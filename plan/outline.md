@@ -54,4 +54,4 @@ I assume conclusions will become clear in time.
 * I really hope these recommendations and specs are developer-friendly, and people actually implement from them.
 * Don't forget the social web is changing ALL the time, so how to stop all this work becoming immediately out of date? (ie. how this is a building block, or extensible).
 
-<span id="contingency">1: If profile stuff doesn't end up in WG specs, I can still have a spec, and implement as an extension to WG output. </span>
+<a name="contingency">1</a>: If profile stuff doesn't end up in WG specs, I can still have a spec, and implement as an extension to WG output.
