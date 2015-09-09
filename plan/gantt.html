@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PhD Gantt Chart</title>
+	<style type="text/css">
+    body
+    {
+      font-family: Arial, sans-serif;
+      overflow: scroll;
+    }
+    table {
+      table-layout: fixed;
+			padding: 0;
+			padding: 0;
+			margin: 0;
+			border-collapse: collapse;
+			width: 18650px;
+		}
+		table td, table th {
+			padding: 0.3em;
+			margin: 0;
+		}
+		table td.empty, table th.empty {
+			border: 0;
+			background: transparent;
+		}
+		table th {
+			background: #000;
+			color: #FFF;
+		}
+		table th, table td.task {
+			text-align: left;
+			border: 1px solid #000;
+		}
+		table td.task, table th.empty {
+			width: 400px;
+		}
+		table th.month30 {
+		  width: 1500px;
+		}
+		table th.month31 {
+		  width: 1550px;
+		}
+		table th.month29 {
+		  width: 1450px;
+		}
+		table td.day {
+			width: 50px;
+			background: #CCC;
+			border: 1px solid #000;
+		}
+		table td div {
+			height: 30px;
+		}
+		table tr.alt {
+			background: #F4F4F4;
+		}
+		div.task1 {
+			background: #C2CAEF;
+			width: 250px;
+			margin-left: 50px;
+		}
+		div.task2 {
+			background: #FFAFAF;
+			width: 350px;
+			margin-left: 200px;
+		}
+		div.task3 {
+			background: #C7DFB5;
+			width: 450px;
+			margin-left: 300px;
+		}
+	</style>
+
+  </head>
+
+  <body>
+   
+<h1>PhD Gantt chart</h1>
+
+<table>
+
+<tr>
+	<th class="empty"></th>
+	<th class="month30" colspan="30">September</th>
+	<th class="month31" colspan="31">October</th>
+	<th class="month30" colspan="30">November</th>
+	<th class="month31" colspan="31">December</th>
+	<th class="month31" colspan="31">January</th>
+	<th class="month29" colspan="29">February</th>
+	<th class="month31" colspan="31">March</th>
+	<th class="month30" colspan="30">April</th>
+	<th class="month31" colspan="31">May</th>
+	<th class="month30" colspan="30">June</th>
+	<th class="month31" colspan="31">July</th>
+	<th class="month31" colspan="31">August</th>
+	<th class="month30" colspan="30">September</th>
+</tr>
+
+<tr>
+
+	<td class="empty"></td>
+	<td class="day">T01</td>
+	<td class="day">W02</td>
+	<td class="day">T03</td>
+	<td class="day">F04</td>
+	<td class="day">S05</td>
+	<td class="day">S06</td>
+
+	<td class="day">M07</td>
+	<td class="day">T08</td>
+	<td class="day">W09</td>
+	<td class="day">T10</td>
+	<td class="day">F11</td>
+	<td class="day">S12</td>
+	<td class="day">S13</td>
+
+	<td class="day">M14</td>
+	<td class="day">T15</td>
+	<td class="day">W16</td>
+	<td class="day">T17</td>
+	<td class="day">F18</td>
+	<td class="day">S19</td>
+	<td class="day">S20</td>
+	
+	<td class="day">M21</td>
+	<td class="day">T22</td>
+	<td class="day">W23</td>
+	<td class="day">T24</td>
+	<td class="day">F25</td>
+	<td class="day">S26</td>
+	<td class="day">S27</td>
+	
+	<td class="day">M28</td>
+	<td class="day">T29</td>
+	<td class="day">W30</td>
+
+
+</tr>
+
+<tr class="alt">
+
+	<td class="task">Task 1</td>
+	<td colspan="30" class="taskbar"><div class="task1">&nbsp;</div></td>
+
+</tr>
+
+<tr>
+
+	<td class="task">Task 2</td>
+	<td colspan="30" class="taskbar"><div class="task2">&nbsp;</div></td>
+
+</tr>
+
+<tr class="alt">
+
+	<td class="task">Task 3</td>
+	<td colspan="30" class="taskbar"><div class="task3">&nbsp;</div></td>
+
+</tr>
+
+</table>
+
+</body>
+</html>
