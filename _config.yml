@@ -1,0 +1,16 @@
+# Site settings
+title: Thesis
+email:
+description:
+baseurl:
+url: "http://rhiaro.co.uk/tag/phd"
+twitter: rhiaro
+github: rhiaro
+
+# Build settings
+#permalink: pretty
+
+highlighter: pygments
+
+gems:
+  - jekyll-redirect-from
