@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Chapter 5:
+title: Chapter 5
 ---
 
 # Persona-izing Decentralised Social Apps
