@@ -11,3 +11,4 @@ title: Chapter 4
 * Criteria for good decentralised, interoperable social profiles.
 * Spec (probably part of SocialWG specs).
 * Evaluation fo spec against criteria.
+* Primer
