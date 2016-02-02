@@ -21,7 +21,7 @@
 | 17 | 2  | [49](https://github.com/rhiaro/thesis/issues/49)            |                                                      |
 | 18 | 2  | [50](https://github.com/rhiaro/thesis/issues/50)             |                                                     |
 | 19 | 2  | [51](https://github.com/rhiaro/thesis/issues/51)              |                                                    |
-| 20 |    | |                                                                                                                  |
+| 20 | 3  | |  **[Draft Ch3](https://github.com/rhiaro/thesis/milestones/(3)%20Social%20Semantics)**                                                                                                                |
 | 21 |    | *(SOCIAM all hands this week)*                                 |                                                             |
 | 22 |    | |                                                                                                                 |
 | 23 |    | |                                                                                                                 |
