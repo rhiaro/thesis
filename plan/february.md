@@ -31,3 +31,6 @@
 | 27 |    | |                                                                                                                 |
 | 28 |    | |                                                                                                                 |
 | **29** | **2**  | | **[Ch2 lit outline](https://github.com/rhiaro/thesis/milestones/Ch2%20literature%20outline)**                     |
+
+* [Chapter 3](http://rhiaro.github.io/thesis/chapter3)
+* [Chapter 2](http://rhiaro.github.io/thesis/chapter2)
