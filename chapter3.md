@@ -13,7 +13,9 @@ Claim that 'profile' is defined simplistically in existing studies, and to bette
 
 ## Background
 
-### Data modelling and knowledge representation
+### Describing people for computers
+
+Data modelling and knowledge representation
 
 * FOAF + Relationships
 * VCard
