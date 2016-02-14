@@ -7,22 +7,21 @@ title: Chapter 3 - Social Semantics
 
 ## Introduction
 
-The previous chapter discusses an individual's relation with their online representation; how the affordances of a profile impact the culture of an online community, including how users interact and relate to each other, and how users understand themselves as part of the community. The studies described consider profiles and users *within* individual systems, yet online representations of people are employed across different systems in great and exciting variety. In order to build on our understanding of the role an online profile plays in self-presentation, identity and interaction we need a more nuanced understanding of what a 'profile' *is* in a general sense. Our goal therefore is to establish a framework for classifying online profiles so that they may be more effectively compared despite the differences between systems and communities.
+The [previous chapter](/thesis/chapter2) discusses an individual's relation with their online representation; how the affordances of a profile impact the culture of an online community, including how users interact and relate to each other, and how users understand themselves as part of the community. The studies described consider profiles and users *within* individual systems, yet online representations of people are employed across different systems in great and exciting variety. In order to build on our understanding of the role an online profile plays in self-presentation, identity and interaction we need a more nuanced understanding of what a 'profile' *is* in a general sense. Our goal therefore is to establish a framework for classifying online profiles so that they may be more effectively compared despite the differences between systems and communities.
 
+This requires examining profiles from a number of different (potentially overlapping) perspectives:
 
+* Active users of a system, who maintain a profile.
+* Passive users of a system, who may not have a profile of their own.
+* System designers and developers, who must model and display data about their users.
+* Third-party developers who build additional services using data from another system.
+* Regulatory bodies which seek to influence or direct how systems are used for legal, ethical or economic reasons.
 
-//, and how a 'profile' is situated in the context of its use
-
-This chapter primarily examines existing implementations of social profiles, to find out what works and what's missing (compared to needs identified in ch2).
- Second we propose a set of constructs to
-capture the most important features of social machines and
-to compare existing instances thereof
-
-Claim that 'profile' is defined simplistically in existing studies. To that end we undertake an empirical analysis of digital representations of users on 20 different social websites and derive a classification framework to enable profiles to be considered along different dimensions (or something).
+In this chapter we first review existing work around how particular systems model their users, or allow users to present themselves. Secondly we undertake an empirical analysis of digital representations of users on 20 different online systems. From these we derive a set of constructs to capture the most important features of profiles in online systems and evaluate this framework by classifying a further 10 systems according to it (or something). We propose this as groundwork for deriving requirements for profiles when designing new systems which need digital representations of their users, as well as for assessing the benefits and drawbacks of how profiles are implemented in existing systems in such a way that takes into account the contexts in which they are used.
 
 ## Background
 
-### Describing people for computers
+### When is a person not a person?
 
 Data modelling and knowledge representation
 
@@ -42,7 +41,7 @@ Studies about what users feel they should put in a profile due to community norm
 
 ### Profiles with a purpose
 
-More in depth on how context informs profile useage.
+More in depth on how context informs profile useage. (this might be more chapter 2-y)
 
 * [Managing Impressions Online: Self-Presentation Processes in the Online Dating Environment](http://onlinelibrary.wiley.com/doi/10.1111/j.1083-6101.2006.00020.x/full)
 * [Constructing academic alter-egos: identity issues in a blog-based community](http://download.springer.com/static/pdf/526/art%253A10.1007%252Fs12394-009-0020-8.pdf?originUrl=http%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs12394-009-0020-8&token2=exp=1454607008~acl=%2Fstatic%2Fpdf%2F526%2Fart%25253A10.1007%25252Fs12394-009-0020-8.pdf%3ForiginUrl%3Dhttp%253A%252F%252Flink.springer.com%252Farticle%252F10.1007%252Fs12394-009-0020-8*~hmac=19ee001e710533a633cd3e827bafee6bf6017106127489f26f407924383cfa82)
