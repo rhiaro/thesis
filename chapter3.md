@@ -7,9 +7,18 @@ title: Chapter 3 - Social Semantics
 
 ## Introduction
 
-This chapter primarily examines existing implementations of social profiles, to find out what works and what's missing (compared to needs identified in ch2).
+The previous chapter discusses an individual's relation with their online representation; how the affordances of a profile impact the culture of an online community, including how users interact and relate to each other, and how users understand themselves as part of the community. The studies described consider profiles and users *within* individual systems, yet online representations of people are employed across different systems in great and exciting variety. In order to build on our understanding of the role an online profile plays in self-presentation, identity and interaction we need a more nuanced understanding of what a 'profile' *is* in a general sense. Our goal therefore is to establish a framework for classifying online profiles so that they may be more effectively compared despite the differences between systems and communities.
 
-Claim that 'profile' is defined simplistically in existing studies, and to better understand the role a profile plays in self-presentation, online identity and interaction we need a more nuanced understanding of how a 'profile' is situated in context. To that end we undertake an empirical analysis of digital representations of users on 20 different social websites and derive a classification framework to enable profiles to be considered along different dimensions (or something).
+
+
+//, and how a 'profile' is situated in the context of its use
+
+This chapter primarily examines existing implementations of social profiles, to find out what works and what's missing (compared to needs identified in ch2).
+ Second we propose a set of constructs to
+capture the most important features of social machines and
+to compare existing instances thereof
+
+Claim that 'profile' is defined simplistically in existing studies. To that end we undertake an empirical analysis of digital representations of users on 20 different social websites and derive a classification framework to enable profiles to be considered along different dimensions (or something).
 
 ## Background
 
@@ -55,6 +64,7 @@ To sort (or use in ch2)
 * [Anonymity and Online Community: Identity Matters](http://www.webcitation.org/query?url=http%3A%2F%2Falistapart.com%2Farticles%2Fidentitymatters&date=2008-09-28)
 * [Can You See Me Now? Audience and Disclosure Regulation in Online Social Network Sites](http://bst.sagepub.com/content/28/1/20)
 * [The Online Disinhibition Effect](http://online.liebertpub.com/doi/abs/10.1089/1094931041291295)
+* [Social Comparison 2.0: Examining the Effects of Online Profiles on Social-Networking Sites](http://online.liebertpub.com/doi/abs/10.1089/cyber.2010.0120)
 
 ## Defining an online profile
 
