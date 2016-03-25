@@ -39,7 +39,10 @@ Studies about what users feel they should put in a profile due to community norm
 This user study got 52 people to first describe how they want others to perceive them based on an online profile, then asked them to fill out a minimum of 10 from 22 attributes and after each one, they rated the impression their profile gave against TIPI personality attributes. Satisfaction with how the profile matched their ideal self-presentation converged after 10 attributes, with free-form attributes tending to increase satisfaction the most. However this study asks participants to fill out a profile in a void, neglecting that profiles are usually updated with a purpose or awareness of a particular context in mind. Participants indicate a *general* preferred impression they want to give to others, but who are the consumers of the profile? The participants do not indicate who their expected audience is or what they think the profile is for.
 
 * [Self-Presentation and Gender on MySpace](https://www.researchgate.net/publication/222435595_Self-Presentation_and_Gender_on_MySpace)
-* [How do People with Disability Use and Experience Virtual Worlds and ICT: A Literature Review](https://journals.tdl.org/jvwr/index.php/jvwr/article/viewFile/6173/5977)
+* Disabilities
+ * [Opportunities for People with Disabilities in the Virtual World of Second Life](http://onlinelibrary.wiley.com/doi/10.1002/j.2048-7940.2010.tb00056.x/pdf)
+ * [Disability discourses for online identities](http://www.tandfonline.com/doi/pdf/10.1080/09687590220139883?instName=University+of+Edinburgh)
+ *
 * [Mick or Keith: blended identity of online rock fans](http://download.springer.com/static/pdf/515/art%253A10.1007%252Fs12394-009-0015-5.pdf?originUrl=http%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs12394-009-0015-5&token2=exp=1454607007~acl=%2Fstatic%2Fpdf%2F515%2Fart%25253A10.1007%25252Fs12394-009-0015-5.pdf%3ForiginUrl%3Dhttp%253A%252F%252Flink.springer.com%252Farticle%252F10.1007%252Fs12394-009-0015-5*~hmac=857c96e9bbf2551fe5a284c7ae7af3136d8ad2f82d8f48c12967dd96fd4827eb)
 
 ### Profiles with a purpose
