@@ -112,3 +112,215 @@ Something coherant and useful, hopefully.
 Apply taxonomy
 
 ## Conclusions
+
+
+
+
+
+# Reading notes (to condense)
+
+## Self-Presentation of Personality During Online Profile Creation
+
+### Scott Counts & Kristin Stecher 2009
+
+User study. Fill in fake profile, vs. how it compares to personality.
+
+People are able to create profiles they feel match desired self-presentation.
+
+Free form is best.
+
+Only a few fields sufficient.
+
+Self presentation: image or idea of the self, created for social purposes.
+
+In Western culture, personality traits are most important (Cousins 1989)
+
+Stecher & Counts 2008b - only 5 attributes needed to make meaningful inferences.
+
+Self-presentation online = many factors - friends, testimonials, interests, photos, bio. More or less easily faked or controlled, eg. friends profile pics not controlled, but friends selected.
+
+This study - only controlled by users: more easily faked.
+
+Gosling 2003 - people usually truthful.
+
+'User stands to gain from a more nuanced understanding of how attributes contribute to desired self-presentation'.
+
+Online self-presentation characterisation: status (Donath 2007), tastes (Liu 2007), personality (this, based on 1890 James taxonomy: material, social, spiritual).
+
+Western = individualistic. More spiritual. Which actually means like personality and accomplishments and abilities.
+
+#### Study
+
+3 questions:
+
+* How do people characterise ideal self?
+* As they build profile, does online impression converge on ideal?
+* What types and attributes contribute most?
+
+52 participants.
+
+* Free form: how do you want others to percieve you based on profile? Sorted answers according to James taxonomy.
+* Create a profile - fill 22 attributes, from fb (& Lampe 2006, Stecher 2008b). Minimum 10.
+* After each attribute, rate profile against TIPI personality traits, 1-7 Likert.
+* Rate how they want others to see them, against TIPI.
+
+Satisfaction converged at 10 attributes, which was also the most common number filled out (==>> this was the required minimum!)
+
+==>> This study misses *context* of profile creation... Profiles usually created with a purpose/community in mind.
+
+More free form / expressive attributes contributed more to satisfaction with self-representation. Exceptions - college was high, music was low.
+
+Fiore 2008 - agrees free form is more predictive of attractiveness.
+
+## Constructing academic alter egos: identity issues in a blog-based community
+
+### Dennen 2009
+
+Online interaction = opportunity for exploring identity.
+
+This is about community of pseudonymous bloggers norms, identity performance.
+
+Blog elements through which identity maybe expressed:
+
+* name and blog title
+* profiles
+* post content
+* voice
+* affiliations
+* visual design
+
+'Blog identities are constructions whoch develop over time'
+
+Narratives are acts of self-construction and self-depiction. Agency. (Bruner 1994)
+
+Some are seeking status.
+
+Reputation and appearance -> trust (Daneshgar & Ho 2008)
+
+Identity construction is ongoing, conscious or unconscious.
+
+Madden 2007 - 1/2 adults searched themselves online, awareness of info out there.
+
+Sharing key to participating. Lampe 2007 - fb profiles with more info -> more friends.
+
+Associations with others provide identity cues - boyd & Ellison 2008
+
+'Blogs differ from facebook in terms of identity expectations.'
+
+Answers will help designers understand what their members might like/need.
+
+Blogging different because individual members have 'ownership over defined spaces', 'no clear entity either owns or defines the community as a whole'.
+
+* Q1. What elements constitute and contribute to a blogger's identity?
+* Q2. Why do bloggers construct alternate or pseudonymous identities?
+* Q3. How are these individual blogger identities shaped and affected by participation in the larger community?
+
+Blogademe - predominiately N. American academics.
+
+Most sole authors, pseudonyms. Wide topics. Diaristic.
+
+Community from topical proximity not physical proximity.
+
+#### Study
+
+Observed and engaged with since 2004. Primarily observation. Approached used by others studying online communities - Gatson & Zweerink 2004.
+
+Core 200 blogs, additional at various points. Field notes and archives are documentation. 40 semi-structured interviews.
+
+* [Lincoln & Guba 1985 for credibility](https://www.google.com/?ion=1&espv=2#q=lincoln%20and%20guba%201985%20credibility) of researcher in study.
+
+'petite generalizations' - Stake 1995.
+
+Blogs analysed as part of collective community with overaching identity, not as individual artifacts.
+
+Idenitty choices reinforce community norms. Desire to belong.
+
+#### Name and blog title
+
+Title may expand on pseudonym. Both include clues about person and intent. Pseudonyms norm, but anonymity not accepted. Trust. Norm to use consistent pseudonym. Infrequent changes.
+
+Use of changing names and blog titles to explore transitioning real life identity. Audience usually invited.
+
+#### Profiles
+
+Standard fields or free form. Blurb may appear in blog side bar. Tend to remain static over time. Statements touch upon major roles played and blog topics. Some opt for no profile.
+
+#### Post content
+
+Long term engagement gives a fuller sense of authorship identities.
+
+Some assume prior readership in the language used. Indicates what's important. Not diary, dialogue with readers. What is shared or not - communicates persona in public.
+
+#### Voice
+
+Anonymous posts were identifiable from voice.
+
+Some imitate each other to make a point. Affects readership/appeal.
+
+#### Affiliation
+
+Sidebar. Blogrolls; sometimes mutliple for communities. Also non-blog links.
+
+#### Visual design
+
+Personalise over time. Avatar. Many share photos as banner.
+
+Some say they subscribe with RSS but click through to read in context.
+
+#### Altogether
+
+= comprehensive persona.
+
+Surface level clues, then reinforced over time. Consistent over time.
+
+A blogging identity = a context-driven representation of a person. Roots in f2f but highlights or downplay characteristics based on community.
+
+High privacy concern - context collapse.
+
+Pseudonyms - stable identity - critical for community development. 95% pseudonymous. Not extreme measures to keep IRL and blog separate. Just indirection layer.
+
+Particiapation > privacy concerns.
+
+Pseudonyms are norm, marker of community membership. New members choices guided by community norms, less effort than earlier members.
+
+Outsiders uncomfortable with pseudonyms. Privilige! Bloggers don't care.
+
+Blogademe bloggers are not academic focussed. 'Whole person' not just professional. Find that most/all accurately represent themselves. Not many dog bloggers.
+
+Community shares identity/privacy protection practices. Warn each other if close to being 'outed' by too revealing posts. Distrust is not of others in the community, but random people stumbling across.
+
+Identities constructed in context of community.
+
+Tension between privacy and community.
+
+"bloggers must deal with the complexity of representing themselves accurately while at the same time protecting themselves from being readily identified outside the community. *Such is the challenge of discussing potentially sensitive or personal details in a public, archived and indexable format*"
+
+## How do people with disabilities use and experience virtual worlds
+
+### Stendal 2012
+
+This is a giant literature review with lots of stuff about the methodology for doing literature reviews.
+
+People with disabilities have problems with access and acceptance. Little research on virtual worlds and disabled people. 54 articles reviewed and categorised.
+
+Online provides control over disclosure of impairment - Bowker and Tuffin 2002.
+
+New friendships and reduced isolation - Bradley & Poppin 2003.
+
+Virtual worlds are potentially harmful if they fail to provide users with option to conceal disability - Ford 2001.
+
+Some functionality may reconstruct disability - Carr 2010.
+
+Inclusion in Second Life - Stewart 2010.
+
+Studies of virtual worlds focus on rehabilitation or games that teach life skills.
+
+## digitalvertigo
+
+## AJ Keen 2012
+
+Sheryl Sandberg in 2012 (while COO fb): "Profiles will no longer be outlines, but detailed self portraits... this shift towards authenticity will take getting used to"
+
+Zuckerberg 2009: 2 identities = lack of integrity.
+
+Ben Zimmerman re: Zuckerverbs "language is being recast... into a utilitarian tool for 'expressing' relationships to objects... in a remarkablky unexpressive fashion" (63)
