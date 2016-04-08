@@ -32,7 +32,7 @@ In the same way apps restrict users, how might social machines designed with som
 
 ## digitalvertigo
 
-## AJ Keen 2012
+### AJ Keen 2012
 
 Solitude is important and impossible.
 
@@ -148,3 +148,67 @@ How do we know who is behind/controlling an avatar (/profile). Agents. 'Hidden c
 Digital footprints to detect liars, psychosis, leadership... @no way to hide the fact that one is a dog" (168)
 
 "even the roles we play are up for grabs in virtual reality. Avatars can reveal sides of people they themselves never knew existed." (260)
+
+## App Generation
+
+### Gardner & Davis 2013
+
+=> Davis thesis blogs identity youth Bermuda
+
+Three Is - identity, intimacy, imagination - have been reconfigured by apps
+
+Teens crafted online persona ~ true sense of self (feed into each other)
+
+Facebook relationship status option s- "give rise to new forms of imaginative expression... application shapes and restricts these expressions in distinct and distinctive ways" 6
+
+=> "An 'app' or 'application' is... tightly controlled by the individual or organisation that designed teh app." 6
+
+Weird idea that if there isn't an app for something it doesn't matter 8
+
+App-enabling vs app-dependant 10
+
+5 year study 150 young people in New England and fewer in Bermuda. 7 focus groups with 6-10 adults who have worked with young people for >20 years. 40 interviews with high school teachers. Compared student art (writing and graphics) gathered over 20 years - how changed.
+
+Need to consider how earlier technologies like telephone defined youth 13
+
+Proposes that generations may be defined by dominant technologies (=> too fast!)
+
+Componants of technlogy: tools and machines, information, media, human psychology.
+
+McLuhan alert 22 Each medium, extension of human sensory organs, alters relation of individual to the surrounding world.
+
+Devices more personal - control over what is sent and received - compared to radio and TV (=> compare to who controls apps though?)
+
+'The paradox of action and restriction' 24
+
+"Can constitute a challenge - asking us what we can accomplish despite these restrictions" 25
+
+"wrt identity formation: Apps can short-circuit identity formation, pushing you into being someone else's avatar - or, ... they can allow you to approach identity formation more deliberately, holistically, thoughtfully." 32
+
+"prepackaged identity", "endless role diffusion"
+
+Pro tech - danah, Cathy Davidson, Henry Jenkins, Shirky, David Weinberger.
+
+Anti tech - Nicholas Carr, Mark Bauerlein, Cass Sunstein, Sherry T, Janen Lamien(?)
+
+"we believe more and more young people are app-dependant than app-enabled" 45
+
+Young people expressing consistency between online and offline selves 63
+
+But online is often a 'polished' version. Not one-to-one. Youth interviwed said online identity is 'less complete' than offline 64
+
+Sometimes due to constraints of platform. More common - privacy.
+
+"Do apps open up or constrain identity expresson?" 66
+
+"The standard elements of a profile on facebook... are used to package the self for public consumption" 71 "Presentation and performance are also central on YouTube"
+
+Narcissism - constant need for support/validation/self-assurance, enabled by web. But young people less secure and more risk-averse, hopeless.
+
+Identities with religious communities lessened; young people identify with multiple groups "sympathies are distributed" More accepting of diversity. 87
+
+Access to wider range of online communities means niche identities don't have to be set aside to fit in 90 - enabling
+
+"apps to augment or replace offline relationships?" 110
+
+Responsibility on parents and app developers to steer towards enabling over dependant.
