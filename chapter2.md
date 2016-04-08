@@ -212,3 +212,41 @@ Access to wider range of online communities means niche identities don't have to
 "apps to augment or replace offline relationships?" 110
 
 Responsibility on parents and app developers to steer towards enabling over dependant.
+
+## Born Digital
+
+### Palfrey and Gasser 2008
+
+Obviously dated. Addressed to old people who are scared of da youts.
+
+Explains how 'digital natives' are so vastly different then goes on to say how they're not different at all. That's okay I suppose.
+
+Online enables fluid experimentation with identity but also keeps a record so identities are traceable.
+
+"Digital natives almost never distinguish between the online and offline versions of themselves", "multiple representations inform her overall identity"
+
+=> Identity management = multiple presentations of self on facebook DiMiccio and Miller - says should build tools to support bridging communities.
+
+=> Youth, Identity and Digital Media
+
+=> Huffaker and Calvert, Gender Identity and Language Use in Teenage Blogs
+
+=> Calvert - Identity Construction on the Internet
+
+"changes are far greater for social than for personal identity"
+
+Reward vs risk of self-disclosure. Young people understimate risks. 25
+
+"The structural design of online platforms both constrains and builds upon these means of building networks of identity and trust"
+
+=> Still quite a lot of focus on the visuals of avatars, 'controlled' by user, like wearing a mask. I suppose that's the most obvious way of telling ifn someone is trying a new 'identity' if they design an image for themselves that physically different. 'Virtual worlds'
+
+34 "can adjust her digital identity with ease, but has far less ability to control how her identity is percievied by others", "she appears to have much more control over her identity but in fact she has much less"
+
+"more bound to a single identity"
+
+"identities might converge... even more than identities ever converged before the digital era."
+
+"...created multiple identities... might be connected to create a much fuller picture of the individual... spanning a greater period of time."
+
+36 "Most digital natives have an instinct about... identity expression an dformation in a digital age"
