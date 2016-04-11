@@ -7,6 +7,48 @@ title: Chapter 2 - The Presentation of Self Online
 
 The main goal of this chapter is to cover previous work and empirical evidence of how people present themselves, as a basis for better supporting them.
 
+## Presentation of self
+
+socsci literature
+
+## Youth online
+
+Social self-presentation literature applied to the online space is mostly applied to these aliens called 'young people'
+
+socsci/websci literature
+
+## Privacy
+
+websci literature, impact on sns use and impression management
+
+## Social machines
+
+socm literature
+
+how does considering online social stuff as social machines affect how we understand profile creation and impression management?
+
+cross-platform, cross-community, imagined audience
+
+Identity in social machines. How to explore identities when part of a crowd? Reputation in a coordinated whole needs consistency and reliability. Apps as tools for individuals, vs/and tools for social coordination.
+
+In the same way apps restrict users, how might social machines designed with some purpose inhibit users? How can we build social machines with space for exploration and innovation by participants? How crucial is self-presentation of participants for this?
+
+## Constructing online identity
+
+studies!
+
+### Content creators
+
+dump most of SOCM14 paper here
+
+### Pro-social deception
+
+people-people
+
+but also people-system, leads to... ----> chapter 3!
+
+# Notes
+
 * Social sciencey and web sciencey background literature
   * Goffman
   * boyd
@@ -21,14 +63,10 @@ The main goal of this chapter is to cover previous work and empirical evidence o
 
 Reading all these studies from the last five to ten years about teens' changing attention, changing priorities, changing emotional states (or ways of handling it) due to technology, it occurred me to me they're talking about me (or is that narcissistic?). Some things I read are instinctively familiar; obvious. Some are ridiculous. How does my first-hand experience of growing up with technology affect my reading of studies, and my ability to study others?
 
-## Social machines braindumping
+## Privacy
 
-Identity in social machines. How to explore identities when part of a crowd? Reputation in a coordinated whole needs consistency and reliability. Apps as tools for individuals, vs/and tools for social coordination.
-
-In the same way apps restrict users, how might social machines designed with some purpose inhibit users? How can we build social machines with space for exploration and innovation by participants? How crucial is self-presentation of participants for this?
-
-
-# Reading notes (to condense)
+My Profile Is My Password, Verify Me! The Privacy/Convenience Tradeoff of Facebook Connect - Paper
+Serge Egelman
 
 ## digitalvertigo
 
