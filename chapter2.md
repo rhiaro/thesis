@@ -17,6 +17,12 @@ Social self-presentation literature applied to the online space is mostly applie
 
 socsci/websci literature
 
+## Bloggers
+
+Lots of work on identity and bloggers, especially wrt journalism/media.
+
+(Literature from indieweb paper)
+
 ## Privacy
 
 websci literature, impact on sns use and impression management
@@ -40,6 +46,10 @@ studies!
 ### Content creators
 
 dump most of SOCM14 paper here
+
+### indieweb
+
+Interviews
 
 ### Pro-social deception
 
