@@ -29,6 +29,14 @@ Were any of them evaluated and how so?
 
 The data stored may be distinctly personal, shared with third-parties only in specific contexts for a particular purpose; or it may be inherantly social, expected to be broadcast on creation to at least one other person and possibly subject to further reshaping, sharing, and propagation throughout a network of people. Many datastores are optimised for one or the other of these scenarios and may place constraints on their users accordingly; others attempt to meet requirements for both types of data and encounter different implementation and usability challenges as a result.
 
+### From status updates to microblogging, and beyond
+
+There was some point when everyone (planning/discussing decentralised systems) was referring to 'status updates' and I think twitter maybe switched the terminology to 'microblogging' but now, with AS2 and stuff, I feel like all content is being modelled equally and there's less trying to enumerate all types of content, and awareness of a need for extensibility. This is pertinent to the idea that a stream of content contributes just as much to a person's online presentation as a set of attributes. Status updates were kind of 'my current state' which is distinctly something at the top of a profile, like 'about me right now', but microblogging keeps a feed of past states very visible as well.
+
+https://gist.github.com/rhiaro/62acd5d135548dca47f1
+
+http://rhiaro.co.uk/2015/12/things-happenings
+
 ## The people in the machines
 
 Background on how identity fits into these systems and related standards work. Typically for authentication and access control, with representation of user secondary or not covered. What's missing to do with profiles/people from previous and current identity-related standards work? What problems has this caused? (Critique also based on findings in chs 2 & 3.)
