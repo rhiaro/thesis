@@ -30,6 +30,14 @@ Data modelling and knowledge representation
 * SIOC
 * Person or webpage: who cares, does it matter, and httpRange-14 (it is at least worth mentioning if we're going to turn this work into something useful for pedantic engineers etc; the real question is: can I fit this discussion into a section in a chapter, or should I write a whole book on it?)
 
+### Control
+
+Inferred data from analyses... what is personal data? People can't really see how they're perceived by advertisers etc. They have an online profile that's totally opaque to them.
+
+* danah boyd mirror
+* richard gomer at soton
+* http://arxiv.org/pdf/1412.6159v2.pdf
+
 ### User perceptions of profiles
 
 Studies about what users feel they should put in a profile due to community norms, expectations, particular service. Or what users feel might be the consequences of how they use a profile. Particular outcomes of profile usage.
