@@ -36,11 +36,20 @@ Social self-presentation literature applied to the online space is mostly applie
 
 socsci/websci literature, boyd
 
+* http://eprints.lse.ac.uk/27072/1/Taking_risky_opportunities_in_youthful_content_creation_%28LSERO%29.pdf
+
 Introduce concepts of 
 
 * Context collapse 
 * imagined audience
 * networked publics
+
+### Narcissism
+
+Constructing an ideal self, a facade. Social media often critiqued as encouraging narcissistic behaviour, especially with teens.
+
+* http://bc4women.org/2016/02/theres-an-app-for-that-when-social-media-identity-overshadows-identity-in-christ/
+* http://thenewinquiry.com/blogs/marginal-utility/social-media-is-not-self-expression/
 
 ## Bloggers
 
@@ -57,7 +66,12 @@ Present day social media has dramatically increased participation in publishing 
 
 ## To share or not to share (privacy and social media)
 
-Tensions between convenience of sharing on social media and increasing awareness of privacy concerns
+Tensions between convenience of sharing on social media and increasing awareness of privacy concerns.
+
+Does self-censorship stifle personal expression? How does this impact identity construction?
+
+* https://cie.acm.org/articles/panopticism-cyberculture-could-privacy-invasive-social-media-stifle-innovation/
+* http://blogs.microsoft.com/on-the-issues/2015/01/12/life-online-stifling-young-peoples-self-expression/#sm.0000pytzcsfz8ehetkb1drfejzbrt
 
 websci literature, impact on sns use and impression management
 
@@ -109,6 +123,8 @@ My perspective. Western bias.
 Reading all these studies from the last five to ten years about teens' changing attention, changing priorities, changing emotional states (or ways of handling it) due to technology, it occurred me to me they're talking about me (or is that narcissistic?). Some things I read are instinctively familiar; obvious. Some are ridiculous. How does my first-hand experience of growing up with technology affect my reading of studies, and my ability to study others?
 
 # Notes
+
+
 
 ## digitalvertigo
 
