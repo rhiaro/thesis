@@ -81,7 +81,7 @@ In the same way applications restrict users, how might social machines designed 
 
 ## Constructing online identity
 
-studies!
+This section presents empirical studies of online identity practices in three different areas: active content creators using centralised social media; active content creators using decentralised systems; and, deception as a tool for social impression management.
 
 ### Content creators
 
@@ -102,7 +102,7 @@ but also people-system, leads to... ----> chapter 3!
 
 ## Conclusions
 
-### Context
+### Limitiations and reflections
 
 My perspective. Western bias.
 
