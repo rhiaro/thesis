@@ -47,9 +47,47 @@ POSSIBLY: interviews / focus groups with developers and users of past / failed /
 
 Post mortem.
 
+## The pieces
+
+Here we uncover common modules of decentralised social systems from previous discussion, and look at where there are overlaps and things that stand out.
+
+
+
 ## ...
 
 * Criteria for good decentralised, interoperable social profiles.
 * Spec for profiles.
 * Evaluation fo spec against criteria because apparently this is okay.
 * Primer, including how this relates to SWWG specs (via SWP)
+
+# Sources and notes
+
+http://dcentproject.eu/wp-content/uploads/2014/01/D4.1-State-of-the-Art_new_2.pdf
+
+http://www.nesta.org.uk/sites/default/files/research_on_digital_identity_ecosystems.pdf
+
+http://www.www2015.it/documents/proceedings/companion/p1155.pdf
+
+* Backend as a service / nobackend
+  * Firebase
+  * That other one sandro was talking about with firebase
+* Personal data stores
+  * indx/webbox (SOCIAM)
+  * Mydex
+  * That Stanford one
+* Personal data stores with separate app stuff going on
+  * Solid
+  * hood.ie
+  * Unhosted / remoteStorage
+* Protocols
+  * Tent.io
+  * webmention/micropub
+* Social network stuff
+  * pump.io
+  * Disapora
+  * Friendica
+* Blockchain-y stuff (??)
+  * Ethereum
+  * Maidsafe
+* Peer to peer stuff
+  * scuttlebot
