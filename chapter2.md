@@ -112,6 +112,8 @@ Deception as a tool for social impression management online
   * Lying survey
   * lieCloud case studies
 
+Magic quadrant for this stuff? Unconscious vs conscious effort 
+
 but also people-system, leads to... ----> chapter 3!
 
 ## Conclusions
