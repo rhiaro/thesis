@@ -11,33 +11,73 @@ The main goal of this chapter is to cover previous work and empirical evidence o
 
 socsci literature
 
+* Goffman
+    - Perfomativity
+    - Front stage and back stage
+* boyd
+* Turkle (2nd half of Alone Together)
+* Giddens, Modernity (identity as separateness/uniqueness; personal construction as opposed to ascription due to the loss of traditional anchors. Construction of "self" as an "ongoing project")
+
+## Offline to online... and back again
+
+When people use digital technologies to communicate, they are passing a version of themselves through the filter of the platform they use. Aspects of their offline identity may be mediated by a particular technology as they input into a system, and similarly as their input is consumed by the reciever, who may even be using a different technology. 
+
+..Similarities and differences between Goffman's frontstage and back stage...
+
+Online identities are not only a reflection of offline identities, but the inverse can be true as well. Feedback loop.
+
+Rodogno, R (2012). "Personal Identity Online.". Philosophy & Technology. - online identity affects offline self
+
+Psychology studies about virtual worlds. Infinite Reality.
+
 ## Youth online
 
 Social self-presentation literature applied to the online space is mostly applied to these aliens called 'young people'
 
-socsci/websci literature
+socsci/websci literature, boyd
+
+Introduce concepts of 
+
+* Context collapse 
+* imagined audience
+* networked publics
 
 ## Bloggers
 
-Lots of work on identity and bloggers, especially wrt journalism/media.
+..speaking of networked publics...
 
-(Literature from indieweb paper)
+* Lots of work on identity and bloggers, especially wrt journalism/media.
+* Russell, A. (2009) International Blogging. -> various studies from a non-Western perspective <-
 
-## Privacy
+Identity is both individually and socially constructed. Identity expression through personal blogs is very individualistic; bloggers have traditionally had quite a bit of control over not only what they choose to share and write about, but how it is presented, organised and laid out. ..[@thatbloggingstudy] describes importance of themes and designs, and mentions that some people use a feed reader to subscribe but click through to the original post to read in context...
+
+Whilst bloggers (during peak blogging years like 2007) do collaboratively construct their identities through interactions with the community, they were mostly restricted to commenting on other people's posts. This fragments their contributions across different domains, and where their writing style and topics constitute a part of their identity, so it fragments their identity.
+
+Present day social media has dramatically increased participation in publishing and sharing online content [@citationeeded]. Easy-to-use services lower the barrier to entry for connecting with and pushing thoughts out to an audience. Identities expressed through social media are inherantly collaborative; every interaction is pushed to a network, and part of a dynamic cycle of consumption and creation feedback. Commenting on someone else's post automatically links it to your own profile, and often it appears there as well, accessible from two different contexts. Yet they permit little customisation, providing preset options for content or reaction templates, and consistent inflexible designs for profile pages. This tips the balance away from the individual aspect of identity construction, and differentiates current social media practices from a generation of bloggers who populated the web prior to the mainstream adoption of social media.
+
+## To share or not to share (privacy and social media)
+
+Tensions between convenience of sharing on social media and increasing awareness of privacy concerns
 
 websci literature, impact on sns use and impression management
 
-## Social machines
+* My Profile Is My Password, Verify Me! The Privacy/Convenience Tradeoff of Facebook Connect - Serge Egelman
 
-socm literature
+## Technoself
+
+Dive into this... 'field' since 2013.. https://en.wikipedia.org/wiki/Technoself
+
+## Social machines
 
 how does considering online social stuff as social machines affect how we understand profile creation and impression management?
 
 cross-platform, cross-community, imagined audience
 
+Specifically thinking about social machines lets us emphasise the multiple contexts in which people are managing their identity, rather than constraining to per-platform/per-technology/per-task studies.
+
 Identity in social machines. How to explore identities when part of a crowd? Reputation in a coordinated whole needs consistency and reliability. Apps as tools for individuals, vs/and tools for social coordination.
 
-In the same way apps restrict users, how might social machines designed with some purpose inhibit users? How can we build social machines with space for exploration and innovation by participants? How crucial is self-presentation of participants for this?
+In the same way applications restrict users, how might social machines designed with some purpose inhibit users? How can we build social machines with space for exploration and innovation by participants? How crucial is self-presentation of participants for this?
 
 ## Constructing online identity
 
@@ -53,30 +93,22 @@ Interviews
 
 ### Pro-social deception
 
-people-people
+Deception as a tool for social impression management online
 
-but also people-system, leads to... ----> chapter 3!
-
-# Notes
-
-* Social sciencey and web sciencey background literature
-  * Goffman
-  * boyd
-  * Turkle (2nd half of Alone Together)
-  * whilst there will be other lit reviews in other chapters, this is the foundational one of the thesis and will take up most of this chapter probably.
-* Brief empircal analysis of creator profiles (SOCM14)
-* Deception as a tool for social impression management online
   * Lying survey
   * lieCloud case studies
 
-## Braindumping
+but also people-system, leads to... ----> chapter 3!
+
+## Conclusions
+
+### Context
+
+My perspective. Western bias.
 
 Reading all these studies from the last five to ten years about teens' changing attention, changing priorities, changing emotional states (or ways of handling it) due to technology, it occurred me to me they're talking about me (or is that narcissistic?). Some things I read are instinctively familiar; obvious. Some are ridiculous. How does my first-hand experience of growing up with technology affect my reading of studies, and my ability to study others?
 
-## Privacy
-
-My Profile Is My Password, Verify Me! The Privacy/Convenience Tradeoff of Facebook Connect - Paper
-Serge Egelman
+# Notes
 
 ## digitalvertigo
 
