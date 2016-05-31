@@ -7,6 +7,9 @@ title: Chapter 2 - The Presentation of Self Online
 
 The main goal of this chapter is to cover previous work and empirical evidence of how people present themselves, as a basis for better supporting them.
 
+..sections for social vs individual construction ..
+.... political, cultural, racial. stuff about web dissolving these, but not really
+
 ## Presentation of self
 
 socsci literature
@@ -105,6 +108,8 @@ dump most of SOCM14 paper here
 
 Interviews
 
+Does the indieweb attempt to recapture the more individualistic aspects of identity management, whilst retaining audience and feedback - collaborative identity construction - on the scale enabled by centralised services?
+
 ### Pro-social deception
 
 Deception as a tool for social impression management online
@@ -117,6 +122,8 @@ Magic quadrant for this stuff? Unconscious vs conscious effort
 but also people-system, leads to... ----> chapter 3!
 
 ## Conclusions
+
+do we run a risk of losing out on the collaborative aspects of identity construction if we designs decentralised systems which aren't sufficiently federated? Must acknowledge the criticality of interaction for identity formation.
 
 ### Limitiations and reflections
 
@@ -348,3 +355,150 @@ Reward vs risk of self-disclosure. Young people understimate risks. 25
 "...created multiple identities... might be connected to create a much fuller picture of the individual... spanning a greater period of time."
 
 36 "Most digital natives have an instinct about... identity expression an dformation in a digital age"
+
+## International Blogging
+
+### 2009 Adrienne Russell, Nabil Echchaibi
+
+Focus on non-US. Counter to work that says spread of blogging as spread of Western democratic ideals. "power dynamics offline influence developments online".
+
+Audience reception theory (Ang 1985)
+
+US media practice remade around the world to better suit needs (Appadira 1996). Media technologies as often oppressive as liberating. Blogging celebrated as extended public journalism.
+
+Theme in this book: blogs to "negotiate and articulate identity"
+
+"many uses of blogs... talking about blogging as a uniform act with well-defined goals can be misleading" (Bruns and Jacobs 2006). Arguement for individual case studies instead of generalisations.
+
+Difference between A list blogs and smaller ones. We need to study latter, but rarely do so. "not only incarnate better the potential of Internet users to challenge elite control of news production, but they also show us on a smaller scale how individuals and communities use netowrk technologies to sustain new forms of social, cultural and economic solidarity" (12)
+
+Circa 2007 people saw blogging as revolutionary and empowering for individuals, decentralising. "we live in a new era of complex and non-linear communication" (15)
+
+#### Paris banlieues
+
+Individual and community identities defined by mainstream media - blogs allow people to redefine their identities for themselves (23). Had a knock-on effect on traditional media re: Paris banleiues
+
+#### Muslim
+
+"Blogging as a cultural practice" (29)
+
+"the inherant and irreducible dynamism of any identity"
+
+Reading 25 blogs over 9 months in 2007, specifically Muslim authors, themes linked to Islam, all English.
+
+"How is publicness reconfigured in Muslim blogs?", "concurrent existence of both intellectual, reasoned analysis and arguements with emotional expressions and responses"
+
+Structural societal biases strip Muslims of rationality, but blogging empowers them to express in-depth analyses alongside reasoned and justified emotional responses.
+
+Posting comments on blogs enables publicness, as publicness entails dialogue (39)
+
+"almost seamless merging of political/public themes with the more personal/private ones". Typically private issues (by Euro standard) become issues for public discussion. "the lines between private and public are constantly shifting, and perhaps blogs might be ghtough of as contributing to such shifts" (40)
+
+Blogging opens for dialgue but not guarentee it (commentors are dumb) - cannot expenct consensus. More to kick start debate. 
+
+=> Giddens - modernity and self-identity. Identity as separateness and uniqueness. Also personal construction rather than ascription now due to loss of traditional anchors. "having a self means being in charge of an ongoing project" (24)
+
+"Muslim identities are considered to be more or less uniform and Muslim people appear interchangeable with each other rather than unique individuals... However blogging acts in ways that effectively establish the separateness and uniqueness of each blogger, first by naming and authoring a blog and secondly by having a unique URL address" (42)
+
+'I' and 'me' as claiming the blog as part of the blogger's identity => (Amir-Ebrahimi 2004, Reed 2005)
+
+"blogging combines identity-in-the-making with connection with others, who also help define this identity. Thus for a blogger to choose and list their friends and their enemies, to write about who and what they like or not, show that they mutually define each other" ... "the fact that the blogger has discretion over most parts of the blog, shows that indeed to some extent they define and construct their own identity, while on the other the mobilization of other blogs or blog entries in doing so, denotes the collaborative or social elements of this construction".
+
+"Muslim blogging reconfigures identity as both shared-ness and unique-ness" (does it?)
+
+"ways in which blogging practices can reenter or feed back into both the formal, institutional aspects of life, and into the everyday politics of coexistence"
+
+* Amir-Ebrahimi, 2004, Performance in everyday life and the rediscovery of the 'self' in Iranian weblogs
+* Alexanian, J. 2006 Publicly initimate online: Iranian weblogs in Souther CA
+* Burns and Jacobs 2006 Use of blogs
+* Giddens 1991 Modernity and self-identity
+* Reed 2005 "My blog is me"
+
+Blogs analysed 25, 11 blogspots, 4 wordpress.com, 1 blogsome, 9 domains (1 sub .pickledpolitics.com)
+
+#### China
+
+"bloggers defining themselves for an international audience"
+
+"If they become popular, these writers may be confronted with responses hitherto reserved fr professional news outlets, in particular challenges to their authenticity or character" (47)
+
+"instead of abandoning ethnicity and other markers of identity as was originally predicted (Turkle 1995), bloggers and others who participate in online communities deliberately identify themselves in these terms of ethnicity and culture"
+
+5 blogs online since 2002.
+
+Saying that Chinese blogging is a Western imposition assumes that Chinese are not shaping blogosphere and can only conform to existing standards, and that they can't choose how or when to use blogs. (49)
+
+Forums and listservs are pre-blog
+
+"On the Internet, because performing identity depends far more on self-description than on presentation of direct 'evidence', every blogger must make choices about what to reveal and make further decisions about how to illustrate these choices." (50) We can look at choices to see what criteria seem important for defining identity.
+
+#### Russia
+
+History of LiveJournal is intertwined with evolution of Internet in Russia. Early internet conceptualized as grassroots, place for dialogue, domestic kitchen (vs Western 'frontier' or 'superhighway').
+
+Split between pro- and anti-Western influence (individual)
+
+Optimists and pessimists wrt internet and state/society.
+
+Western 'collaborative', Russian 'collectivist'
+
+"Power-play between self-identity and imposed lables" ... users... "suddenly, forcibly and incorrectly labelled as 'Russian'" Different words for Russia in terms of culture and Russian in terms of nation state.
+
+#### Australia
+
+Surprisingly (given cultural, linguistic and political similarities) different from US. "more concerned with responding to commentary seen on fellow bloggers' sites; such commentary may increasingly take place on those sites themselves than at a distance through new posts on one's own blog" (94)
+
+Study measuring types of outgoing links in various blogs and posts but I'm not really sure why. Something about political engagement?
+
+#### Israel
+
+3 leading political Hebrew language blogs, and some English language Israeli-based. Structured interviews with blog founders.
+
+Blog phenomenon: 2001 with Isra-blog, 2003 Notes, 2005 Tapuz's Blogosphere, 2006 WP template to Hebrew and Blogli (WP based)
+
+(Focus is on solely political rather than personal blogs in this chapter). Mass media ignored political blogs. Sometimes reprinted without proper credit. "Blogs are perceived as an expression of the writer's identity as if it is a form of interpersonal interaction within a virtual community representing the publich sphere". Depoliticized.
+
+"American bloggers think that while comments are not a requirement, they do enhance blog content dramatically" (Arrington 2006 Techcrunch: What is the definition of a blog?)
+
+* Herring + Kouper The discursive construction of weblogs 2004
+
+#### Arab (Morocco)
+
+5 Moroccan blogs, Arabic, French and English language.
+
+blogma - local blogging (contrast to rest of Arab world which is pan-Arab)
+
+(hahaha abuse of a female blogger met with alarm and noted as outlier). "Myth" of internet as end of politics.
+
+#### Italy
+
+Grillo - political comedian excluded from mainstream media in 90s. Analysis of his blog for 1 year from 1 May 2005. Has become a lively community for political dissidents.
+
+#### Singapore
+
+Blogs as cultural and personal tools of expression:
+
+* Blanchard 2004 Blogs as virtual communities
+* Herring 2005 Conversations in the blogosphere
+* Ibrahim 2006 Weblogs as personal narratives
+* Nardi 2004 Why we blog
+
+Bloggin popularised due to availability of software and major political events. "Blogs enable the privatization of public events and the publicization of the personal" (173) "cultural tools for expression or personal conduits for public ruminations". blogs "fuse global practices with local agency"
+
+2006 Singapore general election - political blogging played a big role.
+
+-> Applies intertextuality to hypertext
+
+"the cultural context of offline society mediates the readings of text and images that occur online" (Miller and Slater 2000)
+
+"the Internet is an unbound textual space which is always in the process of being produced" (175)
+
+"As a cognitive space it conjoins the virutal and the physical spaces producing new streams of consciousness and dialogism which often locate the social context of these utterances"
+
+Cultural taboos affect narratives. "silent discourse in offline society and the alternative discourses on the Internet"
+
+Individual agency of blog is in direct contrast to political culture in Singapore. "The ability of technology to create new personas as well as strip and reinvent identities means that identity on the Internet cannot be neatly divided into 'insiders' and 'outsiders' or 'citizens' and 'foreigners'" (185)
+
+* "avatarism" Judith 1998 Identity and deception in the virtual community.
+
+"what is contraversial or novel for the community can be influenced by offline societal norms" (189)
