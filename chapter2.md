@@ -7,19 +7,44 @@ title: Chapter 2 - The Presentation of Self Online
 
 The main goal of this chapter is to cover previous work and empirical evidence of how people present themselves, as a basis for better supporting them.
 
-..sections for social vs individual construction ..
-.... political, cultural, racial. stuff about web dissolving these, but not really
+* TODO: Turkle (2nd half of Alone Together)
 
-## Presentation of self
-
-socsci literature
+## Performing the self
 
 * Goffman
     - Perfomativity
     - Front stage and back stage
-* boyd
-* Turkle (2nd half of Alone Together)
+    - Impressions given and impressions given off
+
+In Faceted Id/entity [@boyd-facid], boyd highlights several differences between self-representation offline compared to online. Embodiment is a key factor in self-presentation and she claims considerable difference between performing one's identity through appearance - eg. fashion and body language - when walking into a room, and explicitly describing oneself by entering attributes and other personal information into an online form to create a profile. 
+
+Self-presentation is largely unconscious in the physical realm and comes naturally the most people. People may also use in-crowd markers (like a shirt with a band logo on) consciously to send certain messages to peole who will recognise them, whilst not drawing any attention from people who won't. The disembodied nature of online interactions means that people must find new ways to express themselves, and manage the impressions other people have of them. A lack of control over one's online self presentation is compounded by the inability to visualise - or perhaps even be aware of - the data that is collected by the systems we use. Online activities are logged over time to an extent that most individuals are not aware of; these activities can be considered as an individual's impressions "given off", and they are used, largely unknowingly, for the commercial benefits of third parties. boyd suggests that visualising all of one's personal information that is available online, as well as visualising one's 'audience' or social network connections, would provide an individual with better awareness of, and so better control over, their online image. In body's prototype interfaces, users are explicitly asked for personal data in order to build a profile of themselves, and boyd does point out the problematic nature of this, compared with the unconscious or implicit identity performance one conducts in offline social settings.
+
+Since these prototypes were designed, social media gained widespread popularity. Most, if not all, mainstream systems request input of expicit personal data to build an initial profile, despite the discord of this activity compared with offline. However, unlike in boyd's prototypes, it doesn't stop there. Such systems encourage ongoing engagement through adding and messaging contacts with various degress of publicness, creating status updates to broadcast a current situation, production of creative media content, and feedback on content and updates created by others. As we will see in chapter 3, contemporary social media build one's profile from various combinations of these online activities, and typically use far more than the explicit data entered by the user to generate a representation of a person. Nonetheless, users may not have an accurate impression of what this representation looks like to others.
+
+Transparency of data collected, and control over how it is distributed is key to boyd's thesis of how to empower individuals online. Sadly, the situation here has not improved in the intervening eight years. Indeed, private corporations are collecting more and more personal data through free social networking sites, and granting the subjects zero rights with regard to access or distribution. Various big data scandals [@cites] that gained media attention, plus Snowden etc, mean that awareness of surveillence and personal data collection is growing amongst the general public. Later in this chapter we elaborate on how privacy concerns impact online disclosure and profile creation behaviours; we then build on the copious existing literature with an empirical study of a community of hackers intent on decentralised data storage as a means to greater control.
+
+### The self in context
+
+Development of personal identity is not only something that happens internally. We are strongly influenced by feedback (conscious and unconscious) from others around us, as well as the particular setting and culture in which we find ourselves. Thus identity is *socially* constructed, and often is adjusted according to *context* [@cites socsci via boyd-facid]. 
+
+(self-awareness is identity situated as in society.) A person's understanding of the context in which they are performing impacts their perfomance [@boyd-facid]. boyd argues that online, people find it much more difficult to evaluate this context, and thus run increasead risk of performing inappropriately, or experience *context collapse* when multiple audiences are inadvertantly combined. (TODO: expand context collapse)
+
+Beyond simply visualising all of one's personal information, and the connections between social network contacts to show how personal data may flow through a network, boyd suggests that these visualisations can be used to actively segregate one's contacts along parameters which correspond to one's personal information, permitting an individual to perform identity more appropriately in digital spaces. However in practice, designing user interfaces for this proves to be challenging. For one, people aren't used to explicitly thinking about audience and context, so dividing their contacts up this way is not natural. 
+
+.... political, cultural, racial. stuff about web dissolving these [@Turkle], but not really. [@Kenny] study about people using identity language (with a corpus of terms that corresponds to culture/society), but in content not wrt themselves or in their profiles.
+
+An audience that is not considered by boyd (actually double check, maybe this is mentioned in Mirror), and probably others when I summarise more relevant studies here, is the wider network of data consumers beyond one's social network connections. Data derived from explicit input and implicit activities, and aggregates of thousands of 'people like you'. That is, the commercial entities, machine learning algorithms, digital marketers, advertising agencies, and our various evil corporate overlords. The tension of sharing personal data with these third parties vs. wanting to reach an audience of known human connections, is typically discussed with regards to weighing up privacy concerns; discussed later in this chapter.
+
+### The project of the self
+
 * Giddens, Modernity (identity as separateness/uniqueness; personal construction as opposed to ascription due to the loss of traditional anchors. Construction of "self" as an "ongoing project")
+
+Arguably even more of a 'project' in explicit digital spaces. Persistence and searchability as architectural differences between physical and digital [@boyd-facid] play in here.
+
+### Authenticity
+
+Turkle. Keen.
 
 ## Offline to online... and back again
 
@@ -33,9 +58,9 @@ Rodogno, R (2012). "Personal Identity Online.". Philosophy & Technology. - onlin
 
 Psychology studies about virtual worlds. Infinite Reality.
 
-## Youth online
+## Growing up online
 
-Social self-presentation literature applied to the online space is mostly applied to these aliens called 'young people'
+Social self-presentation literature applied to the online space is mostly applied to these aliens called 'young people'. This is probably because online features heavily in a particularly formative part of life when identity construction is happening hardcore.
 
 socsci/websci literature, boyd
 
@@ -75,6 +100,8 @@ Does self-censorship stifle personal expression? How does this impact identity c
 
 * https://cie.acm.org/articles/panopticism-cyberculture-could-privacy-invasive-social-media-stifle-innovation/
 * http://blogs.microsoft.com/on-the-issues/2015/01/12/life-online-stifling-young-peoples-self-expression/#sm.0000pytzcsfz8ehetkb1drfejzbrt
+* http://delivery.acm.org/10.1145/2820000/2811257/a32-watson.pdf?ip=128.30.9.155&id=2811257&acc=ACTIVE%20SERVICE&key=7777116298C9657D%2EDE5F786C30E1A3B4%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&CFID=622938928&CFTOKEN=63606359&__acm__=1464713525_235398616fee89ea696a3cf4d8c788e1
+  * "Researchers have found that users have many friends and desire to selectively share with multiple audiences [Boyd and Ellison 2007]. However, users struggle to manage their privacy settings as they are quite complex and change frequently. As a result, users can share information more broadly than intended, even among people they have friended [Johnson et al. 2012], resulting in embarrassment or regret [Wang et al. 2011]. Rather than adjust confusing privacy settings, users may resort to various coping mechanisms such as censoring their disclosures [Wisniewski et al. 2012]."
 
 websci literature, impact on sns use and impression management
 
@@ -88,7 +115,7 @@ Dive into this... 'field' since 2013.. https://en.wikipedia.org/wiki/Technoself
 
 how does considering online social stuff as social machines affect how we understand profile creation and impression management?
 
-cross-platform, cross-community, imagined audience
+cross-platform [@Lampe-chi2016], cross-community, imagined audience
 
 Specifically thinking about social machines lets us emphasise the multiple contexts in which people are managing their identity, rather than constraining to per-platform/per-technology/per-task studies.
 
@@ -98,7 +125,7 @@ In the same way applications restrict users, how might social machines designed 
 
 ## Constructing online identity
 
-This section presents empirical studies of online identity practices in three different areas: active content creators using centralised social media; active content creators using decentralised systems; and, deception as a tool for social impression management.
+Hinted on by [@boyd-facid, cite, cite, cite], individuals are rapidly and often intuitively developing coping mechanisms and practices to more effectively manage their online self-impressions despite the constraints of the tools they use. This section explores some of these behaviours through empirical studies of three different approaches to identity-shaping and impression management: the personal brands of creative content producers; decentralised social interactions through personal websites; and, degrees of deception on social media.
 
 ### Content creators
 
@@ -124,6 +151,8 @@ but also people-system, leads to... ----> chapter 3!
 ## Conclusions
 
 do we run a risk of losing out on the collaborative aspects of identity construction if we designs decentralised systems which aren't sufficiently federated? Must acknowledge the criticality of interaction for identity formation.
+
+Misuse of systems by content creators, 'liars', etc. Replacement of functions of systems by developers. What can we learn from these.
 
 ### Limitiations and reflections
 
