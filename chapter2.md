@@ -8,13 +8,23 @@ title: Chapter 2 - The Presentation of Self Online
 The main goal of this chapter is to cover previous work and empirical evidence of how people present themselves, as a basis for better supporting them.
 
 * TODO: Turkle (2nd half of Alone Together)
+* Self sovereign identity 
+    - https://idcubed.org/home_page_feature/white-paper-a-new-kind-of-social-ordering-self-sovereignty-autonomous-trust-and-p2p-parity/
+    - https://idcubed.org/home_page_feature/windhover-principles-digital-identity-trust-data/
+    - https://idcubed.org/about/vision-mission-2/
 
 ## Performing the self
 
-* Goffman
-    - Perfomativity
-    - Front stage and back stage
-    - Impressions given and impressions given off
+The obvious place to start when embarking on a discussion about self-presentation is Goffman. In *The Presentation of Self in Everyday Life*, Goffman posits several, now well-established, theories:
+
+* Everyone is performing. The front-stage of our performance is what we create for others - the audience - to see, so that they may evaluate and interact appropriately with us.
+* We also have a back-stage; how we act when there is no audience, or the audience is our *team* who participate alongside us for front-stage performances.
+* Our performances have both conscious and unconscious aspects. That is, we consciuosly *give* information about ourselves to others in order to manage their impression of us, but we also unconsciously *give off* information that others may pick up on and take into account when making their assessment of us.
+
+
+https://en.wikipedia.org/wiki/Online_identity
+
+https://en.wikipedia.org/wiki/Identity_%28social_science%29
 
 In Faceted Id/entity [@boyd-facid], boyd highlights several differences between self-representation offline compared to online. Embodiment is a key factor in self-presentation and she claims considerable difference between performing one's identity through appearance - eg. fashion and body language - when walking into a room, and explicitly describing oneself by entering attributes and other personal information into an online form to create a profile. 
 
@@ -28,7 +38,7 @@ Transparency of data collected, and control over how it is distributed is key to
 
 Development of personal identity is not only something that happens internally. We are strongly influenced by feedback (conscious and unconscious) from others around us, as well as the particular setting and culture in which we find ourselves. Thus identity is *socially* constructed, and often is adjusted according to *context* [@cites socsci via boyd-facid]. 
 
-(self-awareness is identity situated as in society.) A person's understanding of the context in which they are performing impacts their perfomance [@boyd-facid]. boyd argues that online, people find it much more difficult to evaluate this context, and thus run increasead risk of performing inappropriately, or experience *context collapse* when multiple audiences are inadvertantly combined. (TODO: expand context collapse)
+(self-awareness is identity situated as in society.) A person's understanding of the context in which they are performing impacts their perfomance [@boyd-facid]. boyd argues that online, people find it much more difficult to evaluate this context, and thus run increasead risk of performing inappropriately, or experience *context collapse* when multiple audiences are inadvertantly combined. (TODO: expand context collapse. MS Passport as boyd's example. G+/YT as mine. Some Guardian etc articles)
 
 Beyond simply visualising all of one's personal information, and the connections between social network contacts to show how personal data may flow through a network, boyd suggests that these visualisations can be used to actively segregate one's contacts along parameters which correspond to one's personal information, permitting an individual to perform identity more appropriately in digital spaces. However in practice, designing user interfaces for this proves to be challenging. For one, people aren't used to explicitly thinking about audience and context, so dividing their contacts up this way is not natural. 
 
@@ -106,6 +116,7 @@ Does self-censorship stifle personal expression? How does this impact identity c
 websci literature, impact on sns use and impression management
 
 * My Profile Is My Password, Verify Me! The Privacy/Convenience Tradeoff of Facebook Connect - Serge Egelman
+* Panopticon
 
 ## Technoself
 
@@ -531,3 +542,5 @@ Individual agency of blog is in direct contrast to political culture in Singapor
 * "avatarism" Judith 1998 Identity and deception in the virtual community.
 
 "what is contraversial or novel for the community can be influenced by offline societal norms" (189)
+
+http://www.csdl.tamu.edu/~marshall/pubs.html
