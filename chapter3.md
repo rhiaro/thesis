@@ -19,6 +19,8 @@ This requires examining profiles from a number of different (potentially overlap
 
 In this chapter we first review existing work around how particular systems model their users, or allow users to present themselves. Secondly we undertake an empirical analysis of digital representations of users on 20 different online systems. From these we derive a set of constructs to capture the most important features of profiles in online systems and evaluate this framework by classifying a further 10 systems according to it (or something). We propose this as groundwork for deriving requirements for profiles when designing new systems which need digital representations of their users, as well as for assessing the benefits and drawbacks of how profiles are implemented in existing systems in such a way that takes into account the contexts in which they are used.
 
+https://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.21.pdf
+
 ## Background
 
 ### When is a person not a person?
@@ -30,12 +32,14 @@ Data modelling and knowledge representation
 * SIOC
 * Person or webpage: who cares, does it matter, and httpRange-14 (it is at least worth mentioning if we're going to turn this work into something useful for pedantic engineers etc; the real question is: can I fit this discussion into a section in a chapter, or should I write a whole book on it?)
 
+http://blog.plaxo.com/2004/02/plaxo_and_foaf_/
+
 ### Control
 
 Inferred data from analyses... what is personal data? People can't really see how they're perceived by advertisers etc. They have an online profile that's totally opaque to them.
 
 * danah boyd mirror
-* richard gomer at soton
+* richard gomer at soton (meaningful consent data useage)
 * http://arxiv.org/pdf/1412.6159v2.pdf
 
 ### User perceptions of profiles
