@@ -64,6 +64,8 @@ Here we uncover common modules of decentralised social systems from previous dis
 
 http://dcentproject.eu/wp-content/uploads/2014/01/D4.1-State-of-the-Art_new_2.pdf
 
+http://randomwalker.info/publications/critical-look-at-decentralization-v1.pdf
+
 http://www.nesta.org.uk/sites/default/files/research_on_digital_identity_ecosystems.pdf
 
 http://www.www2015.it/documents/proceedings/companion/p1155.pdf
@@ -91,3 +93,5 @@ http://www.www2015.it/documents/proceedings/companion/p1155.pdf
   * Maidsafe
 * Peer to peer stuff
   * scuttlebot
+
+  http://randomwalker.info/publications/critical-look-at-decentralization-v1.pdf
