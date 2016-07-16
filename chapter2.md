@@ -126,15 +126,23 @@ Dive into this... 'field' since 2013.. https://en.wikipedia.org/wiki/Technoself
 
 ## Social machines
 
-how does considering online social stuff as social machines affect how we understand profile creation and impression management?
+> how does considering online social stuff as social machines affect how we understand profile creation and impression management?
+> 
+> cross-platform [@Lampe-chi2016], cross-community, imagined audience
+> 
+> Specifically thinking about social machines lets us emphasise the multiple contexts in which people are managing their identity, rather than constraining to per-platform/per-technology/per-task studies.
+> 
+> Identity in social machines. How to explore identities when part of a crowd? Reputation in a coordinated whole needs consistency and reliability. Apps as tools for individuals, vs/and tools for social coordination.
+> 
+> In the same way applications restrict users, how might social machines designed with some purpose inhibit users? How can we build social machines with space for exploration and innovation by participants? How crucial is self-presentation of participants for this?
 
-cross-platform [@Lampe-chi2016], cross-community, imagined audience
+Social Machines are systems for which the human and computational aspects are equally critical. In most cases, humans do the creative work whilst machines do the administrative tasks. Up to now, systems have not been designed *to be* Social Machines; rather, the concept and definition of a Social Machine is derived from observations of existing (usually Web-based) systems. Many are products of the contemporary social web, on many different scales and in many different domains, often evolving, responding to technological and social developments, and interacting with each other @cite[Hendler2010, ByrneEvans2013, DeRoure2013, Strohmaier2013]. Social Machines can be identified within and across social media networks, within and across online communities, and within and across technological spaces.
 
-Specifically thinking about social machines lets us emphasise the multiple contexts in which people are managing their identity, rather than constraining to per-platform/per-technology/per-task studies.
+Social Machines are pertinent to our work here as they provide a lens through which we can examine sociotechnical phenomena which emphasises the interdependence between humans and technology. In studies of social networks discussed previously in this chapter, humans are considered as *users* of systems, and discussions focus around how people react to technology, how people behave in the context of particular technical or social constraints, or how people's lives are changed in response to their interactions with and through digital environments. It is important to also reflect upon the ways in which technology evolves or is reconceptualised as a result of passive (mis)use and active (mis)appropriation by humans. We similarly must recognise technical systems in the wider context of society, and include in our dialogue the developers who design and build technical systems, the organisations and legal entities which finance and drive them, and the cultural and economic climate in which they are situated.
 
-Identity in social machines. How to explore identities when part of a crowd? Reputation in a coordinated whole needs consistency and reliability. Apps as tools for individuals, vs/and tools for social coordination.
+Social Machines which have been studied so far have been described in terms of [...] [ciatation needed - Simperl's observing paper]. The emphasis in existing work is on discussing Social Machines in collective terms; that is, 'a' Social Machine - wherever its boundaries happen to have been drawn - is considered as a coherent whole. The circumstances of the individual human participants not been given extensive consideration *(TODO: update from 2014+ lit)*. For any given Social Machine, individual participants are diverse and participate in different ways, with varying goals, motivations and outcomes. As we have seen with through studies of social media mentioned previously, they manipulate their online presence(s) so that they may behave in different ways according to different contexts, or may work together to construct a single image controlled by multiple people @cite[Dalton2013]. Such behaviour impacts our understand of roles, incentives and attribution for work done, and accountability and trustworthiness of participants and the data they produce. [...HERE NOW...] Ignoring this can cause problems with observing social machines (eg.\ believing that participants who lie about who they are have negative intentions) and with designing them (eg.\ imposing restrictions that conflict with some adapted use of the system).
 
-In the same way applications restrict users, how might social machines designed with some purpose inhibit users? How can we build social machines with space for exploration and innovation by participants? How crucial is self-presentation of participants for this?
+In this paper we argue that due to the complex nature of online identity, understanding nuanced identity behaviours of participants in a more granular way is crucial for social machine observation and design. We briefly describe _creative media production social machines_, and present the results of a study of personas portrayed by participants in one of these. We then describe a preliminary framework for making sense of human participants in social machines, detail extensions to the study to further develop the framework, and outline an experiment that tests the framework by creating flexible formal representations of multiple personas using linked data.
 
 ## Constructing online identity
 
