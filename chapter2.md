@@ -18,9 +18,11 @@ The main goal of this chapter is to cover previous work and empirical evidence o
 The obvious place to start when embarking on a discussion about self-presentation is Goffman. In *The Presentation of Self in Everyday Life*, Goffman posits several, now well-established, theories:
 
 * Everyone is performing. The front-stage of our performance is what we create for others - the audience - to see, so that they may evaluate and interact appropriately with us.
-* We also have a back-stage; how we act when there is no audience, or the audience is our *team* who participate alongside us for front-stage performances.
-* Our performances have both conscious and unconscious aspects. That is, we consciuosly *give* information about ourselves to others in order to manage their impression of us, but we also unconsciously *give off* information that others may pick up on and take into account when making their assessment of us.
+* We also have a back-stage; how we act when there is no audience, or an audience of our *team*. Our team participate alongside and collude with on the front-stage.
+* Our performances have both conscious and unconscious aspects. That is, we consciously *give* information about ourselves to others in order to manage their impression of us, but we also unconsciously *give off* information that others may pick up on and take into account when deciding how to interact with us.
+* Both actors and audiences are complicit in maintaining the cohesion of a situation. Peformances break down if actors break character, deliberately or accidentally, or if there is a mismatch between parties' definition of the situation.
 
+These theories of course apply to face-to-face interaction.
 
 https://en.wikipedia.org/wiki/Online_identity
 
