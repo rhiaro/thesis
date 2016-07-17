@@ -213,7 +213,7 @@ For ten content creators, 93 profiles were discovered. Of these, 23 were YouTube
 
 Additionally, there are profiles which are _not_ directly linked from the (self-identified) 'main' profile, or the links are treated as though to the profile of a different person. Figure \ref{clinks} shows three screenshots of different YouTube channels showing different ways creators link out to other versions of themselves.
 
-![Dane transparently links to 3 of his channels, two for alternative content types and one for a character he created.  2. Fred is a character played by Lucas, but the links on Fred's channel treat Lucas as a different person. 3. Andrew Lemming lists Khyan as "Uncle", although Khyan is the creator of the Andrew Lemming character. \label{clinks}](fig_channellinks.eps)
+![Dane transparently links to 3 of his channels, two for alternative content types and one for a character he created.  2. Fred is a character played by Lucas, but the links on Fred's channel treat Lucas as a different person. 3. Andrew Lemming lists Khyan as "Uncle", although Khyan is the creator of the Andrew Lemming character. \label{clinks}](figs/fig_channellinks.eps)
 
 Creators also used their profiles to link to shared channels (where either multiple creators post content independently of each other, or creators collaborate to produce joint content, or a both), and channels of others with whom they regularly work.
 
@@ -229,7 +229,7 @@ The importance of these connections varies depending on the system as well as on
 
 Although their use is to some degree shaped by community norms, such connections are strongly influenced by the architecture of the particular website. However in addition, most of the websites examined allow enough control over the textual content of a profile that profile owners can manually create links to other documents on the web. Creators may also be able to adapt the content publishing interfaces to add additional connections (eg. adding links to Twitter and Facebook accounts in the description of a YouTube video), and often do. These connections necessitate extra effort on the part of the content creator, and tell us more about their relationships with other online accounts. Figure \ref{connections} shows different types of connections between profiles and personas for one content creator.
 
-![Lucas Cruickshank was an early YouTube success story through his persona Fred Figglehorn. Here, different types of connections between various online accounts belonging to both Lucas and Fred are illustrated. \label{connections}](fig_fred.eps)
+![Lucas Cruickshank was an early YouTube success story through his persona Fred Figglehorn. Here, different types of connections between various online accounts belonging to both Lucas and Fred are illustrated. \label{connections}](figs/fig_fred.eps)
 
 ##### Summary
 
