@@ -124,33 +124,166 @@ websci literature, impact on sns use and impression management
 
 Dive into this... 'field' since 2013.. https://en.wikipedia.org/wiki/Technoself
 
-## Social machines
+## The ghost in the (social) machine
 
 > how does considering online social stuff as social machines affect how we understand profile creation and impression management?
 > 
 > cross-platform [@Lampe-chi2016], cross-community, imagined audience
-> 
-> Specifically thinking about social machines lets us emphasise the multiple contexts in which people are managing their identity, rather than constraining to per-platform/per-technology/per-task studies.
-> 
-> Identity in social machines. How to explore identities when part of a crowd? Reputation in a coordinated whole needs consistency and reliability. Apps as tools for individuals, vs/and tools for social coordination.
-> 
-> In the same way applications restrict users, how might social machines designed with some purpose inhibit users? How can we build social machines with space for exploration and innovation by participants? How crucial is self-presentation of participants for this?
 
-Social Machines are systems for which the human and computational aspects are equally critical. In most cases, humans do the creative work whilst machines do the administrative tasks. Up to now, systems have not been designed *to be* Social Machines; rather, the concept and definition of a Social Machine is derived from observations of existing (usually Web-based) systems. Many are products of the contemporary social web, on many different scales and in many different domains, often evolving, responding to technological and social developments, and interacting with each other @cite[Hendler2010, ByrneEvans2013, DeRoure2013, Strohmaier2013]. Social Machines can be identified within and across social media networks, within and across online communities, and within and across technological spaces.
+Social Machines are systems for which the human and computational aspects are equally critical. In most cases, humans do the creative work whilst machines do the administrative tasks [@Timbl1999]. Up to now, systems have not been designed *to be* Social Machines; rather, the concept and definition of a Social Machine is derived from observations of existing (usually Web-based) systems. Many are products of the contemporary social web, on many different scales and in many different domains, often evolving, responding to technological and social developments, and interacting with each other [@Hendler2010, @ByrneEvans2013, @DeRoure2013, @Strohmaier2013]. Social Machines can be identified within and across social media networks, within and across online communities, and within and across technological spaces.
 
 Social Machines are pertinent to our work here as they provide a lens through which we can examine sociotechnical phenomena which emphasises the interdependence between humans and technology. In studies of social networks discussed previously in this chapter, humans are considered as *users* of systems, and discussions focus around how people react to technology, how people behave in the context of particular technical or social constraints, or how people's lives are changed in response to their interactions with and through digital environments. It is important to also reflect upon the ways in which technology evolves or is reconceptualised as a result of passive (mis)use and active (mis)appropriation by humans. We similarly must recognise technical systems in the wider context of society, and include in our dialogue the developers who design and build technical systems, the organisations and legal entities which finance and drive them, and the cultural and economic climate in which they are situated.
 
-Social Machines which have been studied so far have been described in terms of [...] [ciatation needed - Simperl's observing paper]. The emphasis in existing work is on discussing Social Machines in collective terms; that is, 'a' Social Machine - wherever its boundaries happen to have been drawn - is considered as a coherent whole. The circumstances of the individual human participants not been given extensive consideration *(TODO: update from 2014+ lit)*. For any given Social Machine, individual participants are diverse and participate in different ways, with varying goals, motivations and outcomes. As we have seen with through studies of social media mentioned previously, they manipulate their online presence(s) so that they may behave in different ways according to different contexts, or may work together to construct a single image controlled by multiple people @cite[Dalton2013]. Such behaviour impacts our understand of roles, incentives and attribution for work done, and accountability and trustworthiness of participants and the data they produce. [...HERE NOW...] Ignoring this can cause problems with observing social machines (eg.\ believing that participants who lie about who they are have negative intentions) and with designing them (eg.\ imposing restrictions that conflict with some adapted use of the system).
+Social Machines which have been studied so far have been described and categorised in terms of purpose [@DeRoure2013], motivations and incentives, technology used, goals and processes, quality assessment of outputs, and user participation and interaction [@Smart2014]. The emphasis in this work is on discussing Social Machines in collective terms; that is, 'a' Social Machine - wherever its boundaries happen to have been drawn (so far these boundaries are typically drawn around the edge of a "service" [@Smart2014]) - is considered as a coherent whole. The circumstances of the individual human participants not been given extensive consideration *(TODO: barring ... update from 2014+ lit)*. For any given Social Machine, individual participants are diverse and participate in different ways, with varying goals, motivations and outcomes. As we have seen with through studies of social media mentioned previously, they manipulate their online presence(s) so that they may behave in different ways according to different contexts, or may work together to construct a single image controlled by multiple people [@Dalton2013]. Such behaviour impacts our understanding of roles, autonomy and awareness, incentives and attribution, and accountability and trustworthiness of participants. Overlooking unique individual perspectives when observing a Social Machine as a whole can cause incorrect assumptions, for example: believing that participants who lie about who they are have negative intentions in a Social Machine whose overall "purpose" is to strengthen social ties. We must also bear this in mind when designing systems, so that a system may grow in response to unexpected actions of participants rather than hampering their explorations.
 
-In this paper we argue that due to the complex nature of online identity, understanding nuanced identity behaviours of participants in a more granular way is crucial for social machine observation and design. We briefly describe _creative media production social machines_, and present the results of a study of personas portrayed by participants in one of these. We then describe a preliminary framework for making sense of human participants in social machines, detail extensions to the study to further develop the framework, and outline an experiment that tests the framework by creating flexible formal representations of multiple personas using linked data.
+We argue that due to the complex nature of online identity, understanding nuanced individual behaviours of participants in a more granular way is crucial for Social Machine observation. We advance this argument in {part x} through an empirical study of a Social Machine centered around creative media production.
 
 ## Constructing online identity
 
-Hinted on by [@boyd-facid, cite, cite, cite], individuals are rapidly and often intuitively developing coping mechanisms and practices to more effectively manage their online self-impressions despite the constraints of the tools they use. This section explores some of these behaviours through empirical studies of three different approaches to identity-shaping and impression management: the personal brands of creative content producers; decentralised social interactions through personal websites; and, degrees of deception on social media.
+Hinted on by [@boyd-facid, cite, cite, cite], individuals are rapidly and often intuitively developing coping mechanisms and practices to more effectively manage their online self-presentation and impression management despite the constraints of the tools they use. This section explores some of these behaviours through three empirical studies:
+
+* of the personal branding of creative content producers on YouTube;
+* of social media 'makers' who control their social interactions through personal websites;
+* of deception and lying for impression management in mainstream social media.
 
 ### Content creators
 
-dump most of SOCM14 paper here
+Work in this section was previously published as *Constructed Identity and Social Machines: A Case Study in Creative Media Production* (2014, Proceedings of WWW, Seoul). 
+
+In {part x} we described existing work in understanding socio-technical systems as Social Machines, and argue that due to the complex nature of online identity, understanding nuanced identity behaviours of Social Machine participants in a more granular way is crucial. Here, we briefly describe _creative media production social machines_, and present the results of a study of personas portrayed by participants in one of these. We then describe additional dimensions along which a Social Machine can be classified in order to better understand human participants as individuals.
+
+#### Creative Media Production Social Machines
+
+Amongst the plethora of user-generated content on the web are a huge number of works of creative media, and behind these are independent content creators pushing their work to a global audience and actively seeking to further their reach. Within this ecosystem we can see _creative media production social machines_ on a variety of different scales. The definition of creative media production social machines encompasses a broad class of systems where:
+
+* humans may use a purely digital, or combination of digital and analogue methods, and a degree of creative effort, to produce media content;
+* the content is published such that it is publicly accessible on the web;
+* a global audience may consume, curate and commentate on this content in technologically-mediated environments.
+
+These social machines exist both within and across content host platforms (eg. YouTube) and within and across online communities and social networks. Many, if not all, media types and genres are represented among the media artefacts that emerge from these systems, and the content combines with its reception to have a sometimes profound effect on media and culture in the offline world.
+
+Figure \ref{vlog} shows the interconnected social and technical systems engaged when a simple vlog (video blog) is uploaded to YouTube. These processes would be further expanded if the creator was to branch out and produce different types of content, collaborate with another creator, cross-publicise, share audiences or even co-own a YouTube channel or other website profile.
+
+![Interconnected social and technical systems necessary for publishing a vlog on YouTube.\label{vlog}](fig_vlog.eps)
+
+Creative media production social machines create an environment in which content creators of all backgrounds and abilities are able to publish outside of the constraints of traditional media channels. These creators are actively vying for attention from the masses; competing for views, likes and shares on a global scale. How they present themselves to their audience can be critical to their success, but also a ground for playful experimentation.
+
+**Motivations for participation**
+
+It is worth noting that there are a variety of motivations or incentives for content creators to participate in these systems.
+
+Some content host sites provide direct financial incentive for popularity (eg. YouTube's Google Adsense). Others facilitate a commission based model, where creators show off their work and take paid requests for custom pieces from the community (eg. DeviantArt). For content creators who publish primarily on such systems, their activity on other systems is usually tied to driving traffic back to the content which makes them money, or entertaining the fanbase from whom they thrive (eg. a creator who publishes sketch comedy on YouTube might use their Twitter account to tell original jokes to maintain interest in between video releases).
+
+But for many content creators, the financial rewards from their chosen content host sites might be a convenient side-effect of doing something that they love. Reputation as a creator of high quality content, a talented artist or a particularly funny comedian might be their primary driver. There are also social cues in many communities that affect content creator behaviour. Sometimes creators don't want to be accused of 'pandering' to their audience or losing their artistic integrity, and regulate their behaviour accordingly.
+
+The visibility of quantitative data collected by a content host site -- such as how many views a piece of content has, how often they are referred to as a co-creator, or how often a content creator persona responds to viewer comments -- may also impact behaviour. Technical factors are often highly conflated with the social norms in a community.
+
+Thus, the core reasons for creating content can affect both the content created and how creators present themselves to their audience in the process.
+
+#### Constructed online identity
+
+The nature of identity and anonymity in online spaces is well discussed \cite{Donath2002, Halpin2006, Rains2007, Ren2012}. Humans naturally adjust the way they present themselves according to the context, and different online spaces may afford different levels of flexibility in doing this. Some systems don't require any kind of registration to post content, allowing people to adopt and discard personas as needed, and to create social cues to identify each other that are not designed as part of the system \cite{Bernstein2011}. Entirely different behaviour occurs in systems that strongly encourage or even try to enforce usage of real names. Often it is trivial for people to create multiple accounts under different pseudonyms anyway, but there may be an increased expectation of honesty from other users of the system, which itself affects the culture of communities within. 
+
+In many cases the fact that people present themselves differently in different contexts is unconscious; a side effect of their participation in a particular system according to the social norms or technical affordances (eg.\ their desired username may be unavailable resulting in the forging of new branding around an alternative). In other cases, the creation of alternative personas is engineered and deliberate, either from the outset or as something that has evolved over time. But, beyond carefully crafting a single identity each, multiple individuals may participate in the portrayal of a single persona \cite{Dalton2013} and one individual may present versions of themselves through _multiple_ personas.
+
+#### Study of creator profiles
+
+The public profiles of content creators were examined to discover a) how they present themselves, b) how they spread their online presence across different websites, platforms or communities, and how they spread their content across their different presences c) how they present connections between representations of themselves, and d) how they present connections with other content creators. We also take note of their audience, the type of content they create, and the capabilities of the platforms on which they publish their content, to add context. 
+
+The results presented here are preliminary, and obviously based upon a very small (albeit diverse) sample, and cannot be considered conclusive. We later discuss future work in improving and extending this study, as well as describe an experiment to study the roles of content creators in large communities in more detail.
+
+##### Content creators
+
+Ten content creators were selected from a subset of creators with whose content we have a passing familiarity through encountering it online over the past months to years. This resulted in a broad spectrum of content types (video, animation, music, art, written word) genres (comedy, game commentaries, educational, political), popularity, well-knownness and activity levels. We deliberately examined content creator profiles from the perspective of a content consumer, or casual audience member. Thus, for the purposes of this study, we do not have access to deeper insight about the personas beyond what is accessible publicly through the web. Future work that expands on this is discussed later.
+
+##### Profiles and personas
+
+For ten content creators, 93 profiles were discovered. Of these, 23 were YouTube channels, 16 Twitter profiles, 13 Facebook, 9 Vimeo, 7 Tumblr, 6 personal websites, 5 Instagram and 4 Vine, 3 Google Plus, 2 Bandcamp and 2 DeviantArt and 1 each of Patreon, FormSpring, BlipTV, and Newgrounds. Table \ref{creators} shows how the profiles are distributed. As we can see, in the domain of creative content production identities are not site- or community-specific. Creators spread their activities across a number of networks in order to shape a more complete identity. 
+
+| Creator | # profiles | Mean profiles per site |
+| ======= | ========== | ====================== |
+| Dane    | 18         |          2.3           |
+| Khyan   | 13         |          1.9           |
+| Bing    | 13         |          1.3           |
+| Lucas   | 11         |          1.4           |
+| Bown    | 9          |          1.5           |
+| Todd    | 7          |          1.2           |
+| Arin    | 7          |          1.0           |
+| Suzy    | 6          |          1.2           |
+| Ciaran  | 5          |          1.3           |
+| Chloe   | 4          |          1.0           |
+
+**Table: Distribution of profiles for content creators in the study.**
+
+'Second channels' are common on YouTube. Creators who focus on one type of content (eg.\ sketch comedy) publish this on their main channel as well as using their main channel identity for interactions on the site. On their second channel they publish content that they may consider to be of interest to only a part of their main audience, such as vlogs about their lives, outtakes from main channel content, or experimental pieces. Most content creators with second channels post explicit links to them on their main channel, and often publicise them within content metadata or as part of the content directly. In some cases, including those where the connection between two channels is explicit and obvious, the creators behave differently towards their audience through second channel content. This varies greatly depending on the type of content produced. In some cases, second channels may be perceived as more reflective of the creator's 'true' personality, if they project themselves as more serious or honest, and publish more personal content like vlogs or behind-the-scenes footage. Whether or not this is accurate is impossible to know without intimate knowledge of the creators' offline life of course. The significance is that persona variations exist, and creators do not necessarily hide these alternative presentations of themselves from their audience.
+
+Additionally, there are profiles which are _not_ directly linked from the (self-identified) 'main' profile, or the links are treated as though to the profile of a different person. Figure \ref{clinks} shows three screenshots of different YouTube channels showing different ways creators link out to other versions of themselves.
+
+![Dane transparently links to 3 of his channels, two for alternative content types and one for a character he created.  2. Fred is a character played by Lucas, but the links on Fred's channel treat Lucas as a different person. 3. Andrew Lemming lists Khyan as "Uncle", although Khyan is the creator of the Andrew Lemming character. \label{clinks}](fig_channellinks.eps)
+
+Creators also used their profiles to link to shared channels (where either multiple creators post content independently of each other, or creators collaborate to produce joint content, or a both), and channels of others with whom they regularly work.
+
+Most profile host sites offer limited options for customisation, and the use of consistent branding was intermittent. This mostly took the form of identical or similarly styled display pictures, similarly phrased introductory paragraphs, and similarly styled content.
+
+Some creators have profiles which are distinctly grouped into alternative personas. This was evident from the branding, content and connections between them.
+
+##### Connections
+
+How connections to other people were represented varied depending on the technical system. We can differentiate between mutual relationships between accounts (eg. 'friend') and one-directional relationships (eg. 'follower', 'subscriber'). Some systems offer both types of relationship, some one or the other. For YouTube channels, popularity ranged from over 3.5 million subscribers for Dane's character channel _realannoyingorange_ to 118 for Bown's secondary _bowntalks_ channel.
+
+The importance of these connections varies depending on the system as well as on the attitude of the system user. Mutual connections may initially be presumed to indicate a closer relationship, but this is not always the case. Some systems allow users to accept all friend requests en masse, which they may do to please fans, resulting in a lot of essentially meaningless mutual connections. Instead, outbound one-directional connections come in far smaller numbers, and indicate the content creator is particularly interested in the outputs of the other creators they choose to follow. It is normal for content creators to follow other creators with whom they have collaborated.
+
+Although their use is to some degree shaped by community norms, such connections are strongly influenced by the architecture of the particular website. However in addition, most of the websites examined allow enough control over the textual content of a profile that profile owners can manually create links to other documents on the web. Creators may also be able to adapt the content publishing interfaces to add additional connections (eg. adding links to Twitter and Facebook accounts in the description of a YouTube video), and often do. These connections necessitate extra effort on the part of the content creator, and tell us more about their relationships with other online accounts. Figure \ref{connections} shows different types of connections between profiles and personas for one content creator.
+
+![Lucas Cruickshank was an early YouTube success story through his persona Fred Figglehorn. Here, different types of connections between various online accounts belonging to both Lucas and Fred are illustrated. \label{connections}](fig_fred.eps)
+
+##### Summary
+
+Content creators at all levels of activity do not seem to have straightforward relationships with the systems they use for publishing and publicising their content. Through manually examining profiles, it is possible to identify personas, and connections between creators, and understand the likely explanations behind them. Currently there is no way to formalise these deductions. Methods for formalisation are useful for gaining a deeper understanding of the actions in this space, as well as for creating machine-readable representations of social machine participants. 
+
+#### Framework for understanding identities of social machine participants
+
+Based on the findings previously described, we propose four closely linked but distinct concepts that are useful in a granular discussion of identities of social machine participants: roles, attribution, accountability and traceability.  We explain each in the context of creative media production social machines, and show how they can be used as dimensions to assess the nature of individual identity in a social machine.
+
+**Roles**
+
+A creative media production social machine contains consumers, commentators and curators, and creators \cite{Luther2007a}. These roles are interchangeable, and content creators may wish to adopt different personas according to the role they are playing. Plus, content creators are often multi-talented and they may wish to put on a different face according to the different types of content they publish. How easily this is accomplished, according to the social expectations and technical affordances of a system that is part of a social machine, can impact the behaviour of participants.
+
+**Attribution**
+
+In content creation communities, contributions to media output are directly connected to building reputation, so content creators generally desire to have their name attached to work they produce. If the publication system does not allow this directly, as is often the case for sites that host collaborative works (a video published on one YouTube channel may contain contributions from several creators, each with their own channels), then creators adapt the system as best they can (the uploader may list links to the channels of all contributors in the video description) \cite{Luther2010}. Even when a content host site provides automatic linking to other user profiles -- common in remixing communities -- this isn't necessarily enough. \cite{Monroy-Hernandez2011} finds that human-given credit means more, and so free-text fields for content metadata are often used anyway.
+
+**Accountability**
+
+In many of the oft-discussed social machines, like Wikipedia, Galaxy Zoo, Ushahidi, and the theoretical crime data social machine in \cite{ByrneEvans2013}, accurate data is critical to the usefulness of the output of the system(s). Thus, accountability through identity is important. It is reasonable then to want to regulate participants somehow. But this cannot be universally applicable.
+
+The production of creative content is a domain that exemplifies the need for taking a more flexible approach to identity understanding and management. On one hand, creators wish to be accurately credited for their work and plagiarism may even result in a financial or reputational loss. On the other hand, creators may appear under multiple guises, engage in diverse behaviours and make contradictory statements about their participation in a creative work, all in the name of entertainment. Creators may also engage in some activities under an alternative identity in order to avoid any effect on the reputation of their main persona. These are valid uses of the anonymity provided by online spaces -- a core feature of the World Wide Web -- and should be allowed. Such activities won't necessarily even result in diminished trust. A content consumer may fully enjoy a series of vlogs, unaware that the vlogger is a character and the life events portrayed are entirely fictional, and be none the worse off for it.
+
+**Traceability**
+
+We consider traceability in terms of the settings in which an individual might interact with others. A person participating in a creative media production social machine may exist behind a different persona when participating in a scientific discovery social machine, and yet another in a health and well-being social machine. The discovery that other participants in the health and well-being social machine are aware of their alternate persona in the creative media production social machine may cause them to amend one or both of their personas. If the risk of their multiple identities being 'discovered' is high they may adjust their behaviour accordingly, whether this is ceasing all attempts at 'deception', or taking steps to decrease the overlap of the communities of which they are a part.
+
+Further to this, well known content creators often appear at offline events to meet their fans. Those who star in popular video content are recognised in the street. They are interviewed by journalists and contracted to produce viral adverts by marketing companies. Only with careful control of their online persona can they successfully engage in offline interactions like this. A content creator who appears in poorly-produced videos as an apparently genuine violent drunk and who sends abusive messages to other website users along the same theme to maintain the persona, may not be considered a candidate for a job in broadcast media. Even if in actuality, they have skilfully written and portrayed a believable character.
+
+An example in which the traceability of personas was crucial is the DARPA Network Challenge \cite{Tang2011}, for which participants needed to provide their 'real life' identities to win the cash prizes. Even if they had operated under pseudonyms during the competition, in order to validate their claims they needed to make known these personas and consolidate them with an identity that would allow them to receive the prize money.
+
+Knowledge of others present the online and offline spaces in which someone spends time may influence how they establish their personas in these spaces. An evolution of these spaces or a change in the individual's circumstances over time may cause them to revise their personas.
+
+##### Applying the framework
+
+We can apply these concepts to social machines in order to understand the importance of individuals' identities within them. We use some well known social machines as examples for each dimension.
+
+The _roles_ dimension describes the ease at which participants can change the role they play in a system. From a system with only one role for all participants, where everyone is equal (like reCAPTCHA), to a system where multiple roles are available but participants are restricted to playing only one (the Obama campaign), to a system where there are multiple roles which participants can move fluidly between (creative media production).
+
+The _attribution_ dimension allows us to consider whether or not crediting participant contributions is important. This is entirely unimportant for reCAPTCHA, slightly important for Wikipedia, and far more important for creative media production.
+
+The _accountability_ dimension helps us to decide whether the provenance of the inputs make a difference. In a crime reporting social machine this would be critical, so regulating identities to ensure trustworthy data would make sense. It is only important to a certain degree for creative media production, and it is unimportant for GalaxyZoo, for example.
+
+The _traceability_ dimension relates to the transparency of connections between different personas. A reliable connection to an identity as a US citizen was critical for participants of the DARPA Network Challenge, but high traceability of content creator personas may cause problems if they are trying to project a particular image.
+
+#### Conclusion
+
+We have demonstrated through an empirical study that participants in social machines often have complex relationships with their own self-representation, and with their connections to others in a system. Individuals may have one-to-many or many-to-one relationships with online personas, for a number of different reasons, and with different levels of transparency. We have presented a preliminary framework which allows the degree to which this complexity can affect the overall understanding of a social machine to be assessed along four dimensions: roles, attribution, accountability and traceability.
 
 ### indieweb
 
