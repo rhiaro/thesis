@@ -21,6 +21,8 @@ In this chapter we first review existing work around how particular systems mode
 
 https://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.21.pdf
 
+Maybe use stuff in participation and interaction of social machines taxonomy http://eprints.soton.ac.uk/362359/1/SOCIAM%20Classificationv2.pdf Could see this as a further breakdown of one of the U categories (see also their methodology pg 13) "Given the value of taxonomies in advancing our understanding of the conceptual landscape associated with a domain"
+
 ## Background
 
 ### When is a person not a person?
