@@ -142,13 +142,11 @@ Hinted on by [@boyd-facid, cite, cite, cite], individuals are rapidly and often 
 * of social media 'makers' who control their social interactions through personal websites;
 * of deception and lying for impression management in mainstream social media.
 
-### Content creators
+### Creative Media Production Social Machines
 
 Work in this section was previously published as *Constructed Identity and Social Machines: A Case Study in Creative Media Production* (2014, Proceedings of WWW, Seoul). 
 
 In {part x} we described existing work in understanding socio-technical systems as Social Machines, and argue that due to the complex nature of online identity, understanding nuanced identity behaviours of Social Machine participants in a more granular way is crucial. Here, we briefly describe _creative media production social machines_, and present the results of a study of personas portrayed by participants in one of these. We then describe additional dimensions along which a Social Machine can be classified in order to better understand human participants as individuals.
-
-#### Creative Media Production Social Machines
 
 Amongst the plethora of user-generated content on the web are a huge number of works of creative media, and behind these are independent content creators pushing their work to a global audience and actively seeking to further their reach. Within this ecosystem we can see _creative media production social machines_ on a variety of different scales. The definition of creative media production social machines encompasses a broad class of systems where:
 
@@ -160,7 +158,7 @@ These social machines exist both within and across content host platforms (eg. Y
 
 Figure \ref{vlog} shows the interconnected social and technical systems engaged when a simple vlog (video blog) is uploaded to YouTube. These processes would be further expanded if the creator was to branch out and produce different types of content, collaborate with another creator, cross-publicise, share audiences or even co-own a YouTube channel or other website profile.
 
-![Interconnected social and technical systems necessary for publishing a vlog on YouTube.\label{vlog}](fig_vlog.eps)
+![Interconnected social and technical systems necessary for publishing a vlog on YouTube.\label{vlog}](figs/fig_vlog.eps)
 
 Creative media production social machines create an environment in which content creators of all backgrounds and abilities are able to publish outside of the constraints of traditional media channels. These creators are actively vying for attention from the masses; competing for views, likes and shares on a global scale. How they present themselves to their audience can be critical to their success, but also a ground for playful experimentation.
 
