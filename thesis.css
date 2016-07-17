@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+}
+h1 {
+  text-align: center; font-size: 3.2em; font-weight: normal; font-family: serif;
+}
+h5 {
+  font-size: 1em; font-style: italic;
+}
+article {
+  width: 60%; margin-left: auto; margin-right: auto;
+}
+aside.do#toc {
+  background-color: #d7e7d7; 
+  height: 100%; max-height: 100%; max-width: 15%; 
+  box-shadow: none; border-right: 1px solid #ccc; border-bottom: none; border-radius: 0;
+}
+#table-of-stuff { display: none; }
+
+.notes {
+  color: #aaa; border: 1px solid silver;
+}
+p.notes { padding: 0.4em; }
+em.notes { padding: 0.4em; }
