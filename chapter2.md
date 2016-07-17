@@ -279,13 +279,13 @@ The _traceability_ dimension relates to the transparency of connections between 
 
 We have demonstrated through an empirical study that participants in social machines often have complex relationships with their own self-representation, and with their connections to others in a system. Individuals may have one-to-many or many-to-one relationships with online personas, for a number of different reasons, and with different levels of transparency. We have presented a preliminary framework which allows the degree to which this complexity can affect the overall understanding of a social machine to be assessed along four dimensions: roles, attribution, accountability and traceability.
 
-### indieweb
+### Social Media Makers
 
-Interviews
+We examine the use of personal websites as tools for online social interaction through 15 semi-structured interviews. Hobbyist hackers and makers are increasingly experimenting with developing personal sites which emulate mainstream social media services like Facebook and Twitter. There is overlap with traditional blogging communities in both practices and motivations, however the prevailing code-it-yourself attitude sets these practitioners apart. Our interviews reveal common attitudes and habits, and we discuss possible implications for the future of blogging and the Social Web.
 
-Does the indieweb attempt to recapture the more individualistic aspects of identity management, whilst retaining audience and feedback - collaborative identity construction - on the scale enabled by centralised services?
+* Analysis ongoing in [rhiaro/indieweb-identity](https://github.com/rhiaro/indieweb-identity) (access controlled)
 
-### Pro-social deception
+### Computationally-mediated pro-social deception
 
 Deception as a tool for social impression management online
 
