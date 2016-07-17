@@ -126,10 +126,6 @@ Dive into this... 'field' since 2013.. https://en.wikipedia.org/wiki/Technoself
 
 ## The ghost in the (social) machine
 
-> how does considering online social stuff as social machines affect how we understand profile creation and impression management?
-> 
-> cross-platform [@Lampe-chi2016], cross-community, imagined audience
-
 Social Machines are systems for which the human and computational aspects are equally critical. In most cases, humans do the creative work whilst machines do the administrative tasks [@Timbl1999]. Up to now, systems have not been designed *to be* Social Machines; rather, the concept and definition of a Social Machine is derived from observations of existing (usually Web-based) systems. Many are products of the contemporary social web, on many different scales and in many different domains, often evolving, responding to technological and social developments, and interacting with each other [@Hendler2010, @ByrneEvans2013, @DeRoure2013, @Strohmaier2013]. Social Machines can be identified within and across social media networks, within and across online communities, and within and across technological spaces.
 
 Social Machines are pertinent to our work here as they provide a lens through which we can examine sociotechnical phenomena which emphasises the interdependence between humans and technology. In studies of social networks discussed previously in this chapter, humans are considered as *users* of systems, and discussions focus around how people react to technology, how people behave in the context of particular technical or social constraints, or how people's lives are changed in response to their interactions with and through digital environments. It is important to also reflect upon the ways in which technology evolves or is reconceptualised as a result of passive (mis)use and active (mis)appropriation by humans. We similarly must recognise technical systems in the wider context of society, and include in our dialogue the developers who design and build technical systems, the organisations and legal entities which finance and drive them, and the cultural and economic climate in which they are situated.
