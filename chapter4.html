@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Standards for the Social Web</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link href="https://dokie.li/media/css/do.css" media="all" rel="stylesheet" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="all" rel="stylesheet" />
+        <link href="https://dokie.li/media/css/editor.css" media="all" rel="stylesheet" />
+        <script src="https://dokie.li/scripts/simplerdf.js"></script>
+        <script src="https://dokie.li/scripts/medium-editor.min.js"></script>
+        <script src="https://dokie.li/scripts/medium-editor-tables.min.js"></script>
+        <script src="https://dokie.li/scripts/do.js"></script>
+        <link href="thesis.css" rel="stylesheet" />
+        
+    </head>
+
+    <body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ dctypes: http://purl.org/dc/dcmitype/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# qb: http://purl.org/linked-data/cube# schema: https://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ oa: http://www.w3.org/ns/oa# as: http://www.w3.org/ns/activitystreams# solid: http://www.w3.org/ns/solid/terms#" typeof="schema:CreativeWork sioc:Post prov:Entity">
+        <main>
+            <article about="" typeof="schema:Article">
+                <h1 property="schema:name doap:name">Standards for the Social Web (and other stories)</h1>
+
+                <div id="content">
+<section id="introduction">
+  <h2>Introduction</h2>
+  <p>This chapter presents a survey of decentralised systems which store data about a person, their attributes and activities. These systems are analysed along various axes to determine their intended function, fitness for purpose and how they are or were ultimately used and to what extent. A particular focus is on treatment of individuals as users of or participants in a system, and we classify systems according to their approach to handling user identities and profile data (based on the definition of profile ch3). We then use this analysis and classification to describe modules of decentralised systems and the contexts in which they are likely to work well and benefit users; and similarly to identify gaps and common pitfalls in theoretical and implementation work.</p>
+
+  <ul class="notes">
+    <li>Criteria for good decentralised, interoperable social profiles.</li>
+    <li>Spec for profiles.</li>
+    <li>Evaluation fo spec against criteria because apparently this is okay.</li>
+    <li>Primer, including how this relates to SWWG specs (via SWP)</li>
+  </ul>
+</section>
+
+<section id="motivations-and-agendas"> 
+  <h2>Motivations and agendas</h2>
+
+  <p>We begin by describing what drives the systems in our survey. Why does one choose to start desiging or building a decentralised system?</p>
+
+  <p>Academic, FOSS, commercial, political, ideals, manifestos</p>
+
+  <p>Problem they’re trying to solve.</p>
+
+  <p>Expressed constraints and limitations.</p>
+</section>
+
+<section id="realisation">
+  <h2>Realisation</h2>
+
+  <p>Extent of implementation / specifications, how well documented, level of community, extensibility.</p>
+
+  <p>Were any of them evaluated and how so?</p>
+</section>
+
+<section id="social-and-personal-datastores">
+  <h2>Social (and) Personal Datastores</h2>
+
+  <p>The data stored may be distinctly personal, shared with third-parties only in specific contexts for a particular purpose; or it may be inherantly social, expected to be broadcast on creation to at least one other person and possibly subject to further reshaping, sharing, and propagation throughout a network of people. Many datastores are optimised for one or the other of these scenarios and may place constraints on their users accordingly; others attempt to meet requirements for both types of data and encounter different implementation and usability challenges as a result.</p>
+
+  <section id="from-status-updates-to-microblogging-and-beyond">
+    <h3>From status updates to microblogging, and beyond</h3>
+
+    <p>There was some point when everyone (planning/discussing decentralised systems) was referring to ‘status updates’ and I think twitter maybe switched the terminology to ‘microblogging’ but now, with AS2 and stuff, I feel like all content is being modelled equally and there’s less trying to enumerate all types of content, and awareness of a need for extensibility. This is pertinent to the idea that a stream of content contributes just as much to a person’s online presentation as a set of attributes. Status updates were kind of ‘my current state’ which is distinctly something at the top of a profile, like ‘about me right now’, but microblogging keeps a feed of past states very visible as well.</p>
+
+    <p>https://gist.github.com/rhiaro/62acd5d135548dca47f1</p>
+
+    <p>http://rhiaro.co.uk/2015/12/things-happenings</p>
+  </section>
+</section>
+
+<section id="the-people-in-the-machines">
+  <h2>The people in the machines</h2>
+
+  <p>Background on how identity fits into these systems and related standards work. Typically for authentication and access control, with representation of user secondary or not covered. What’s missing to do with profiles/people from previous and current identity-related standards work? What problems has this caused? (Critique also based on findings in chs 2 &amp; 3.)</p>
+</section>
+
+<section id="the-people-behind-the-machines">
+  <h2>The people behind the machines</h2>
+
+  <p>POSSIBLY: interviews / focus groups with developers and users of past / failed / faded decentralised social systems.</p>
+
+  <p>Post mortem.</p>
+</section>
+
+<section id="the-pieces">The pieces</h2>
+
+  <p>Here we uncover common modules of decentralised social systems from previous discussion, and look at where there are overlaps and things that stand out.</p>
+</section>
+
+<section class="notes" id="sources-and-notes">
+<h2>Sources and notes</h2>
+
+<p>http://dcentproject.eu/wp-content/uploads/2014/01/D4.1-State-of-the-Art_new_2.pdf</p>
+
+<p>http://randomwalker.info/publications/critical-look-at-decentralization-v1.pdf</p>
+
+<p>http://www.nesta.org.uk/sites/default/files/research_on_digital_identity_ecosystems.pdf</p>
+
+<p>http://www.www2015.it/documents/proceedings/companion/p1155.pdf</p>
+
+<ul>
+  <li>Backend as a service / nobackend
+    <ul>
+      <li>Firebase</li>
+      <li>That other one sandro was talking about with firebase</li>
+    </ul>
+  </li>
+  <li>Personal data stores
+    <ul>
+      <li>indx/webbox (SOCIAM)</li>
+      <li>Mydex</li>
+      <li>That Stanford one</li>
+    </ul>
+  </li>
+  <li>Personal data stores with separate app stuff going on
+    <ul>
+      <li>Solid</li>
+      <li>hood.ie</li>
+      <li>Unhosted / remoteStorage</li>
+    </ul>
+  </li>
+  <li>Protocols
+    <ul>
+      <li>Tent.io</li>
+      <li>webmention/micropub</li>
+    </ul>
+  </li>
+  <li>Social network stuff
+    <ul>
+      <li>pump.io</li>
+      <li>Disapora</li>
+      <li>Friendica</li>
+    </ul>
+  </li>
+  <li>Blockchain-y stuff (??)
+    <ul>
+      <li>Ethereum</li>
+      <li>Maidsafe</li>
+    </ul>
+  </li>
+  <li>Peer to peer stuff
+    <ul>
+      <li>scuttlebot</li>
+    </ul>
+
+    <p>http://randomwalker.info/publications/critical-look-at-decentralization-v1.pdf</p>
+  </li>
+</ul>
+</section>
+
+</div>
+        </div></article>
+      </main>
+
+  <script src="thesis.js"></script>
+  <script>
+    window.onload = function(){
+      init(4);
+    }
+  </script>
+  </body>
+</html>
