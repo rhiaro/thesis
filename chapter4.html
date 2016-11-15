@@ -18,72 +18,85 @@
     <body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ dctypes: http://purl.org/dc/dcmitype/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# qb: http://purl.org/linked-data/cube# schema: https://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ oa: http://www.w3.org/ns/oa# as: http://www.w3.org/ns/activitystreams# solid: http://www.w3.org/ns/solid/terms#" typeof="schema:CreativeWork sioc:Post prov:Entity">
         <main>
             <article about="" typeof="schema:Article">
-                <h1 property="schema:name doap:name">Standards for the Social Web (and other stories)</h1>
+                <h1 property="schema:name doap:name">Standards for the Social Web <br/>(and other stories)</h1>
 
                 <div id="content">
-<section id="introduction">
+
+<section id="introduction" rel="schema:haspart">
   <h2>Introduction</h2>
-  <p>This chapter presents a survey of decentralised systems which store data about a person, their attributes and activities. These systems are analysed along various axes to determine their intended function, fitness for purpose and how they are or were ultimately used and to what extent. A particular focus is on treatment of individuals as users of or participants in a system, and we classify systems according to their approach to handling user identities and profile data (based on the definition of profile ch3). We then use this analysis and classification to describe modules of decentralised systems and the contexts in which they are likely to work well and benefit users; and similarly to identify gaps and common pitfalls in theoretical and implementation work.</p>
+  <div>
+    <p>This chapter presents a survey of decentralised systems which store data about a person, their attributes and activities. These systems are analysed along various axes to determine their intended function, fitness for purpose and how they are or were ultimately used and to what extent. A particular focus is on treatment of individuals as users of or participants in a system, and we classify systems according to their approach to handling user identities and profile data (based on the definition of profile ch3). We then use this analysis and classification to describe modules of decentralised systems and the contexts in which they are likely to work well and benefit users; and similarly to identify gaps and common pitfalls in theoretical and implementation work.</p>
 
-  <ul class="notes">
-    <li>Analysis of the various stuff in line with CCCCC framework from 3.</li>
-    <li>Criteria for good decentralised, interoperable social profiles.</li>
-  </ul>
+    <ul class="notes">
+      <li>Analysis of the various stuff in line with CCCCC framework from 3.</li>
+      <li>Criteria for good decentralised, interoperable social profiles.</li>
+    </ul>
+  </div>
 </section>
 
-<section id="motivations-and-agendas"> 
+<section id="motivations-and-agendas" rel="schema:haspart"> 
   <h2>Motivations and agendas</h2>
+  <div>
 
-  <p>We begin by describing what drives the systems in our survey. Why does one choose to start desiging or building a decentralised system?</p>
+    <p>We begin by describing what drives the systems in our survey. Why does one choose to start desiging or building a decentralised system?</p>
 
-  <p>Academic, FOSS, commercial, political, ideals, manifestos</p>
+    <p>Academic, FOSS, commercial, political, ideals, manifestos</p>
 
-  <p>Problem they’re trying to solve.</p>
+    <p>Problem they’re trying to solve.</p>
 
-  <p>Expressed constraints and limitations.</p>
+    <p>Expressed constraints and limitations.</p>
+  </div>
 </section>
 
-<section id="realisation">
+<section id="realisation" rel="schema:haspart">
   <h2>Realisation</h2>
+  <div>
+    <p>Extent of implementation / specifications, how well documented, level of community, extensibility.</p>
 
-  <p>Extent of implementation / specifications, how well documented, level of community, extensibility.</p>
-
-  <p>Were any of them evaluated and how so?</p>
+    <p>Were any of them evaluated and how so?</p>
+  </div>
 </section>
 
-<section id="social-and-personal-datastores">
+<section id="social-and-personal-datastores" rel="schema:haspart">
   <h2>Social (and) Personal Datastores</h2>
+  <div>
+    <p>The data stored may be distinctly personal, shared with third-parties only in specific contexts for a particular purpose; or it may be inherantly social, expected to be broadcast on creation to at least one other person and possibly subject to further reshaping, sharing, and propagation throughout a network of people. Many datastores are optimised for one or the other of these scenarios and may place constraints on their users accordingly; others attempt to meet requirements for both types of data and encounter different implementation and usability challenges as a result.</p>
 
-  <p>The data stored may be distinctly personal, shared with third-parties only in specific contexts for a particular purpose; or it may be inherantly social, expected to be broadcast on creation to at least one other person and possibly subject to further reshaping, sharing, and propagation throughout a network of people. Many datastores are optimised for one or the other of these scenarios and may place constraints on their users accordingly; others attempt to meet requirements for both types of data and encounter different implementation and usability challenges as a result.</p>
+    <section id="from-status-updates-to-microblogging-and-beyond" rel="schema:haspart">
+      <h3>From status updates to microblogging, and beyond</h3>
+      <div>
+        <p>There was some point when everyone (planning/discussing decentralised systems) was referring to ‘status updates’ and I think twitter maybe switched the terminology to ‘microblogging’ but now, with AS2 and stuff, I feel like all content is being modelled equally and there’s less trying to enumerate all types of content, and awareness of a need for extensibility. This is pertinent to the idea that a stream of content contributes just as much to a person’s online presentation as a set of attributes. Status updates were kind of ‘my current state’ which is distinctly something at the top of a profile, like ‘about me right now’, but microblogging keeps a feed of past states very visible as well.</p>
 
-  <section id="from-status-updates-to-microblogging-and-beyond">
-    <h3>From status updates to microblogging, and beyond</h3>
+        <p>https://gist.github.com/rhiaro/62acd5d135548dca47f1</p>
 
-    <p>There was some point when everyone (planning/discussing decentralised systems) was referring to ‘status updates’ and I think twitter maybe switched the terminology to ‘microblogging’ but now, with AS2 and stuff, I feel like all content is being modelled equally and there’s less trying to enumerate all types of content, and awareness of a need for extensibility. This is pertinent to the idea that a stream of content contributes just as much to a person’s online presentation as a set of attributes. Status updates were kind of ‘my current state’ which is distinctly something at the top of a profile, like ‘about me right now’, but microblogging keeps a feed of past states very visible as well.</p>
-
-    <p>https://gist.github.com/rhiaro/62acd5d135548dca47f1</p>
-
-    <p>http://rhiaro.co.uk/2015/12/things-happenings</p>
-  </section>
+        <p>http://rhiaro.co.uk/2015/12/things-happenings</p>
+      </div>
+    </section>
+  </div>
 </section>
 
-<section id="the-people-in-the-machines">
+<section id="the-people-in-the-machines" rel="schema:haspart">
   <h2>The people in the machines</h2>
+  <div>
 
-  <p>Background on how identity fits into these systems and related standards work. Typically for authentication and access control, with representation of user secondary or not covered. What’s missing to do with profiles/people from previous and current identity-related standards work? What problems has this caused? (Critique also based on findings in chs 2 &amp; 3.)</p>
+    <p>Background on how identity fits into these systems and related standards work. Typically for authentication and access control, with representation of user secondary or not covered. What’s missing to do with profiles/people from previous and current identity-related standards work? What problems has this caused? (Critique also based on findings in chs 2 &amp; 3.)</p>
+  </div>
 </section>
 
-<section id="the-people-behind-the-machines">
+<section id="the-people-behind-the-machines" rel="schema:haspart">
   <h2>The people behind the machines</h2>
+  <div>
+    <p>POSSIBLY: interviews / focus groups with developers and users of past / failed / faded decentralised social systems.</p>
 
-  <p>POSSIBLY: interviews / focus groups with developers and users of past / failed / faded decentralised social systems.</p>
-
-  <p>Post mortem.</p>
+    <p>Post mortem.</p>
+  </div>
 </section>
 
-<section id="the-pieces">The pieces</h2>
-
-  <p>Here we uncover common modules of decentralised social systems from previous discussion, and look at where there are overlaps and things that stand out.</p>
+<section id="the-pieces" rel="schema:haspart">
+  <h2>The pieces</h2>
+  <div>
+    <p>Here we uncover common modules of decentralised social systems from previous discussion, and look at where there are overlaps and things that stand out.</p>
+  </div>
 </section>
 
 <section class="notes" id="sources-and-notes">
