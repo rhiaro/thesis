@@ -26,7 +26,14 @@ function init(chapter){
     e.preventDefault();
     toggle(this);
   });
-  chapt.innerHTML = "<p><a href=\"chapter" + prev + ".html\">&lt; Chapter " + prev + " </a></p><h2>" + chapter + ". " + title + "</h2><p><a href=\"chapter" + next + ".html\">Chapter " + next + " &gt; </a></p>";
+  chapt.innerHTML = "<p><a href=\"index.html\">Home</a></p>";
+  if(prev > 0){
+    chapt.innerHTML += "<p><a href=\"chapter" + prev + ".html\">&lt; Chapter " + prev + " </a></p>";
+  }
+  if(next < 7){
+    chapt.innerHTML += "<p><a href=\"chapter" + next + ".html\">Chapter " + next + " &gt; </a></p>";
+  }
+  chapt.innerHTML += "<h2>" + chapter + ". " + title + "</h2>";
   toc.insertBefore(chapt, document.getElementById("table-of-contents-i"));
   toc.appendChild(notes);
 }
