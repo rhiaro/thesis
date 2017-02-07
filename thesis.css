@@ -34,9 +34,49 @@ aside.do#toc {
   box-shadow: none; border-right: 1px solid #ccc; border-bottom: none; border-radius: 0;
 }
 #table-of-stuff { display: none; }
+#toc h2 {
+  font-size: 1.4em;
+  color: black; font-weight: bold;
+}
 
 .notes {
   color: #aaa; border: 1px solid silver;
 }
 p.notes { padding: 0.4em; }
 em.notes { padding: 0.4em; }
+
+@media print {
+
+  #toc {
+    display: none;
+  }
+  article {
+    width: 90%;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  article p, article li {
+    font-size: 16px;
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+  ul, img {
+    page-break-inside: avoid;
+  }
+  article a {
+    text-decoration: underline;
+   }
+
+   article a[href]:after {
+     content:" <" attr(href) "> ";
+   }
+  .notes {
+    display: none;
+  }
+}
