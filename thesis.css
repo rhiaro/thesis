@@ -45,6 +45,42 @@ aside.do#toc {
 p.notes { padding: 0.4em; }
 em.notes { padding: 0.4em; }
 
+table {
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  max-width: 100%;
+  border-collapse:
+  collapse; border-spacing: 0;
+}
+td, th {
+  border: 1px solid transparent; 
+  height: 30px;
+  padding-left: 0.4em; padding-right: 0.4em;
+}
+tbody th {
+  background: #DFDFDF;
+  font-weight: bold;
+}
+tbody td {
+  background: #FAFAFA;
+  text-align: center;
+}
+tbody tr td:first-of-type {
+  font-weight: bold;
+  text-align: left;
+}
+tbody tr:nth-child(even) td { background: #F1F1F1; }
+tbody tr:nth-child(odd) td { background: #FEFEFE; }
+thead, tfoot, thead td, tfoot td {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: left;
+  vertical-align: top;
+}
+tfoot {
+  border-bottom: 1px solid #FEFEFE;
+}
+
+
 @media print {
 
   #toc {
