@@ -79,8 +79,12 @@ thead, tfoot, thead td, tfoot td {
   text-align: left;
   vertical-align: top;
 }
+thead {
+  border-top: 2px solid #F1F1F1;
+}
 tfoot {
-  border-bottom: 1px solid #FEFEFE;
+  border-bottom: 2px solid #F1F1F1;
+  border-top: 2px solid #F1F1F1;
 }
 
 
@@ -117,5 +121,9 @@ tfoot {
    }
   .notes {
     display: none;
+  }
+
+  table {
+    font-size: 0.8em;
   }
 }
