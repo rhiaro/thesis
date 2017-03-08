@@ -69,6 +69,9 @@ tbody tr td:first-of-type {
   font-weight: bold;
   text-align: left;
 }
+table.leftie tbody td, table.leftie tbody th {
+  text-align: left;
+}
 tbody tr:nth-child(even) td { background: #F1F1F1; }
 tbody tr:nth-child(odd) td { background: #FEFEFE; }
 thead, tfoot, thead td, tfoot td {
