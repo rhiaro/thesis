@@ -1311,7 +1311,7 @@
       <h3>Introduction</h3>
       <div>
 
-        <p>In order to build on our understanding of the role an online profile plays in self-presentation, identity and interaction we need a more nuanced understanding of what a ‘profile’ <em>is</em> in a general sense. What is the <em>meaning</em> of a profile? We undertake an empirical analysis of digital representations of users on 20 different online systems. From these we derive a set of constructs to capture the most important features of profiles in online systems and evaluate this framework by classifying a further 10 systems according to it (or something). We propose this as groundwork for deriving requirements for profiles when designing new systems which need digital representations of their users, as well as for assessing the benefits and drawbacks of how profiles are implemented in existing systems in such a way that takes into account the contexts in which they are used.</p>
+        <p>In order to build on our understanding of the role an online profile plays in self-presentation, identity and interaction we need a more nuanced understanding of what a ‘profile’ <em>is</em> in a general sense. What is the <em>meaning</em> of <em>profile</em>? I carried out an empirical analysis of digital representations of users on 20 different online systems. <span class="notes">The following is handwaving, needs fixing:</span> From these we derive a set of constructs to capture  features of profiles in online systems and evaluate this framework by classifying a further 10 systems according to it (or something). We propose this as groundwork for deriving requirements for profiles when designing new systems which need digital representations of their users, as well as for assessing the benefits and drawbacks of how profiles are implemented in existing systems in such a way that takes into account the contexts in which they are used.</p>
         <p class="notes">Maybe use stuff in participation and interaction of social machines taxonomy http://eprints.soton.ac.uk/362359/1/SOCIAM%20Classificationv2.pdf Could see this as a further breakdown of one of the U categories (see also their methodology pg 13) “Given the value of taxonomies in advancing our understanding of the conceptual landscape associated with a domain”. Taxonomy is very sort of task/activity centric rather than about individuals.</p>
         <p class="notes"><a href="https://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.21.pdf">Anonymity, Unobservability, Pseudonymity, and Identity Management – A Proposal for Terminology</a></p>
 
@@ -1322,23 +1322,37 @@
     <section id="profiles-study-design" rel="schema:haspart">
       <h3>Study Design</h3>
       <div>
-        <p>...</p>
 
         <section id="profiles-method" rel="schema:haspart">
           <h4>Method</h4>
           <div>
 
+            <p>I started with the following areas to investigate:</p>
             <ul>
-              <li>Study: Start with questions to answer about profiles on different sites; refine questions with progress; find overlaps, similarities, differences; turn this into a framework for categorisation/comparison of types of profile. Probably an actual named method for this.</li>
-              <li>Justify selection of starting 20 sites:
-                <ul>
-                  <li>Alexa?</li>
-                  <li>Social Machines classifications?</li>
-                  <li>Some dimensions to try to cover, like purpose, user base, business model, ..</li>
-                </ul>
-              </li>
-              <li>Evaluation: apply taxonomy to more. Selection how?</li>
+              <li>Data contained within a profile.</li>
+              <li>How profile data may be accessed by others.</li>
+              <li>How profile data may be distributed or pushed to others.</li>
+              <li>The role of profile data within the broader system.</li>
             </ul>
+            <p>The starting point for a 'profile' was typically a URL or dataset including a username or other unique identifier for an entity (which could be an individual or group). After initial explorations of the profiles in a few systems, these areas were refined into specific questions to answer about each:</p>
+            <ol>
+              <li>What does a profile contain?</li>
+              <li>How are profiles updated?</li>
+              <li>How are people notified when a profile is updated?</li>
+              <li>How is access to a profile controlled?</li>
+              <li>How are profiles within a system connected together?</li>
+              <li>How can profiles be exported from or imported into a system?</li>
+              <li>What constraints are placed on a profile?</li>
+              <li>How do profiles fit in with a systems apparent data model?</li>
+              <li><em>What</em> is the profile for?</li>
+              <li><em>Who</em> is the profile for?</li>
+            </ol>
+
+            <p>I took one system at a time, and answered all of the questions by logging in (where applicable) to my own account and observing the behaviours of the system in response to interactions with my own and other users' profiles (where necessary), and took screenshots. I also read systems' terms of service, and about pages, introductory descriptions or statements of purpose, and leaned on my own background knowledge of how the systems are used by myself and others.</p>
+
+            <p>Having answered all of the questions about each system, I passed through each one again to confirm, and add more detail if necessary, and I noted similarities and differences between systems. From the results, I derived a set of potential <em>features</em> for profiles, and ranked each system according to how it used these features. This allowed some clustering of similar systems into a general categorisation framework. <span class="todo"> Please tell me there's an actual named method for this?</span></p>
+
+            <p class="todo"> Evaluation: apply taxonomy to more. Selection how?</p>
           </div>
         </section>
 
@@ -1346,6 +1360,17 @@
           <h4>Subjects</h4>
           <div>
             <p>Twenty social systems were selected for the initial analysis phase. Something is considered a 'social system' in this case where users engage with it in order to create a Web-based representation or description of themselves of some kind. Most are ordinary websites which one uses by registering, then logging in and out. We also include some tooling and software purposed for making profiles in a less centralised or commercial manner.</p>
+
+            <p>These systems were selected <span class="todo">...</span> and only systems with which I have personal experience were chosen, in order to take advantage of latent background knowledge when navigating the systems.</p> 
+            <div class="notes">TODO: Better justify selection of starting 20 sites:
+                <ul>
+                  <li>Alexa?</li>
+                  <li>Social Machines classifications?</li>
+                  <li>Some dimensions to try to cover, like purpose, user base, business model, ..</li>
+                </ul>
+              </li>
+            </div>
+
             <p><a href="#kaplan10">Kaplan &amp; Haenlein (2010)</a> categorise social systems into six groups:</p>
             <ul>
               <li><em>Blogs</em> are "special types of websites that usually display date-stamped entries in reverse chronological order"</li>
@@ -1356,6 +1381,7 @@
               <li><em>Virtual Social Worlds</em> "allows inhabitants to choose their behavior more freely ... there are no rules restricting the range of possible interactions"</li>
             </ul>
             <p>We include the first four of these in the <a href="#profiles-subjects-table">table below</a><sup>k</sup>, as well as extending this categorisation with <em>Quantified Self</em> (life-logging or self-tracking; automated or manual recording of minutiae of daily life) and <em>Transactional</em> (networks that exist for exchange of goods or services) in order to accommodate new types of systems which have emerged since.</p>
+
             <table id="profiles-subjects-table">
               <thead>
                 <tr><td colspan="8"><strong>Profiles study subjects:</strong> social systems analysed to generate the taxonomy</td></tr>
@@ -1570,6 +1596,9 @@
                   <td>CP</td>
                 </tr>
                 <tr>
+                  <td>// TODO</td>
+                  <td></td>
+                  <td></td>
                   <td></td>
                   <td></td>
                   <td></td>
