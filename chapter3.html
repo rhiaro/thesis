@@ -2162,6 +2162,15 @@ One person or legal entity may not maintain more than one free account.
           <section id="profiles-model" rel="schema:haspart">
             <h4>How do profiles fit in with a systems apparent data model?</h4>
             <div>
+
+              <p>To answer this question, I have examined wording in systems' documentation around profiles, in user interfaces as well as APIs. Where possible, I have also looked at internal data models of the software.</p>
+
+              <p>Twitter, Indieweb, Pump.io, LinkedIn, Facebook, Quora, PeoplePerHour, ResearchGate, OkCupid, AirBnB, Zooniverse, RunKeeper, and GitHub profiles, accounts and people are all roughly equivalent. That is, a profile sufficiently identifies a person; for example the "name" attribute of a profile is the name of the profile owner (rather than the name of the profile). Activities associated with these profiles (eg. "distance ran" or "commit made") are assumed to have been carried out by the profile owner.</p>
+
+              <p>Tumblr and YouTube equate an account (or login; username/password combination) with a person, but each account may be attached to multiple profiles: secondary blogs in the case of Tumblr, channels in the case of YouTube. Profile owners can carry out interactions from behind one of these profiles at a time.</p>
+
+              <p>Friendica permits a user of one account to create multiple profiles with different attributes, and set up access control so that certain people see a particular profile. Different profiles are different 'views' on one person. Profile owners can also assign a 'type' to their profile which automatically sets some defaults for privacy and access control settings.</p>
+<!--
               <pre class="notes">**Indieweb**: Use site URLs to refer to people. Attributes attached to `h-card`, embedded in homepage alongside other content.
 
 **Twitter**: account ~= profile ~= person
@@ -2204,7 +2213,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
 
 **runkeeper**: person with IRL attributes and activities logged.
 
-**github**: content/activity-oriented.. people/users with attriutes about them, and relationships to content/actions.</pre>
+**github**: content/activity-oriented.. people/users with attriutes about them, and relationships to content/actions.</pre>-->
             </div>
           </section>
               
