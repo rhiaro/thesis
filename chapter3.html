@@ -1907,7 +1907,17 @@ Can grant write access and transfer admin between users for secondary blogs.
           <section id="profiles-connections" rel="schema:haspart">
             <h4>How are profiles within a system connected together?</h4>
             <div>
-              <pre class="notes">**Indieweb**: Under debate, some people use XFN (eg. `rel=following`)
+              <p>Connections between profiles may be uni- or bi-directional; some systems permit both. Bi-directional connections need to be mutual; triggered by one user and confirmed by the second. Uni-directional connections may or may not need approval from the second user, depending on either the system as a whole or individual user preferences. Some systems contain more than one kind of uni-directional connection, which may be named or displayed differently, and carry different connotations. Systems vary in whether or not they notify other users (than the ones involved in the connection) about new connections.</p>
+
+              <p>Systems with uni-directional connections are Twitter, Tumblr, Pump.io, Facebook, Quora, LinkedIn, ResearchGate, Friendca and GitHub ('follow'), YouTube ('subscribe'), OkCupid, PeoplePerHour ('like/bookmark/favourite'). Systems with bi-directional connections are CouchSurfing, Facbook, Friendica, and RunKeeper ('friends'), LinkedIn ('connect'). The intersection of these (systems with both) is Facebook, LinkedIn, and Friendica.</p>
+
+              <p>Some Indieweb profiles include a list of others the profile owner follows using XFN markup, but this is not necessarily widespread. StackOverflow, Zooniverse and AirBnb do not have a means of creating persistent connections between profiles, besides leaving references in the case of AirBnb.</p>
+
+              <p>Systems which permit more specific information or categorisation of connections are CouchSurfing (specify 'hosted', 'surfed', 'traveled with' or 'never met' as well as the closeness of the relationship), and Facebook (can specify specific relationships, eg. 'brother'). When a follow request is sent on Friendica, the recipient can accept it as uni-directional (the follower is labelled a 'fan/admirer') or bi-directional, so the recipient also sees the follower's updates. Bi-directional connection requests on LinkedIn require a reason or more information as 'proof' of a mutual connection, before it is sent.</p>
+
+              <p>OkCupid connections are uni-directional, and only revealed to the recipient if and when a mutual action is made. On Twitter, following another user sometimes appears as an activity in your timeline; notifications are also sometimes sent to your followers to advertise the new connection.</p>
+
+              <!--<pre class="notes">**Indieweb**: Under debate, some people use XFN (eg. `rel=following`)
 
 **Twitter**: One directional; notifications sometimes sent to your followers when you follow someone, especially if others in your network also do; follows (some? all? curated how?) appear in your timeline; no notifications of unfollows; configurable notification when someone follows you.
 
@@ -1941,7 +1951,7 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **runkeeper**: 2 way friendship (request-accept); used with access control as 4, and delivery/notifications.
 
-**github**: follow a user (see all activity in feed), but primary method seems to be to follow content/threads.</pre>
+**github**: follow a user (see all activity in feed), but primary method seems to be to follow content/threads.</pre>-->
             </div>
           </section>
               
