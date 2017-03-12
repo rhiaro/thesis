@@ -1794,7 +1794,14 @@ Content-Type: application/vnd.com.runkeeper.Profile+json
           <section id="profiles-notifications" rel="schema:haspart">
             <h4>How are people notified when a profile is updated?</h4>
             <div>
-              <pre class="notes">**Indieweb**: not spec'd
+
+              <p>When profile attributes are updated by the profile owner, most systems do not notify other users of the system at all.</p>
+
+              <p>Facebook however pushes updates to friends' timelines along with status updates and content interactions, though the extent to which it does this for each friend depends on their arbitrary content distribution algorithm, and from a user perspective is hard to predict. The most reliably seen attribute updates are changes to profile pictures, cover photos, and relationship status. Whenever the profile owner updates an attribute on Facebook, they are asked to make it a 'story', which sustains a reference to the fact the attribute changed. Friendica delivers changes to profile pictures only.</p>
+
+              <p>OkCupid and LinkedIn provide the option to enable sharing of changes to profile attributes. In the case of LinkedIn, updates are pushed to contacts' feeds, but may also be displayed to non-immediate contacts in the network as a form of promoting connections. OkCupid may display updates to other users in their activity feeds according to whether the system thinks these people might be interested in your profile.</p>
+
+              <!--<pre class="notes">**Indieweb**: not spec'd
 
 **Twitter**: None.
 
@@ -1828,7 +1835,7 @@ Content-Type: application/vnd.com.runkeeper.Profile+json
 
 **runkeeper**: None.
 
-**github**: None.</pre>
+**github**: None.</pre>-->
             </div>
           </section>
               
