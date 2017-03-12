@@ -1843,7 +1843,23 @@ Content-Type: application/vnd.com.runkeeper.Profile+json
           <section id="profiles-access" rel="schema:haspart">
             <h4>How is access to a profile controlled?</h4>
             <div>
-              <pre class="notes">**Indieweb**: not spec'd
+
+              <p>Systems vary between providing all-or-nothing access to profiles, making everything public but all optional, providing access control on the basis of groups or networks, or individual users, and providing granular access to individual aspects of profiles.</p>
+
+              <p>Systems which have limited to no access control, but make all or most data optional to enter include OkCupid, Quora, CouchSurfing, AirBnB, Friendica, Zooniverse, Pump.io and GitHub. OkCupid and CouchSurfing allow profile visibility to be restricted to other logged-in users. CouchSurfing permits users to hide their full name, and GitHub permits users to hide their email address.</p>
+              <p>Quora permits users to answer or ask questions as 'anonymous' whilst logged into their account. These questions/answers do not show up on the user's profile. Otherwise, the only other control profile owners have is disabling their online presence. Friendica permits connections to be hidden, as well as certain aspects of content. On AirBnB, profile attributes are optional but <em>hosts</em> can automatically decline users without certain attributes filled in.</p>
+
+              <p>Systems with more granular concepts of audience than public/private include Pump.io, LinkedIn, Facebook, Twitter, and ResearchGate. In Pump.io individual objects can be 'addressed' so that only particular groups (which can be created by the profile owner) or individuals can see them. LinkedIn permits visibility of some individual profile attributes to 'everyone', 'my network' and 'my connections'. The profile can be set to publicly visible, with certain attributes individually excluded. Connections can be private or public, and content and interactions can be designated different levels of visibility from entirely private to entirely public, with 'network' and 'connections' in between. ResearchGate enables hiding certain statistics, certain attributes, and certain content. Uploaded papers can be visible to 'everyone', 'mutual followers' or 'ResearchGate members'.</p>
+
+              <p>Twitter allows users to 'protect' their profiles, which means only those requesting access can see content and connections; however, all <em>attributes</em> are visible to anyone regardless. Profile owners can block other users, preventing them from seeing everything but their name, display picture and profile banner.</p>
+
+              <p>Systems with granular access control across several different aspects of the profile include YouTube, Facebook, RunKeeper and ResearchGate. YouTube provides granular access controls for various attributes, interactions, links to content, some statistics (like number of subscriptions) and content. RunKeeper attributes can be assigned levels of visibility individually ('everyone', 'friends', 'just me').</p>
+
+              <p>Facebook has complex granular access controls, including individual attributes, content, interactions, connections and links. Defaults can be set, as well as updated on a per-object basis at the time of posting/creating. Content can be restricted to include or exclude individuals, groups, particular networks. Read and write access controls are distinct; that is, one can create a post that is publicly readable, but comments on that post may be restricted or disabled completely.</p>
+
+              <p>Tumblr's use of 'primary' and 'secondary' blogs is interesting; where a blog constitutes a profile, users can essentially have as many profiles as they want attached to one login. Primary blogs (one per login) are always public, but secondary blogs (unlimited) can be password protected. There are no automatic links between a user's primary blog and secondary ones, including through the API. There is also no way to tell if a particular profile is primary or secondary, or the account to which a secondary blog is attached. Secondary blog owners may also grant <em>write</em> access to other system users, enabling multi-user profiles. Blocking users prevents the blocked user from interacting with or seeing content.</p>
+
+              <!--<pre class="notes">**Indieweb**: not spec'd
 
 **Twitter**: All or nothing for content. A blocked user can still see some attributes (avatar, banner, name). Protected accounts show all profile data but not content or followers/ing
 
@@ -1883,7 +1899,7 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **runkeeper**: 'Sharing' Everyone/Friends/Just Me, profile things in groups of different levels of granularity (body measurements, weight, diabetes, nutrition, sleep, activities). Anything not in this list is an optional thing to fill in I guess, ie no way to say 'name' is friends only.
 
-**github**: Most optional, can choose to keep email private.</pre>
+**github**: Most optional, can choose to keep email private.</pre>-->
             </div>
           </section>
               
