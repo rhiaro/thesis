@@ -1959,7 +1959,16 @@ Can grant write access and transfer admin between users for secondary blogs.
           <section id="profiles-portability" rel="schema:haspart">
             <h4>How can profiles be exported from or imported into a system?</h4>
             <div>
-              <pre class="notes">**Indieweb**: Server agnostic, move data as you please, but you need to control your domain.
+
+              <p>In the Indieweb model of profile ownership, all data is assumed to be on a server controlled, or at least trusted, by the profile owner. As such, they can move it however they please. Similarly, Pump.io and Friendica are open source software platforms which allow people to either opt to use an instance on a server they trust, or install their own instance for complete control. They both use the ActivityStreams 1.0 data model (Friendica has extensions); while Friendica provides import/export functionality in the UI, Pump.io doesn't, however the database or JSON feed is compatible across instances.</p>
+
+              <p>Twitter, Facebook, YouTube, LinkedIn, ResearchGate, and RunKeeper provide a download link for an archive of content. In most cases these are a snapshot of current profile attributes, without a history of changes, except for Facebook, which provides a comprehensive activity log. All exports are proprietary JSON, HTML or CSV formats.</p>
+
+              <p>StackOverflow profiles are reusable across different StackExchange sites; there is no export, however there are public dumps of Q&amp;A data. GitHub data is available through an API.</p>
+
+              <p>Tumblr, CouchSurfing, Quora, OkCupid, PeoplePerHour, AirBnB and Zooniverse provide neither an export nor an API to access all profile data.</p>
+
+              <!--<pre class="notes">**Indieweb**: Server agnostic, move data as you please, but you need to control your domain.
 
 **Twitter**: You can download an archive of content and snapshot of profile attributes (and date of snapshot) but no changes history.
 
@@ -2002,7 +2011,7 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **runkeeper**: All data exportable, not standard format.
 
-**github**: repo content is inherantly portable via git; other stuff avaiable through API but no standard format.</pre>
+**github**: repo content is inherantly portable via git; other stuff avaiable through API but no standard format.</pre>-->
             </div>
           </section>
               
