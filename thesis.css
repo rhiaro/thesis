@@ -54,10 +54,9 @@ table {
 }
 td, th {
   border: 1px solid transparent; 
-  height: 30px;
-  padding-left: 0.4em; padding-right: 0.4em;
+  padding: 0.4em;
 }
-tbody th {
+tbody th, thead th {
   background: #DFDFDF;
   font-weight: bold;
 }
