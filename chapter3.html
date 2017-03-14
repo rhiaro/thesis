@@ -2369,7 +2369,106 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
           </tbody>
         </table>
 
-        <p>The <a href="#profile-features-results">following table</a> shows the rankings of each system against each feature.</p>
+        <p>Flexibility is a function of the different types of content/data which make up a profile, and the relationship the profile owner has with those who see or use their profile. As some times of content are under more control of the profile owner than others, we consider the proportion to which they make up the profile, and weighting given to each. Flexibility also considers the systems technical or policy constraints around profile contents.</p>
+
+        <p>Access control involves the granularity of the controls, the extent to which profile owners can opt into or out of publishing certain aspects, and the awareness of the owner of who their audience is.</p>
+
+        <p>Prominence takes into account the extent to which a system would function were users' data (of the various kinds) not aggregated into profiles. Prominence of profiles may depend on the role a user is playing in the system, so the potential varying roles are also taken into account. Systems with a high emphasis on connecting people feature profiles prominently, whilst systems with lots of interactions but little need for reputation do not necessarily require consistent profiles to be useful.</p>
+
+        <p>Portability considers how easy it is to get profile data out of a system, as well as how reusable that data is in other systems. This includes whether data is exported into a known standard data model, and standard file format, and the extent of additional processing that may be required to port it elsewhere.</p>
+
+        <p>Representation connects the systems' model of users with its purpose. Systems with possibility or expectation of personas or partial representations of individuals score low, whilst systems with emphasis on 'real people' and one-to-one mappings between profiles and profile owners score highly. Systems in which the real-life human is required for legal or transactional purposes (eg. to make a payment or provide a service) lose 0.1 point because this is a level of distinction between the profile and the person.</p>
+
+        <p>An overview of the questions which contributed to the derivation of each feature is in <a href="#profile-questions-features">this table</a> and the rankings of each system against each feature are in the <a href="#profile-features-results">following table</a>.</p>
+
+        <table id="profile-questions-features">
+          <thead>
+            <tr><td colspan="11"><strong>Profile questions and features relation</strong></td></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th rowspan="2">Feature</th>
+              <th colspan="10">Questions</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+              <th>10</th>
+            </tr>
+            <tr>
+              <td>Flexible</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Access Controlled</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Prominent</td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td>Portable</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Representative</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+            </tr>
+          </tbody>
+        </table>
 
         <table id="profile-features-results">
           <thead>
@@ -2389,147 +2488,147 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
             </tr>
             <tr>
               <td>AirBnB</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>0.2</td>
+              <td>0.2</td>
+              <td>1.0</td>
+              <td>0.0</td>
+              <td>0.9</td>
             </tr>
             <tr>
               <td>CouchSurfing</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>0.5</td>
+              <td>0.1</td>
+              <td>1.0</td>
+              <td>0.0</td>
+              <td>0.9</td>
             </tr>
             <tr>
               <td>Facebook</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>0.3</td>
+              <td>0.9</td>
+              <td>0.7</td>
+              <td>0.5</td>
+              <td>0.8</td>
             </tr>
             <tr>
               <td>Friendica</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>0.8</td>
+              <td>0.8</td>
+              <td>0.7</td>
+              <td>1.0</td>
+              <td>0.2</td>
             </tr>
             <tr>
               <td>Github</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>0.2</td>
+              <td>0.1</td>
+              <td>0.3</td>
+              <td>0.4</td>
+              <td>0.8</td>
             </tr>
             <tr>
               <td>Indieweb wiki</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>1.0</td>
+              <td>0.0</td>
+              <td>0.5</td>
+              <td>1.0</td>
+              <td>1.0</td>
             </tr>
             <tr>
               <td>LinkedIn</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>0.3</td>
+              <td>0.8</td>
+              <td>0.8</td>
+              <td>0.5</td>
+              <td>0.9</td>
             </tr>
             <tr>
               <td>OkCupid</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>0.5</td>
+              <td>0.1</td>
+              <td>1.0</td>
+              <td>0.0</td>
+              <td>0.7</td>
             </tr>
             <tr>
               <td>PeoplePerHour</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>0.5</td>
+              <td>0.1</td>
+              <td>1.0</td>
+              <td>0.0</td>
+              <td>0.9</td>
             </tr>
             <tr>
               <td>Pump.io</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>0.8</td>
+              <td>0.2</td>
+              <td>0.7</td>
+              <td>1.0</td>
+              <td>0.5</td>
             </tr>
             <tr>
               <td>Quora</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>0.5</td>
+              <td>0.2</td>
+              <td>0.3</td>
+              <td>0.0</td>
+              <td>0.9</td>
             </tr>
             <tr>
               <td>ResearchGate</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>0.6</td>
+              <td>0.4</td>
+              <td>0.3</td>
+              <td>0.8</td>
+              <td>0.9</td>
             </tr>
             <tr>
               <td>RunKeeper</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>0.7</td>
+              <td>0.5</td>
+              <td>0.1</td>
+              <td>0.5</td>
+              <td>0.4</td>
             </tr>
             <tr>
               <td>StackOverflow</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>0.5</td>
+              <td>0.1</td>
+              <td>0.3</td>
+              <td>0.3</td>
+              <td>0.9</td>
             </tr>
             <tr>
               <td>Tumblr</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>0.8</td>
+              <td>0.7</td>
+              <td>0.2</td>
+              <td>0.0</td>
+              <td>0.1</td>
             </tr>
             <tr>
               <td>Twitter</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>0.6</td>
+              <td>0.5</td>
+              <td>0.2</td>
+              <td>0.4</td>
+              <td>0.5</td>
             </tr>
             <tr>
               <td>YouTube</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>0.7</td>
+              <td>0.7</td>
+              <td>0.2</td>
+              <td>0.7</td>
+              <td>0.5</td>
             </tr>
             <tr>
               <td>Zooniverse</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>0.5</td>
+              <td>0.1</td>
+              <td>0.1</td>
+              <td>0.0</td>
+              <td>0.8</td>
             </tr>
           </tbody>
         </table>
@@ -2537,15 +2636,8 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
       </div>
     </section>
 
-    <section id="profiles-evaluation" rel="schema:haspart">
-      <h3>Evaluation</h3>
-      <div>
-        <p>Apply taxonomy</p>
-      </div>
-    </section>
-
-    <section id="profiles-conclusions" rel="schema:haspart">
-      <h3>Conclusions</h3>
+    <section id="profiles-discussion" rel="schema:haspart">
+      <h3>Discussion</h3>
       <div>
         <p>..</p>
       </div>
