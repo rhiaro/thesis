@@ -22,7 +22,8 @@ body {
 h1 {
   text-align: center; font-size: 3.2em; font-weight: normal; font-family: serif;
 }
-h5 {
+h4, h5 {
+  font-family: serif;
   font-size: 1em; font-style: italic;
 }
 article {
@@ -42,15 +43,15 @@ aside.do#toc {
 .notes {
   color: #aaa; border: 1px solid silver;
 }
+.chapter { display: none; }
 p.notes { padding: 0.4em; }
 em.notes { padding: 0.4em; }
 
 table {
   color: #333;
   font-family: Helvetica, Arial, sans-serif;
-  max-width: 100%;
-  border-collapse:
-  collapse; border-spacing: 0;
+  max-width: 100%!important;
+  border-collapse: collapse; border-spacing: 0;
 }
 td, th {
   border: 1px solid transparent; 
@@ -94,6 +95,23 @@ button {
 
 @media print {
 
+  .do {
+    display:none !important;
+    }
+    span.do.ref {
+    display:inline !important;
+    }
+    span.do.ref sup {
+    display:none;
+    }
+    .tabs nav {
+    display:none !important;
+    }
+    .tabs .selected {
+    border:0 !important;
+    padding:0 !important;
+    }
+
   #toc {
     display: none;
   }
@@ -105,16 +123,18 @@ button {
   }
   h2 {
     font-size: 1.2em;
+    page-break-before: always;
   }
-  article p, article li {
-    font-size: 16px;
-  }
-
-  h1, h2, h3 {
+  h3 { font-size: 1em; }
+  h4 { font-size: 0.8em; font-style: italic; font-weight: normal; }
+  h1, h2, h3, h4 {
     page-break-after: avoid;
   }
-  ul, img {
+  pre, blockquote, ul, ol, img, figure, table {
     page-break-inside: avoid;
+  }
+  article p, article li {
+    font-size: 14px;
   }
   article a {
     text-decoration: underline;
@@ -126,8 +146,25 @@ button {
   .notes {
     display: none;
   }
+  article p.chapter {
+    display: block;
+    text-align: center;
+    font-size: 8em;
+    color: silver;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0px; padding: 0px;
+  }
 
-  table {
+  tbody {
+    font-size: 0.6em;
+  }
+  tbody tr:nth-child(even) td { background: #F1F1F1 !important; -webkit-print-color-adjust: exact; -moz-print-color-adjust: exact;  }
+  tbody td, tbody th {
+    border: 1px solid silver;
+  }
+  thead, tfoot {
+    border-bottom: 1px solid silver;
     font-size: 0.8em;
   }
 }
