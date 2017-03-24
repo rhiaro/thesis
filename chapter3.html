@@ -2023,15 +2023,26 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
   <h2>The many dimensions of lying online</h2>
   <div>
     <p>In <a href="#constructing-online-identity">the previous study</a> we see some of the creative ways in which individuals work around constraints of even flexible profiles in order to meet their expressive needs. We learned that misrepresenting one's real-life identity is not necessarily in conflict with the functioning of the system, and may even be a culturally important aspect of participation.</p>
-    <p>We expand on these observations with a survey of social media users who reveal the ways in which they bend the truth in their online profiles, and why, and how they feel about others doing so.</p>
-    <p>We categorise the things respondents consider when making decisions about their online identity as follows: <em>system</em>, <em>authenticity</em>, <em>audience</em>, <em>safety/comfort</em>, <em>play</em>.</p>
+    <p>We expand on these observations with a survey of social media users who reveal the ways in which they bend the truth in their online profiles, and why, and how they feel about others doing so. Portraying matters as other than they truly are is an important part of everyday human communication. The survey examines ways in which people fabricate, omit or alter the truth online. Many reasons are found, including creative expression, hiding sensitive information, role-playing, and avoiding harassment or discrimination. The results suggest lying is often used for benign purposes, and we conclude that indeed its use may be essential to maintaining a humane online society.</p>
+    <p>We categorise the things respondents consider when making decisions about how to portray their online identity as follows: <em>system</em>, <em>authenticity</em>, <em>audience</em>, <em>safety/comfort</em>, <em>play</em>.</p>
     <p>This section was adapted from work originally published as <em>Self Curation, Social Partitioning, Escaping from Prejudice and Harassment: the Many Dimensions of Lying Online</em> at ACM WebSci 2015 with Max van Kleek, Dave Murray Rust, Daniel Smith and Nigel Shadbolt.</p>
-
-    <p class="todo">Rewrite this all to integrate better, and also because most of the words currently aren't actually mine.</p>
 
     <section id="lies-intro" rel="schema:hasPart">
       <h3>Introduction</h3>
-      <div></div>
+      <div>
+        <p>People avoid telling the <q>full, open, and honest truth</q> in many situations, whether it involves simply the omission or falsification of information, to more substantial forms of deception and lying. Such behaviours have been shown to amount to, by some accounts, nearly a third of offline interpersonal communications [<a href="#">depaulo1996lying</a>,<a href="#">bok2011lying</a>]. </p>
+
+        <p>As individuals increasingly manage multiple social contexts of growing complexity in their daily lives, techniques are required for navigating the interlocking and often antagonistic demands placed on them.
+        Examination of deceptive practices has shown that they often serve as coping strategies for managing and mitigating these complex social situations.
+        Examples of such reasons include protecting one or another's reputation or identity, to preserve particular relationships or ties, avoiding confrontation, showing solidarity with another, covering up accidental transgressions, among others [<a href="#">hancock2007digital</a>, <a href="#">Burgoon:2003:TDM:820748.821362</a>].</p>
+
+        <p>As the prevalence of computationally mediated socialisation increases, so does the need to understand the role and use of lying and deception in online interaction, and to uncover the kinds of social tensions and attendant complexities that arise from the new social affordances that the Web provides [<a href="#">hancock2004deception</a>].
+        People now conduct their interactions and curate their identities across a large number of online spaces at a much larger scale, whilst attempting to maintain their privacy, reputation and roles throughout. Deception is a tool used to cope with this complexity, and a lens through which their difficulties and needs can be observed [<a href="#">hancock2007digital</a>, <a href="#">Burgoon:2003:TDM:820748.821362</a>].  </p>
+
+        <p>We present here a summary of a survey-based study in which we sought to characterise the spectrum of lying and deception practices routinely used online. We are concerned with the ways in which people carry out the use of such behaviours, the reasons for them, and the manners in which such practices arise or are used differently across contexts, situations, and spaces. We aimed this initial study at prolific internet users, who spend, if not a majority, a substantial part of their daily lives in social encounters online, as being most socially engaged online and likely to the widest variety of such behaviours. We are interested in the intent behind the deception, but we do not examine the moral or ethical dimensions of such practices, as these can be highly subjective and grounded in particular personal philosophies. </p>
+
+        <p>As described in the following sections, our analysis found that while there are a wide range of reasons people use deception or identity protection online, few reasons for doing so are malicious (or comprised of <q>dark lies</q>); in fact, a majority of the reasons pertain to impression management, conflict avoidance, and in order to fit in to groups. In conclusion, we discuss the implications of our findings for the development of the Web, in particular within the context of the increasing centralisation of social networks and rise of web identity assurance providers.</p>
+      </div>
     </section>
 
     <section id="lies-rqs" rel="schema:hasPart">
@@ -2041,12 +2052,119 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
 
     <section id="lies-study-design" rel="schema:hasPart">
       <h3>Study Design</h3>
-      <div></div>
+      <div>
+
+        <section id="lies-study-method" rel="schema:hasPart">
+          <h4>Method</h4>
+          <div>
+            
+            <p>We took a several-step approach to designing the survey questions. First, we looked for precedent in previous surveys (e.g., the <em>Questionnaire on Academic Excuses</em> for student lying behaviour [<a href="#">roig2005lying</a>], elicitation method for daily lying studies [<a href="#">depaulo1996lying</a>]).</p>
+
+            <p>Secondly, we iterated on the phrasing of the questions by consulting other colleagues as experts in the process to shape the specific foci and wordings. Since we could find no survey that we could directly appropriate, we resorted to designing our own. (We initially considered several methods besides survey, including semi-structured interviews, and artefact examinations, but fell back to a web-based survey to be the most appropriate for getting a wide sample from a large number of our target population).  In order to characterise the broad class of behaviours we wanted to examine, we first showed a list of candidate terms including terms such as <em>deceptions</em>, <em>lies</em>, <em>falsifications</em>, <em>omissions</em> and <em>untruths</em> to several experts, alongside a small but diverse list of example behaviours we wished to seek.  Our colleagues, comprising 2 Web Science doctoral students and 3 postdoctoral researchers, gave us feedback about which term(s) they considered most appropriate, and then discussed the range of behaviours we were seeking to elicit.  The outcome of this process was to break out three distinct questions: one pertaining to the use of untruths, one pertaining to the use of pseudonyms, and finally to the use of fictional personas, which are identities for characters that were entirely fabricated.</p>
+
+            <p>The survey was delivered via the web, and comprised 12 sets of questions including 1 set of demographic questions, and 8 open-answer free responses. In this analysis, we focus on the subset of the questionnaire delineated in Figure [<a href="#lies-table-questionnaire">questionnaire</a>].</p>
+
+            <p>Analysis of free-response questions was done using a <em>grounded theory</em> [<a href="#">strauss1990basics</a>] approach; themes were identified across responses through a process starting with open coding process by each of three researchers separately, followed by a discussion process where themes were refined and combined. Multiple themes were permitted per entry. Once consensus was achieved on themes, all responses for a given question were re-coded against the final set.</p>
+
+            <table id="lies-table-questionnaire" class="leftie">
+              <thead>
+                <tr><td colspan="3"><strong>Focus questions:</strong> List of questions corresponding to subset of survey discussed in this analysis. </td></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>No.</th>
+                  <th>Question</th>
+                  <th>Answer type</th>
+                </tr>
+                <tr><td>Q4a</td><td>Have you ever told lies/<q>untruths</q> online? Why?</td><td>free text</td></tr>
+                <tr><td>Q4b</td><td>How often do you tell lies/<q>untruths</q> on social media?</td><td>5-level Likert</td></tr>
+                <tr><td>Q4c</td><td>How often do you think your friends lie on social media compared to you?</td><td>5-level Likert</td>  </tr>  
+                <tr><td>Q5a</td><td>Do you use any pseudonyms online? Why?</td><td>free text</td></tr>
+                <tr><td>Q5b</td><td>Have you created any fictional personas? Why?</td><td>free text</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        
+        <section id="lies-participants" rel="schema:hasPart">
+          <h4>Participant recruitment</h4>
+          <div>
+            <p>The survey was published online, with no restrictions on participation. General recruitment was carried out by handing out flyers with the URL, and the researcher's social media presences (primarily Facebook and Twitter). This was augmented by enlisting two people with popular twitter accounts (@TheTomSka, 191k followers, and @DameWendyDBE, 4k followers) to promote the survey.</p>
+            <p>In order to ensure a good selection of passionate internet users - people who live a lot of their life on the web, and care about their online presence - additional recruitment was carried out in person at two events in London: <em>ComicCon</em> and the <em>WebWeWant Festival</em>.</p>
+          </div>  
+        </section>
+        
+        <section id="lies-limitations" rel="schema:hasPart">
+          <h4>Limitations</h4>
+          <div>
+            <p>Early on in the process, we postulated that eliciting the breadth of behaviours we sought to understand - ranging from trivial information omission and fabrication, to deliberate deception and beyond - might be challenging for multiple reasons. On the one hand, behaviours concerned with privacy and safety are often carried out routinely, with benevolent (non-malicious) intention. These kinds of well-ingrained practices might not be reported as lying or deception, due to both their familiarity and their motivation. At the opposite end of the scale, morally reproachable, subversive or malicious practices may not be reported because the person is not comfortable sharing, whether to protect their reputation, their self image or for fear of repercussions. We address these limitations as far as possible through careful design of our survey questions, as <a href="#lies-study-method">described in the method</a>.</p>
+          </div>
+        </section>
+      </div>
+
     </section>
 
     <section id="lies-results" rel="schema:hasPart">
       <h3>Results</h3>
-      <div></div>
+      <div>
+        <p>Out of the 500 survey responses, 39% (198) provided a gender; 50.2% responded female, 49.8% male, and 1% transgender.  With respect to age, 59% responded, 91% were between 18 and 25, 7% 26-35, and 2% 36+.  The age distribution skew was reflective of, and likely due primarily to, the predominantly young audiences at the two festivals; we discuss the potential implications of this distribution at the end of the paper.</p>
+
+        <p>Nearly all respondents were very active social media users, although use of particular platforms varied significantly.  Figure [<a href="#lies-fig-socialmedia">socialmedia</a>] shows the self-reported Likert scores per platform for 6 social media platforms. The popularity of YouTube and Twitter for respondents was likely influenced by the method of recruitment (via Twitter), and the fact that one of the popular Twitter users who disseminated news of the survey is a popular YouTuber.  The other platforms, meanwhile, were more divided, with Tumblr being the most divided between highly active (125, 27%) and those that never used it (144, 32%).  Vine was reported used the least overall with (422,91%) reporting having either never or rarely used it.</p>
+
+        <table id="lies-fig-socialmedia">
+          <thead>
+            <tr><td colspan="2"><strong>Results:</strong> Self-reported use of social media, from <em>1=Never</em> to <em>5=Often</em> times a day.
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="figs/lies-q1-fb" alt="chart"/></td>
+              <td><img src="figs/lies-q1-twitter" alt="chart"/></td>
+            </tr>
+            <tr>
+              <td>(a) Facebook</td>
+              <td>(b) Twitter</td>
+            <td>
+            <tr>
+              <td><img src="figs/lies-q1-youtube" alt="chart"/></td>
+              <td><img src="figs/lies-q1-tumblr" alt="chart"/></td>
+            </tr>
+            <tr>
+              <td>(c) YouTube</td>
+              <td>(d) Tumblr</td>
+            <td>
+            <tr>
+              <td><img src="figs/lies-q1-instagram" alt="chart"/></td>
+              <td><img src="figs/lies-q2-vine" alt="chart"/></td>
+            </tr>
+            <tr>
+              <td>(e) Instagram</td>
+              <td>(f) Vine</td>
+            <td>
+          </tbody>
+          <tfoot>
+            <tr><td colspan="2"><strong>Medians:</strong> facebook = 3, twitter = 5, YouTube = 5, Tumblr = 3, Instagram = 2, Vine = 1</td></tr>
+        </table>
+
+        <section id="lies-results-frequency" rel="schema:hasPart">
+          <h4>Self-reported frequency of deception/lying</h4>
+          <div></div>
+        </section>
+
+        <section id="lies-reasons" rel="schema:hasPart">
+          <h4>Reasons for Deception</h4>
+          <div></div>
+        </section>
+
+        <section id="lies-pseudonyms" rel="schema:hasPart">
+          <h4>Pseudonyms</h4>
+          <div></div>
+        </section>
+
+        <section id="lies-personas" rel="schema:hasPart">
+          <h4>Personas</h4>
+          <div></div>
+        </section>
+      </div>
     </section>
 
     <section id="lies-discussion" rel="schema:hasPart">
