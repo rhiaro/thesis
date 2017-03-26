@@ -550,7 +550,7 @@ WAIT THESE ARE ALL GET. No POST for update o.O
 
 API:
 
-```
+<q>`
 To create a new user, POST a user representation (see below) to the list.
 
 The JSON object representing the user has the following properties:
@@ -558,7 +558,7 @@ The JSON object representing the user has the following properties:
 * nickname: The user's nickname. 1-64 characters, including only ASCII capital and lowercase letters and numbers as well as "-", ".", and "_". The nickname is immutable and unique per server; it can't be changed.
 * password: The plain-text password. This isn't returned when you GET the user object, but you have to provide it when registering or updating the user.
 * profile: a "person" object. This is created automatically when you create a new user; don't try to add it yourself. Don't update this directly; update the person through its object endpoint.
-```
+<q>`
 
 **YouTube**: Web form(s) / client UI
 
@@ -566,14 +566,14 @@ The JSON object representing the user has the following properties:
 
 **Facebook**: Various web forms, some inline.
 
-```
+<q>`
 You can update a User by making a POST request to /{user_id}.
 
 id
 firstname
 lastname
 label_cohort
-```
+<q>`
 
 Also various endpoints for types of content that might appear on profiles.
 
@@ -597,7 +597,7 @@ Also various endpoints for types of content that might appear on profiles.
 
 API: The currently logged in User may edit their record by sending a partial representation of the resource including their changes. A User cannot edit linked resources:
 
-```
+<q>`
 PUT https://panoptes-staging.zooniverse.org/api/users/{id}
 
 Accept:application/vnd.api+json; version=1
@@ -608,11 +608,11 @@ Content-Type:application/json
     "credited_name": "Dr. Stuart Lynn, DDS"
   }
 }
-```
+<q>`
 
 **runkeeper**: Web form. API:
 
-```
+<q>`
 PUT /profile HTTP/1.1
 Host: api.runkeeper.com
 Authorization: Bearer xxxxxxxxxxxxxxxx
@@ -621,7 +621,7 @@ Content-Type: application/vnd.com.runkeeper.Profile+json
 {
 "athlete_type": "Ultra Marathoner"
 }
-```
+<q>`
 
 **github**: Web form. `PATCH /user`: name, email, blog, company, location, hireable, bio</pre>-->
             </div>
@@ -838,14 +838,14 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **Friendica**: ActivityStreams. Various levels of compatability with APIs of GNU Social, pump.io, Twitter, diaspora. Profile and connections portable to another server. You can also use your friendica identity via webfinger to identify with a bunch of other things like remotestorage, owncloud.
 
-```
+<q>`
 * Friendica uses DFRN as message protocol.
 * The messages uses ActivityStreams.
 * Webfinger is used for the discovery of users
 * Salmon is used as a message exchange protocol for replies and mentions.
 * Portable Contacts is used for friends lists.
 * pubsubhubbub is used for OStatus.
-```
+<q>`
 
 **Zooniverse**: n/a
 
@@ -882,15 +882,15 @@ Secondary blogs can't 'initiate social features' (follow, like, ask, fan mail et
 
 **CouchSurfing**:
 
-```
+<q>`
 5. Do Create Only One Profile: Duplicate, fake, and joke profiles are not allowed. The first profile that you create must be you and is the only one that you may have. Our trust network needs everyone to stand by their reputation.
 
 6. Do Be Yourself: Misrepresenting yourself as someone else is prohibited. This includes representation as an agent, representative, employee, or affiliate of Couchsurfing.
-```
+<q>`
 
 **Facebook**:
 
-```
+<q>`
 Registration and Account Security
 
 Facebook users provide their real names and information, and we need your help to keep it that way. Here are some commitments you make to us relating to registering and maintaining the security of your account:
@@ -903,40 +903,40 @@ Facebook users provide their real names and information, and we need your help t
 * You will not share your password (or in the case of developers, your secret key), let anyone else access your account, or do anything else that might jeopardize the security of your account.
 * You will not transfer your account (including any Page or application you administer) to anyone without first getting our written permission.
 * If you select a username or similar identifier for your account or Page, we reserve the right to remove or reclaim it if we believe it is appropriate (such as when a trademark owner complains about a username that does not closely **relate to a user's actual name**).
-```
+<q>`
 
 **Quora**:
 
-```
+<q>`
 ... you must provide us accurate information, including your real name, when you create your account on Quora.
 
 agree that you have not and will not contribute any Content that ... (e) creates an impression that you know is incorrect, misleading, or deceptive, including by impersonating others or otherwise misrepresenting your affiliation with a person or entity;
-```
+<q>`
 
 **OkCupid**:
 
-```
+<q>`
 Unique and bona fide profile
 You agree to create only one unique profile. In addition, in order to maintain the integrity of the Website, by joining, you agree that your use of the Website shall be for bona fide relationship-seeking purposes (for example, you may not use the Website solely to compile a report of compatible singles in your area, or to write a school research paper). From time to time, we may create test profiles in order to monitor the operation of our services.
-```
+<q>`
 
 **StackOverflow**:
 
-```
+<q>`
 Subscriber shall provide Stack Exchange with accurate, complete, and updated registration information, including Subscriber’s e-mail address. Failure to do so shall constitute a breach of this Agreement, which may result in immediate termination of Subscriber's account. Subscriber may not (a) select or use as a profile name a name of another person with the intent to impersonate that person; or (b) use as a profile name a name subject to any rights of a person other than Subscriber without appropriate authorization.
-```
+<q>`
 
 **LinkedIn**:
 
-```
+<q>`
 To use the Services, you agree that: ... (2) you will only have one LinkedIn account, which must be in your real name
 
 You agree to ... (3) not transfer any part of your account (e.g., connections, groups)
-```
+<q>`
 
 **PeoplePerHour**:
 
-```
+<q>`
 To use PPH, Users have to register for an account, provide accurate and complete information, and keep their account information updated. Both Buyers and Sellers undergo the same account registration process.
 Each account must be a personal account, but Users may trade as a sole trader, company or any other legal entity (whether incorporated or unincorporated).
 Users cannot register for more than one account.
@@ -958,20 +958,20 @@ open more than one user account with PeoplePerHour.  Duplicate accounts will be 
 include any links to your website or any third party website anywhere in your profile including your profile image or portfolio images;
 upload any content to your profile that breaches our terms and conditions including all the obvious things like abusive, offensive, defamatory or infringing content.
 share your bank account or any other withdrawal method. Such practice is against our Terms and Conditions of Website Use and leads to permanent account suspension.
-```
+<q>`
 
 **ResearchGate**: Nothing to do with profiles?!
 
 **AirBnB**:
 
-```
+<q>`
 Your Airbnb Account and your Airbnb Account profile page will be created for your use of the Site and Application based upon the personal information you provide to us or that we obtain via an SNS as described above. You may not have more than one (1) active Airbnb Account. You agree to provide accurate, current and complete information during the registration process and to update such information to keep it accurate, current and complete. Airbnb reserves the right to suspend or terminate your Airbnb Account and your access to the Site, Application and Services if you create more than one (1) Airbnb Account, or if any information provided during the registration process or thereafter proves to be inaccurate, fraudulent, not current or incomplete.
 
 you will not: ...
 * register for more than one Airbnb Account or register for an Airbnb Account on behalf of an individual other than yourself;
 * unless Airbnb explicitly permits otherwise, request or book a stay at any Accommodation if you will not actually be staying at the Accommodation yourself;
 * impersonate any person or entity, or falsify or otherwise misrepresent yourself or your affiliation with any person or entity;
-```
+<q>`
 
 **Friendica**: ToS per server presumably.
 
@@ -979,13 +979,13 @@ you will not: ...
 
 **runkeeper**:
 
-```
+<q>`
 agree that you will not: ... (v) impersonate another person.
-```
+<q>`
 
 **github**:
 
-```
+<q>`
 You must be a human. Accounts registered by "bots" or other automated methods are not permitted.
 
 You must provide your name, a valid email address, and any other information requested in order to complete the signup process.
@@ -993,7 +993,7 @@ You must provide your name, a valid email address, and any other information req
 Your login may only be used by one person - a single login shared by multiple people is not permitted. You may create separate logins for as many people as your plan allows.
 
 One person or legal entity may not maintain more than one free account.
-```
+<q>`
 </pre>-->
             </div>
           </section>
@@ -1043,13 +1043,13 @@ One person or legal entity may not maintain more than one free account.
 
 **Zooniverse**: From http://www.arfon.org/how-the-zooniverse-works-the-domain-model
 
-```
+<q>`
 User
 
 People are core to the Zooniverse. When talking publically about the Zooniverse I almost always use the term 'citizen scientist' or 'volunteer' because it feels like an appropriate term for someone who donates their time to one of our projects. When writing code however, the shortest descriptive term that makes sense is usually selected so in our domain model the term we use is User.
 
 A User is exactly what you'd expect, it's a person, it has a bunch of information associated with it such as a username, an email address, information about which projects they've helped with and a host of other bits and bobs. Crucially though for us, a User is the same regardless of which project they're working - that is Users are pan-Zooniverse. Whether you're classiying galaxies over at Galaxy Zoo or identifying animals on Snapshot Serengeti we're associating your efforts with the same User record each time which turns out to be useful for a whole bunch of reasons (more later).
-```
+<q>`
 
 **runkeeper**: person with IRL attributes and activities logged.
 
@@ -2210,9 +2210,9 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
                 <tr><td>hide</td><td>Hiding activities from everyone.</td></tr>
                 <tr><td>identity</td><td>Online identity more closely matching true self.</td></tr>
                 <tr><td>intimate</td><td>Posting intimate thoughts and feelings.</td></tr>
-                <tr><td>no</td><td>``No'', with no reason given.</td></tr>
+                <tr><td>no</td><td><q>No</q>, with no reason given.</td></tr>
                 <tr><td>nothide</td><td>Use of a pseudonym, but not trying to hide one's identity.</td></tr>
-                <tr><td>plus</td><td>Mentioned the Google\texttt{+} ``real names'' policy.</td></tr>
+                <tr><td>plus</td><td>Mentioned the Google\texttt{+} <q>real names</q> policy.</td></tr>
                 <tr><td>privacy</td><td>General feeling of not wanting to reveal stuff.</td></tr>
                 <tr><td>reuse</td><td>Used a nickname or variation of offline names.</td></tr>
                 <tr><td>safety</td><td>Protection from other people.</td></tr>
@@ -2220,7 +2220,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
                 <tr><td>sex</td><td>Anything about sex.</td></tr>
                 <tr><td>soceng</td><td>Tricking people or gaming the system e.g. falsely gaining trust, fake qualifications, circumventing age restrictions, using sockpuppets, and spam control.</td></tr>
                 <tr><td>spy</td><td>The system is spying on me, merging my accounts, and sharing data.</td></tr>
-                <tr><td>yes</td><td>``Yes'', with no reason given.</td></tr>
+                <tr><td>yes</td><td><q>Yes</q>, with no reason given.</td></tr>
                 <tr><td>-</td><td>Theme unclear from answer.</td></tr>
               </tbody>
             </table>
@@ -2637,25 +2637,25 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
           <div>
             <p>A common reason why participants wouldn't use these tools related to the amount of effort required to use them. P8 observed that the effort-of-use barrier is a challenge even for tools already available today, and postulated that platforms were exploiting the lack of adoption of these tools to their advantage:</p>
 
-            <blockquote>The thing I've noticed is that people will always do the easiest [thing].  That's why nobody encrypts. I don't. You know, for all my concerns about privacy, I don't encrypt anything, [...] very few people take the extra security steps they can because it's convoluted. And the minute you ask people to do that, they'll just take the easiest route. Providers like Facebook and Twitter and all the apps out there know that, and that's why it's so easy for them to collect data - they know people will just take the easiest route. - P8</blockquote>
+            <blockquote><p>The thing I've noticed is that people will always do the easiest [thing].  That's why nobody encrypts. I don't. You know, for all my concerns about privacy, I don't encrypt anything, [...] very few people take the extra security steps they can because it's convoluted. And the minute you ask people to do that, they'll just take the easiest route. Providers like Facebook and Twitter and all the apps out there know that, and that's why it's so easy for them to collect data - they know people will just take the easiest route. - P8</p></blockquote>
 
-            <p>However, for some vignettes the extra effort was seen to pay off as an opportunity. For instance, in response to \emph{Social Steganography}, P6 contemplated that by broadcasting different status updates to distinct subsets of his friends on Facebook, he could control multiple identities simultaneously:</p>
+            <p>However, for some vignettes the extra effort was seen to pay off as an opportunity. For instance, in response to <em>Social Steganography</em>, P6 contemplated that by broadcasting different status updates to distinct subsets of his friends on Facebook, he could control multiple identities simultaneously:</p>
 
-            <p>I think essentially at this point you are projecting two identities simultaneously and you really would want to manage both. [...] it almost becomes twice the task. But the really interesting thing would be if different groups all had different keys - so you'd send a single status but they'd all see different ones. That would be sort of be neat, [to be] projecting multiple identities at once, because you can't really do that offline. Finally, technology would give us a chance to BETTER control our identities! - P6</p>
+            <blockquote><p>I think essentially at this point you are projecting two identities simultaneously and you really would want to manage both. [...] it almost becomes twice the task. But the really interesting thing would be if different groups all had different keys - so you'd send a single status but they'd all see different ones. That would be sort of be neat, [to be] projecting multiple identities at once, because you can't really do that offline. Finally, technology would give us a chance to BETTER control our identities! - P6</p></blockquote>
 
             <p>A second aspect that was mentioned was not the direct effort of use, but that indirectly required to stay on top of the wake of deception left by using such tools. In some settings, participants noted specific compensatory measures that would be required to prevent being found out, and noted the complexity and effort of these measures. </p>
             
-            <p>If I used a tool like this and said I had been in meetings but then actually NOT logged the hours against the project, what the meeting was about or  anything like that, it would make my accounting for my own time very hard. - P7</p>
+            <blockquote><p>If I used a tool like this and said I had been in meetings but then actually NOT logged the hours against the project, what the meeting was about or  anything like that, it would make my accounting for my own time very hard. - P7</p></blockquote>
           </div>
         </section>
 
         <section id="liecloud-other-strategies" rel="schema:hasPart">
           <h4>Availability of Other Channels, Strategies</h4>
           <div>
-            <p>The most common reason given for not needing to use a tool was the availability of alternative approaches to achieving the desired objectives sought in which the fictional tools were imagined to be most useful. A common such strategy was simply \emph{omitting} or \emph{suppressing} information they did not wish to share; this strategy was used for a variety of privacy-related concerns as an alternative to use of the tools depicted in the \emph{Social Steganography} and \emph{lieMoves} vignettes.  A second common strategy was the use of \emph{other channels} and \emph{access control features}.  For instance, P13 discussed the use of encryption to both help control scope of a message and for unwanted leakage by platforms. Several mentioned Facebook and Google+'s built-in access control features for limiting the scope of a particular message as an alternative to using a steganography approach. </p>
-            <p>In some cases, participants identified that alternate strategies were imperfect, and sometimes the fictional tool offered a better solution. For example, the alternate strategy of suppressing location leakage by turning location tracking off, was perceived as worse than \emph{lieMoves} by both P6 and P9, because doing so would cause apps that needed the user's location to simply refuse to work.</p>  
+            <p>The most common reason given for not needing to use a tool was the availability of alternative approaches to achieving the desired objectives sought in which the fictional tools were imagined to be most useful. A common such strategy was simply <em>omitting</em> or <em>suppressing</em> information they did not wish to share; this strategy was used for a variety of privacy-related concerns as an alternative to use of the tools depicted in the <em>Social Steganography</em> and <em>lieMoves</em> vignettes.  A second common strategy was the use of <em>other channels</em> and <em>access control features</em>.  For instance, P13 discussed the use of encryption to both help control scope of a message and for unwanted leakage by platforms. Several mentioned Facebook and Google+'s built-in access control features for limiting the scope of a particular message as an alternative to using a steganography approach. </p>
+            <p>In some cases, participants identified that alternate strategies were imperfect, and sometimes the fictional tool offered a better solution. For example, the alternate strategy of suppressing location leakage by turning location tracking off, was perceived as worse than <em>lieMoves</em> by both P6 and P9, because doing so would cause apps that needed the user's location to simply refuse to work.</p>  
 
-            <p>There were fewer alternative strategies given for the other vignettes; ``simply being honest'', and in particular ``blocking off time'' was given as a common strategy for situations where \emph{lieCal} would be useful (P4, P8, P9).  </p>
+            <p>There were fewer alternative strategies given for the other vignettes; <q>simply being honest</q>, and in particular <q>blocking off time</q> was given as a common strategy for situations where <em>lieCal</em> would be useful (P4, P8, P9).  </p>
           </div>
         </section>
 
@@ -2663,30 +2663,30 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
           <h4>Privacy and Control</h4>
           <div>
             <p>Several participants cited potential benefits to privacy control and management.  The leaking of location information was a concern; six participants reported keeping location services on their smartphones turned off by default for reasons such as to prevent apps from sending their location to third-parties without their consent.</p>  
-            <blockquote>[lieMoves] would mostly catch out apps that were taking my location without even asking, because if I want to tell the truth when I think it matters, I can still do that, but those that are just spying on me gets crap! And that appeals, because they shouldn't be able to collect in the first place! - P6</blockquote>
+            <blockquote><p>[lieMoves] would mostly catch out apps that were taking my location without even asking, because if I want to tell the truth when I think it matters, I can still do that, but those that are just spying on me gets crap! And that appeals, because they shouldn't be able to collect in the first place! - P6</p></blockquote>
 
-            <p>P8 asked whether \emph{lieMoves} was available for use, because she wanted it immediately to keep Google from tracking her.</p>
-            <p>I want to install it immediately and keep using it for the rest of my life! I wouldn't have any ethical worries about it because I wouldn't be lying to anyone, I would be lying to Google, and that's exactly what I want to do!  Because they shouldn't have this information in the  first place, so giving them wrong information is perfect. As I said, can I have this today, please? - P8</p>
+            <p>P8 asked whether <em>lieMoves</em> was available for use, because she wanted it immediately to keep Google from tracking her.</p>
+            <blockquote><p>I want to install it immediately and keep using it for the rest of my life! I wouldn't have any ethical worries about it because I wouldn't be lying to anyone, I would be lying to Google, and that's exactly what I want to do!  Because they shouldn't have this information in the  first place, so giving them wrong information is perfect. As I said, can I have this today, please? - P8</p></blockquote>
 
             <p>Others pointed out that a remaining impediment to adoption of such tools is still a remaining lack of awareness of how services operated and used people's information.</p>
 
-            <blockquote>People can't make value judgements about the systems they interact with because they don't understand them well enough yet, especially what's going on behind the scenes. They don't actually feel the need to deceive system and platforms because they don't even know they're being spied upon. - P6</blockquote>
+            <blockquote><p>People can't make value judgements about the systems they interact with because they don't understand them well enough yet, especially what's going on behind the scenes. They don't actually feel the need to deceive system and platforms because they don't even know they're being spied upon. - P6</p></blockquote>
           </div>
         </section>
 
         <section id="liecloud-authenticity" rel="schema:hasPart">
           <h4>Authenticity and Crafting Personas</h4>
           <div>
-            <p>Participants reflected on how the data they shared affected other people's perceptions of them, as well as their perceptions of others on social media. P11 (in agreement with P1, P2, P3, P6, P7, P8, P9, P12 and P15) assumed that her friends engaged in ``image-shaping'' by ``being quite selective or trying to present a particular kind of persona'', and described an occasion when a contact's online presentation was at odds with what she knew to be happening offline.</p>
+            <p>Participants reflected on how the data they shared affected other people's perceptions of them, as well as their perceptions of others on social media. P11 (in agreement with P1, P2, P3, P6, P7, P8, P9, P12 and P15) assumed that her friends engaged in <q>image-shaping</q> by <q>being quite selective or trying to present a particular kind of persona</q>, and described an occasion when a contact's online presentation was at odds with what she knew to be happening offline.</p>
 
-            <blockquote>People will always seem like they're having a really good time and post about how great everything is but then you talk to them and things aren't actually quite how they're made to be portrayed on social media. [...] So like one of my friends, her sister was just posting about her one year anniversary of getting married, and how brilliant it was, and they were both posting about the presents they got for each other. Within a month they were separated [...] I know more about that from talking to my friend personally, but in terms of what's presented online to a different audience, to a much wider audience, that was not what was going on. - p11</blockquote>
+            <blockquote><p>People will always seem like they're having a really good time and post about how great everything is but then you talk to them and things aren't actually quite how they're made to be portrayed on social media. [...] So like one of my friends, her sister was just posting about her one year anniversary of getting married, and how brilliant it was, and they were both posting about the presents they got for each other. Within a month they were separated [...] I know more about that from talking to my friend personally, but in terms of what's presented online to a different audience, to a much wider audience, that was not what was going on. - P11</p></blockquote>
 
             <p>P12 described a friend who, unable to withhold information or resist questions from an inquisitive audience, made up stories about her life to satisfy them, thus creating a persona.</p>
-            <blockquote>'Cos of the following that some fanfiction gets, she gets asked a lot of personal questions and she doesn't want to feel rude so she just lies, so she answers these very personal questions so she feels connected to her audience but she deliberately lies 'cos she finds it sometimes a bit invasive. - P12</blockquote>
+            <blockquote><p>'Cos of the following that some fanfiction gets, she gets asked a lot of personal questions and she doesn't want to feel rude so she just lies, so she answers these very personal questions so she feels connected to her audience but she deliberately lies 'cos she finds it sometimes a bit invasive. - P12</p></blockquote>
             
             <p>P8 and P15 similarly mentioned deception used to protect privacy without alienating people. In contrast, others saw total openness in their sharing as important for presenting their "authentic" selves on social media, and thought less of those who they perceived to be engaged in deliberate image-shaping.</p>
 
-            <blockquote>I wouldn't be friends with people who would be lying all the time or who make up stuff just for attention. [...] if I found out that there was someone I was interested in doing this the faith I put in them or the fact that I was being very genuine would take a hit. - P9</blockquote>
+            <blockquote><p>I wouldn't be friends with people who would be lying all the time or who make up stuff just for attention. [...] if I found out that there was someone I was interested in doing this the faith I put in them or the fact that I was being very genuine would take a hit. - P9</p></blockquote>
           </div>
         </section>
 
@@ -2695,18 +2695,18 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
           <div>
             <p>Though sometimes in conflict with attempts at authenticity, a number of respondents echoed the sentiment that degrees of deception are crucial for maintaining a well-functioning society.</p>
 
-            <blockquote>I think that not telling people -- everyone, everything -- is a central aspect of being kind in the world. - P15</blockquote>
+            <blockquote><p>I think that not telling people - everyone, everything - is a central aspect of being kind in the world. - P15</p></blockquote>
 
-            <blockquote>It's about empowerment -- little lies, like ``I'm just too tired and you're quite a taxing person'' could be the truth but that's a bit mean, and you didn't want to say that! versus ``oh no sorry I have plans with my boyfriend'' which might be a lie, but it's nice. - P6</blockquote>
+            <blockquote><p>It's about empowerment - little lies, like <q>I'm just too tired and you're quite a taxing person</q> could be the truth but that's a bit mean, and you didn't want to say that! versus <q>oh no sorry I have plans with my boyfriend</q> which might be a lie, but it's nice. - P6</p></blockquote>
             
-            <blockquote>Often you lie to save people's feelings or -- to stop someone finding out about a surprise party. Like there are really nice reasons to lie, and if you could help people make nice lies safer, that would be awesome! - P14</blockquote>
+            <blockquote><p>Often you lie to save people's feelings or - to stop someone finding out about a surprise party. Like there are really nice reasons to lie, and if you could help people make nice lies safer, that would be awesome! - P14</p></blockquote>
  
             <p>P6 commented that this could be a subtle method of signalling violations of personal privacy online:</p>
-            <blockquote>The idea of being able to put massively sarcastic calendar appointments just so that, when someone looks at my calendar to see what I'm doing, they know I don't want them to know, and they should just stop asking.  - P6</blockquote>
+            <blockquote><p>The idea of being able to put massively sarcastic calendar appointments just so that, when someone looks at my calendar to see what I'm doing, they know I don't want them to know, and they should just stop asking.  - P6</p></blockquote>
 
-            <p>Such methods were also viewed as a form of social empowerment; a way of giving people freedom to block off time (\emph{lieCalendar}) or send a message (\emph{Social Steganography}) in situations where the honest approach would be awkward due to shyness, introversion, or differences in social positions, e.g. having to contradict a superior or respected senior.</p>
+            <p>Such methods were also viewed as a form of social empowerment; a way of giving people freedom to block off time (<em>lieCalendar</em>) or send a message (<em>Social Steganography</em>) in situations where the honest approach would be awkward due to shyness, introversion, or differences in social positions, e.g. having to contradict a superior or respected senior.</p>
 
-            <blockquote>Somebody younger, less experienced, less confident might find that this is a nice, straightforward way of blocking time out for themselves and feeling good or comfortable about it.  Because it can be quite difficult saying ``no, I'm not free'' to someone senior. - P8</blockquote>
+            <blockquote><p>Somebody younger, less experienced, less confident might find that this is a nice, straightforward way of blocking time out for themselves and feeling good or comfortable about it.  Because it can be quite difficult saying <q>no, I'm not free</q> to someone senior. - P8</p></blockquote>
 
           </div>
         </section>
@@ -2716,19 +2716,19 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
           <div>
             <p>Many participants discussed their expectations of who could access their social data and messages.  P15 and P11 mentioned assuming private Facebook messages could be read only the recipient; all but four participants segregated their friends using platform privacy settings.</p>
 
-            <blockquote>If I wanted only certain people to know something I'd just send them a private message rather than put it as my status anyway. - P11</blockquote>
-            <blockquote>Very occasionally I will post things only on Facebook and not Twitter because then only my friends can see it. - P6</blockquote>
-            <blockquote>Why would I need such a tool when I can define on Facebook, for every single message exactly who sees it? - P7</blockquote>
+            <blockquote><p>If I wanted only certain people to know something I'd just send them a private message rather than put it as my status anyway. - P11<p></blockquote>
+            <blockquote><p>Very occasionally I will post things only on Facebook and not Twitter because then only my friends can see it. - P6</p></blockquote>
+            <blockquote><p>Why would I need such a tool when I can define on Facebook, for every single message exactly who sees it? - P7</p></blockquote>
 
             <p>Contrarily, several participants also rationalised that they must assume that anything they post online could be made completely public at any moment, and the safest technique is not to share at all. </p>
 
-            <blockquote>If there's something you don't want people to know, then you just  don't tell. - P7</blockquote>
+            <blockquote><p>If there's something you don't want people to know, then you just  don't tell. - P7</p></blockquote>
 
-            <p>P12, meanwhile, said \emph{lieMapper} would potentially improve her ability to maintain separation among her separate personas online by showing her when information from multiple identities linked up.</p>
+            <p>P12, meanwhile, said <em>lieMapper</em> would potentially improve her ability to maintain separation among her separate personas online by showing her when information from multiple identities linked up.</p>
 
-            <blockquote>This one is more just a way for you to control your privacy [...] Cos I don't actually have anything linked directly [between identities], but probably they have certain things links other ways, so that would be quite interesting to see. - P12</blockquote>
+            <blockquote><p>This one is more just a way for you to control your privacy [...] Cos I don't actually have anything linked directly [between identities], but probably they have certain things links other ways, so that would be quite interesting to see. - P12</p></blockquote>
             
-            <p>P2 and P14 were among those who considered themselves not interesting enough for anyone to want to invade their privacy, and P4 even found it "felt quite good" when he found his private facebook profile had been accessed by someone outside of their network because he "was of interest to someone".</p>
+            <p>P2 and P14 were among those who considered themselves not interesting enough for anyone to want to invade their privacy, and P4 even found it <q>felt quite good</q> when he found his private facebook profile had been accessed by someone outside of their network because he <q>was of interest to someone</q>.</p>
           </div>
         </section>
 
@@ -2738,27 +2738,27 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
             <p>Finally, many of the participants volunteered their views on ethical or moral reasons of why they would or would not use these tools in specific ways. Perspectives varied in general and according to the vignette presented.</p>
 
             <p>The technology vignettes could be seen as ethically neutral, with the ethics coming from the manner of their use:</p>
-            <blockquote>If your intention is to use these tools to harm someone, then that's the individual's own decision to make and you can decide for yourself whether that's morally right or wrong.  But simply using the tools themselves doesn't imply you're going to do something that is harmful or morally wrong. - P5</blockquote>
+            <blockquote><p>If your intention is to use these tools to harm someone, then that's the individual's own decision to make and you can decide for yourself whether that's morally right or wrong.  But simply using the tools themselves doesn't imply you're going to do something that is harmful or morally wrong. - P5</p></blockquote>
 
             <p>However, in some cases, there was such a strong implication between the design of the tool and the kinds of lies which it facilitates that the morality of the tool became the morality of the action:</p>
 
-            <blockquote>Well as someone who's considered murdering people before, this is exactly how I would do it. I would create a fake social media presence so I could go off and do something illegal or even \ldots I could commit adultery, I really can't see much of a practical application for ethically good things\ldots} - p14, discussing lieTinerary</blockquote>
+            <blockquote><p>Well as someone who's considered murdering people before, this is exactly how I would do it. I would create a fake social media presence so I could go off and do something illegal or even ... I could commit adultery, I really can't see much of a practical application for ethically good things... - P14, discussing lieTinerary</p></blockquote>
 
             <p>To P6, whether deception was moral contextually dependant on whether the recipient had a legitimate need for the truth and why.  </p>
 
-            <blockquote>If someone has a right to know something for some reason [...] then lying to them there is more problematic than if they didn't have a right to ask you, or to be looking for that information. [...]  that's their own fault; they should have know they shouldn't have looked. - P6</blockquote>
+            <blockquote><p>If someone has a right to know something for some reason [...] then lying to them there is more problematic than if they didn't have a right to ask you, or to be looking for that information. [...]  that's their own fault; they should have know they shouldn't have looked. - P6</p></blockquote>
 
             <p>Some participants suggested that they would need a really good reason to use deception tools. P14 felt that a better alternative to having to lie was to get out of situations in which one felt the need to lie.</p>
 
-            <blockquote>And if you're in a situation where you have to lie to people about where you are, then that's a situation you need to get out of cos that's a creepy situation [...] The only time I can see this being good is like if you're in an abusive marriage and you're going to a divorce lawyer in secret. - P14</blockquote>
+            <blockquote><p>And if you're in a situation where you have to lie to people about where you are, then that's a situation you need to get out of cos that's a creepy situation [...] The only time I can see this being good is like if you're in an abusive marriage and you're going to a divorce lawyer in secret. - P14</p></blockquote>
 
             <p>There was often a moral distinction made between friends and platforms as the targets of deception. While a majority (11) reported taking issue with deliberately deceiving friends, there was also widespread consensus on wanting not to deceive a general audience on social media. A notable exception to this was a feeling that lying to platforms is not dishonest.</p>
 
-            <blockquote>well if I'm talking to my friend I always tell the truth; I'm quite an honest person ... but I don't think lying to Facebook is unethical [\ldots], because it's not affecting any of your friends or anyone on your list, so it has no effect -- so you're not really lying to anyone? [...] I don't trust these companies enough, to be honest, with the information I supply them. - P9</blockquote>
+            <blockquote><p>well if I'm talking to my friend I always tell the truth; I'm quite an honest person ... but I don't think lying to Facebook is unethical [...], because it's not affecting any of your friends or anyone on your list, so it has no effect - so you're not really lying to anyone? [...] I don't trust these companies enough, to be honest, with the information I supply them. - P9</p></blockquote>
 
             <p>P6 took the position that lying to platforms should be the moral choice, even part of one's civic duty.</p>
 
-            <blockquote>I think lying to Facebook is to be encouraged! [platforms] spend so much effort in deceiving users into thinking they're doing one thing when they're doing another, that giving users some control seems fine. Its sort of like the debate whether minorities can be racist against white people -- like, whether the power imbalance seems to negate any meaningful argument, certainly when it comes to lying to services. - P6</blockquote>
+            <blockquote><p>I think lying to Facebook is to be encouraged! [platforms] spend so much effort in deceiving users into thinking they're doing one thing when they're doing another, that giving users some control seems fine. Its sort of like the debate whether minorities can be racist against white people - like, whether the power imbalance seems to negate any meaningful argument, certainly when it comes to lying to services. - P6</p></blockquote>
           </div>
         </section>
 
@@ -2782,7 +2782,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
           <div>
             <p>One viewpoint is that mendacious impulses are indicative of a problematic situation: that fixing the socio-technical context would remove the need to deceive, and the community could become more socially honest. Systems requesting excessive information frequently provoked anger, and a feeling that feeding back fictitious information was justified. One lens for designers to engage with this issue is Grice's conversational maxims. Typically, these are used to define one side of a social contract: the quantity, quality, relation and manner of information production. </p>
 
-            <p>A complimentary view applies them to requests for information. This accounts for many of the indignant quotes we recieved---systems were asking for \emph{too much} information, or \emph{irrelevant} information. Providing clarity here, relating information demands to the current context, limiting information to the that which is necessary can guide designers towards upholding the platform's end of the social contract. Our \emph{lieMapper} vignette asked how far through our social networks personal information was likely to diffuse, alerting the user to social information  violations; similarly, when designers illuminate the hidden pathways which our data takes---or doesn't---it provides a grounding on which trust can be built.</p>
+            <p>A complimentary view applies them to requests for information. This accounts for many of the indignant quotes we recieved---systems were asking for <em>too much} information, or <em>irrelevant} information. Providing clarity here, relating information demands to the current context, limiting information to the that which is necessary can guide designers towards upholding the platform's end of the social contract. Our <em>lieMapper} vignette asked how far through our social networks personal information was likely to diffuse, alerting the user to social information  violations; similarly, when designers illuminate the hidden pathways which our data takes---or doesn't---it provides a grounding on which trust can be built.</p>
 
             <p>Legal identities, and the problems which they cause, highlight the multifacted aspects of life, whether online or off. The general trend is towards a collapse of context, the joining of identities across sites and networks, but the attitude that people should be happy to connect all of their identities together in this way is an expression of social privilege. Tools exist to aid the management of multiple personas, typically used by astroturfing organisations~[kolivos2012consumer, gilewicz2012digital}. As a provocation, what would design for multifaceted life look like? Are there ways to support participants in plural presentation, helping them to understand and maintain their context bounds, rather than attempting to force a homogenisation. How can we support radical self expression and support marginalised groups? What about systems which acknowledge that there are parts of users lives which they don't want to share publicly, but they still need to express them and connect with similar people? Designing for contextual authenticity rather than imposing singular identity pushes back against marginalisation.</p>
           </div>
@@ -2793,11 +2793,11 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
           <div>
             <p>It was clear from responses that being reminded of one's lies can be upsetting, especially for people who consider themselves honest. On one hand, this might suggest systems might automatically remove, or reduce the visibility of, digital traces that could serve as reminders of one's past deceit.  The recent growth in messaging apps that automatically delete messages after a single viewing~[messaging2015} might, in fact, be related to this perceived design need. On the other hand, visibility of such actions can lead people towards greater honesty---knowing how often one was deceptive could clearly be a powerful push towards veracity.</p> 
 
-            <p>A second major theme addressed the effort, both of using the tool, and dealing with its potential consequences.  It was clear that any tool that required more time and effort than customary was perceived as too burdensome.  There was also the consideration of the side-effects caused by such tools, and the degree of effort required to ensure such repercussions would not cause deceptions to be discovered.  But having to explicitly act at all was also viewed negatively; that is, having to engage with a tool in order to carry out a deception, such as with \emph{lieCal}, was viewed less favourably than something that could do it automatically, such as \emph{lieMoves}. </p>
+            <p>A second major theme addressed the effort, both of using the tool, and dealing with its potential consequences.  It was clear that any tool that required more time and effort than customary was perceived as too burdensome.  There was also the consideration of the side-effects caused by such tools, and the degree of effort required to ensure such repercussions would not cause deceptions to be discovered.  But having to explicitly act at all was also viewed negatively; that is, having to engage with a tool in order to carry out a deception, such as with <em>lieCal}, was viewed less favourably than something that could do it automatically, such as <em>lieMoves}. </p>
 
-            <p>An additional problem with requiring explicit action is that doing so often leaves little space for plausible deniability.  When explicit action is needed, it becomes often difficult to justify that such an action was taken accidentally or unintentionally (assuming the individual is of sound mind).  If we instead imagine tools that \emph{deceive by default}, the possibility that a deception was simply a side effect of being busy or forgetting to make the system tell the truth would remain.  For example, a deceive-by-default variation of \emph{lieCal} might automatically fill the person's calendar with false but plausible appointments, allowing its user to quickly identify and replace them with real ones as needed. Such designs would additionally support many of the goals of \emph{privacy-by-design}~[schaar2010privacy}.</p>
+            <p>An additional problem with requiring explicit action is that doing so often leaves little space for plausible deniability.  When explicit action is needed, it becomes often difficult to justify that such an action was taken accidentally or unintentionally (assuming the individual is of sound mind).  If we instead imagine tools that <em>deceive by default}, the possibility that a deception was simply a side effect of being busy or forgetting to make the system tell the truth would remain.  For example, a deceive-by-default variation of <em>lieCal} might automatically fill the person's calendar with false but plausible appointments, allowing its user to quickly identify and replace them with real ones as needed. Such designs would additionally support many of the goals of <em>privacy-by-design}~[schaar2010privacy}.</p>
 
-            <p>Another significant barrier to the use of such tools is related to safety and discovery, the first ensuring that deceptive actions would not have unintended consequences, while the second pertains to the effort and actions necessary to ensure deceptions would not be discovered.  Such concerns suggest that there is a potential space for future tools that are able to support \emph{safe deception}, both in terms of highlighting potential hazards, and towards mitigating the burden of covering up active lies and their effects.  Tools such as \emph{lieMapper} that are able to provide situational awareness about social information flow could help individuals tell certain, especially \emph{nice lies} (as described by P8), safely.</p>
+            <p>Another significant barrier to the use of such tools is related to safety and discovery, the first ensuring that deceptive actions would not have unintended consequences, while the second pertains to the effort and actions necessary to ensure deceptions would not be discovered.  Such concerns suggest that there is a potential space for future tools that are able to support <em>safe deception}, both in terms of highlighting potential hazards, and towards mitigating the burden of covering up active lies and their effects.  Tools such as <em>lieMapper} that are able to provide situational awareness about social information flow could help individuals tell certain, especially <em>nice lies} (as described by P8), safely.</p>
           </div>
         </section>
         
@@ -3040,7 +3040,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
         to and therefore well attended by our target participants.</p>
 
         <p>All participants work or study in the technology industry, which is
-        typical of our ``social media makers'' target, though not all work in
+        typical of our <q>social media makers</q> target, though not all work in
         web development. 11 participants identified as male, 3 as female and one
         declined to answer. A majority of participants are white; two listed
         their ethnicity as Hispanic or Latino, one as Jewish and one as Asian,
@@ -3078,10 +3078,10 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
             or more major centralised social media services. All but one
             participant cross-posted content from their personal site to social
             media sites to some degree, referring to this process as
-            ``syndication'', which may be manual or automatic.
+            <q>syndication</q>, which may be manual or automatic.
             All participants said they need centralised services in order to reach their social
             network(s), as they did not expect their friends and family to go out of
-            their way to read their personal website on a regular basis. Participant K had been involved in various open source social network projects, but missed his regular contacts: ``I was originally in like the GNU Social and Disapora... they didn't make a ton of sense because I didn't know anybody that was on them.'' Participant J agreed that he had looked at some open source projects, but didn't like their ``wholesale rejection of silos'' because his friends were still using centralised systems and he wants them to read the things he writes.</p>
+            their way to read their personal website on a regular basis. Participant K had been involved in various open source social network projects, but missed his regular contacts: <q>I was originally in like the GNU Social and Disapora... they didn't make a ton of sense because I didn't know anybody that was on them.</q> Participant J agreed that he had looked at some open source projects, but didn't like their <q>wholesale rejection of silos</q> because his friends were still using centralised systems and he wants them to read the things he writes.</p>
 
             <blockquote>"Most of my friends are in silos, I want to be in those conversations and interact with them there, but I also want the control of both the data and the presentation... It's about interacting with people in silos while not being locked up in silos" (M)</blockquote>
 
@@ -3093,19 +3093,19 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
             <p><strong>Contents:</strong> is the media or data or length of text
             contained in this post consistent with the type of content generally
             posted to this site? This could be a cultural constraint, or a technical
-            restriction. Participant M says content must ``fit in'' so any inconsistencies from what's expected don't distract from the content itself. Participant E makes collages of photos to post because ``this is generally what people do on Pinterest'' and F points out the ``unspoken rules about what goes on there and how people interact''.</p>
+            restriction. Participant M says content must <q>fit in</q> so any inconsistencies from what's expected don't distract from the content itself. Participant E makes collages of photos to post because <q>this is generally what people do on Pinterest</q> and F points out the <q>unspoken rules about what goes on there and how people interact</q>.</p>
 
             <p>Does the content cover a subject appropriate
             to discuss on the third-party platform? Participant N wouldn't write academic things on Facebook for fear of boring people.</p>
 
             <p><strong>Frequency of posts:</strong> Almost 75\% of participants were worried about
-            creating undue ``noise''. For example, only carefully selected photos
+            creating undue <q>noise</q>. For example, only carefully selected photos
             are generally posted to Instagram, but a whole, uncurated set is
             uploaded to Flickr.</p>
 
-            <blockquote>``On twitter nobody cares if you're too noisy, but on facebook they
-            really do, they start complaining.'' (B)</blockquote>
-            <blockquote>``I don't want to post too much and like dominate someone's feed... I wanted to post 20 photos today and I definitely feel a pressure not to do that because it's [being syndicated to] Instagram'' (I)</blockquote>
+            <blockquote><q>On twitter nobody cares if you're too noisy, but on facebook they
+            really do, they start complaining.</q> (B)</blockquote>
+            <blockquote><q>I don't want to post too much and like dominate someone's feed... I wanted to post 20 photos today and I definitely feel a pressure not to do that because it's [being syndicated to] Instagram</q> (I)</blockquote>
 
             <p><strong>Who will see it:</strong> is the content of the post appropriate for the
             connections they know they have on the third-party platform? Will the
@@ -3114,13 +3114,13 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
             desirable?</p>
 
             <p>Participant B uses Medium to reach to people beyond his normal circles
-            of ``affluent white men who work in tech''. Participant F withholds
+            of <q>affluent white men who work in tech</q>. Participant F withholds
             certain content from Facebook to avoid social-media-novice family
             members making unrelated personal comments which all of her other
             contacts can see. Participant I keeps his social media profiles fully
             private, even though they mirror the public content posted on his
-            personal site, considering the interactions on Twitter ``too abusive and
-            spammy'' for it to be worthwhile letting strangers comment on his posts.</p>
+            personal site, considering the interactions on Twitter <q>too abusive and
+            spammy</q> for it to be worthwhile letting strangers comment on his posts.</p>
 
             <p><strong>What will it look like:</strong> 70\% think about how
             their content would be rendered on other networks when deciding whether
@@ -3149,9 +3149,9 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
 
             <p>One third of participants said they do not think about their audience, but 7 described how they are very aware of who might be reading their content, including that they revise content until they feel it is appropriate for multiple audiences they imagine might see it. 5 people say they primarily post for themselves, and 4 said that whilst they selectively cross-post subsets of content based on the norms and audience of third-party platforms, they actively want to collapse these contexts on their own site.</p>
 
-            <blockquote>``I'm ready to collapse everything... I want to be as complete as possible... It'd be fun if I had a blog that's part let's say... Swift coding, and also part cute beefcake pictures.'' (J)</blockquote>
+            <blockquote><q>I'm ready to collapse everything... I want to be as complete as possible... It'd be fun if I had a blog that's part let's say... Swift coding, and also part cute beefcake pictures.</q> (J)</blockquote>
 
-            <p>Some would consider filtering based on who was looking, if it was technically straightforward. However most don't care at all about audiences from different aspects of their lives coming across their posts, or imagine the audience for their site is so small that context collapse is unlikely. Some people even saw this as positive, describing it as ``healthy'' (M, I) or ``more human'' (I). 4 acknowledged their privilege as non-vulnerable members of society which allowed them to feel this way.</p>
+            <p>Some would consider filtering based on who was looking, if it was technically straightforward. However most don't care at all about audiences from different aspects of their lives coming across their posts, or imagine the audience for their site is so small that context collapse is unlikely. Some people even saw this as positive, describing it as <q>healthy</q> (M, I) or <q>more human</q> (I). 4 acknowledged their privilege as non-vulnerable members of society which allowed them to feel this way.</p>
 
             <p>Despite this, 7 participants said they post pseudonymously or anonymously in other systems which are completely disconnected from their primary online identity. This is usually about sensitive topics that they are not willing to share more broadly, and don't trust their own technical expertise to build sufficent access control into their own systems.</p>
           </div>
@@ -3160,7 +3160,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
         <section id="results-self-expression" rel="schema:hasPart">
           <h4>Self-expression</h4>
           <div>
-            <p>Despite the uses for centralised systems in terms of network reach and audience management, one aspect of \emph{control} desired by participants is how they are able to express themselves.</p>
+            <p>Despite the uses for centralised systems in terms of network reach and audience management, one aspect of <em>control} desired by participants is how they are able to express themselves.</p>
 
             <p><strong>Self-expression through visuals: </strong>Participants cared a lot about what their websites look like. Three quarters said
             that having creative control over the appearance of their content was
@@ -3169,13 +3169,13 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
             the `noisy' interfaces of Facebook and Twitter. For others, it was
             important that they had freedom to experiment.</p>
 
-            <blockquote>``I like playing with the form. I think the thing about cookie cutter
+            <blockquote><q>I like playing with the form. I think the thing about cookie cutter
             sites is that they are one size fits all. And I think form in some ways
             dictates content and so if you're publishing on a network things you are
             writing are lead by what's already on the network. If you've got your
             own site it's like starting form scratch you can just dictate exactly
             what's there, you can choose your own identity, you can have a huge say
-            over what you're publishing.'' - B</blockquote>
+            over what you're publishing.</q> - B</blockquote>
 
             <p>Participant L showed other peoples' sites he was inspired by visually,
             including one which uses a unique design for each individual blog post.
@@ -3188,9 +3188,9 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
             which capture moods, ideas and experiments from the time the posts were
             written: </p>
 
-            <blockquote>``I could easily try out a new style knowing that I
-            wasn't committing all my archives or the future to this style.'' He was
-            convinced these temporal visuals were ``worth preserving'' by his own
+            <blockquote><q>I could easily try out a new style knowing that I
+            wasn't committing all my archives or the future to this style.</q> He was
+            convinced these temporal visuals were <q>worth preserving</q> by his own
             memories of blog posts he'd read looking a certain way, and the
             associations or even nostalgia that come with that when articles are
             re-discovered. The same participant periodically makes time-limited
@@ -3214,13 +3214,13 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
             online, this started to reflect into his offline life as well, and he
             withdrew socially. Recently he realised this wasn't healthy and made a
             concerted effort to become more expressive, more confident in his identity
-            and to be ``forward'' about his experiences as a queer software developer.
+            and to be <q>forward</q> about his experiences as a queer software developer.
             Following this, he very deliberately won't be concealing parts
-            of himself going forward. He now finds ``joy in intersections'' of the different
-            parts of his life and adds that on your own domain, ``no-one can tell you that you can't call yourself whatever you want.''</p>
+            of himself going forward. He now finds <q>joy in intersections</q> of the different
+            parts of his life and adds that on your own domain, <q>no-one can tell you that you can't call yourself whatever you want.</q></p>
 
             <p>Participant L cares deeply about the visuals of his site, but ultimately sees 
-            them as something that will change: ``content will always represent me more than any visual design will, because visual designs come and go.'' As a result, he does not display any content created by others: ``I want every pixel on my site to be mine.''</p>
+            them as something that will change: <q>content will always represent me more than any visual design will, because visual designs come and go.</q> As a result, he does not display any content created by others: <q>I want every pixel on my site to be mine.</q></p>
 
             <p><strong>Self-expression through functionality: </strong>60\% of participants appreciate the ability to create types of content that
             no other social systems allow, and to mix and match the types of content they 
@@ -3231,34 +3231,34 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
         <section id="results-empowerment" rel="schema:hasPart">
           <h4>Empowerment</h4>
           <div>
-            <p>Participants varied in how they felt their personal sites empowered them, beyond self-expression. For some it was about ownership. Participant J expressed concern that his generation rarely own things, from cars and houses, to music, and his personal site was a way of claiming something back: ``my personal website at the center or origin of my ideas... it's like expanding my own real estate.''</p>
+            <p>Participants varied in how they felt their personal sites empowered them, beyond self-expression. For some it was about ownership. Participant J expressed concern that his generation rarely own things, from cars and houses, to music, and his personal site was a way of claiming something back: <q>my personal website at the center or origin of my ideas... it's like expanding my own real estate.</q></p>
 
-            <p>However participant B pointed out that ``owning your own stuff is only useful if you can actually control it... if you're not a developer that's actually disempowering'' and participant L describes personal data ownership as ``a tool toward autonomy. Just owning a lot of stuff doesn't give you control or freedom or agency.''</p>
+            <p>However participant B pointed out that <q>owning your own stuff is only useful if you can actually control it... if you're not a developer that's actually disempowering</q> and participant L describes personal data ownership as <q>a tool toward autonomy. Just owning a lot of stuff doesn't give you control or freedom or agency.</q></p>
 
-            <p>75\% want a place under their control to be the <em>canonical</em> source of their content; the definitive location for their online persona. Participant I's personal site is entirely public, yet his social media profiles - to where all of his posts are syndicated - are locked down, ``to encourage people, if they wanted to share something that I tweeted, to then share my original copy instead on my website.''</p>
+            <p>75\% want a place under their control to be the <em>canonical</em> source of their content; the definitive location for their online persona. Participant I's personal site is entirely public, yet his social media profiles - to where all of his posts are syndicated - are locked down, <q>to encourage people, if they wanted to share something that I tweeted, to then share my original copy instead on my website.</q></p>
           </div>
         </section>
 
         <section id="results-longevity" rel="schema:hasPart">
           <h4>Longevity</h4>
           <div>
-            <p>12 participants expressed the importance of being able to archive their content and data. They wanted copies. If a centralised service disappears or bars their access - something which has happened at some point to every participant - most now have their content and often the context of conversations with others, on their own servers. Participant G ``had no idea Geocities would go away.''</p>
+            <p>12 participants expressed the importance of being able to archive their content and data. They wanted copies. If a centralised service disappears or bars their access - something which has happened at some point to every participant - most now have their content and often the context of conversations with others, on their own servers. Participant G <q>had no idea Geocities would go away.</q></p>
 
-            <p>For some, this is also about personal development, reflection, and spotting patterns in their behaviour over time. ``I like being able to have a record of everything I've published over the last ten years and being able to come back to it and go oh this is what I thought about this back then'' (B). Participant L thinks we should take a 2000 year view of our digital lives, and that we all have a right to store personal data ``cradle-to-grave... that will live on untouched after our death'' to benefit future societies.</p>
+            <p>For some, this is also about personal development, reflection, and spotting patterns in their behaviour over time. <q>I like being able to have a record of everything I've published over the last ten years and being able to come back to it and go oh this is what I thought about this back then</q> (B). Participant L thinks we should take a 2000 year view of our digital lives, and that we all have a right to store personal data <q>cradle-to-grave... that will live on untouched after our death</q> to benefit future societies.</p>
           </div>
         </section>
 
         <section id="results-ephemerality" rel="schema:hasPart">
           <h4>Ephemerality</h4>
           <div>
-            <p>Nonetheless, 7 participants create content with the expectation that it will disappear, and see value in being able to do this, and 4 participants explicitly consider social media to be a place for ephemeral content. ``I feel that I'm much more responsible for what I post... whereas on twitter you're part of the faceless hoarde'', said F, explaining why she posts throwaway or snarky comments to twitter without bothering to archive them in her own space. Many participants treat facebook replies and likes the same way: ``if it's a comment on someone else's post I'm assuming it's pretty much throwaway. I write assuming it could last forever, but I also write assuming that if it got deleted for any reason I wouldn't care... doublethink'' (I). However several participants expressed that they would archive certain types of content if they could, but at present the technical barrier is too high, and their priority for doing so is too low.</p>
+            <p>Nonetheless, 7 participants create content with the expectation that it will disappear, and see value in being able to do this, and 4 participants explicitly consider social media to be a place for ephemeral content. <q>I feel that I'm much more responsible for what I post... whereas on twitter you're part of the faceless hoarde</q>, said F, explaining why she posts throwaway or snarky comments to twitter without bothering to archive them in her own space. Many participants treat facebook replies and likes the same way: <q>if it's a comment on someone else's post I'm assuming it's pretty much throwaway. I write assuming it could last forever, but I also write assuming that if it got deleted for any reason I wouldn't care... doublethink</q> (I). However several participants expressed that they would archive certain types of content if they could, but at present the technical barrier is too high, and their priority for doing so is too low.</p>
           </div>
         </section>
 
         <section id="results-consent" rel="schema:hasPart">
           <h4>Consent</h4>
           <div>
-            <p>Another aspect of control is consent. Many members of the community use common tooling to fetch replies from social media to the syndicated copies of their posts. There are privacy safeguards in the tooling that prevent private or access controlled posts from being exposed publicly, but 4 participants either didn't do this, despite a desire for archives, or expressed misgivings about the fact they were: ``it feels a little bit weird to be pulling people's stuff without their consent'' (B) because most contacts on social media were unaware of the possibility that their content would be copied to somewhere else on the Web; somewhere potentially more likely to be indexed by search engines.</p>
+            <p>Another aspect of control is consent. Many members of the community use common tooling to fetch replies from social media to the syndicated copies of their posts. There are privacy safeguards in the tooling that prevent private or access controlled posts from being exposed publicly, but 4 participants either didn't do this, despite a desire for archives, or expressed misgivings about the fact they were: <q>it feels a little bit weird to be pulling people's stuff without their consent</q> (B) because most contacts on social media were unaware of the possibility that their content would be copied to somewhere else on the Web; somewhere potentially more likely to be indexed by search engines.</p>
           </div>
         </section>
 
@@ -3268,10 +3268,10 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
             <p>Participant B once posted something which triggered a flood of reactions
             from an infamously abusive online community. His tooling automatically pulled these 
             responses from social media, through to his personal site. Rather exercising
-            his ability to remove these posts, he ``decided to keep it up and sort of showcase the idiots.'' Other participants consider themselves lucky not to have experienced
+            his ability to remove these posts, he <q>decided to keep it up and sort of showcase the idiots.</q> Other participants consider themselves lucky not to have experienced
             this, and give little thought to how they would handle it.</p>
 
-            <p>Though 7 participants ``don't write sensitive stuff on digital technology'' (N) none expressed concern about centralised systems mining the data they syndicate, or the terms of service they are agreeing to in doing so.</p>
+            <p>Though 7 participants <q>don't write sensitive stuff on digital technology</q> (N) none expressed concern about centralised systems mining the data they syndicate, or the terms of service they are agreeing to in doing so.</p>
           </div>
         </section>
 
@@ -3305,7 +3305,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
     <section id="smm-conclusion" rel="schema:hasPart">
       <h3>Conclusion</h3>
       <div>
-        <p>The ``digital makers'' we interviewed revealed their primary motivations 
+        <p>The <q>digital makers</q> we interviewed revealed their primary motivations 
         in replacing or supplementing mainstream social media use with their own
         personal systems are <em>control</em> of their online representation, and
         over the longevity (or not) of their content, and <em>decompartmentalising</em> or 
@@ -3316,7 +3316,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
         or displayed have developed their own completely custom publishing environments 
         in order to more freely express themselves. They demonstrate many creative 
         ways of displaying similar types of content to that ordinarily found on 
-        social media, as well as innovating with new ``post types'' or ways of sharing 
+        social media, as well as innovating with new <q>post types</q> or ways of sharing 
         information that they cannot do elsewhere at all. This freedom to experiment 
         leads them to reflect on and perhaps better understand their identities. Further, participants feel 
         empowered by the ability to archive their content for life, or hide or remove content from their own 
