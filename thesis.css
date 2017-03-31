@@ -99,6 +99,13 @@ button {
   border: 2px solid #F1F1F1;
   padding: 0.4em; font-size: 0.6em;
 }
+sup a {
+  text-decoration: none;
+}
+.fn {
+  font-size: 0.9em;
+  padding: 0; margin: 0;
+}
 
 
 @media print {
