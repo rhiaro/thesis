@@ -28,6 +28,7 @@ h4, h5 {
 }
 article {
   width: 60%; margin-left: auto; margin-right: auto;
+  overflow: visible;
 }
 aside.do#toc {
   background-color: #d7e7d7; 
@@ -132,7 +133,6 @@ sup a {
   }
   article {
     width: 90%;
-    overflow: visible;
   }
   h1 {
     font-size: 2em;
