@@ -132,6 +132,7 @@ sup a {
   }
   article {
     width: 90%;
+    overflow: visible;
   }
   h1 {
     font-size: 2em;
@@ -143,7 +144,9 @@ sup a {
   h3 { font-size: 1em; }
   h4 { font-size: 0.8em; font-style: italic; font-weight: normal; }
   h1, h2, h3, h4 {
-    page-break-after: avoid;
+    page-break-after: avoid!important;
+    /*orphans: 3;
+    widows: 3;*/
   }
   pre, blockquote, ul, ol, img, figure, table {
     page-break-inside: avoid;
