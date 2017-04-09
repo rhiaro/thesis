@@ -52,11 +52,21 @@ q { quotes: '"' '"' "'" "'" }
 q:before { content: open-quote }
 q:after  { content: close-quote }
 
+ul li ul, ul li ul li ul {
+  margin-top: 0;
+}
+ul li p {
+  margin-bottom: 0;
+}
+
 table {
-  color: #333;
-  font-family: Helvetica, Arial, sans-serif;
   max-width: 100%!important;
   border-collapse: collapse; border-spacing: 0;
+}
+td, td p, td li {
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
 }
 td, th {
   border: 1px solid transparent; 
