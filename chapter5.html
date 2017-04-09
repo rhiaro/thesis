@@ -301,6 +301,91 @@
         <p class="todo">How the standards of the SWWG can fit together into an actual system: <a href="https://w3.org/TR/social-web-protocols">SWP</a></p>
         <p>This section introduces the <em>Social Web Protocols</em>, a description of the specifications produced by the Social Web Working Group as arranged by the previously derived API requirements. Some content in this section is published as a W3C Working Group Note [<a href="#ref-swp">swp</a>]. Systems can be built with these protocols in great variety. Incorporating the standards produced by the Social Web Working Group does not automatically mean a system is empowering to its users as the protocols provide only a skeleton, leaving much open for specialisation by developers. Conformance to these protocols does however imply that users are able to move their data between systems; that clients and servers are somewhat decoupled so users have more flexibility with regards to tools; and that users are not compelled to follow their network or locked into the system where their friends are.</p>
 
+        <section id="swp-overview" rel="schema:hasPart">
+          <h4>Overview</h4>
+          <div>
+            
+            <figure id="swp-specpaths" rel="schema:hasPart">
+              <img src="figs/swp.png" />
+              <figcaption><p><strong>Fig [specpaths]:</strong> How the Social Web Protocols specifications connect different (high level) parties together.</p></figcaption>
+            </figure>
+
+            <table id="swp-specrels" rel="schema:hasPart">
+              <thead><tr><td colspan="7"><p><strong>Table [specrels]:</strong> How each spec relates to the others.</p></td></tr></thead>
+              <tfoot><tr><td colspan="7">
+                <p><strong>To read (approx):</strong> if I have <em>x</em>, it uses <em>y</em> to _.</p>
+                <p><em>n/a</em> means there is no explicit relation between the specs, but does not mean to suggest they can't be used together.</p>
+                <p><em>bridge</em> means these specs have overlapping functionality and bridging code is needed for interoperability.</p>
+              </td></tr></tfoot>
+              <tbody>
+                <tr>
+                  <th></th>
+                  <th>AS2</th>
+                  <th>AP</th>
+                  <th>MP</th>
+                  <th>LDN</th>
+                  <th>WM</th>
+                  <th>WS</th>
+                </tr>
+                <tr>
+                  <td>AS2</td>
+                  <td></td>
+                  <td>represent content for CRUD, delivery and subscriptions</td>
+                  <td>n/a</td>
+                  <td>MAY represent notification contents</td>
+                  <td>n/a</td>
+                  <td>MAY represent publishers' content</td>
+                </tr>
+                <tr>
+                  <td>AP</td>
+                  <td>pass it around with</td>
+                  <td></td>
+                  <td>bridge</td>
+                  <td>use to trigger notifications</td>
+                  <td>n/a</td>
+                  <td>n/a</td>
+                </tr>
+                <tr>
+                  <td>MP</td>
+                  <td>n/a</td>
+                  <td>bridge</td>
+                  <td></td>
+                  <td>n/a</td>
+                  <td>n/a</td>
+                  <td>n/a</td>
+                </tr>
+                <tr>
+                  <td>LDN</td>
+                  <td>MAY pass notifications around with</td>
+                  <td>use for delivery</td>
+                  <td>n/a</td>
+                  <td></td>
+                  <td>bridge</td>
+                  <td>use for delivery</td>
+                </tr>
+                <tr>
+                  <td>WM</td>
+                  <td>n/a</td>
+                  <td>n/a</td>
+                  <td>n/a</td>
+                  <td>bridge</td>
+                  <td></td>
+                  <td>n/a</td>
+                </tr>
+                <tr>
+                  <td>WS</td>
+                  <td>MAY pass feeds to subscribers</td>
+                  <td>n/a</td>
+                  <td>n/a</td>
+                  <td>use to trigger notifications</td>
+                  <td>n/a</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
         <section id="swp-read" rel="schema:hasPart">
           <h4>Reading</h4>
           <div>
