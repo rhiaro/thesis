@@ -52,217 +52,246 @@
 <section id="socialwg-thesis" rel="schema:hasPart">
   <h2>Standards and self-presentation</h2>
   <div>
+    <p class="todo">Introduction</p>
     <p>But wait, isn't this thesis about self presentation? I'm glad you asked. At the core of freedom of expression is choice...</p>
-
-    <section id="socialwg-process" rel="schema:hasPart">
-      <h3>Social Web WG process/decisions/stuff</h3>
+    
+    <section id="swwg-api-requirements" rel="schema:hasPart">
+      <h3>API Requirements</h3>
       <div>
         <p>An early activity of the Working Group was to write 99 "user stories" describing actions that people should be able to carry out using systems based on standards produced by the group. The goal of this was to focus efforts on the most important standards to be worked on, to meet the needs that appeared most critical to members of the group. Most group members contributed one or more user stories, and they varied based on the perspective of the individual or organisation they represented. The group then voted (+1, .....) on every user story, and selected a top eight to prioritise.</p>
 
-        <p>My subsequent contribution was to derive API requirements from the shortlisted user stories... https://rhiaro.co.uk/2015/08/api-requirements</p>
+        <p>My subsequent contribution was to derive API requirements from the shortlisted user stories.</p>
 
-        <p>Process:</p>
-        <ol>
-          <li>List required functionality from each user story.</li>
-          <li>Cluster related functionality, find overlap between stories (see colours/tags).</li>
-          <li>Organise requirements into shortlist.</li>
-        </ol>
-        <h2>Requirements shortlist</h2>
-        <p>In no particular order. Tags/colours map to requirements by story, below.</p>
-        <h3><span style="background-color: crimson">sub</span> Subscribe to content</h3>
-        <ul>
-        <li>According to some filter, eg. by a certain user, posted to a certain group.</li>
-        <li>Undo a subscription.</li>
-        </ul>
-        <h3><span style="background-color: lightgreen">pub</span> Publish content</h3>
-        <ul>
-        <li>Including text, photo, video, audio.</li>
-        <li>Including metadata and relations to other things, ie. audience/to, tags, reply-to, likes.</li>
-        <li>Update published content.</li>
-        <li>Delete published content.</li>
-        </ul>
-        <h3><span style="background-color: DarkOrchid">notif</span> Notifications</h3>
-        <ul>
-        <li>User is somehow alerted when content is created that explicitly targets them (ie. as recipient or subject).  </li>
-        </ul>
-        <h3><span style="background-color: dodgerblue">read</span> Read content</h3>
-        <ul>
-        <li>According to permissions.</li>
-        <li>Discovery of content according to criteria:
-        <ul>
-        <li>type (text, photo..);</li>
-        <li>associated with group;</li>
-        <li>created by a particular user;</li>
-        <li>by the content's target (replies/likes of a particular post).</li>
-        </ul></li>
-        </ul>
+        <section id="swwg-api-requirements-process" rel="schema:hasPart">
+          <h4>Process</h4>
+          <div>
 
-        <table id="swwg-user-stories" class="leftie">
-          <thead><tr><td colspan="3"><p><strong>Table [swwg-user-stories]</strong>: The top eight Social Web Working Group user stories</p></td></tr></thead>
-          <tbody>
-            <tr>
-              <th>Story name</th>
-              <th>Details</th>
-              <th>Labels</th>
-            </tr>
-            <tr>
-              <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#SWAT0">Social Web Acid Test</a></td>
-              <td>
-                <ol>                  
-                  <li>user A takes a photo of B from their phone and posts it</li>
-                  <li>user A explicitly tags the photo with B</li>
-                  <li>B gets notified that they are in a photo</li>
-                  <li>C who follows A gets the photo</li>
-                  <li>C makes a comment on the photo</li>
-                  <li>A and B get notified of the comment</li>
-                </ol>
-              </td>
-              <td>
+            <ol>
+              <li>Read each user story and straightforwardly list required functionality.</li>
+              <li>Cluster related functionality, find overlap between stories.</li>
+              <li>Label the clusters.</li>
+              <li>Organise labels into shortlist of requirements.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section id="swwg-api-requirements-results">
+          <h4>Results</h4>
+          <div>
+            <p>The simplified story requirements and their respective labels are listed in <a href="#swwg-user-stories">table [swwg-user-stories]</a>. The labelled requirements, with descriptions derived from the requirements of the combined user stories, are as follows:</p>
+            <ul id="swwg-api-requirements-list">
+              <li>
+                <p><strong>Subscribe to content</strong> <span style="background-color: crimson">sub</span></p>
                 <ul>
-                  <li>Publishing a photo. <span style="background-color: lightgreen">pub</span></li>
-                  <li>Push notifications. <span style="background-color: DarkOrchid">notif</span></li>
-                  <li>Subscription to a user. <span style="background-color: crimson">sub</span></li>
-                  <li>Commenting on / replying to a post. <span style="background-color: lightgreen">pub</span></li>
+                  <li>According to some filter, eg. by a certain user, posted to a certain group.</li>
+                  <li>Undo a subscription.</li>
                 </ul>
-              </td>
-            </tr>
-            <tr>
-              <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#User_posts_a_note">User posts a note</a></td>
-              <td>
-                <ol>
-                  Eric writes a short note to be shared with his followers.
-                  After posting the note, he notices a spelling error. He edits the note and re-posts it.
-                  Later, Eric decides that the information in the note is incorrect. He deletes the note.
-                </ol>
-              </td>
-              <td>
+              </li>
+              <li>
+                <p><strong>Publish content</strong> <span style="background-color: lightgreen">pub</span></p>
                 <ul>
-                  <li>Publishing text content. <span style="background-color: lightgreen">pub</span></li>
-                  <li>Updating published text. <span style="background-color: lightgreen">pub</span></li>
-                  <li>Deleting published text. <span style="background-color: lightgreen">pub</span></li>
+                  <li>Including text, photo, video, audio.</li>
+                  <li>Including metadata and relations to other things, ie. audience/to, tags, reply-to, likes.</li>
+                  <li>Update published content.</li>
+                  <li>Delete published content.</li>
                 </ul>
-              </td>
-            </tr>
-            <tr>
-              <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#Reading_a_user.27s_recent_posts">Reading a user's recent posts</a></td>
-              <td>
-                <ol>
-                  Iris finds a comment by Sam on one of her photos funny. She'd like to read more posts by Sam.
-                  Iris reads the latest notes by Sam. She also reviews his latest photos.
-                </ol>
-              </td>
-              <td>
+              </li>
+              <li>
+                <p><strong>Notifications</strong> <span style="background-color: DarkOrchid">notif</span></p>
                 <ul>
-                  <li>Reading comments / replies. <span style="background-color: dodgerblue">read</span></li>
-                  <li>Reading posts from a particular user. <span style="background-color: dodgerblue">read</span></li>
-                  <li>Viewing photos from a particular user. <span style="background-color: dodgerblue">read</span></li>
+                  <li>User is somehow alerted when content is created that explicitly targets them (ie. as recipient or subject).  </li>
                 </ul>
-              </td>
-            </tr>
-            <tr>
-              <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#Following_a_person">Following a person</a></td>
-              <td>
-                <ol>    
-                  Delano meets Beth at a company meeting. They are both user interface designers. He finds her ideas interesting.
-                  Delano follows Beth on their company social network.
-                  Beth posts a photo from a whiteboarding session at a company retreat.
-                  Delano sees the photo in his inbox stream.
-                  Ted, Delano's coworker, wants to find new people to follow. He looks at the list of people that Delano follows. He finds Beth in the list, reads her stream, enjoys it, and decides to follow her, too.
-                  Beth posts frequently. Delano is having a hard time reading his inbox stream because Beth's activities drown out everyone else's. He stops following Beth.
-                </ol>
-              </td>
-              <td>
+              </li>
+              <li>
+                <p><strong>Read content</strong> <span style="background-color: dodgerblue">read</span></p>
                 <ul>
-                  <li>Subscription to a user. <span style="background-color: crimson">sub</span></li>
-                  <li>Publishing a photo. <span style="background-color: lightgreen">pub</span></li>
-                  <li>See a user's subscriptions. <span style="background-color: crimson">sub</span></li>
-                  <li>Read posts from a particular user. <span style="background-color: dodgerblue">read</span></li>
-                  <li>Unsubscribe from a user. <span style="background-color: crimson">sub</span></li>
+                  <li>According to permissions.</li>
+                  <li>Discovery of content according to criteria:
+                  <ul>
+                  <li>type (text, photo..);</li>
+                  <li>associated with group;</li>
+                  <li>created by a particular user;</li>
+                  <li>by the content's target (replies/likes of a particular post).</li>
+                  </ul></li>
                 </ul>
-              </td>
-            </tr>
-            <tr>
-              <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#Read_Social_Stream">Read social stream</a></td>
-              <td>
-                <ol>    
-                  Jake is bored at work. He checks his social inbox stream to see what his friends, family, and coworkers are up to.
-                  Jake sees in his social stream a note by Tammy about her new apartment. Tammy is his friend.
-                  Jake sees in his social stream a photo by Edith from her concert last night. Jake follows Edith but Edith doesn't know Jake. Edith has thousands of followers.
-                  Jake sees in his social stream a video from Damon. Damon and Jake are both in the "Boxing Fans" group. Damon posted the video to the group.
-                  Jake sees in his social stream a sound file from Carol. Carol is Jake's wife. The sound file is a reminder to stop for groceries after work. Carol posted the sound file only for Jake.
-                  Jake sees in his social stream that his friend Tammy has added a new friend, Denise. Jake remembers Denise from high school. Jake requests to add Denise as a friend, too.
-                </ol>
-              </td>
-              <td>
-                <ul>
-                  <li>Subscribe to a user (one way). <span style="background-color: crimson">sub</span></li>
-                  <li>Join a group ~= subscribe to group content. <span style="background-color: crimson">sub</span></li>
-                  <li>Publish a video. <span style="background-color: lightgreen">pub</span></li>
-                  <li>Publish audio. <span style="background-color: lightgreen">pub</span></li>
-                  <li>Private sharing. <span style="background-color: dodgerblue">read</span></li>
-                  <li>Publish subscriptions. <span style="background-color: crimson">sub</span></li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#Integration_:_Adding_recommendations_to_bespoke_software">Adding recommendations</a></td>
-              <td>
-                <ol>
-                  James maintains an application for managing architectural designs
-                  Maggie, a senior architect would like to recommend many of the better designs
-                  James uses an existing liking service which allows him to post any recommendations, to provide this
-                  This service also allows James to present existing likes for the design in question
-                  Maggie gets to like specific designs, and her followers see these as do viewers of these designs
-                  James achieves this with a simple inclusion on the associated web page, but could have chosen a more detailed integration if greater control was needed over the user interface
-                </ol>
-              </td>
-              <td>
-                <ul>
-                  <li>Liking / recommending a post. <span style="background-color: lightgreen">pub</span></li>
-                  <li>Subscribe to a user. <span style="background-color: crimson">sub</span></li>
-                  <li>View likes of a post. <span style="background-color: dodgerblue">read</span></li>
-                  <li>Posting from one interface to another system (scope?)</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#Integration_:_Adding_comments_to_bespoke_software">Adding comments</a></td>
-              <td>
-                <ol>
-                  Maria, an IT Architect, has been tasked with encouraging better collaboration on the development of her companies Industrial Processes
-                  As these processes are tightly controlled (though generally visible) an associated discussion and evangelisation capability is required
-                  Maria integrates with an existing comment capability to store and retrieve comments rather than redeveloping
-                  May-Ling sees the comment area with the Processes and suggests changes, as she herself does not have rights to update
-                  The process owner gets a notification that someone has commented on this Process
-                  Followers of both the Process owner and May-Ling will see this comment event
-                  Maria achieves this with a simple inclusion on the associated web page, but could have chosen a more detailed integration if greater control was needed over the user interface
-                </ol>
-              </td>
-              <td>
-                <ul>
-                  <li>Reply to posts. <span style="background-color: lightgreen">pub</span></li>
-                  <li>Notifications. <span style="background-color: DarkOrchid">notif</span></li>
-                  <li>Subscribe to a user. <span style="background-color: crimson">sub</span></li>
-                  <li>Posting from one interface to another system (scope?)</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#Direct_Messaging">Direct messaging</a></td>
-              <td>
-                <o
-                </ol>
-              </td>
-              <td>
-                <ul>
-                  <li>Publishing text content. <span style="background-color: lightgreen">pub</span></li>
-                  <li>Private sharing; specifying audience. <span style="background-color: dodgerblue">read</span></li>
-                  <li>Notifications. <span style="background-color: DarkOrchid">notif</span></li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+              </li>
+            </ul>
+            <table id="swwg-user-stories" class="leftie">
+              <thead><tr><td colspan="3"><p><strong>Table [swwg-user-stories]</strong>: The top eight Social Web Working Group user stories</p></td></tr></thead>
+              <tfoot>
+                <tr><td colspan="3">The first two columns are the work of members of the Social Web Working Group (see wiki history for attribution [<a href="#rdf-swwg-user-stories">swwg-user-stories</a>]) and the third column is my own work.</td></tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <th width="15%">Story name</th>
+                  <th width="40%">Details</th>
+                  <th width="45%">Labels</th>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#SWAT0">Social Web Acid Test (SWAT0)</a></td>
+                  <td>
+                    <ol>                  
+                      <li>user A takes a photo of B from their phone and posts it</li>
+                      <li>user A explicitly tags the photo with B</li>
+                      <li>B gets notified that they are in a photo</li>
+                      <li>C who follows A gets the photo</li>
+                      <li>C makes a comment on the photo</li>
+                      <li>A and B get notified of the comment</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Publishing a photo. <span style="background-color: lightgreen">pub</span></li>
+                      <li>Push notifications. <span style="background-color: DarkOrchid">notif</span></li>
+                      <li>Subscription to a user. <span style="background-color: crimson">sub</span></li>
+                      <li>Commenting on / replying to a post. <span style="background-color: lightgreen">pub</span></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#User_posts_a_note">User posts a note</a></td>
+                  <td>
+                    <ol>
+                      <li>Eric writes a short note to be shared with his followers.</li>
+                      <li>After posting the note, he notices a spelling error. He edits the note and re-posts it.</li>
+                      <li>Later, Eric decides that the information in the note is incorrect. He deletes the note.</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Publishing text content. <span style="background-color: lightgreen">pub</span></li>
+                      <li>Updating published text. <span style="background-color: lightgreen">pub</span></li>
+                      <li>Deleting published text. <span style="background-color: lightgreen">pub</span></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#Reading_a_user.27s_recent_posts">Reading a user's recent posts</a></td>
+                  <td>
+                    <ol>
+                      <li>Iris finds a comment by Sam on one of her photos funny. She'd like to read more posts by Sam.</li>
+                      <li>Iris reads the latest notes by Sam. She also reviews his latest photos.</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Reading comments / replies. <span style="background-color: dodgerblue">read</span></li>
+                      <li>Reading posts from a particular user. <span style="background-color: dodgerblue">read</span></li>
+                      <li>Viewing photos from a particular user. <span style="background-color: dodgerblue">read</span></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#Following_a_person">Following a person</a></td>
+                  <td>
+                    <ol>    
+                      <li>Delano meets Beth at a company meeting. They are both user interface designers. He finds her ideas interesting.</li>
+                      <li>Delano follows Beth on their company social network.</li>
+                      <li>Beth posts a photo from a whiteboarding session at a company retreat.</li>
+                      <li>Delano sees the photo in his inbox stream.</li>
+                      <li>Ted, Delano's coworker, wants to find new people to follow. He looks at the list of people that Delano follows. He finds Beth in the list, reads her stream, enjoys it, and decides to follow her, too.</li>
+                      <li>Beth posts frequently. Delano is having a hard time reading his inbox stream because Beth's activities drown out everyone else's. He stops following Beth.</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Subscription to a user. <span style="background-color: crimson">sub</span></li>
+                      <li>Publishing a photo. <span style="background-color: lightgreen">pub</span></li>
+                      <li>See a user's subscriptions. <span style="background-color: crimson">sub</span></li>
+                      <li>Read posts from a particular user. <span style="background-color: dodgerblue">read</span></li>
+                      <li>Unsubscribe from a user. <span style="background-color: crimson">sub</span></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#Read_Social_Stream">Read social stream</a></td>
+                  <td>
+                    <ol>    
+                      <li>Jake is bored at work. He checks his social inbox stream to see what his friends, family, and coworkers are up to.</li>
+                      <li>Jake sees in his social stream a note by Tammy about her new apartment. Tammy is his friend.</li>
+                      <li>Jake sees in his social stream a photo by Edith from her concert last night. Jake follows Edith but Edith doesn't know Jake. Edith has thousands of followers.</li>
+                      <li>Jake sees in his social stream a video from Damon. Damon and Jake are both in the "Boxing Fans" group. Damon posted the video to the group.</li>
+                      <li>Jake sees in his social stream a sound file from Carol. Carol is Jake's wife. The sound file is a reminder to stop for groceries after work. Carol posted the sound file only for Jake.</li>
+                      <li>Jake sees in his social stream that his friend Tammy has added a new friend, Denise. Jake remembers Denise from high school. <li>Jake requests to add Denise as a friend, too.</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Subscribe to a user (one way). <span style="background-color: crimson">sub</span></li>
+                      <li>Join a group ~= subscribe to group content. <span style="background-color: crimson">sub</span></li>
+                      <li>Publish a video. <span style="background-color: lightgreen">pub</span></li>
+                      <li>Publish audio. <span style="background-color: lightgreen">pub</span></li>
+                      <li>Private sharing. <span style="background-color: dodgerblue">read</span></li>
+                      <li>Publish subscriptions. <span style="background-color: crimson">sub</span></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#Integration_:_Adding_recommendations_to_bespoke_software">Adding recommendations</a></td>
+                  <td>
+                    <ol>
+                      <li>James maintains an application for managing architectural designs</li>
+                      <li>Maggie, a senior architect would like to recommend many of the better designs</li>
+                      <li>James uses an existing liking service which allows him to post any recommendations, to provide this</li>
+                      <li>This service also allows James to present existing likes for the design in question</li>
+                      <li>Maggie gets to like specific designs, and her followers see these as do viewers of these designs</li>
+                      <li>James achieves this with a simple inclusion on the associated web page, but could have chosen a more detailed integration if greater control was needed over the user interface</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Liking / recommending a post. <span style="background-color: lightgreen">pub</span></li>
+                      <li>Subscribe to a user. <span style="background-color: crimson">sub</span></li>
+                      <li>View likes of a post. <span style="background-color: dodgerblue">read</span></li>
+                      <li>Posting from one interface to another system (scope?)</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#Integration_:_Adding_comments_to_bespoke_software">Adding comments</a></td>
+                  <td>
+                    <ol>
+                      <li>Maria, an IT Architect, has been tasked with encouraging better collaboration on the development of her companies Industrial Processes</li>
+                      <li>As these processes are tightly controlled (though generally visible) an associated discussion and evangelisation capability is required</li>
+                      <li>Maria integrates with an existing comment capability to store and retrieve comments rather than redeveloping</li>
+                      <li>May-Ling sees the comment area with the Processes and suggests changes, as she herself does not have rights to update</li>
+                      <li>The process owner gets a notification that someone has commented on this Process</li>
+                      <li>Followers of both the Process owner and May-Ling will see this comment event</li>
+                      <li>Maria achieves this with a simple inclusion on the associated web page, but could have chosen a more detailed integration if greater control was needed over the user interface</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Reply to posts. <span style="background-color: lightgreen">pub</span></li>
+                      <li>Notifications. <span style="background-color: DarkOrchid">notif</span></li>
+                      <li>Subscribe to a user. <span style="background-color: crimson">sub</span></li>
+                      <li>Posting from one interface to another system (scope?)</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#Direct_Messaging">Direct messaging</a></td>
+                  <td>
+                    <ol>
+                      <li>Kyle wants to tell Lisa something privately.</li>
+                      <li>Kyle sends her a message that no one else can view.</li>
+                      <li>Lisa is notified she has a message.</li>
+                      <li>Lisa reads the message and responds privately.</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Publishing text content. <span style="background-color: lightgreen">pub</span></li>
+                      <li>Private sharing; specifying audience. <span style="background-color: dodgerblue">read</span></li>
+                      <li>Notifications. <span style="background-color: DarkOrchid">notif</span></li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+                       
       </div>
     </section>
 
@@ -368,7 +397,7 @@
                     <p>[<a href="#vk14">11</a>] suggests that the first feature of a <abbr title="Personal Web Observatory">PWO</abbr> should be to allow individuals to consolidate data collected by third parties into one repository under their control. Rather than attempting to aggregate - or even find - <em>all</em> data about myself spread across the Web, I chose a handful of services which have particular value to me, that I have been using to actively log particular things. I exported data from <a href="https://last.fm">Lastfm</a> (over ten years of music listening history), <a href="https://twitter.com">Twitter</a> (7 years of short notes), <a href="https://runkeeper.com">Runkeeper</a> (1 year of runs, walks and hikes with GPS traces), and <a href="https://github.com">Github</a> and <a href="https://bitbucket.com">Bitbucket</a> (5 years of code commit history), and Firefox bookmarks (2 years). I also exported data from 750words.com (almost 7 years of intermittent use) but did not import this into my store due to private content and no reliable access control built in.</p>
                     
                     <p>On top of these data dumps I created the following templates:</p>
-                    <table id="posttypes" style="font-size: 0.8em;">
+                    <table id="posttypes" class="leftie">
                         <thead>
                             <tr><th>Type of data</th><th>Attributes displayed <sup><a href="#post-attrs">*</a></sup></th></tr>
                         </thead>
