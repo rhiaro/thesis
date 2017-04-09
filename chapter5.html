@@ -304,11 +304,129 @@
         <section id="swp-overview" rel="schema:hasPart">
           <h4>Overview</h4>
           <div>
+
+            <p>People and the content they create are the core components of the social web; they make up the social graph. This document describes a standard way in which people can:</p>
+
+            <ul>
+              <li>connect with other people and subscribe to their content;</li>
+              <li>create, update and delete social content;</li>
+              <li>interact with other peoples' content;</li>
+              <li>be notified when other people interact with their content;</li>
+            </ul>
+
+            <p>regardless of <em>what that content</em> is or <em>where it is stored</em>.</p>
+
+            <p>These components are core building blocks for interoperable social systems.</p>
+
+            <p>Each of these components can be implemented independently as needed, or all together in one system, as well as extended to meet domain-specific requirements. Users can store their social data across any number of compliant servers, and use compliant clients hosted elsewhere to interact with their own content and the content of others. Put simply, this document tells you, according the recommendations of the Social Web Working Group:</p>
+
+            <ul>
+              <li>how to expose/consume social content (reading).</li>
+              <li>what to post, and where to, in order to create, update or delete content (publishing).</li>
+              <li>how to ask for notifications about content (subscribing).</li>
+              <li>how to deliver notifications about content or users (delivery).</li>
+              <!-- <li>how to expose profiles and <a href="#relationships">relationships</a>.</li> -->
+            </ul>
+
+            <p>The <a href="#swp-reqs">following table</a> shows the high level requirements according to the <a href="https://www.w3.org/2013/socialweb/social-wg-charter.html">Social Web Working Group charter</a> and the <a href="https://www.w3.org/wiki/Socialwg/Social_API/Requirements">Social API Requirements</a>, and how the specifications of the Working Group overlap with respect to each.</p>
+            <table id="swp-reqs">
+              <thead><tr><td colspan="10"><p><strong>Table [swp-reqs]:</strong> The API requirements and which specs they are met by.</p></td></tr></thead>
+              <tbody>
+                <tr>
+                  <th></th>
+                  <th><a href="#content-representation">Vocabulary</a></th>
+                  <th><a href="#content-representation">Syntax</a></th>
+                  <th><a href="#reading">Read</a></th>
+                  <th><a href="#creating-content">Create</a></th>
+                  <th><a href="#updating">Update</a></th>
+                  <th><a href="#deleting">Delete</a></th>
+                  <th><a href="#subscribing">Subscription</a></th>
+                  <th><a href="#delivery">Delivery</a></th>
+                  <!-- <th><a href="#profiles">Profiles</a></th> -->
+                </tr>
+                <tr>
+                  <td style="text-align:left;">ActivityPub</td>
+                  <td></td>
+                  <td></td>
+                  <td>X</td>
+                  <td>X</td>
+                  <td>X</td>
+                  <td>X</td>
+                  <td>X</td>
+                  <td>X</td>
+                  <!-- <td>X</td> -->
+                </tr>
+                <tr>
+                  <td style="text-align:left;">ActivityStreams 2.0</td>
+                  <td>X</td>
+                  <td>X</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <!-- <td></td> -->
+                </tr>
+                <tr>
+                  <td style="text-align:left;">Linked Data Notifications</td>
+                  <td></td>
+                  <td></td>
+                  <td>X</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>X</td>
+                  <!-- <td></td> -->
+                </tr>
+                <tr>
+                  <td style="text-align:left;">Micropub</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>X</td>
+                  <td>X</td>
+                  <td>X</td>
+                  <td></td>
+                  <td></td>
+                  <!-- <td></td> -->
+                </tr>
+                <tr>
+                  <td style="text-align:left;">WebSub<br></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>X</td>
+                  <td></td>
+                  <!-- <td></td> -->
+                </tr>
+                <tr>
+                  <td style="text-align:left;">Webmention</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>X</td>
+                  <!-- <td></td> -->
+                </tr>
+              </tbody>
+            </table>
+
+            <p>The specifications may be implemented alongside each other in various configurations. <a href="#swp-specpaths">This figure</a> shows a high level view of how different parties in a social system may be connected together. The arrows show data flowing through the system, and the labels of the arrows are the protocols by which data is enabled to flow.</p>
             
             <figure id="swp-specpaths" rel="schema:hasPart">
               <img src="figs/swp.png" />
               <figcaption><p><strong>Fig [specpaths]:</strong> How the Social Web Protocols specifications connect different (high level) parties together.</p></figcaption>
             </figure>
+
+            <p>Some of the specifications overlap in functionality, or complement each other explicitly. <a href="#swp-specrels">This table</a> shows how.</p>
 
             <table id="swp-specrels" rel="schema:hasPart">
               <thead><tr><td colspan="7"><p><strong>Table [specrels]:</strong> How each spec relates to the others.</p></td></tr></thead>
