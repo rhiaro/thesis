@@ -298,7 +298,42 @@
     <section id="social-web-protocols" rel="schema:hasPart">
       <h3>Social Web Protocols</h3>
       <div>
-        <p>How the standards of the SWWG can fit together into an actual system: <a href="https://w3.org/TR/social-web-protocols">SWP</a></p>
+        <p class="todo">How the standards of the SWWG can fit together into an actual system: <a href="https://w3.org/TR/social-web-protocols">SWP</a></p>
+        <p>This section introduces the <em>Social Web Protocols</em>, a description of the specifications produced by the Social Web Working Group as arranged by the previously derived API requirements. Some content in this section is published as a W3C Working Group Note [<a href="#ref-swp">swp</a>]. Systems can be built with these protocols in great variety. Incorporating the standards produced by the Social Web Working Group does not automatically mean a system is empowering to its users as the protocols provide only a skeleton, leaving much open for specialisation by developers. Conformance to these protocols does however imply that users are able to move their data between systems; that clients and servers are somewhat decoupled so users have more flexibility with regards to tools; and that users are not compelled to follow their network or locked into the system where their friends are.</p>
+
+        <section id="swp-read" rel="schema:hasPart">
+          <h4>Reading</h4>
+          <div>
+            <p>An individual's self presentation online can be partially composed of content they produce and interact with. The <em>read</em> label covers how these are exposed for consumption by others. This may include permissions or access control, which could require the reader to identify themselves before content is made available. Different types of content and interactions should be discoverable, perhaps according to criteria like the type of content, a group or individual with which it is associated, or through its association with other content (eg. through replies).</p>
+
+            <p><strong>ActivityStreams 2.0</strong> (AS2) models content and interactions as objects and activities. AS2 includes a <em>vocabulary</em> for modelling different types of objects and activities as well as various relations they might have with other objects (including user profiles) and activities. The AS2 <em>syntax</em> describes a consistent structure for objects and activities including sets of objects and activities as collections. Collections can be explicitly created and updated by a user (like adding photos to an album) or generated automatically as a result of other user actions or the properties of certain objects/activities (eg. a list of followers of a user). AS2 does not specify how objects, activities, or collections come into existence, only what they look like once they do.</p>
+
+            <p>AS2 content must be served with the Content-Type <code>application/activity+json</code> or, if necessary for JSON-LD extended implementations, <code>application/ld+json; profile="http://www.w3.org/ns/activitystreams"</code>. Content must be described using the AS2 vocabulary, and may use other vocabularies in addition or instead, per the extension mechanism.</p>
+
+            <p>AS2 builds upon ActivityStreams 1.0 [<a href="#ref-as1">as1</a>] and is not fully backwards compatible; <a href="http://www.w3.org/TR/activitystreams-core#activitystreams-1.0">the relationship between AS1 and AS2 is documented in the AS2 spec</a>.</p>
+
+            <p>Because AS2 is a data model, it does not recommend how data should be displayed. Its utility is in enabling a consistent representation of social objects and activities to be passed between potentially disconnected systems (eg. from Alice's social network to Bob's). The systems consuming the data are responsible for rendering it appropriately. This means that system designers can provide their users with options for customising the presentation data that may constitute their profiles.</p>
+
+            <p>AS2 specifies a finite set of object and activity types and properties. These are a baseline set of common social interactions which can be extended upon by systems which need additional terms or more specific variations. The extension mechanism is based on linked data, via JSON-LD. Developers are expected to publish documentation and an RDF representation of their terms at a domain under their control, and refer to terms by URI in the normal manner. Further, the Social Web Working Group describes a mechanism by which well-used extensions are included with the AS2 namespace document by means of a W3C Community Group vetting process. The advantage of this is...</p>
+
+          </div>
+        </section>
+
+        <section id="swp-publish" rel="schema:hasPart">
+          <h4>Publishing</h4>
+          <div></div>
+        </section>
+
+        <section id="swp-subscription" rel="schema:hasPart">
+          <h4>Subscribing</h4>
+          <div></div>
+        </section>
+
+        <section id="swp-delivery" rel="schema:hasPart">
+          <h4>Delivering</h4>
+          <div></div>
+        </section>
+
       </div>
     </section>
   </div>
