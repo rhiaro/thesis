@@ -422,8 +422,8 @@
             <p>The specifications may be implemented alongside each other in various configurations. <a href="#swp-specpaths">This figure</a> shows a high level view of how different parties in a social system may be connected together. The arrows show data flowing through the system, and the labels of the arrows are the protocols by which data is enabled to flow.</p>
             
             <figure id="swp-specpaths" rel="schema:hasPart">
-              <img src="figs/swp.png" />
-              <figcaption><p><strong>Fig [specpaths]:</strong> How the Social Web Protocols specifications connect different (high level) parties together.</p></figcaption>
+              <img src="figs/swp.png" id="swp-specpaths-img" />
+              <figcaption><p><strong>Fig [specpaths]:</strong> How the Social Web Protocols specifications connect different (high level) parties together (<span>all possibilities, click to show different configurations</span>).</p></figcaption>
             </figure>
 
             <p>Some of the specifications overlap in functionality, or complement each other explicitly. <a href="#swp-specrels">This table</a> shows how.</p>
@@ -838,6 +838,27 @@
   <script>
     window.onload = function(){
       init(5);
+
+      // SWP diagram cycle
+      function rotateImages(i, img, imgs, capt, capts){
+        img.src = "figs/"+imgs[i]+".png";
+        capt.innerText = capts[i];
+      }
+      var i = 0;
+      var imgs = ["swp-ap", "swp-sloph", "swp-indie", "swp-indieplus", "swp-readonly", "swp-wm", "swp-weird", "swp"];
+      var capts = ["Typical ActivityPub", "ActivityPub without subscriptions", "Typical IndieWeb (Micropub plus Webmention)", "Advanced IndieWeb (Mp, Wm and WebSub)", "Read-only, no publishing clients", "Webmention alone", "ActivityPub to create, WebSub to distribute", "all possibilities"];
+      var img = document.getElementById("swp-specpaths-img");
+      var capt = document.querySelector("#swp-specpaths figcaption p span");
+      console.log(capt);
+      img.addEventListener("click", function(e){
+        if(i >= imgs.length-1){
+          i = 0;
+        }else{
+          i = i + 1;
+        }
+        rotateImages(i, img, imgs, capt, capts);
+      });
+      
     }
   </script>
   </body>
