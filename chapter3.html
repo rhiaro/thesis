@@ -5,8 +5,7 @@
         <title>Social Web in the Wild</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link href="https://dokie.li/media/css/do.css" media="screen" rel="stylesheet" />
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="all" rel="stylesheet" />
-        <link href="https://dokie.li/media/css/editor.css" media="all" rel="stylesheet" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet" />
         <script src="https://dokie.li/scripts/simplerdf.js"></script>
         <script src="https://dokie.li/scripts/medium-editor.min.js"></script>
         <script src="https://dokie.li/scripts/medium-editor-tables.min.js"></script>
@@ -17,7 +16,10 @@
         <link href="thesis.css" rel="stylesheet" />
         <link href="https://rhiaro.co.uk/incoming/" rel="http://www.w3.org/ns/ldp#inbox" />
         <link href="https://linkedresearch.org/annotation/rhiaro/thesis/" rel="http://www.w3.org/ns/oa#annotationService" />
-        
+<style>
+/*TODO: Move this to external stylesheet*/
+#studies-overview tbody th:first-child { width:200px; }
+</style>
     </head>
 
     <body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ dctypes: http://purl.org/dc/dcmitype/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# qb: http://purl.org/linked-data/cube# schema: https://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ oa: http://www.w3.org/ns/oa# as: http://www.w3.org/ns/activitystreams# solid: http://www.w3.org/ns/solid/terms#" typeof="schema:CreativeWork sioc:Post prov:Entity">
@@ -72,16 +74,9 @@
 
         <table id="studies-overview" class="leftie">
           <thead><tr><td colspan="6"><strong>Overview of studies</strong></td></tr></thead>
-          <tfoot>
-            <tr><td colspan="6"><strong>Perspectives:</strong> A - Active users; P - Passive users; S - System developers; T - Third party developers; O - Outside bodies</td></tr>
-            <tr><th rowspan="4">Publications</th><td colspan="5">WWW 2014: </td></tr>
-            <tr><td colspan="5">WebSci 2015: </td></tr>
-            <tr><td colspan="5">CHI 2016: </td></tr>
-            <tr><td colspan="5">AoIR 2017: </td></tr>
-          </tfoot>
           <tbody>
             <tr>
-              <th width="200">Study</th>
+              <th>Study</th>
               <th>Type</th>
               <th>Participants</th>
               <th>Publication</th>
@@ -129,8 +124,14 @@
               <td>self-expression, persistence/ephemerality,  networks &amp; audience, authority, consent</td>
             </tr>
           </tbody>
+          <tfoot>
+            <tr><td colspan="6"><strong>Perspectives:</strong> A - Active users; P - Passive users; S - System developers; T - Third party developers; O - Outside bodies</td></tr>
+            <tr><th rowspan="4">Publications</th><td colspan="5">WWW 2014: </td></tr>
+            <tr><td colspan="5">WebSci 2015: </td></tr>
+            <tr><td colspan="5">CHI 2016: </td></tr>
+            <tr><td colspan="5">AoIR 2017: </td></tr>
+          </tfoot>
         </table>
-
       </div>
     </section>
   </div>
@@ -236,14 +237,6 @@
               <thead>
                 <tr><td colspan="8"><strong>Profiles study subjects:</strong> social systems analysed to generate the taxonomy</td></tr>
               </thead>
-              <tfoot>
-                <tr>
-                  <td colspan="8"><strong>Categories from Kaplan &amp; Haenlein:</strong> B - Blog (including Microblog); SNS - Social Networking Site; CP - Collaborative Project; CC - Content Communities</td>
-                </tr>
-                <tr>
-                  <td colspan="8"><strong>Additional:</strong> QS - Quantified Self; T - Transactional</td>
-                </tr>
-              </tfoot>
               <tbody>
                 <tr>
                   <th>System</th>
@@ -391,7 +384,7 @@
                   <td>website</td>
                   <td></td>
                   <td>developers</td>
-                  <td>Q&A (tech)</td>
+                  <td>Q&amp;A (tech)</td>
                   <td>advertising</td>
                   <td>CC</td>
                 </tr>
@@ -436,6 +429,14 @@
                   <td>CP</td>
                 </tr>
               </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="8"><strong>Categories from Kaplan &amp; Haenlein:</strong> B - Blog (including Microblog); SNS - Social Networking Site; CP - Collaborative Project; CC - Content Communities</td>
+                </tr>
+                <tr>
+                  <td colspan="8"><strong>Additional:</strong> QS - Quantified Self; T - Transactional</td>
+                </tr>
+              </tfoot>
             </table>
           </div>
         </section>
@@ -493,7 +494,7 @@
 
 **YouTube**: channel art, display picture, content (videos), liked videos, created playlists, curated connections, featured content. Links to: attributes (description, links, country); stats (subs, views, joined); discussion (comments on your content).
 
-**CouchSurfing**: Attributes (name, age, location, occupation, education, hometown, languages. member since, photo, availability), free text (about me, interests, music movies & books, one amazing thing done, teach learn share, what I can share, countries visited, countries lived in), % complete profile (pushes to connect to fb), verified; links to My Home, Photos, References, Friends.
+**CouchSurfing**: Attributes (name, age, location, occupation, education, hometown, languages. member since, photo, availability), free text (about me, interests, music movies &amp; books, one amazing thing done, teach learn share, what I can share, countries visited, countries lived in), % complete profile (pushes to connect to fb), verified; links to My Home, Photos, References, Friends.
 
 **Facebook**: Attributes (literally everything you can think of, free text and enum and select from content created by others eg. pages). Content (status updates, notes, photos, videos, other media). Stats (friends, following, likes, groups). Activities (interactions with other people and content, stuff cross posted from linked apps and sites).
 
@@ -501,7 +502,7 @@
 
 **Okcupid**: Attributes (photo, age, location, gender, Self-summary, What I'm doing with my life, I'm really good at, Favorite books, movies, shows, music and food; The six things I could never do without; The first thing people usually notice about me; I spend a lot of time thinking about; On a typical Friday night I am; You should message me if; I'm looking for [Men/Women/Everyone], ages between, near me?, must be single?, for [new friends / long-term dating / short-term dating / casual sex]; orientation; ethnicity; status; relationship type; height; body type; diet; smoking; drinking; drugs; religion; sign; education; offspring; pets; languages spoken). Stats (personality traits compared to average; % match with person reading profile). Content (photos, questions and answers).
 
-**StackOverflow**: Attributes (name, role, company, about me, location, links and social media); stats (answers, questions, people reached, member for, profile views, last seen, visits, badges, accept rate, vote counts); content (posts q&q, tags); links to activity, reputation, everything done.
+**StackOverflow**: Attributes (name, role, company, about me, location, links and social media); stats (answers, questions, people reached, member for, profile views, last seen, visits, badges, accept rate, vote counts); content (posts q&amp;q, tags); links to activity, reputation, everything done.
 
 **LinkedIn**: Attributes (name, photo, location, hometown, experience, education, summary, languages, voluntary experience, organisations, honors and awards, test scores, courses, patents, projects, publications, certifications, interests, personal details, contact information, skills, background photo); Content (posts, media) (not on profile: likes, status updates); Stats (groups, following, rank, views); from others (endorsements).
 
@@ -828,7 +829,7 @@ Can grant write access and transfer admin between users for secondary blogs.
 
 **Okcupid**: No official API, no export.
 
-**StackOverflow**: Profiles reusable across StackExchange sites. Export n/a through UI, but there are public dumps of q&a data.
+**StackOverflow**: Profiles reusable across StackExchange sites. Export n/a through UI, but there are public dumps of q&amp;a data.
 
 **LinkedIn**: Can download a full archive of all data, activity, connections, *everything*.
 
@@ -944,7 +945,7 @@ Each account must be a personal account, but Users may trade as a sole trader, c
 Users cannot register for more than one account.
 The information that Users supply in the public profile of their account must comply with PPH profile policies (http://support.peopleperhour.com/hc/en-us/articles/205218177-Profile-policies)
 
-Your profile is your “shop front” as a Seller so it is recommended that you invest the time to include as much information as you can to highlight your skills and credentials.   When creating your profile we have a few policies that Sellers are expected to adhere to.  These policies form part of our T&Cs.
+Your profile is your “shop front” as a Seller so it is recommended that you invest the time to include as much information as you can to highlight your skills and credentials.   When creating your profile we have a few policies that Sellers are expected to adhere to.  These policies form part of our T&amp;Cs.
 
  
 
@@ -1471,7 +1472,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
 
         <table id="profile-features-results-1" style="display: none;">
           <thead>
-            <tr><td colspan="13"><strong>Profiles study results:</strong> features of systems</td></tr>
+            <tr><td colspan="19"><strong>Profiles study results:</strong> features of systems</td></tr>
             <tr title="click headers to sort">
               <th>Features</th>
               <th>AirBnB</th>
@@ -2115,7 +2116,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
             <p><strong>Fig [socialmedia]:</strong> Self-reported use of social media, from <em>1=Never</em> to <em>5=Often</em> times a day.</p>
             <p>Medians: Facebook = 3, Twitter = 5, YouTube = 5, Tumblr = 3, Instagram = 2, Vine = 1</p>
           </figcaption>
-        </table>
+        </figure>
 
         <section id="lies-results-frequency" rel="schema:hasPart">
           <h4>Self-reported frequency of deception/lying</h4>
@@ -2195,8 +2196,6 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
               <thead>
                 <tr><td colspan="2"><strong>Q5 Tags:</strong> List of themes and categories resulting from analysis of Questions 5a and 5b.</td></tr>
               </thead>
-              <tfoot>
-                <tr><td colspan="2">Question 5a is <em>Do you use pseudonyms on any social media platforms? Why do you do this? Do you try to hide your real name/identity?</em> and 5b is <em>Have you created any fictional personas (eg. characters, alter-egos) to use on social media?</em></td></tr>
               <tbody>
                 <tr><th>Code</th><th>Description</th></tr>
                 <tr><td>bespoke</td><td>Several online identities kept separate.</td></tr>
@@ -2225,6 +2224,9 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
                 <tr><td>yes</td><td><q>Yes</q>, with no reason given.</td></tr>
                 <tr><td>-</td><td>Theme unclear from answer.</td></tr>
               </tbody>
+              <tfoot>
+                <tr><td colspan="2">Question 5a is <em>Do you use pseudonyms on any social media platforms? Why do you do this? Do you try to hide your real name/identity?</em> and 5b is <em>Have you created any fictional personas (eg. characters, alter-egos) to use on social media?</em></td></tr>
+              </tfoot>
             </table>
 
             <p>A total of N=286 responses were received for Q5a, which asked for information about whether participants had used pseudonyms, and why. A group (N=82, 27%) claimed not to use pseudonyms online, and a further group (N=5, 2%) gave answers which were unclear.  This left 70% of respondents claiming to have used an online pseudonym. </p>
@@ -3192,7 +3194,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
             written: </p>
 
             <blockquote><p>I could easily try out a new style knowing that I
-            wasn't committing all my archives or the future to this style. (I)</p></blockquote></q> 
+            wasn't committing all my archives or the future to this style. (I)</p></blockquote>
 
             <p>He was
             convinced these temporal visuals were <q>worth preserving</q> by his own
@@ -3392,7 +3394,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
 
     <p>Finally, interviews with <em><a href="#social-media-makers">Social media makers</a></em> delves into how individuals are maintaining online profiles without centralised services, motivated by <em>self-expression</em>, <em>persistence/ephemerality</em>, and <em>authority</em>, and constrained by the effects of their <em>networks</em> and audience <em>consent</em>. These themes reflect the importance of visual expressiveness in self-presentation and control over where data is stored and how it is maintained.</p>
 
-    <p>All of these studies demonstrate that online self-presentation is both constituted and affected by <em>who</em> sees a representation of an individual, and <em>what</em> it is they see, both of which are encompassed by the situation <em>whereby</em> it is seen (see <a href="#ccccc-hierarchy">fig [hierarchy]</a>). Next, I present the five terms which cover the possible lenses through which we must look at online profiles in order to understand them fully.</a>
+    <p>All of these studies demonstrate that online self-presentation is both constituted and affected by <em>who</em> sees a representation of an individual, and <em>what</em> it is they see, both of which are encompassed by the situation <em>whereby</em> it is seen (see <a href="#ccccc-hierarchy">fig [hierarchy]</a>). Next, I present the five terms which cover the possible lenses through which we must look at online profiles in order to understand them fully.</p>
 
     <figure id="ccccc-hierarchy">
       <img src="figs/ccccc-hierarchy.png" />
