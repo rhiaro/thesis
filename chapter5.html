@@ -455,7 +455,18 @@
               <figcaption><p><strong>Fig [specpaths]:</strong> How the Social Web Protocols specifications connect different (high level) parties together (<span>all possibilities, click to show different configurations</span>).</p></figcaption>
             </figure>
 
-            <p>Some of the specifications overlap in functionality, or complement each other explicitly. <a href="#swp-specrels">This table</a> shows how.</p>
+            <p>Some of the specifications overlap in functionality, or complement each other explicitly. This list provides detail on some key relations between different specifications, and <a href="#swp-specrels">table [specrels]</a> provides a summary.</p>
+
+            <ul>
+              <li><strong>ActivityPub and ActivityStreams 2.0</strong>: ActivityPub uses the AS2 syntax and vocabulary for the payload of all requests.</li>
+              <li><strong>ActivityPub and Linked Data Notifications</strong>: ActivityPub specialises LDN as the mechanism for delivery of notifications by requiring that payloads are AS2. <em>Inbox</em> endpoint discovery is the same. LDN receivers can understand requests from ActivityPub federated servers, but ActivityPub servers can't necessarily understand requests from generic LDN senders.</li>
+              <li><strong>ActivityStreams 2.0 and Linked Data Notifications</strong>: LDN MAY use the AS2 syntax and vocabulary for the payload of notification requests.</li>
+              <li><strong>Webmention and Linked Data Notifications</strong>: Overlapping functionality that needs to be bridged due to different content types of requests. An LDN request MAY contain the equivalent data as a Webmention request, but not necessarily vice versa.</li>
+              <li><strong>ActivityPub and Micropub</strong>: Overlapping functionality that needs to be bridged due to different vocabularies and possibly different content types of requests. Micropub specifies client-to-server interactions for content creation; ActivityPub specifies this, <em>plus</em> side-effects and server-to-server interactions.</li>
+              <li><strong>Micropub and Webmention</strong>: Are complementary but independent. Content could be created with Micropub, then Webmention discovery can be commenced on any URLs in the content.</li>
+              <li><strong>Micropub and Linked Data Notifications</strong>: Are complementary but independent. Content could be created with Micropub, then LDN discovery can be commenced on any relevant resources identified by the server.</li>
+              <li><strong>Micropub and WebSub</strong>: Are complementary but independent. Content could be created with Micropub, then passed to a WebSub <em>hub</em> for delivery to subscribers.</li>
+            </ul>
 
             <table id="swp-specrels" rel="schema:hasPart">
               <thead><tr><td colspan="7"><p><strong>Table [specrels]:</strong> How each spec relates to the others.</p></td></tr></thead>
