@@ -560,9 +560,13 @@
 
             <p>Because AS2 is a data model, it does not recommend how data should be displayed. Its utility is in enabling a consistent representation of social objects and activities to be passed between potentially disconnected systems (eg. from Alice's social network to Bob's). The systems consuming the data are responsible for rendering it appropriately. This means that system designers can provide their users with options for customising the presentation data that may constitute their profiles.</p>
 
+            <h5 id="extending-as2">Extending AS2</h5>
+
             <p>AS2 specifies a finite set of object and activity types and properties. These are a baseline set of common social interactions which can be extended upon by systems which need additional terms or more specific variations. The extension mechanism is based on linked data, via JSON-LD. Developers are expected to publish documentation and an RDF representation of their terms at a domain under their control, and refer to terms by URI in the normal manner. Further, the Social Web Working Group describes a mechanism by which well-used extensions are included with the AS2 namespace document by means of a W3C Community Group vetting process. The advantage of this is that implementations can adopt common extensions easily, without needing to include additional namespaces. It also makes extensions more discoverable for newcomers to AS2.</p>
 
             <p>The first such extension is in fact <strong>ActivityPub</strong>. ActivityPub uses ActivityStreams 2.0 for all data in all requests, and also adds additional terms to the AS2 namespace. Thus, ActivityPub requires requests have the Content-Type <code>application/ld+json; profile="https://www.w3.org/ns/activitystreams"</code>.</p>
+
+            <h5 id="content-representation-other">Other ways of representing content</h5>
 
             <p>Despite AS2 being the recommended synatax and vocabulary of the Working Group, some specifications use different or broader mechanisms. This helps to let developers pick and choose different specifications for different tasks even if they prefer not to use AS2:</p>
             <ul>
@@ -570,6 +574,34 @@
               <li><strong>Micropub</strong> clients which expect to read data (this would usually be clients for <em>updating</em> content) are expecting it as JSON in the <a href="http://microformats.org/wiki/microformats2-parsing">parsed microformats2 syntax</a>.</li>
               <li><strong>WebSub</strong> is agnostic as to the Content-Type used by publishers; hubs are expected to deliver the new content to subscribers as-is produced by the publisher, at the publisher's <code>topic</code> URL.</li>
             </ul>
+
+            <h5 id="objects-and-streams">Objects and streams</h5>
+
+            <p>Whichever syntax and vocabulary is used, there are some general recommendations for representing objects (individual entities) and streams (sets or collections of objects).</p>
+            <ul>
+              <li>All objects must have URLs in their <code>id</code> property. This URL should resolve to return the properties of an object; what is returned may depend on the requester's right to access the content, determined by authentication and/or authorisation.</li>
+              <li>Each stream must have a URL, which must resolve to return the contents of the stream (according to the requester's right to access, and could be paged). The data returned may include additional metadata about the stream (such as title, description).</li>
+              <li>Each object in a stream must contain at least its URL, which can be dereferenced to retrieve all properties of the object, and may contain other properties of the object.</li>
+              <li>One user may publish one or more streams of content. Streams may be generated automatically or manually, and might be segregated by post type, topic, audience, or any arbitrary criteria decided by the curator of the stream. A user <a href="#profiles">profile</a> MAY include links to multiple streams, which a consumer could follow to read or subscribe to.</li>
+            </ul>
+
+            <h5 id="special-streams">Special streams</h5>
+
+            <p>Streams are represented in AS2 as a <code>Collection</code> or <code>OrderedCollection</code>. ActivityPub defines some special usages; four streams that must be accessible from a user's profile, and one which is optional, via the following properties:</p>
+
+            <ul>
+              <li><code>inbox</code>: A reference to an AS2 collection comprising all the messages received by the actor.</li>
+              <li><code>outbox</code>: An AS2 collection comprising of all the messages produced by the actor.</li>
+              <li><code>following</code>: An AS2 collection of the actors that this actor is following.</li>
+              <li><code>followers</code>: An AS2 collection of the actors that follow this actor.</li>
+              <li><code>streams</code>: An optional list of supplementary AS2 collections which may be of interest. </li>
+            </ul>
+  
+            <p>ActivityPub permits arbitrary streams to be updated through specifying special behavior for the server when it receives activities with types <code>Add</code> and <code>Remove</code>. When a server receives such an activity in the <code>outbox</code>, and the <code>target</code> is a stream, it must add the <code>object</code> to the <code>target</code> (for <code>Add</code>) or remove the <code>object</code> from the <code>target</code> (for <code>Remove</code>).</p>
+
+            <p>Two kinds of special streams are <code>inbox</code> and <code>outbox</code>. When read (ie. with an HTTP <code>GET</code> request) they return ordinary streams of objects, but they also double as endpoints which can be <code>POST</code>ed to directly to add objects, for <a href="#swp-delivery">delivery of notifications</a> and <a href="#swp-publish">publishing new content</a> respectively.</p>
+
+            <p>The <code>inbox</code> is a notion shared by ActivityPub and Linked Data Notifications, however in order to be <em>read</em> by both ActivityPub <em>and</em> LDN clients, publishers must relate the stream to the objects it contains using both the <code>as:items</code> and <code>ldp:contains</code> predicates. This is an unfortunate discord, but since ActivityPub is immovably tied to AS2 and LDN is immovably tied to compatibility with existing Linked Data Platform servers, there was really no compromise to be had. Fortunately this bridge is relatively minor in terms of coding, once a developer is aware of it.</p>
 
           </div>
         </section>
