@@ -587,13 +587,14 @@
 
             <h5 id="special-streams">Special streams</h5>
 
-            <p>Streams are represented in AS2 as a <code>Collection</code> or <code>OrderedCollection</code>. ActivityPub defines some special usages; four streams that must be accessible from a user's profile, and one which is optional, via the following properties:</p>
+            <p>Streams are represented in AS2 as a <code>Collection</code> or <code>OrderedCollection</code>. ActivityPub defines some special usages; two streams that must be accessible from a user's profile, and four which are optional, via the following properties:</p>
 
             <ul>
-              <li><code>inbox</code>: A reference to an AS2 collection comprising all the messages received by the actor.</li>
-              <li><code>outbox</code>: An AS2 collection comprising of all the messages produced by the actor.</li>
-              <li><code>following</code>: An AS2 collection of the actors that this actor is following.</li>
-              <li><code>followers</code>: An AS2 collection of the actors that follow this actor.</li>
+              <li><code>inbox</code>: A reference to an AS2 collection comprising all the objects sent to the profile's owner.</li>
+              <li><code>outbox</code>: An AS2 collection comprising all the objects produced by the profile's owner.</li>
+              <li><code>following</code>: An optional AS2 collection of the users that this user is following.</li>
+              <li><code>followers</code>: An optional AS2 collection of the users that follow this user.</li>
+              <li><code>likes</code>: An optional AS2 collection of every <code>object</code> from all of the user's <code>Like</code> activities (generated automatically by the server).</li>
               <li><code>streams</code>: An optional list of supplementary AS2 collections which may be of interest. </li>
             </ul>
   
