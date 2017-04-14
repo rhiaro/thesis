@@ -52,7 +52,7 @@
 <section id="socialwg-thesis" rel="schema:hasPart">
   <h2>Standards and self-presentation</h2>
   <div>
-    <p class="todo">Introduction</p>
+    <p>We have previously established that (obviously?) online self-presentation is greatly more complex than listing attributes and a photo on a Web page.</p>
     <p>But wait, isn't this thesis about self presentation? I'm glad you asked. At the core of freedom of expression is choice...</p>
 
     <section id="swwg-charter" rel="schema:hasPart">
@@ -549,15 +549,28 @@
           <div>
             <p>An individual's self presentation online can be partially composed of content they produce and interact with. The <em>read</em> label covers how these are exposed for consumption by others. This may include permissions or access control, which could require the reader to identify themselves before content is made available. Different types of content and interactions should be discoverable, perhaps according to criteria like the type of content, a group or individual with which it is associated, or through its association with other content (eg. through replies).</p>
 
+            <h5 id="content-representation">Content representation</h5>
+
             <p><strong>ActivityStreams 2.0</strong> (AS2) models content and interactions as objects and activities. AS2 includes a <em>vocabulary</em> for modelling different types of objects and activities as well as various relations they might have with other objects (including user profiles) and activities. The AS2 <em>syntax</em> describes a consistent structure for objects and activities including sets of objects and activities as collections. Collections can be explicitly created and updated by a user (like adding photos to an album) or generated automatically as a result of other user actions or the properties of certain objects/activities (eg. a list of followers of a user). AS2 does not specify how objects, activities, or collections come into existence, only what they look like once they do.</p>
 
             <p>AS2 content must be served with the Content-Type <code>application/activity+json</code> or, if necessary for JSON-LD extended implementations, <code>application/ld+json; profile="http://www.w3.org/ns/activitystreams"</code>. Content must be described using the AS2 vocabulary, and may use other vocabularies in addition or instead, per the extension mechanism.</p>
+
+            <p>To make content available as ActivityStreams 2.0 JSON, one could do so directly when requested with an appropriate <code>Accept</code> header (eg. <code>application/activity+json</code> or <code>application/ld+json</code>), or indirectly via a <code>rel="alternate" type="application/activity+json"</code> link . This link could be to a different domain, for third-party services which dynamically generate ActivityStreams 2.0 JSON on behalf of a publisher.</p>
 
             <p>AS2 builds upon ActivityStreams 1.0 [<a href="#ref-as1">as1</a>] and is not fully backwards compatible; <a href="http://www.w3.org/TR/activitystreams-core#activitystreams-1.0">the relationship between AS1 and AS2 is documented in the AS2 spec</a>.</p>
 
             <p>Because AS2 is a data model, it does not recommend how data should be displayed. Its utility is in enabling a consistent representation of social objects and activities to be passed between potentially disconnected systems (eg. from Alice's social network to Bob's). The systems consuming the data are responsible for rendering it appropriately. This means that system designers can provide their users with options for customising the presentation data that may constitute their profiles.</p>
 
-            <p>AS2 specifies a finite set of object and activity types and properties. These are a baseline set of common social interactions which can be extended upon by systems which need additional terms or more specific variations. The extension mechanism is based on linked data, via JSON-LD. Developers are expected to publish documentation and an RDF representation of their terms at a domain under their control, and refer to terms by URI in the normal manner. Further, the Social Web Working Group describes a mechanism by which well-used extensions are included with the AS2 namespace document by means of a W3C Community Group vetting process. The advantage of this is...</p>
+            <p>AS2 specifies a finite set of object and activity types and properties. These are a baseline set of common social interactions which can be extended upon by systems which need additional terms or more specific variations. The extension mechanism is based on linked data, via JSON-LD. Developers are expected to publish documentation and an RDF representation of their terms at a domain under their control, and refer to terms by URI in the normal manner. Further, the Social Web Working Group describes a mechanism by which well-used extensions are included with the AS2 namespace document by means of a W3C Community Group vetting process. The advantage of this is that implementations can adopt common extensions easily, without needing to include additional namespaces. It also makes extensions more discoverable for newcomers to AS2.</p>
+
+            <p>The first such extension is in fact <strong>ActivityPub</strong>. ActivityPub uses ActivityStreams 2.0 for all data in all requests, and also adds additional terms to the AS2 namespace. Thus, ActivityPub requires requests have the Content-Type <code>application/ld+json; profile="https://www.w3.org/ns/activitystreams"</code>.</p>
+
+            <p>Despite AS2 being the recommended synatax and vocabulary of the Working Group, some specifications use different or broader mechanisms. This helps to let developers pick and choose different specifications for different tasks even if they prefer not to use AS2:</p>
+            <ul>
+              <li><strong>Linked Data Notifications</strong> notification contents can use any vocabulary, so long as the data is available in JSON-LD. Thus notifications may use ActivityStreams 2.0, but don't have to. Clients and servers can negotiate between themselves (using <code>Accept</code> and <code>Accept-Post</code> HTTP headers) about using different RDF syntaxes, as well.</li>
+              <li><strong>Micropub</strong> clients which expect to read data (this would usually be clients for <em>updating</em> content) are expecting it as JSON in the <a href="http://microformats.org/wiki/microformats2-parsing">parsed microformats2 syntax</a>.</li>
+              <li><strong>WebSub</strong> is agnostic as to the Content-Type used by publishers; hubs are expected to deliver the new content to subscribers as-is produced by the publisher, at the publisher's <code>topic</code> URL.</li>
+            </ul>
 
           </div>
         </section>
