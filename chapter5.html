@@ -653,6 +653,14 @@
 
             <p><strong>Micropub</strong> clients perform updates, as either form-encoded or JSON POST requests, using the <code>mp-action=update</code> parameter, as well as a <code>replace</code>, <code>add</code> or <code>delete</code> property containing the updates to make, to the Micropub endpoint. <code>replace</code> replaces all values of the specified property; if the property does not exist already, it is created. <code>add</code> adds new values to the specified property without changing the existing ones; if the property does not exist already, it is created. <code>delete</code> removes the specified property; you can also remove properties by value by specifying the value.</p>
 
+            <h5 id="swp-deleting">Deleting</h5>
+
+            <p>Content is deleted when a client sends a request to delete an existing object. If a server has implemented a <a href="#delivery">delivery</a> or <a href="#subscribing">subscription</a> mechanism, when an object is deleted, the deletion MUST be propagated to the original recipients using the same mechanism.</p>
+
+            <p><strong>ActivityPub</strong> clients delete an object by sending an HTTP POST request containing an AS2 <code>Delete</code> activity to the <code>outbox</code> of the authenticated user. Servers MUST either <em>replace</em> the <code>object</code> of this activity with a tombstone and return a <code>410 Gone</code> status code, or return a <code>404 Not Found</code>, from its URL.</p>
+
+            <p><strong>Micropub</strong> delete requests are two key-value pairs, in form-encoded or JSON: <code>mp-action</code>: <code>delete</code> and <code>url</code>: <code>url-to-be-deleted</code>, sent to the Micropub endpoint .</p>
+
           </div>
         </section>
 
