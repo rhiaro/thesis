@@ -645,10 +645,18 @@
               <li>You can rely on out-of-band agreements between clients and servers for vocabulary extensibility.</li>
             </ul>
 
+            <h5 id="swp-updating">Updating</h5>
+
+            <p>Content is updated when a client sends changes to attributes (additions, removals, replacements) to an existing object. If a server has implemented a <a href="#swp-delivery">delivery</a> or <a href="#swp-subscribing">subscription</a> mechanism, when an object is updated, the update MUST be propagated to the original recipients using the same mechanism.</p>
+
+            <p><strong>ActivityPub</strong> clients send an HTTP <code>POST</code> request to the <code>outbox</code> containing an [[ActivityStreams2]] <code>Update</code> activity. The <code>object</code> of the activity is an existing object, and the fields to update should be nested. If a partial representation of an object is sent, omitted fields are <em>not</em> deleted by the server. In order to delete specific fields, the client can assign them a <code>null</code> value. However, when a federated server passes an <code>Update</code> activity to another server's <em><code>inbox</code></em>, the recipient must assume this is the <em>complete</em> object to be replaced; partial updates are not performed server-to-server.</p>
+
+            <p><strong>Micropub</strong> clients perform updates, as either form-encoded or JSON POST requests, using the <code>mp-action=update</code> parameter, as well as a <code>replace</code>, <code>add</code> or <code>delete</code> property containing the updates to make, to the Micropub endpoint. <code>replace</code> replaces all values of the specified property; if the property does not exist already, it is created. <code>add</code> adds new values to the specified property without changing the existing ones; if the property does not exist already, it is created. <code>delete</code> removes the specified property; you can also remove properties by value by specifying the value.</p>
+
           </div>
         </section>
 
-        <section id="swp-subscription" rel="schema:hasPart">
+        <section id="swp-subscribing" rel="schema:hasPart">
           <h4>Subscribing</h4>
           <div></div>
         </section>
