@@ -612,7 +612,40 @@
 
         <section id="swp-publish" rel="schema:hasPart">
           <h4>Publishing</h4>
-          <div></div>
+          <div>
+            <p>Publishing in this context incorporates creating new content, and updating or deleting existing content. Content generated through a client (such as a web form, mobile app, sensor, smart device) is created when it is sent to a server for processing, where it is typically stored and usually published (either publicly or to a restricted audience, in human- and/or machine-readable forms). Clients and servers may independently support creating, updating and deleting; there are no dependencies between them.</p>
+
+            <p>Authentication and authorization between clients and servers for creating content are not included in these specifications, as they are considered orthogonal problems which should be solved elsewhere.</p>
+
+            <p>The two specifications recommended by the Social Web Working Group for publishing are Activitypub and Micropub. They use similar high level mechanisms, but differ in requirements around both the vocabularies and content types of data. ActivityPub contains a client-to-server API for creating ActivityStreams 2.0 objects and activities, and specifies additional responsibilities for clients around addressing objects, and for servers around the side-effects of certain types of objects. Micropub provides a basic client-to-server API for creating blog-post type content which can be implemented alone and is intended as a quickstart for content creation, on top of which more complex (but optional) actions can be layered.</p>
+
+            <p>Both provide similar media endpoints for uploading files.</p>
+
+            <p>Neither ActivityPub nor Micropub define APIs for publishing based on HTTP verbs, and thus differ from the more RESTful <a href="https://www.w3.org/TR/ldp">Linked Data Platform (LDP)</a>.</p>
+
+            <h5 id="swp-creating">Creating</h5>
+
+            <p>The publishing endpoint of <strong>ActivityPub</strong> is the <code>outbox</code>. Clients are assumed to have the URL of a (ideally authenticated) user profile as a starting point, and discover the value of the <code>https://www.w3.org/ns/activitystreams#outbox</code> property found at the profile URL (which should be available as JSON). The client then makes an HTTP <code>POST</code> request with an ActivityStreams 2.0 activity or object as a JSON payload with a content type of <code>application/ld+json; profile="https://www.w3.org/ns/activitystreams"</code>. The URL of the created resource is generated at the discretion of the server, and returned in the <code>Location</code> HTTP header. This is an appropriate protocol to use when:</p>
+
+            <ul>
+              <li>You want to send/receive a JSON or JSON-LD payload.</li>
+              <li>Your data is described with AS2 (optionally extensible via JSON-LD).</li>
+              <li>You want serves to carry out a known set of actions upon content creation.</li>
+            </ul>
+
+            <p>Side-effects of creating content with ActivityPub are for the most part adding things to various different collections collections (likes, follows, etc); but also include requirements about blocking users, and a hook to enable federated servers.</p> 
+
+            <p>The publishing endpoint for <strong>Micropub</strong> is the <code>micropub</code> end point. Clients discover this from a user's URL via a <code>rel="micropub"</code> link (in an HTTP <code>Link</code> header, or an HTML element). Clients make a <code>x-www-form-urlencoded</code> POST request containing the key-value pairs for the attributes of the object being created. The URL of the created resource is generated at the discretion of the server, and returned in the <code>Location</code> HTTP header. Clients and servers must support attributes from the Microformats 2 h-entry vocabulary. Micropub also defines special reserved attributes (prefixed with <code>mp-</code>) which can be used as commands to the server. Any additional key names sent outside of these vocabularies may be ignored by the server.</p>
+
+            <p>Micropub requests may alternatively be sent as a JSON payload, the syntax of which is derived from the Microformats 2 parsing algorithm. This is an appropriate protocol to use when:</p>
+
+            <ul>
+              <li>You want to send/receive a form-encoded or JSON payload.</li>
+              <li>Your data is described with the h-entry syntax and vocabulary.</li>
+              <li>You can rely on out-of-band agreements between clients and servers for vocabulary extensibility.</li>
+            </ul>
+
+          </div>
         </section>
 
         <section id="swp-subscription" rel="schema:hasPart">
