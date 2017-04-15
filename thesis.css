@@ -24,8 +24,9 @@ h1 {
 }
 h4, h5 {
   font-family: serif;
-  font-size: 1em; font-style: italic;
+  font-size: 1.2em; font-style: italic;
 }
+h5 { font-weight: normal; }
 article {
   width: 60%; margin-left: auto; margin-right: auto;
   overflow: visible;
