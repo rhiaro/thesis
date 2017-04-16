@@ -1136,25 +1136,78 @@ target=https://aaronpk.example/post-by-aaron
   </div>
 </section>
 
-<section id="accommodating-audience" rel="schema:hasPart">
-  <h2>Accommodating the audience</h2>
+<section id="audience-and-self-presentation" rel="schema:hasPart">
+  <h2>Audience and self-presentation</h2>
   <div>
-    <section id="introduction" inlist="" rel="schema:hasPart" resource="#introduction">
+    <section id="face-introduction" inlist="" rel="schema:hasPart" resource="#face-introduction">
       <h3>Introduction</h3>
+      <div>
         <p>Conflict or power imbalance arises when one party imposes frontstage expectations on another party's backstage behaviour. For example:</p>
 
         <p>My landlady recently complained to me about an experience she had with a short-term guest in my shared apartment. On the day of the guest's checkout, my landlady had arranged to come over and collect the keys and return the deposit at a certain time. She arrived one hour early, without letting the guest know. She was shocked to find dishes unwashed, jars left open, food on the counter, and the guest watching a movie on the sofa in her underwear. She told me this was "not a good guest", bemoaning the untidiness.</p>
 
         <p>Little does she know that that is often what the apartment looks like when I am home alone and she is not due for a visit. Nonetheless, because I have learned her tendency to turn up unannounced, as well as her penchant for tidiness, I make more effort to keep on top of cleaning day-to-day.</p>
 
-        <p>The problem here is that the guest was engaging in backstage activities, because she did not anticipate being observed for another hour. The guest fully intended to have the apartment clean and ready at the agreed time, and was entitled to behave as she pleased (enjoying her vacation) until then. Similarly, my landlady has every right to enter the apartment she owns when she chooses, however she does *not* have a right to expect that everyone therein behave constantly as if she were already present. She fails to acknowledge that her guests are going to behave differently when she is not around, and is holding her guests at fault for her flawed expectations.</p>
+        <p>The problem here is that the guest was engaging in backstage activities, because she did not anticipate being observed for another hour. The guest fully intended to have the apartment clean and ready at the agreed time, and was entitled to behave as she pleased (enjoying her vacation) until then. Similarly, my landlady has some right to enter the apartment she owns when she chooses, however she does <em>not</em> have a right to expect that everyone therein behave constantly as if she were already present. She fails to acknowledge that her guests are going to behave differently when she is not around, and is holding her guests at fault for her flawed expectations.</p>
 
         <p>One part of engaging in appropriate self-presentation is understanding and accounting for the expectations of those present: our audience. Even when thrown in to unexpected scenarios, we usually have some chance to react and accommodate in face-to-face interactions. When we are unable to do so, unpleasant social situations arise.</p>
 
         <p>Online, we present a face but cannot see our audience. We may have no reliable information about who are audience are or their expectations, or we may <em>imagine</em> a different audience to the one(s) we really have. Furthermore, multiple audiences may access our single 'face', and we have no opportunity to adapt and change our presentation to suit their expectations.</p>
 
-        <p>This section deals with an experimental implementation which attempts to address the problem of accommodating audience expectations with our unified online face.</p>
-      </section>
+        <p>This section deals with an experimental implementation which attempts to address the problem of accommodating audience expectations with our unified online face. It's called <em>face</em>: facilitate audience control of expectations. <!-- I'm so funny and smart.--> </p>
+
+      </div>
+    </section>
+
+    <section id="face-system-design" rel="schema:hasPart">
+      <h3>System design</h3>
+      <div>
+
+        <p class="todo">Since I don't have time to finish building this, should I mock it up and call it a 'thought experiment'? I would hate myself, but maybe it's better than leaving it out altogether.</p>
+
+        <p><em>face</em> is built into <em>sloph</em>, the personal data store described in the <a href="#personal-web-observatory">previous section</a>. The system is essentially a series of stylesheets which can be applied to adapt the presentation of any data object or stream of content viewed using <em>sloph</em>. I came up with five dimensions which can be used to describe different aspects of myself, and along which every data object in the datastore can be rated. The stylesheet(s) for a particular data object is determined by its combination of rankings. In addition, a set of controls are presented to a visitor to the site which allow them to rate how interested they are in each of the five dimensions. Adjusting this rating changes which data objects are visible, as well as the overall appearance of the homepage.</p>
+
+        <p>The default view is a fairly neutral representation of my online presence, which can be adjusted to give a more or less personal or professional view, and gear it towards particular topics of interest. This way, the visitor still may be confronted with content they feel is inappropriate or uninteresting, however they take responsibility for adjusting the controls to give these results. These controls introduce a collaborative approach to impression management; since I cannot react to an audience I don't know is there, maybe I can prompt my audience to give enough clues to the system that my online presence can react on my behalf.</p>
+
+        <section id="" rel="schema:hasPart">
+          <h4>Vocabulary and data integration</h4>
+        </section>
+
+        <section id="" rel="schema:hasPart">
+          <h4>User interface</h4>
+        </section>
+
+        <section id="" rel="schema:hasPart">
+          <h4>Limitations</h4>
+          <p>Obviously this is not a solution for strict access control, privacy protection, or any kind of concealment or separation of online personas.
+        </section>
+
+      </div>
+
+    </section>
+
+    <section id="" rel="schema:hasPart">
+      <h3>Discussion</h3>
+      <div class="notes">
+        <p>The audience of my online presence is determined by my <strong>connections</strong> and the <strong>cascade</strong>.</p>
+        <p>The information that appears in and around my online presence is determined by the <strong>control</strong> I have over systems which produce it, and <strong>customisability</strong> of its display.</p>
+        <p>Meaning is given to the data in accordance with the <strong>context</strong> in which it is both produced and observed.</p>
+      </div>
+      <div>
+        <section id="" rel="schema:hasPart">
+          <h4>Connectivity and cascade</h4>
+        </section>
+
+        <section id="" rel="schema:hasPart">
+          <h4>Control and customisation</h4>
+        </section>
+
+        <section id="" rel="schema:hasPart">
+          <h4>Context</h4>
+        </section>
+      </div>
+    </section>
+
   </div>
 </section>
 
