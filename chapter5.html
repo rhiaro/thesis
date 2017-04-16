@@ -666,7 +666,58 @@
 
         <section id="swp-subscribing" rel="schema:hasPart">
           <h4>Subscribing</h4>
-          <div></div>
+          <div>
+            <p>An agent (client or server) may <em>ask</em> to be notified of changes to a content object (eg. edits, new replies) or stream of content (eg. objects added or removed from a particular stream). This is <em>subscribing</em>. Specifications which contain subscription mechanisms are ActivityPub and WebSub.</p>
+
+            <p>Nothing should rely on implementation of a subscription mechanism. That is, implementations may set themselves up to receive notifications without always being required to explicitly ask for them from a sender or publisher: see <a href="#swp-delivery">delivery</a>.</p>
+
+            <h5 id="swp-follow">Subscribing with <code>as:Follow</code></h5>
+            <p><strong>[[Activitypub]]</strong> servers maintain a <em>Followers</em> collection for all users. This collection may be directly addressed, or addressed automatically or by default, in the <code>to</code>, <code>cc</code> or <code>bcc</code> field of any Activity, and as a result, servers <a href="#swp-delivery">deliver</a> the Activity to the <code>inbox</code> of each user in the collection.</p>
+            <p>Subscription requests are essentially requests to be added to this collection. They are made by the subscriber's server <code>POST</code>ing a <code>Follow</code> Activity to the target's <code>inbox</code>. This request should be authenticated, and therefore doesn't need additional verification. The target server then SHOULD add the subscriber to the target's Followers collection. Exceptions may be made if, for example, the target has blocked the subscriber.</p>
+
+            <p>This is a suitable subscription mechanism when:</p>
+
+            <ul>
+              <li>The subscriber wants to request updates from a specific actor (rather than objects, streams or threads).</li>
+              <li>The subscriber and publisher both speak ActivityStreams 2.0.</li>
+              <li>The publisher is aware of who has subscribed, and capable of delivering content to subscribers itself.</li>
+            </ul>
+
+            <p>Since delivery is only a requirement for federated servers, prospective subscribers will not be able to <code>POST</code> their <code>Follow</code> activity to the <code>inbox</code> of a profile which is on a non-federated server (expect a <code>405 Method Not Allowed</code>), and thus are not able to subscribe to these profiles. In this case, prospective subscribers may wish to periodically <em>pull</em> from the publisher's <code>outbox</code> instead.</p>
+
+            <h5 id="subscription-delegating">Delegating subscription handling</h5>
+            <p><strong>[[WebSub]]</strong> provides a mechanism to delegate subscription handling and delivery of content to subscribers to a third-party, called a <em>hub</em>. All publishers need to do is link to their chosen hub(s) using HTTP <code>Link</code> headers or HTML <code>&lt;link&gt; </code> elements with <code>rel="hub"</code>, and then notify the hub when new content is available. The mechanism for notifying the hub is left deliberately unspecified, as publishers may have their own built in hub, and therefore use an internal mechanism.</p>
+            
+            <p>Hubs and publishers which would like to agree on a standard mechanism to communicate might consider employing an existing <a href="#swp-delivery">delivery</a> mechanism, namely Linked Data Notifications (<a href="#swp-subscription-notification">fig. [subscription-notification</a>]) or Webmention.</p>
+
+            <figure id="swp-subscription-notification">
+              <pre>
+POST /inbox HTTP/1.1
+Host: hubbub.example
+Content-type: application/ld+json
+
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "id": "",
+  "type": "Announce",
+  "object": "https://rhiaro.co.uk/tags/socialwg",
+  "target": "https://hubbub.example/"
+}
+              </pre>
+              <figcaption><p><strong>Figure [subscription-notification]:</strong> Notifying a hub of new content with LDN, using an AS2 Announce in the notification body. The <code>object</code> is the <code>topic</code> URL and the <code>target</code> is the hub itself. The hub can use this information to fetch new content for subsequent delivery to subscribers.</p></figcaption>
+            </figure>
+
+            <p>The subscriber discovers the hub from the publisher, and sends a form-encoded <code>POST</code> request containing values for <code>hub.mode</code> ("subscribe"), <code>hub.topic</code> (the URL to subscribe to) and <code>hub.callback</code> (the URL where updates should be sent to, which should be 'unguessable' and unique per subscription). The hub and subscriber carry out a series of exchanges to verify this request.</p>
+            <p>When the hub is notified of new content by the publisher, the hub fetches the content of the <code>topic</code> URL, and <a href="#swp-delivery">delivers</a> this to the subscriber's <code>callback</code> URL.</p>
+
+            <p>This is a suitable subscription mechanism when:</p>
+
+            <ul>
+              <li>The subscriber wants to request updates from any resource (not just user profiles), and of any content type.</li>
+              <li>Subscription requests are not authenticated, so you need a way to verify them.</li>
+              <li>The publisher wants to delegate distribution of updates to another service (the hub) instead of doing it itself.</li>
+            </ul>
+          </div>
         </section>
 
         <section id="swp-delivery" rel="schema:hasPart">
