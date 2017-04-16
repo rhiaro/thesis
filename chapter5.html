@@ -688,7 +688,7 @@
             <h5 id="subscription-delegating">Delegating subscription handling</h5>
             <p><strong>[[WebSub]]</strong> provides a mechanism to delegate subscription handling and delivery of content to subscribers to a third-party, called a <em>hub</em>. All publishers need to do is link to their chosen hub(s) using HTTP <code>Link</code> headers or HTML <code>&lt;link&gt; </code> elements with <code>rel="hub"</code>, and then notify the hub when new content is available. The mechanism for notifying the hub is left deliberately unspecified, as publishers may have their own built in hub, and therefore use an internal mechanism.</p>
             
-            <p>Hubs and publishers which would like to agree on a standard mechanism to communicate might consider employing an existing <a href="#swp-delivery">delivery</a> mechanism, namely Linked Data Notifications (<a href="#swp-subscription-notification">fig. [subscription-notification</a>]) or Webmention.</p>
+            <p>Hubs and publishers which would like to agree on a standard mechanism to communicate might consider employing an existing <a href="#swp-delivery">delivery</a> mechanism, namely Linked Data Notifications (<a href="#swp-subscription-notification">fig. [subscription-notification</a>]) or Webmention<sup><a href="fn-swp-sub-wm">sub-wm</a></sup>.</p>
 
             <figure id="swp-subscription-notification">
               <pre>
@@ -718,6 +718,10 @@ Content-type: application/ld+json
               <li>The publisher wants to delegate distribution of updates to another service (the hub) instead of doing it itself.</li>
             </ul>
           </div>
+
+          <p>LDN Receivers can receive deliveries from WebSub hubs by using the <code>inbox</code> URL as the <code>hub.callback</code> URL and <em>either</em> only subscribing to resources published as JSON-LD <em>or</em> accepting content-types other than JSON-LD.</p>
+
+          <p class="fn"><strong>sub-wm</strong>: though this seems to be me to be somewhat outside of the spirit of 'mentioning'.</p>
         </section>
 
         <section id="swp-delivery" rel="schema:hasPart">
