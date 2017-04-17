@@ -55,15 +55,62 @@
   <div>
     <p>We have previously established that (obviously?) online self-presentation is greatly more complex than listing attributes and a photo on a Web page. For decentralised systems to emulate the multitude of self-presentation possibilities provided by mainstream centralised systems today they must coordinate across a range of potential user activities and interactions. Common protocols enable disparate systems to communicate without any prior arrangements. Specifications describing such protocols must be agreed upon and published in such a way that makes them easy to find, and appear authoritative enough that developers of decentralised systems are convinced to implement them.</p>
 
-    <p>This section documents and furthers that process, as part of the work of the W3C Social Web Working Group.</p>
+    <p>This section documents and furthers that process, as part of the work of the W3C Social Web Working Group. <a href="chapter4#socialwg">Chapter 4</a> includes a survey of the specifications and their implementations at the time of writing; this section provides a behind-the-scenes look at and contribution to their development.</p>
 
     <section id="swwg-charter" rel="schema:hasPart">
       <h3>The Social Web Working Group charter</h3>
       <div>
         <p class="todo">Summarise aims/goals and general status at the beginning of the WG</p>
+
+        <p>Problems the SWWG produced standards to solve:</p>
+        <ul>
+          <li>Syntax and vocab</li>
+          <li>CUD</li>
+          <li>subscription and notifications</li>
+        </ul>
+        <p>Problems they did not address:</p>
+        <ul>
+          <li>Identity (authn, authz, presentation)</li>
+          <li>Abuse, spam, data misuse</li>
+          <li>Prevent surveillence</li>
+          <li>Decent outside of http</li>
+          <li>Security, privacy</li>
+          <li>Federated search</li>
+          <li>...</li>
+          <li>Profit</li>
+        </ul>
+
+        <p>The list of unaddressed problems looks enormous and critical, yet I posit that these are mostly unsolveable by technical means. As the SWWG has produced technical specifications rather than a code of ethics or policy recommendations, its reach is somewhat limited.</p>
       </div>
     </section>
-    
+
+    <section id="swwg-participants-and-audience" rel="schema:hasPart">
+      <h3>Working Group participants-and-audience</h3>
+      <div>
+        <p>Working Groups may be chartered with the agreement of 5%(?) of the W3C membership. The chartering process is long, and the SWWG charter was supported by upon its proposal in 2013? by x member organisations. By the time the group was eventually convened in July 2014, y member organisations were formal participants. [One of these was the University of Edinburgh, ie. myself representing my own curiosity at the time, having no idea how deep I'd get. That's right, I joined W3C WGs as a hobby.] Part of this reduction in numbers was due to the Open Social Foundation ?? something about them closing and then supporters never actually rejoining the WG even though they said this was the point.</p>
+        <p>It is noteworthy that no major social networking companies are members of the W3C Social Web Working Group. Big companies who joined were those motivated primiarly by producing social standards for use in business. Many orgs use proprietary (often) in-house social networking platforms for their employees to communicate, organise and share information. The beneft of standards in this scenario is to enable inter-organisational social interaction, to better smooth partnership and other business processes. This outlook set the tone for much of the early discussions in the group.</p>
+        <p>However, over the past two and a half years, active participation in the group has dwindled such that the group is a majority invited experts. As business needs shifted (probably), representitives of organisations interested in social business were reassigned and their participation in the group dissipated. This dramatically (although it wasn't noticeable at the time) altered the tone of the group.</p>
+        <p>Several invited experts are representing their own interests, passionate about social standards they can implement for themselves. Others are from open source communities, wanting existing or upcoming projects to interoperate for social interactions as a way to add value and oftentimes to uphold principles of their users' freedom to choose [to take their data elsewhere]. These two groups are by no means mutually exclusive.</p>
+        <p>It may be difficult to see how Social Web standards can possibly be adopted widely enough to have any impact without the support of major social networking platforms. An informal hypothesis of the WG is that there are many more (e-)industries who can benefit from social networking than the ones who make advertising- and data-mining-supported social platforms. Such businesses either produce tailored in=house solutions to the very specific corner of social media they need (think Amazon reviews) or embed functionality provided by a major platform (think adding a facebook Like button). Some have wholesale ditched maintaining their own online portols and move all of their publishing and customer interaction to a social networking platform (think ... newspaper?). Yet other services have been designed from the ground up to depend on a major platform for the provision of their service at all (analytics, or ...).</p>
+        <p>Complete dependence is risky, as has been shown on countless occasions when eg. Twitter changes its developer terms of service and rovkes the right to exist of certain third-party applications; or facebook changes its API, resulting in an endless cycle of unpredictable conde maintenence.</p>
+        <p>Depending on one for a custoemr base results in either excluding non-users of the platform, or having to manage a presence on multiple platforms. There are of course services (in the previous category) designed to help with this..</p>
+        <p>It is organisations for which 'social' is an enhancement (albeit in many cases a critical one) rather than the core of their revenue stream, that may be persuaded to invest time in implementing open Web standards, and thus normalise expectations of interoperable social systems for end users too.</p>
+        <p>Unfortunately there has been low participation from this category of org as well, so the WG has not necessarily managed to directly address their needs. Nonetheless, it is not a totally infeasible route to glory. At the very least, it should pique their interest enough to tell us where we got it all wrong and for them to get involved in the next round. Maybe.</p>
+
+        <p class="todo">Add something about not needing to store data and make hard API decisions and stuff.</p>
+
+        <p>In summary, the Social Web WG specifications are anticipated to be picked up by:</p>
+        <ul>
+          <li>Individual developers, hobbyists, hackers.</li>
+          <li>Open source projects with principles.</li>
+          <li>Companies which enhance their core offering with social functionality.</li>
+          <li>Organisations which produce social systems to facilitate business operations amongst employees.</li>
+        </ul>
+
+        <p>Further, while increasing publich awareness of the privacy and freedom implications of handing all data to a select few organisations, they may seek new business models (beyond selling consumer data) and innovate on other fronts in order to retain user trust.</p>
+      </div>
+    </section>
+
     <section id="swwg-api-requirements" rel="schema:hasPart">
       <h3>API Requirements</h3>
       <div>
@@ -321,6 +368,19 @@
       <h3>Standardisation as Context</h3>
       <div>
         <p class="todo">Roundup of how this all fits in with CCCCC... ultimately these factors affecting users, long before any systems are even developed.</p>
+        <p>Techncial specifications, at least those produced by the W3C, are for software developers. A mark of the success of a standard is when multiple devleopers, who have no knolwedge of each others' activities, can independently implement the specification into code and have their systems function coherantly together.</p>
+
+        <p>...def: interoperability</p>
+
+        <p>The W3C operates such that contributions to its standards may be made by individuals representing themselves (if invited and approved by working group chairs), but more so by individuasl representing organisations which pay for membership to the W3C. As the Web is an open platform on which anyone can build, there is a lot of space for many ways to solve the same problems. This is a virtue in that it promotes innovation and competition amongst Web servies, but a problem if it results in technical fragmentation of solutions, whereby end users are forced to choose one and forego (or uncomfortably juggle) interaction with others. Organisations join the W3C so that their interests may be represented as they collaborate to produce standard ways of interacting with Web technologies in order to reduce the negative impact of technical fragmentation on end users. </p>
+
+        <p>As has been raised on multiple occasions by this thesis, the social Web is in a state of technical fragmentation. End users, also known as people or human beings, are living with the effects of this on a daily basis. Beyond being a mere inconvenience (not being able to port one's friends from Twitter to Facebook), the competition between social platforms has developed such that people are <em>locked in</em> to services. Once one depends upon a particular social networking platform for communication and content creation it is almost impossible to change provider.</p>
+
+        <p>...def: silos</p>
+
+        <p>This brings with it a plethora of social, cultural, political and economic issues, which have been touched upon at various stages elsewhere in this thesis and we will not detail further here. The <em>Social Activity</em>, which includes the Social Web Working Group, was created in W3C with an eye to creating change in this space.</p>
+
+        <blockquote><p>The focus of the Social Activity is on making "social" a first-class citizen of the Open Web Platform by enabling standardized protocols, APIs, and an architecture for standardized communication among Social Web applications. - <a href="https://www.w3.org/Social/">W3C Social Activity</a></p></blockquote>
       </div>
 
     </section>
