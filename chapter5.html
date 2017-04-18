@@ -5,8 +5,7 @@
         <title>Standards for the Social Web</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link href="https://dokie.li/media/css/do.css" media="all" rel="stylesheet" />
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="all" rel="stylesheet" />
-        <link href="https://dokie.li/media/css/editor.css" media="all" rel="stylesheet" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet" />
         <script src="https://dokie.li/scripts/simplerdf.js"></script>
         <script src="https://dokie.li/scripts/medium-editor.min.js"></script>
         <script src="https://dokie.li/scripts/medium-editor-tables.min.js"></script>
@@ -15,6 +14,8 @@
         <link rel="stylesheet" type="text/css" href="https://rhiaro.co.uk/views/core.css" />
         <link rel="stylesheet" type="text/css" href="https://rhiaro.co.uk/views/base.css" />
         <link href="thesis.css" rel="stylesheet" />
+        <link href="https://rhiaro.co.uk/incoming/" rel="http://www.w3.org/ns/ldp#inbox" />
+        <link href="https://linkedresearch.org/annotation/rhiaro/thesis/" rel="http://www.w3.org/ns/oa#annotationService" />
         
     </head>
 
@@ -27,14 +28,16 @@
 <section id="introduction" rel="schema:hasPart">
   <h2>Introduction</h2>
   <div>
-    <p>Many of the systems discussed in the previous chapter have proven foundational for ongoing efforts to create standards for decentralised social interactions on the Web. Previously we described the standards being produced by the W3C Social Web Working Group; now we discuss in more depth notable decisions and debates of the group, and outline how to actually go about building decentralised social systems which empower self-presentation using these standards. The contributions of this chapter are as follows:</p>
+    <p>Many of the systems discussed in the previous chapter have proven foundational for ongoing efforts to create standards for decentralised social interactions on the Web. Previously we gave an overview of the standards being produced by the W3C Social Web Working Group; now we discuss in more depth notable decisions and debates of the group, describe the resulting standards in more detail, and outline how to actually go about building decentralised social systems which empower self-presentation using these standards. The contributions of this chapter are as follows:</p>
 
     <ul>
-      <li>A critical and up-to-the-minute analysis of standards for decentralised social interaction on the Web, taking into account social dynamics as well as technical considerations.</li>
+      <li>A critical analysis of contemporary standards for decentralised social interaction on the Web, taking into account social dynamics of collaborative projects and the W3C consensus model, as well as the technical considerations.</li>
       <li>A characterisation of the problems being solved by the Social Web WG, and how these relate to the more specific problem of online self-presentation, by means of the conceptual framework from chapter 3.</li>
       <li>A technical primer for the work produced by the group (published by the W3C as a Working Group Note: <em>Social Web Protocols</em>).</li>
       <li>Prototype implementations of standards produced by the group, and a report on their interoperability with implementations produced by others.</li>
     </ul>
+
+    <p>This chapter brings together the qualitative research from earlier with concrete technical outcomes in the form of protocol designs. The work of the Social Web Working Group is in effect a case study for designing decentralised Social Web systems, but what is presented here is more than a survey or observational study. Since I was first a member of the Working Group, and then the W3C Team Contact, I was immersed in every part of the decision making and contributed in some form to all of the specifications produced. The <em>Social Web Protocols</em> document contributes a deeper understanding of the various protocols, and importantly how they can complement or contradict each other. This document is particularly useful <em>because</em> of the complicated social dynamics of the group, and produced as an introductory piece for developers entering this space anew. Technical decisions that have been made by the Working Group over the past (almost) three years were not made in a vacuum, nor dictated by cold logic, but rarely backed up with truly meaningful data. Most decisions were made on - admittedly well-honed - gut instinct of experts, data from small samples, and anecdotal evidence. <em>Social Web Protocols</em> contains fine technical details of the Working Group's recommendations, which are crucial for a complete picture and analysis of the current cutting-edge of decentralised Social Web standards.</p>
 
   <!--   <ul class="note">
       <li>Summary of current SocialWG activities.</li>
@@ -50,21 +53,920 @@
 <section id="socialwg-thesis" rel="schema:hasPart">
   <h2>Standards and self-presentation</h2>
   <div>
-    <p>But wait, isn't this thesis about self presentation? I'm glad you asked. At the core of freedom of expression is choice...</p>
+    <p>We have previously established that (obviously?) online self-presentation is greatly more complex than listing attributes and a photo on a Web page. For decentralised systems to emulate the multitude of self-presentation possibilities provided by mainstream centralised systems today they must coordinate across a range of potential user activities and interactions. Common protocols enable disparate systems to communicate without any prior arrangements. Specifications describing such protocols must be agreed upon and published in such a way that makes them easy to find, and appear authoritative enough that developers of decentralised systems are convinced to implement them.</p>
 
-    <section id="socialwg-process" rel="schema:hasPart">
-      <h3>Social Web WG process/decisions/stuff</h3>
+    <p>This section documents and furthers that process, as part of the work of the W3C Social Web Working Group. <a href="chapter4#socialwg">Chapter 4</a> includes a survey of the specifications and their implementations at the time of writing; this section provides a behind-the-scenes look at and contribution to their development.</p>
+
+    <section id="swwg-charter" rel="schema:hasPart">
+      <h3>The Social Web Working Group charter</h3>
       <div>
-        <p>An early activity of the Working Group was to write 99 "user stories" describing actions that people should be able to carry out using systems based on standards produced by the group. The goal of this was to focus efforts on the most important standards to be worked on, to meet the needs that appeared most critical to members of the group. Most group members contributed one or more user stories, and they varied based on the perspective of the individual or organisation they represented. The group then voted (+1, .....) on every user story, and selected a top ten(?).</p>
+        <p class="todo">Summarise aims/goals and general status at the beginning of the WG</p>
 
-        <p>My subsequent contribution was to derive API requirements from the shortlisted user stories... https://rhiaro.co.uk/2015/08/api-requirements</p>
+        <p>Techncial specifications, at least those produced by the W3C, are for software developers. A mark of the success of a standard is when multiple devleopers, who have no knolwedge of each others' activities, can independently implement the specification into code and have their systems function coherantly together.</p>
+
+        <p>...def: interoperability</p>
+
+        <p>The W3C operates such that contributions to its standards may be made by individuals representing themselves (if invited and approved by working group chairs), but more so by individuasl representing organisations which pay for membership to the W3C. As the Web is an open platform on which anyone can build, there is a lot of space for many ways to solve the same problems. This is a virtue in that it promotes innovation and competition amongst Web servies, but a problem if it results in technical fragmentation of solutions, whereby end users are forced to choose one and forego (or uncomfortably juggle) interaction with others. Organisations join the W3C so that their interests may be represented as they collaborate to produce standard ways of interacting with Web technologies in order to reduce the negative impact of technical fragmentation on end users. </p>
+
+        <p>As has been raised on multiple occasions by this thesis, the social Web is in a state of technical fragmentation. End users, also known as people or human beings, are living with the effects of this on a daily basis. Beyond being a mere inconvenience (not being able to port one's friends from Twitter to Facebook), the competition between social platforms has developed such that people are <em>locked in</em> to services. Once one depends upon a particular social networking platform for communication and content creation it is almost impossible to change provider.</p>
+
+        <p>...def: silos</p>
+
+        <p>This brings with it a plethora of social, cultural, political and economic issues, which have been touched upon at various stages elsewhere in this thesis and we will not detail further here. The <em>Social Activity</em>, which includes the Social Web Working Group, was created in W3C with an eye to creating change in this space.</p>
+
+        <blockquote><p>The focus of the Social Activity is on making "social" a first-class citizen of the Open Web Platform by enabling standardized protocols, APIs, and an architecture for standardized communication among Social Web applications. - <a href="https://www.w3.org/Social/">W3C Social Activity</a></p></blockquote>
+
+        <p>Problems the SWWG produced standards to solve:</p>
+        <ul>
+          <li>Syntax and vocab</li>
+          <li>CUD</li>
+          <li>subscription and notifications</li>
+        </ul>
+        <p>Problems they did not address:</p>
+        <ul>
+          <li>Identity (authn, authz, presentation)</li>
+          <li>Abuse, spam, data misuse</li>
+          <li>Prevent surveillence</li>
+          <li>Decent outside of http</li>
+          <li>Security, privacy</li>
+          <li>Federated search</li>
+          <li>...</li>
+          <li>Profit</li>
+        </ul>
+
+        <p>The list of unaddressed problems looks enormous and critical, yet I posit that these are mostly unsolveable by technical means. As the SWWG has produced technical specifications rather than a code of ethics or policy recommendations, its reach is somewhat limited.</p>
       </div>
+    </section>
+
+    <section id="swwg-participants-and-audience" rel="schema:hasPart">
+      <h3>Working Group participants-and-audience</h3>
+      <div>
+        <p>Working Groups may be chartered with the agreement of 5% of the W3C membership [<a href="#ref-wg-charter">wg-charter</a>]. 
+        The Social Working Group was convened in July 2014 with y member organisations as formal participants [<a href="#ref-wg-members">wg-members</a>]<sup><a href="#fn-wg-me">wg-me</a></sup>. One of the W3C Members which helped found the Working Group was the Open Social Foundation, which was a collaboration between several large companies and expected to use their influence to drive participation in the Working Group. The Open Social Foundation dissolved upon the beginning of the Social Web Working Group, handing its assets to W3C [<a href="#ref-wg-os">wg-os</a>].</p>
+
+        <p>It is noteworthy that no major social networking companies are members of the W3C Social Web Working Group. Big companies who joined were those motivated primiarly by producing social standards for use in business. Many organisations use proprietary (often) in-house social networking platforms for their employees to communicate, organise, and share information. The benefit of standards in this scenario is to enable inter-organisational social interaction, to better smooth partnership and other business processes. This outlook set the tone for much of the early discussions in the group.</p>
+
+        <p>However, over the past two and a half years, active participation in the group has dwindled such that the group is a majority invited experts<sup><a href="#ref-wg-ie">wg-ie</a></sup>. As time progressed, representatives of organisations interested in social business were reassigned and their participation in the group dissipated. This dramatically (although it wasn't noticeable at the time) altered the tone of the group.</p>
+
+        <p>Several invited experts are representing their own interests, passionate about social standards they can implement for themselves. Others are from open source or free software communities, and want existing or emerging projects to interoperate with regard to social interactions, as a way to add value for users but also to uphold principles of their users' freedom to choose to take their data elsewhere. These two groups are by no means mutually exclusive.</p>
+
+        <p>It may be difficult to see how Social Web standards can possibly be adopted widely enough to have any impact without the support of major social networking platforms. An informal hypothesis is that there are many more (e-)industries who can benefit from social networking than the ones who make advertising- and data-mining-supported social platforms. Such businesses either produce tailored in-house solutions to the very specific corner of social media they need (think Amazon reviews) or embed functionality provided by a major platform (think adding a Facebook Like button). Some have moved all of their publishing and customer interaction to one or more mainstream social networking platforms (some newspapers and magazines; restaurants and cafes). Yet other services have been designed from the ground up to depend on a major platform for the provision of their service at all (marketing and customer analytics software; many games).</p>
+
+        <p>Complete dependence is risky, as has been shown on countless occasions when, for example, Twitter changes its developer terms of service and revokes the right to exist of certain third-party applications [<a href="#ref-tw-api">tw-api</a>, <a href="#ref-tw-api2">tw-api2</a>, <a href="#ref-tw-api3">tw-api3</a>, <a href="#ref-tw-api4">tw-api4</a>]; or Facebook changes its API, resulting in an endless cycle of unpredictable code maintenance [<a href="#ref-fb-api">fb-api</a>, <a href="#ref-fb-api2">fb-api2</a>].</p>
+
+        <p>Depending on centralised platforms for a customer base results in either excluding non-users of the chosen platform, or having to manage a presence on multiple platforms. The circle continues with the availability of services designed to help manage broad social media presence over multiple platforms; these are in the latter category of social-platform-dependent business models.</p>
+
+        <p>Organisations which do not want to depend on existing services tend to have to build their own, creating a burden of storing data (securely and privately) on behalf of their customers when this may not even be central to their business process. Standards which allow their customers to point to a personal data store that they already have would be an advantage in this case.</p>
+
+        <p>It is thus organisations for which 'social' is an enhancement (albeit in many cases a critical one) rather than the core of their revenue stream, that may be persuaded to invest time in implementing open Web standards. A result of this adoption can contribute towards normalising expectations of more decentralised social interactions from the perspective of end users, too.</p>
+
+        <p>Unfortunately there has been low participation from this category of organisation as well, so the Working Group has not necessarily managed to appreciate their needs. <!-- Nonetheless, it is not a totally infeasible route to glory. At the very least, it should pique their interest enough to tell us where we got it all wrong and for them to get involved in the next round. Maybe. --></p>
+
+        <p>In summary, the Social Web WG specifications are anticipated to be picked up by:</p>
+        <ul>
+          <li>Individual developers, hobbyists, hackers.</li>
+          <li>Open source projects with principles.</li>
+          <li>Companies which enhance their core offering with social functionality.</li>
+          <li>Organisations which produce social systems to facilitate business operations amongst employees.</li>
+        </ul>
+
+        <p>Further, with increasing public awareness of the privacy and freedom implications of handing all data to a select few organisations, these organisations may seek new business models (beyond selling consumer data) and innovate on other fronts in order to retain user trust.</p>
+
+        <p class="fn" id="fn-wg-me">[wg-me] One of these was the University of Edinburgh, ie. myself representing my own curiosity at the time, having no idea how deep I'd get. That's right, I joined W3C WGs as a hobby.</p>
+        <p class="fn" id="fn-wg-ie">[wg-ie] Invited experts are individuals who cannot pay W3C membership fees but have valuable insight to contribute to a WG. They apply to join, and must be approved by WG chairs.</p>
+      </div>
+    </section>
+
+    <section id="swwg-api-requirements" rel="schema:hasPart">
+      <h3>API Requirements</h3>
+      <div>
+        <p>An early activity of the Working Group was to write 99 "user stories" describing actions that people should be able to carry out using systems based on standards produced by the group. The goal of this was to focus efforts on the most important standards to be worked on, to meet the needs that appeared most critical to members of the group. Most group members contributed one or more user stories, and they varied based on the perspective of the individual or organisation they represented. The group then voted (+1, .....) on every user story, and selected a top eight to prioritise.</p>
+
+        <p>My subsequent contribution was to derive API requirements from the shortlisted user stories.</p>
+
+        <section id="swwg-api-requirements-process" rel="schema:hasPart">
+          <h4>Process</h4>
+          <div>
+
+            <ol>
+              <li>Read each user story and straightforwardly list required functionality.</li>
+              <li>Cluster related functionality, find overlap between stories.</li>
+              <li>Label the clusters.</li>
+              <li>Organise labels into shortlist of requirements.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section id="swwg-api-requirements-results">
+          <h4>Results</h4>
+          <div>
+            <p>The simplified story requirements and their respective labels are listed in <a href="#swwg-user-stories">table [swwg-user-stories]</a>. The labelled requirements, with descriptions derived from the requirements of the combined user stories, are as follows:</p>
+            <ul id="swwg-api-requirements-list">
+              <li>
+                <p><strong>Read content</strong> <span style="background-color: dodgerblue">read</span></p>
+                <ul>
+                  <li>According to permissions.</li>
+                  <li>Discovery of content according to criteria:
+                  <ul>
+                  <li>type (text, photo..);</li>
+                  <li>associated with group;</li>
+                  <li>created by a particular user;</li>
+                  <li>by the content's target (replies/likes of a particular post).</li>
+                  </ul></li>
+                </ul>
+              </li>
+              <li>
+                <p><strong>Publish content</strong> <span style="background-color: lightgreen">pub</span></p>
+                <ul>
+                  <li>Including text, photo, video, audio.</li>
+                  <li>Including metadata and relations to other things, ie. audience/to, tags, reply-to, likes.</li>
+                  <li>Update published content.</li>
+                  <li>Delete published content.</li>
+                </ul>
+              </li>
+              <li>
+                <p><strong>Notifications</strong> <span style="background-color: DarkOrchid">notif</span></p>
+                <ul>
+                  <li>User is somehow alerted when content is created that explicitly targets them (ie. as recipient or subject).  </li>
+                </ul>
+              </li>
+              <li>
+                <p><strong>Subscribe to content</strong> <span style="background-color: crimson">sub</span></p>
+                <ul>
+                  <li>According to some filter, eg. by a certain user, posted to a certain group.</li>
+                  <li>Undo a subscription.</li>
+                </ul>
+              </li>
+            </ul>
+            <table id="swwg-user-stories" class="leftie">
+              <thead><tr><td colspan="3"><p><strong>Table [swwg-user-stories]</strong>: The top eight Social Web Working Group user stories</p></td></tr></thead>
+              <tfoot>
+                <tr><td colspan="3">The first two columns are the work of members of the Social Web Working Group (see wiki history for attribution [<a href="#rdf-swwg-user-stories">swwg-user-stories</a>]) and the third column is my own work.</td></tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <th width="15%">Story name</th>
+                  <th width="40%">Details</th>
+                  <th width="45%">Labels</th>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#SWAT0">Social Web Acid Test (SWAT0)</a></td>
+                  <td>
+                    <ol>                  
+                      <li>user A takes a photo of B from their phone and posts it</li>
+                      <li>user A explicitly tags the photo with B</li>
+                      <li>B gets notified that they are in a photo</li>
+                      <li>C who follows A gets the photo</li>
+                      <li>C makes a comment on the photo</li>
+                      <li>A and B get notified of the comment</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Publishing a photo. <span style="background-color: lightgreen">pub</span></li>
+                      <li>Push notifications. <span style="background-color: DarkOrchid">notif</span></li>
+                      <li>Subscription to a user. <span style="background-color: crimson">sub</span></li>
+                      <li>Commenting on / replying to a post. <span style="background-color: lightgreen">pub</span></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#User_posts_a_note">User posts a note</a></td>
+                  <td>
+                    <ol>
+                      <li>Eric writes a short note to be shared with his followers.</li>
+                      <li>After posting the note, he notices a spelling error. He edits the note and re-posts it.</li>
+                      <li>Later, Eric decides that the information in the note is incorrect. He deletes the note.</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Publishing text content. <span style="background-color: lightgreen">pub</span></li>
+                      <li>Updating published text. <span style="background-color: lightgreen">pub</span></li>
+                      <li>Deleting published text. <span style="background-color: lightgreen">pub</span></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#Reading_a_user.27s_recent_posts">Reading a user's recent posts</a></td>
+                  <td>
+                    <ol>
+                      <li>Iris finds a comment by Sam on one of her photos funny. She'd like to read more posts by Sam.</li>
+                      <li>Iris reads the latest notes by Sam. She also reviews his latest photos.</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Reading comments / replies. <span style="background-color: dodgerblue">read</span></li>
+                      <li>Reading posts from a particular user. <span style="background-color: dodgerblue">read</span></li>
+                      <li>Viewing photos from a particular user. <span style="background-color: dodgerblue">read</span></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#Following_a_person">Following a person</a></td>
+                  <td>
+                    <ol>    
+                      <li>Delano meets Beth at a company meeting. They are both user interface designers. He finds her ideas interesting.</li>
+                      <li>Delano follows Beth on their company social network.</li>
+                      <li>Beth posts a photo from a whiteboarding session at a company retreat.</li>
+                      <li>Delano sees the photo in his inbox stream.</li>
+                      <li>Ted, Delano's coworker, wants to find new people to follow. He looks at the list of people that Delano follows. He finds Beth in the list, reads her stream, enjoys it, and decides to follow her, too.</li>
+                      <li>Beth posts frequently. Delano is having a hard time reading his inbox stream because Beth's activities drown out everyone else's. He stops following Beth.</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Subscription to a user. <span style="background-color: crimson">sub</span></li>
+                      <li>Publishing a photo. <span style="background-color: lightgreen">pub</span></li>
+                      <li>See a user's subscriptions. <span style="background-color: crimson">sub</span></li>
+                      <li>Read posts from a particular user. <span style="background-color: dodgerblue">read</span></li>
+                      <li>Unsubscribe from a user. <span style="background-color: crimson">sub</span></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#Read_Social_Stream">Read social stream</a></td>
+                  <td>
+                    <ol>    
+                      <li>Jake is bored at work. He checks his social inbox stream to see what his friends, family, and coworkers are up to.</li>
+                      <li>Jake sees in his social stream a note by Tammy about her new apartment. Tammy is his friend.</li>
+                      <li>Jake sees in his social stream a photo by Edith from her concert last night. Jake follows Edith but Edith doesn't know Jake. Edith has thousands of followers.</li>
+                      <li>Jake sees in his social stream a video from Damon. Damon and Jake are both in the "Boxing Fans" group. Damon posted the video to the group.</li>
+                      <li>Jake sees in his social stream a sound file from Carol. Carol is Jake's wife. The sound file is a reminder to stop for groceries after work. Carol posted the sound file only for Jake.</li>
+                      <li>Jake sees in his social stream that his friend Tammy has added a new friend, Denise. Jake remembers Denise from high school. <li>Jake requests to add Denise as a friend, too.</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Subscribe to a user (one way). <span style="background-color: crimson">sub</span></li>
+                      <li>Join a group ~= subscribe to group content. <span style="background-color: crimson">sub</span></li>
+                      <li>Publish a video. <span style="background-color: lightgreen">pub</span></li>
+                      <li>Publish audio. <span style="background-color: lightgreen">pub</span></li>
+                      <li>Private sharing. <span style="background-color: dodgerblue">read</span></li>
+                      <li>Publish subscriptions. <span style="background-color: crimson">sub</span></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#Integration_:_Adding_recommendations_to_bespoke_software">Adding recommendations</a></td>
+                  <td>
+                    <ol>
+                      <li>James maintains an application for managing architectural designs</li>
+                      <li>Maggie, a senior architect would like to recommend many of the better designs</li>
+                      <li>James uses an existing liking service which allows him to post any recommendations, to provide this</li>
+                      <li>This service also allows James to present existing likes for the design in question</li>
+                      <li>Maggie gets to like specific designs, and her followers see these as do viewers of these designs</li>
+                      <li>James achieves this with a simple inclusion on the associated web page, but could have chosen a more detailed integration if greater control was needed over the user interface</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Liking / recommending a post. <span style="background-color: lightgreen">pub</span></li>
+                      <li>Subscribe to a user. <span style="background-color: crimson">sub</span></li>
+                      <li>View likes of a post. <span style="background-color: dodgerblue">read</span></li>
+                      <li>Posting from one interface to another system (scope?)</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#Integration_:_Adding_comments_to_bespoke_software">Adding comments</a></td>
+                  <td>
+                    <ol>
+                      <li>Maria, an IT Architect, has been tasked with encouraging better collaboration on the development of her companies Industrial Processes</li>
+                      <li>As these processes are tightly controlled (though generally visible) an associated discussion and evangelisation capability is required</li>
+                      <li>Maria integrates with an existing comment capability to store and retrieve comments rather than redeveloping</li>
+                      <li>May-Ling sees the comment area with the Processes and suggests changes, as she herself does not have rights to update</li>
+                      <li>The process owner gets a notification that someone has commented on this Process</li>
+                      <li>Followers of both the Process owner and May-Ling will see this comment event</li>
+                      <li>Maria achieves this with a simple inclusion on the associated web page, but could have chosen a more detailed integration if greater control was needed over the user interface</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Reply to posts. <span style="background-color: lightgreen">pub</span></li>
+                      <li>Notifications. <span style="background-color: DarkOrchid">notif</span></li>
+                      <li>Subscribe to a user. <span style="background-color: crimson">sub</span></li>
+                      <li>Posting from one interface to another system (scope?)</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#Direct_Messaging">Direct messaging</a></td>
+                  <td>
+                    <ol>
+                      <li>Kyle wants to tell Lisa something privately.</li>
+                      <li>Kyle sends her a message that no one else can view.</li>
+                      <li>Lisa is notified she has a message.</li>
+                      <li>Lisa reads the message and responds privately.</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Publishing text content. <span style="background-color: lightgreen">pub</span></li>
+                      <li>Private sharing; specifying audience. <span style="background-color: dodgerblue">read</span></li>
+                      <li>Notifications. <span style="background-color: DarkOrchid">notif</span></li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+                       
+      </div>
+    </section>
+    <section id="swwg-competing-specifications" rel="schema:hasPart">
+      <h3>Competing specifications</h3>
+      <div>
+
+        <p>The work commenced with some guidelines about deliverables in the charter, but not a specific list; this was something the participants had to figure out in order to meet the previously described API Requirements.</p>
+
+        <p>The technologies promoted by active participants of the Working Group settled into roughly three categories: microformats-based, JSON-based, and RDF-based, with some small points of overlap. The proponents of JSON-based technologies tended to come from the Open Social Foundation background, with experience in open source social systems designed to support multiple users per server/instance. The microformats supporters brought the perspective of individuals running their own personal implementations of social systems, federating with other individuals on a small scale. The RDF crowd brought experience with large-scale data modelling, open data publishing and data integration, often in an academic or proprietary business context. Producing JSON-based protocols was a requirement of the Working Group charter; the other technologies had the potential to still meet this requirement through the microformats2 parsing algorithm in the former case, and JSON-LD in the latter case. These three perspectives are valuable and in theory complementary, but in practice caused drawn out arguments, ideological disagreements, and frequent misunderstandings.</p>
+
+        <p>The different sets of developers set about bringing their preferred solutions up to standard, and submitted them to the Working Group as Editor's Drafts. I started work on documenting the commonalities between the specifications with the intent that we'd manage to converge them into a single optimal protocol (this is the origin of Social Web Protocols). After many months of work, many hours of telecons, and several face-to-face meetings, technical disagreements and general unwillingness to compromise (all captured for posterity in meeting minutes, mailing list discussions, and GitHub issues) resulted in the convergence effort stalling.</p>
+
+        <p>Even leaning on the past experiences (see Chapter 4) of prior systems, this was still relatively untrodden ground, so it was never clear which technology or ideology was most likely to succeed. In most disagreements, it was never obvious that one party was right and the other was wrong. Eventually the Working Group as a whole acknowledged this, and resolved to move forward <em>all</em> of the prospective standards separately, and to stop trying to force convergence into one.</p>
+
+        <p>From outside, this decision was controversial and potentially confusing for developers looking for <em>the</em> solution to decentralised Social Web protocols. However the effect was that specification editors stopped arguing about why their way was the better way to do something, and were free to move their work forward without needing to defend their decisions from people who fundamentally disagreed with their underlying assumptions. Specification editors who had accepted their differences began to help each other, and to share findings and experiences (because they are all working towards the same end goal, after all).</p>
+
+        <p>Ultimately the Working Group has a produced a suite of specifications that is not as coherent as it might have been had the participants been united around fundamental technical decisions. However, we also have a better understanding of how to bridge these different perspectives (in terms of writing code, as well as in terms of discussions) than we would have if one perspective had dominated the group and the others had continued their own work elsewhere. It's too early to tell if this means we increase the chance of these standards being adopted (because we have something to please a broader spectrum of developers out there) or decrease the chances (because we look indecisive and nobody will take the outputs seriously). Similarly, if we see wide uptake of these standards, will we get three (or more) fragmented decentralised Social Webs because developers are opinionated, and writing bridging code is too complicated; or will the efforts towards bridging the approaches be taken up so that completely different protocol stacks can interoperate on some level at least?</p>
+
+        <p>The trials and tribulations of the Social Web Working Group have the potential to have far-reaching consequences on the future of the decentralised Social Web, and as such, on how people are able to present and express themselves online. Even if the Working Group's final outputs are not an ultimate solution, the authority given by the W3C standardisation process means that they will at least be referred to, and probably built upon, as the decentralised Social Web grows.</p>
+      </div>
+    </section>
+
+    <section id="swwg-process" rel="schema:hasPart">
+      <h3>The standardisation process</h3>
+      <div>
+
+        <p>Once a group is formed and participants are in place, the W3C has <em>many</em> processes in place to facilitate standards development. Specifications advance usually over the course of one to two years, through a number of stages of increasing stability, to bring them to a final status of <em>REC</em> (recommendation). Each stage is designed to elicit development, input, and review from different qualified parties to iron out bugs, correct omissions, and generally make sure the specification will do what it is intended to do. While direct input is limited to Working Group members, specification development is carried out in public. Each date-stamped draft is online for anyone to review, mailing list archives, meeting minutes, wiki pages, and (at least in the case of the Social Web Working Group) IRC logs are publicly visible. Working Groups tend to take public comments over a specific mailing list, or GitHub issues, and are obliged to be responsive and consider all feedback seriously.</p>
+
+        <p>Specifications are maintained as Editor's Drafts (ED) throughout their life cycle. This is the most up to date version, and updated at the editor's discretion. Working Groups do not have the authority to publish specifications unsupervised. Each Working Group is supported by one or two W3C employees (Team Contacts), and at each transition from one specification maturity level to the next, a request is sent to the W3C Director, who reviews the relevant information, checks that the Working Group have been handling feedback from commenters appropriately, clarifies any points of confusion, and grants or denies the request.</p>
+
+        <p>The first formal iteration (hosted at the W3C domain) is the First Public Working Draft (FPWD). An ED need not be perfect, or even complete, but when it is sufficiently outlined the Working Group participants vote to publish the FPWD. This is the first stage of the Working Group committing to progress the document towards recommendation. As the specification is discussed and implemented, and feedback comes in, features are added, removed and refined. After each batch of major changes to the ED, the Working Group may vote to publish updated Working Drafts (WD). WDs are essentially official snapshots at particular points in time. As a specification becomes stable (ie. it receives fewer and fewer major changes) the Working Group reaches out further to solicit 'wide review' from relevant communities. These may be outside the W3C as necessary, but there are specific groups inside the W3C who are expected to review all specifications along particular dimensions; namely: security and privacy, internationalisation, and accessibility.</p>
+
+        <p>When the specification is sufficiently stable, and wide review has been achieved, the Working Group may vote to advance to Candidate Recommendation (CR). The CR phase lasts for a minimum of four weeks. This commences a broader call for implementations from outside of the W3C, begins the window in which W3C members must disclose patent conflicts, and prompts W3C Advisory Committee members to review the specification. If major (non-editorial) changes are made to the specification during this phase (which is not uncommon as a result of third-party implementation feedback), then a new CR must be published, which restarts the four week time period. During this time, the editors and their collaborators should be polishing up official test suites, and soliciting implementation reports. The specification can advance to Proposed Recommendation (PR) when it meets a CR exit criteria previously defined by Working Group consensus. In the case of the Social Web Working Group, specifications are expected to have tests and reports for at least two independent implementations of each feature of a specification (where 'feature' is defined per specification). During PR, which must also last a minimum of four weeks, Advisory Committee representatives are re-prompted to review the spec. This is the last time during which anyone can make a Formal Objection to the specification's progression, or raise patent conflicts. <em>Finally</em>, if enough positive Advisory Committee reviews are received, the W3C Director approves the specification to transition to REC. It is carved in stone.</p>
+
+        <p>Why am I telling you all this?</p>
+
+        <p>This is an example of organisational processes having impact on technology design long before the technology is in the hands of end users. The specifications of the Social Web Working Group were not only touched by their editors and Working Group participants, but reshaped and influenced by W3C staff, and representatives of paying W3C Members who weren't participating in the Group directly. Specs were poked and tweaked by other Working Groups who do not specialise in the Social Web (most contentious input came from the Internationalisation (18n) Working Group), as well as critiqued by complete outsiders at every step of the way.</p>
+
+        <p>Most specification editors in the Social Web Working Group were invited experts, and thus not paid by an organisation for their contributions. They were working on these specifications, attending weekly telecons, and often quarterly face-to-face meetings, on their own time, and own dime. Editors are also burdened with test suite development; no small task. The W3C process imposes structure, deadlines and deliverables to the specification development process that may be missing (or certainly different) were the specs advanced elsewhere. These deadlines and review processes ultimately affect what is included in a specification, and what is removed. Smaller specs are easier to review, easier to test, and therefore faster to progress. This tended to mean that when in doubt, features were dropped or marked as 'at risk' rather than have them hold up progress. In particular, ActivityStreams 2.0 was brutally trimmed down over the years, and requests for additions to the vocabulary were automatically rejected after a certain point for fear of slowing things down. I wonder how these exclusions will impact future software designed around AS2.</p>
+
+        <p>Something else worth bearing in mind is that for all of this <em>process</em>, it is commonly held that most 'regular Web developers' don't know or don't care (or both) the difference between the different maturity levels of W3C specifications, or even the difference between a Recommendation and a Note. This makes it fairly easy for developers to be implementing from an out of date document, or giving weight to a protocol design that was ultimately rejected or even unfinished. Not everything with the W3C stamp on has been fully thought through or passed quality tests, but not every developer realises this.</p>
+
+      </div>
+    </section>
+
+    <section id="swwg-context" rel="schema:hasPart">
+      <h3>Standardisation as Context</h3>
+      <div>
+        <p class="todo">Roundup of how this all fits in with CCCCC... ultimately these factors affecting users, long before any systems are even developed.</p>
+        
+      </div>
+
     </section>
 
     <section id="social-web-protocols" rel="schema:hasPart">
       <h3>Social Web Protocols</h3>
       <div>
-        <p>How the standards of the SWWG can fit together into an actual system: <a href="https://w3.org/TR/social-web-protocols">SWP</a></p>
+        <p>Having covered the context of the specifications' development, we now dive into their actual functionality. This section introduces the <em>Social Web Protocols</em>, a description of the specifications produced by the Social Web Working Group, and is arranged by the previously derived API requirements. Some content in this section is published as a W3C Working Group Note [<a href="#ref-swp">swp</a>]. Systems can be built with these protocols in great variety. Incorporating the standards produced by the Social Web Working Group does not automatically mean a system is empowering to its users as the protocols provide only a skeleton, leaving much open for specialisation by developers. Conformance to these protocols does however imply that users are able to move their data between systems; that clients and servers are somewhat decoupled so users have more flexibility with regards to tools; and that users are not compelled to follow their network or locked into the system where their friends are.</p>
+
+        <section id="swp-overview" rel="schema:hasPart">
+          <h4>Overview</h4>
+          <div>
+
+            <p>People and the content they create are the core components of the Social Web; they make up the social graph. This document describes a standard way in which people can:</p>
+
+            <ul>
+              <li>connect with other people and subscribe to their content;</li>
+              <li>create, update and delete social content;</li>
+              <li>interact with other peoples' content;</li>
+              <li>be notified when other people interact with their content;</li>
+            </ul>
+
+            <p>regardless of <em>what that content</em> is or <em>where it is stored</em>.</p>
+
+            <p>These components are core building blocks for interoperable social systems.</p>
+
+            <p>Each of these components can be implemented independently as needed, or all together in one system, as well as extended to meet domain-specific requirements. Users can store their social data across any number of compliant servers, and use compliant clients hosted elsewhere to interact with their own content and the content of others. Put simply, this document tells you, according the recommendations of the Social Web Working Group:</p>
+
+            <ul>
+              <li>how to expose/consume social content (reading).</li>
+              <li>what to post, and where to, in order to create, update or delete content (publishing).</li>
+              <li>how to ask for notifications about content (subscribing).</li>
+              <li>how to deliver notifications about content or users (delivery).</li>
+              <!-- <li>how to expose profiles and <a href="#relationships">relationships</a>.</li> -->
+            </ul>
+
+            <p>The <a href="#swp-reqs">following table</a> shows the high level requirements according to the <a href="https://www.w3.org/2013/socialweb/social-wg-charter.html">Social Web Working Group charter</a> and the <a href="https://www.w3.org/wiki/Socialwg/Social_API/Requirements">Social API Requirements</a>, and how the specifications of the Working Group overlap with respect to each.</p>
+            <table id="swp-reqs">
+              <thead><tr><td colspan="10"><p><strong>Table [swp-reqs]:</strong> The API requirements and which specs they are met by.</p></td></tr></thead>
+              <tbody>
+                <tr>
+                  <th></th>
+                  <th><a href="#content-representation">Vocabulary</a></th>
+                  <th><a href="#content-representation">Syntax</a></th>
+                  <th><a href="#reading">Read</a></th>
+                  <th><a href="#creating-content">Create</a></th>
+                  <th><a href="#updating">Update</a></th>
+                  <th><a href="#deleting">Delete</a></th>
+                  <th><a href="#subscribing">Subscription</a></th>
+                  <th><a href="#delivery">Delivery</a></th>
+                  <!-- <th><a href="#profiles">Profiles</a></th> -->
+                </tr>
+                <tr>
+                  <td style="text-align:left;">ActivityPub</td>
+                  <td></td>
+                  <td></td>
+                  <td>X</td>
+                  <td>X</td>
+                  <td>X</td>
+                  <td>X</td>
+                  <td>X</td>
+                  <td>X</td>
+                  <!-- <td>X</td> -->
+                </tr>
+                <tr>
+                  <td style="text-align:left;">ActivityStreams 2.0</td>
+                  <td>X</td>
+                  <td>X</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <!-- <td></td> -->
+                </tr>
+                <tr>
+                  <td style="text-align:left;">Linked Data Notifications</td>
+                  <td></td>
+                  <td></td>
+                  <td>X</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>X</td>
+                  <!-- <td></td> -->
+                </tr>
+                <tr>
+                  <td style="text-align:left;">Micropub</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>X</td>
+                  <td>X</td>
+                  <td>X</td>
+                  <td></td>
+                  <td></td>
+                  <!-- <td></td> -->
+                </tr>
+                <tr>
+                  <td style="text-align:left;">WebSub<br></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>X</td>
+                  <td></td>
+                  <!-- <td></td> -->
+                </tr>
+                <tr>
+                  <td style="text-align:left;">Webmention</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>X</td>
+                  <!-- <td></td> -->
+                </tr>
+              </tbody>
+            </table>
+
+            <p>The specifications may be implemented alongside each other in various configurations. <a href="#swp-specpaths">This figure</a> shows a high level view of how different parties in a social system may be connected together. The arrows show data flowing through the system, and the labels of the arrows are the protocols by which data is enabled to flow.</p>
+            
+            <figure id="swp-specpaths" rel="schema:hasPart">
+              <img src="figs/swp.png" id="swp-specpaths-img" />
+              <figcaption><p><strong>Fig [specpaths]:</strong> How the Social Web Protocols specifications connect different (high level) parties together (<span>all possibilities, click to show different configurations</span>).</p></figcaption>
+            </figure>
+
+            <p>Some of the specifications overlap in functionality, or complement each other explicitly. This list provides detail on some key relations between different specifications, and <a href="#swp-specrels">table [specrels]</a> provides a summary.</p>
+
+            <ul>
+              <li><strong>ActivityPub and ActivityStreams 2.0</strong>: ActivityPub uses the AS2 syntax and vocabulary for the payload of all requests.</li>
+              <li><strong>ActivityPub and Linked Data Notifications</strong>: ActivityPub specialises LDN as the mechanism for delivery of notifications by requiring that payloads are AS2. <em>Inbox</em> endpoint discovery is the same. LDN receivers can understand requests from ActivityPub federated servers, but ActivityPub servers can't necessarily understand requests from generic LDN senders.</li>
+              <li><strong>ActivityStreams 2.0 and Linked Data Notifications</strong>: LDN MAY use the AS2 syntax and vocabulary for the payload of notification requests.</li>
+              <li><strong>Webmention and Linked Data Notifications</strong>: Overlapping functionality that needs to be bridged due to different content types of requests. An LDN request MAY contain the equivalent data as a Webmention request, but not necessarily vice versa.</li>
+              <li><strong>ActivityPub and Micropub</strong>: Overlapping functionality that needs to be bridged due to different vocabularies and possibly different content types of requests. Micropub specifies client-to-server interactions for content creation; ActivityPub specifies this, <em>plus</em> side-effects and server-to-server interactions.</li>
+              <li><strong>Micropub and Webmention</strong>: Are complementary but independent. Content could be created with Micropub, then Webmention discovery can be commenced on any URLs in the content.</li>
+              <li><strong>Micropub and Linked Data Notifications</strong>: Are complementary but independent. Content could be created with Micropub, then LDN discovery can be commenced on any relevant resources identified by the server.</li>
+              <li><strong>Micropub and WebSub</strong>: Are complementary but independent. Content could be created with Micropub, then passed to a WebSub <em>hub</em> for delivery to subscribers.</li>
+            </ul>
+
+            <table id="swp-specrels" rel="schema:hasPart">
+              <thead><tr><td colspan="7"><p><strong>Table [specrels]:</strong> How each spec relates to the others.</p></td></tr></thead>
+              <tfoot><tr><td colspan="7">
+                <p><strong>To read (approx):</strong> if I have <em>x</em>, it uses <em>y</em> to _.</p>
+                <p><em>n/a</em> means there is no explicit relation between the specs, but does not mean to suggest they can't be used together.</p>
+                <p><em>bridge</em> means these specs have overlapping functionality and bridging code is needed for interoperability.</p>
+              </td></tr></tfoot>
+              <tbody>
+                <tr>
+                  <th></th>
+                  <th>AS2</th>
+                  <th>AP</th>
+                  <th>MP</th>
+                  <th>LDN</th>
+                  <th>WM</th>
+                  <th>WS</th>
+                </tr>
+                <tr>
+                  <td>AS2</td>
+                  <td></td>
+                  <td>represent content for CRUD, delivery and subscriptions</td>
+                  <td>n/a</td>
+                  <td>MAY represent notification contents</td>
+                  <td>n/a</td>
+                  <td>MAY represent publishers' content</td>
+                </tr>
+                <tr>
+                  <td>AP</td>
+                  <td>pass it around with</td>
+                  <td></td>
+                  <td>bridge</td>
+                  <td>use to trigger notifications</td>
+                  <td>n/a</td>
+                  <td>n/a</td>
+                </tr>
+                <tr>
+                  <td>MP</td>
+                  <td>n/a</td>
+                  <td>bridge</td>
+                  <td></td>
+                  <td>n/a</td>
+                  <td>n/a</td>
+                  <td>n/a</td>
+                </tr>
+                <tr>
+                  <td>LDN</td>
+                  <td>MAY pass notifications around with</td>
+                  <td>use for delivery</td>
+                  <td>n/a</td>
+                  <td></td>
+                  <td>bridge</td>
+                  <td>use for delivery</td>
+                </tr>
+                <tr>
+                  <td>WM</td>
+                  <td>n/a</td>
+                  <td>n/a</td>
+                  <td>n/a</td>
+                  <td>bridge</td>
+                  <td></td>
+                  <td>n/a</td>
+                </tr>
+                <tr>
+                  <td>WS</td>
+                  <td>MAY pass feeds to subscribers</td>
+                  <td>n/a</td>
+                  <td>n/a</td>
+                  <td>use to trigger notifications</td>
+                  <td>n/a</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="swp-read" rel="schema:hasPart">
+          <h4>Reading</h4>
+          <div>
+            <p>An individual's self presentation online can be partially composed of content they produce and interact with. The <em>read</em> label covers how these are exposed for consumption by others. This may include permissions or access control, which could require the reader to identify themselves before content is made available. Different types of content and interactions should be discoverable, perhaps according to criteria like the type of content, a group or individual with which it is associated, or through its association with other content (eg. through replies).</p>
+
+            <h5 id="content-representation">Content representation</h5>
+
+            <p><strong>ActivityStreams 2.0</strong> (AS2) models content and interactions as objects and activities. AS2 includes a <em>vocabulary</em> for modelling different types of objects and activities as well as various relations they might have with other objects (including user profiles) and activities. The AS2 <em>syntax</em> describes a consistent structure for objects and activities including sets of objects and activities as collections. Collections can be explicitly created and updated by a user (like adding photos to an album) or generated automatically as a result of other user actions or the properties of certain objects/activities (eg. a list of followers of a user). AS2 does not specify how objects, activities, or collections come into existence, only what they look like once they do.</p>
+
+            <p>AS2 content must be served with the Content-Type <code>application/activity+json</code> or, if necessary for JSON-LD extended implementations, <code>application/ld+json; profile="http://www.w3.org/ns/activitystreams"</code>. Content must be described using the AS2 vocabulary, and may use other vocabularies in addition or instead, per the extension mechanism.</p>
+
+            <p>To make content available as ActivityStreams 2.0 JSON, one could do so directly when requested with an appropriate <code>Accept</code> header (eg. <code>application/activity+json</code> or <code>application/ld+json</code>), or indirectly via a <code>rel="alternate" type="application/activity+json"</code> link . This link could be to a different domain, for third-party services which dynamically generate ActivityStreams 2.0 JSON on behalf of a publisher.</p>
+
+            <p>AS2 builds upon ActivityStreams 1.0 [<a href="#ref-as1">as1</a>] and is not fully backwards compatible; <a href="http://www.w3.org/TR/activitystreams-core#activitystreams-1.0">the relationship between AS1 and AS2 is documented in the AS2 spec</a>.</p>
+
+            <p>Because AS2 is a data model, it does not recommend how data should be displayed. Its utility is in enabling a consistent representation of social objects and activities to be passed between potentially disconnected systems (eg. from Alice's social network to Bob's). The systems consuming the data are responsible for rendering it appropriately. This means that system designers can provide their users with options for customising the presentation data that may constitute their profiles.</p>
+
+            <h5 id="extending-as2">Extending AS2</h5>
+
+            <p>AS2 specifies a finite set of object and activity types and properties. These are a baseline set of common social interactions which can be extended upon by systems which need additional terms or more specific variations. The extension mechanism is based on linked data, via JSON-LD. Developers are expected to publish documentation and an RDF representation of their terms at a domain under their control, and refer to terms by URI in the normal manner. Further, the Social Web Working Group describes a mechanism by which well-used extensions are included with the AS2 namespace document by means of a W3C Community Group vetting process. The advantage of this is that implementations can adopt common extensions easily, without needing to include additional namespaces. It also makes extensions more discoverable for newcomers to AS2.</p>
+
+            <p>The first such extension is in fact <strong>ActivityPub</strong>. ActivityPub uses ActivityStreams 2.0 for all data in all requests, and also adds additional terms to the AS2 namespace. Thus, ActivityPub requires requests have the Content-Type <code>application/ld+json; profile="https://www.w3.org/ns/activitystreams"</code>.</p>
+
+            <h5 id="content-representation-other">Other ways of representing content</h5>
+
+            <p>Despite AS2 being the recommended synatax and vocabulary of the Working Group, some specifications use different or broader mechanisms. This helps to let developers pick and choose different specifications for different tasks even if they prefer not to use AS2:</p>
+            <ul>
+              <li><strong>Linked Data Notifications</strong> notification contents can use any vocabulary, so long as the data is available in JSON-LD. Thus notifications may use ActivityStreams 2.0, but don't have to. Clients and servers can negotiate between themselves (using <code>Accept</code> and <code>Accept-Post</code> HTTP headers) about using different RDF syntaxes, as well.</li>
+              <li><strong>Micropub</strong> clients which expect to read data (this would usually be clients for <em>updating</em> content) are expecting it as JSON in the <a href="http://microformats.org/wiki/microformats2-parsing">parsed microformats2 syntax</a>.</li>
+              <li><strong>WebSub</strong> is agnostic as to the Content-Type used by publishers; hubs are expected to deliver the new content to subscribers as-is produced by the publisher, at the publisher's <code>topic</code> URL.</li>
+            </ul>
+
+            <h5 id="objects-and-streams">Objects and streams</h5>
+
+            <p>Whichever syntax and vocabulary is used, there are some general recommendations for representing objects (individual entities) and streams (sets or collections of objects).</p>
+            <ul>
+              <li>All objects must have URLs in their <code>id</code> property. This URL should resolve to return the properties of an object; what is returned may depend on the requester's right to access the content, determined by authentication and/or authorisation.</li>
+              <li>Each stream must have a URL, which must resolve to return the contents of the stream (according to the requester's right to access, and could be paged). The data returned may include additional metadata about the stream (such as title, description).</li>
+              <li>Each object in a stream must contain at least its URL, which can be dereferenced to retrieve all properties of the object, and may contain other properties of the object.</li>
+              <li>One user may publish one or more streams of content. Streams may be generated automatically or manually, and might be segregated by post type, topic, audience, or any arbitrary criteria decided by the curator of the stream. A user <a href="#profiles">profile</a> MAY include links to multiple streams, which a consumer could follow to read or subscribe to.</li>
+            </ul>
+
+            <h5 id="special-streams">Special streams</h5>
+
+            <p>Streams are represented in AS2 as a <code>Collection</code> or <code>OrderedCollection</code>. ActivityPub defines some special usages; two streams that must be accessible from a user's profile, and four which are optional, via the following properties:</p>
+
+            <ul>
+              <li><code>inbox</code>: A reference to an AS2 collection comprising all the objects sent to the profile's owner.</li>
+              <li><code>outbox</code>: An AS2 collection comprising all the objects produced by the profile's owner.</li>
+              <li><code>following</code>: An optional AS2 collection of the users that this user is following.</li>
+              <li><code>followers</code>: An optional AS2 collection of the users that follow this user.</li>
+              <li><code>likes</code>: An optional AS2 collection of every <code>object</code> from all of the user's <code>Like</code> activities (generated automatically by the server).</li>
+              <li><code>streams</code>: An optional list of supplementary AS2 collections which may be of interest. </li>
+            </ul>
+  
+            <p>ActivityPub permits arbitrary streams to be updated through specifying special behavior for the server when it receives activities with types <code>Add</code> and <code>Remove</code>. When a server receives such an activity in the <code>outbox</code>, and the <code>target</code> is a stream, it must add the <code>object</code> to the <code>target</code> (for <code>Add</code>) or remove the <code>object</code> from the <code>target</code> (for <code>Remove</code>).</p>
+
+            <p>Two kinds of special streams are <code>inbox</code> and <code>outbox</code>. When read (ie. with an HTTP <code>GET</code> request) they return ordinary streams of objects, but they also double as endpoints which can be <code>POST</code>ed to directly to add objects, for <a href="#swp-delivery">delivery of notifications</a> and <a href="#swp-publish">publishing new content</a> respectively.</p>
+
+            <p>The <code>inbox</code> is a notion shared by ActivityPub and Linked Data Notifications, however in order to be <em>read</em> by both ActivityPub <em>and</em> LDN clients, publishers must relate the stream to the objects it contains using both the <code>as:items</code> and <code>ldp:contains</code> predicates. This is an unfortunate discord, but since ActivityPub is immovably tied to AS2 and LDN is immovably tied to compatibility with existing Linked Data Platform servers, there was really no compromise to be had. Fortunately this bridge is relatively minor in terms of coding, once a developer is aware of it.</p>
+
+          </div>
+        </section>
+
+        <section id="swp-publish" rel="schema:hasPart">
+          <h4>Publishing</h4>
+          <div>
+            <p>Publishing in this context incorporates creating new content, and updating or deleting existing content. Content generated through a client (such as a web form, mobile app, sensor, smart device) is created when it is sent to a server for processing, where it is typically stored and usually published (either publicly or to a restricted audience, in human- and/or machine-readable forms). Clients and servers may independently support creating, updating and deleting; there are no dependencies between them.</p>
+
+            <p>Authentication and authorization between clients and servers for creating content are not included in these specifications, as they are considered orthogonal problems which should be solved elsewhere.</p>
+
+            <p>The two specifications recommended by the Social Web Working Group for publishing are Activitypub and Micropub. They use similar high level mechanisms, but differ in requirements around both the vocabularies and content types of data. ActivityPub contains a client-to-server API for creating ActivityStreams 2.0 objects and activities, and specifies additional responsibilities for clients around addressing objects, and for servers around the side-effects of certain types of objects. Micropub provides a basic client-to-server API for creating blog-post type content which can be implemented alone and is intended as a quickstart for content creation, on top of which more complex (but optional) actions can be layered.</p>
+
+            <p>Both provide similar media endpoints for uploading files.</p>
+
+            <p>Neither ActivityPub nor Micropub define APIs for publishing based on HTTP verbs, and thus differ from the more RESTful <a href="https://www.w3.org/TR/ldp">Linked Data Platform (LDP)</a>.</p>
+
+            <h5 id="swp-creating">Creating</h5>
+
+            <p>The publishing endpoint of <strong>ActivityPub</strong> is the <code>outbox</code>. Clients are assumed to have the URL of a (ideally authenticated) user profile as a starting point, and discover the value of the <code>https://www.w3.org/ns/activitystreams#outbox</code> property found at the profile URL (which should be available as JSON). The client then makes an HTTP <code>POST</code> request with an ActivityStreams 2.0 activity or object as a JSON payload with a content type of <code>application/ld+json; profile="https://www.w3.org/ns/activitystreams"</code>. The URL of the created resource is generated at the discretion of the server, and returned in the <code>Location</code> HTTP header. This is an appropriate protocol to use when:</p>
+
+            <ul>
+              <li>You want to send/receive a JSON or JSON-LD payload.</li>
+              <li>Your data is described with AS2 (optionally extensible via JSON-LD).</li>
+              <li>You want serves to carry out a known set of actions upon content creation.</li>
+            </ul>
+
+            <p>Side-effects of creating content with ActivityPub are for the most part adding things to various different collections collections (likes, follows, etc); but also include requirements about blocking users, and a hook to enable federated servers.</p> 
+
+            <p>The publishing endpoint for <strong>Micropub</strong> is the <code>micropub</code> end point. Clients discover this from a user's URL via a <code>rel="micropub"</code> link (in an HTTP <code>Link</code> header, or an HTML element). Clients make a <code>x-www-form-urlencoded</code> POST request containing the key-value pairs for the attributes of the object being created. The URL of the created resource is generated at the discretion of the server, and returned in the <code>Location</code> HTTP header. Clients and servers must support attributes from the Microformats 2 h-entry vocabulary. Micropub also defines special reserved attributes (prefixed with <code>mp-</code>) which can be used as commands to the server. Any additional key names sent outside of these vocabularies may be ignored by the server.</p>
+
+            <p>Micropub requests may alternatively be sent as a JSON payload, the syntax of which is derived from the Microformats 2 parsing algorithm. This is an appropriate protocol to use when:</p>
+
+            <ul>
+              <li>You want to send/receive a form-encoded or JSON payload.</li>
+              <li>Your data is described with the h-entry syntax and vocabulary.</li>
+              <li>You can rely on out-of-band agreements between clients and servers for vocabulary extensibility.</li>
+            </ul>
+
+            <h5 id="swp-updating">Updating</h5>
+
+            <p>Content is updated when a client sends changes to attributes (additions, removals, replacements) to an existing object. If a server has implemented a <a href="#swp-delivery">delivery</a> or <a href="#swp-subscribing">subscription</a> mechanism, when an object is updated, the update MUST be propagated to the original recipients using the same mechanism.</p>
+
+            <p><strong>ActivityPub</strong> clients send an HTTP <code>POST</code> request to the <code>outbox</code> containing an AS2 <code>Update</code> activity. The <code>object</code> of the activity is an existing object, and the fields to update should be nested. If a partial representation of an object is sent, omitted fields are <em>not</em> deleted by the server. In order to delete specific fields, the client can assign them a <code>null</code> value. However, when a federated server passes an <code>Update</code> activity to another server's <em><code>inbox</code></em>, the recipient must assume this is the <em>complete</em> object to be replaced; partial updates are not performed server-to-server.</p>
+
+            <p><strong>Micropub</strong> clients perform updates, as either form-encoded or JSON POST requests, using the <code>mp-action=update</code> parameter, as well as a <code>replace</code>, <code>add</code> or <code>delete</code> property containing the updates to make, to the Micropub endpoint. <code>replace</code> replaces all values of the specified property; if the property does not exist already, it is created. <code>add</code> adds new values to the specified property without changing the existing ones; if the property does not exist already, it is created. <code>delete</code> removes the specified property; you can also remove properties by value by specifying the value.</p>
+
+            <h5 id="swp-deleting">Deleting</h5>
+
+            <p>Content is deleted when a client sends a request to delete an existing object. If a server has implemented a <a href="#delivery">delivery</a> or <a href="#subscribing">subscription</a> mechanism, when an object is deleted, the deletion MUST be propagated to the original recipients using the same mechanism.</p>
+
+            <p><strong>ActivityPub</strong> clients delete an object by sending an HTTP POST request containing an AS2 <code>Delete</code> activity to the <code>outbox</code> of the authenticated user. Servers MUST either <em>replace</em> the <code>object</code> of this activity with a tombstone and return a <code>410 Gone</code> status code, or return a <code>404 Not Found</code>, from its URL.</p>
+
+            <p><strong>Micropub</strong> delete requests are two key-value pairs, in form-encoded or JSON: <code>mp-action</code>: <code>delete</code> and <code>url</code>: <code>url-to-be-deleted</code>, sent to the Micropub endpoint .</p>
+
+          </div>
+        </section>
+
+        <section id="swp-subscribing" rel="schema:hasPart">
+          <h4>Subscribing</h4>
+          <div>
+            <p>An agent (client or server) may <em>ask</em> to be notified of changes to a content object (eg. edits, new replies) or stream of content (eg. objects added or removed from a particular stream). This is <em>subscribing</em>. Specifications which contain subscription mechanisms are ActivityPub and WebSub.</p>
+
+            <p>Nothing should rely on implementation of a subscription mechanism. That is, implementations may set themselves up to receive notifications without always being required to explicitly ask for them from a sender or publisher: see <a href="#swp-delivery">delivery</a>.</p>
+
+            <h5 id="swp-follow">Subscribing with <code>as:Follow</code></h5>
+            <p><strong>ActivityPub</strong> servers maintain a <em>Followers</em> collection for all users. This collection may be directly addressed, or addressed automatically or by default, in the <code>to</code>, <code>cc</code> or <code>bcc</code> field of any Activity, and as a result, servers <a href="#swp-delivery">deliver</a> the Activity to the <code>inbox</code> of each user in the collection.</p>
+            <p>Subscription requests are essentially requests to be added to this collection. They are made by the subscriber's server <code>POST</code>ing a <code>Follow</code> Activity to the target's <code>inbox</code>. This request should be authenticated, and therefore doesn't need additional verification. The target server then SHOULD add the subscriber to the target's Followers collection. Exceptions may be made if, for example, the target has blocked the subscriber.</p>
+
+            <p>This is a suitable subscription mechanism when:</p>
+
+            <ul>
+              <li>The subscriber wants to request updates from a specific actor (rather than objects, streams or threads).</li>
+              <li>The subscriber and publisher both speak ActivityStreams 2.0.</li>
+              <li>The publisher is aware of who has subscribed, and capable of delivering content to subscribers itself.</li>
+            </ul>
+
+            <p>Since delivery is only a requirement for federated servers, prospective subscribers will not be able to <code>POST</code> their <code>Follow</code> activity to the <code>inbox</code> of a profile which is on a non-federated server (expect a <code>405 Method Not Allowed</code>), and thus are not able to subscribe to these profiles. In this case, prospective subscribers may wish to periodically <em>pull</em> from the publisher's <code>outbox</code> instead.</p>
+
+            <h5 id="subscription-delegating">Delegating subscription handling</h5>
+            <p><strong>WebSub</strong> provides a mechanism to delegate subscription handling and delivery of content to subscribers to a third-party, called a <em>hub</em>. All publishers need to do is link to their chosen hub(s) using HTTP <code>Link</code> headers or HTML <code>&lt;link&gt; </code> elements with <code>rel="hub"</code>, and then notify the hub when new content is available. The mechanism for notifying the hub is left deliberately unspecified, as publishers may have their own built in hub, and therefore use an internal mechanism.</p>
+            
+            <p>Hubs and publishers which would like to agree on a standard mechanism to communicate might consider employing an existing <a href="#swp-delivery">delivery</a> mechanism, namely Linked Data Notifications (<a href="#swp-subscription-notification">fig. [subscription-notification</a>]) or Webmention<sup><a href="fn-swp-sub-wm">sub-wm</a></sup>.</p>
+
+            <figure id="swp-subscription-notification">
+              <pre>
+POST /inbox HTTP/1.1
+Host: hubbub.example
+Content-type: application/ld+json
+
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "id": "",
+  "type": "Announce",
+  "object": "https://rhiaro.co.uk/tags/socialwg",
+  "target": "https://hubbub.example/"
+}
+              </pre>
+              <figcaption><p><strong>Figure [subscription-notification]:</strong> Notifying a hub of new content with LDN, using an AS2 Announce in the notification body. The <code>object</code> is the <code>topic</code> URL and the <code>target</code> is the hub itself. The hub can use this information to fetch new content for subsequent delivery to subscribers.</p></figcaption>
+            </figure>
+
+            <p>The subscriber discovers the hub from the publisher, and sends a form-encoded <code>POST</code> request containing values for <code>hub.mode</code> ("subscribe"), <code>hub.topic</code> (the URL to subscribe to) and <code>hub.callback</code> (the URL where updates should be sent to, which should be 'unguessable' and unique per subscription). The hub and subscriber carry out a series of exchanges to verify this request.</p>
+            <p>When the hub is notified of new content by the publisher, the hub fetches the content of the <code>topic</code> URL, and <a href="#swp-delivery">delivers</a> this to the subscriber's <code>callback</code> URL.</p>
+
+            <p>This is a suitable subscription mechanism when:</p>
+
+            <ul>
+              <li>The subscriber wants to request updates from any resource (not just user profiles), and of any content type.</li>
+              <li>Subscription requests are not authenticated, so you need a way to verify them.</li>
+              <li>The publisher wants to delegate distribution of updates to another service (the hub) instead of doing it itself.</li>
+            </ul>
+          </div>
+
+          <p>LDN Receivers can receive deliveries from WebSub hubs by using the <code>inbox</code> URL as the <code>hub.callback</code> URL and <em>either</em> only subscribing to resources published as JSON-LD <em>or</em> accepting content-types other than JSON-LD.</p>
+
+          <p class="fn"><strong>sub-wm</strong>: though this seems to be me to be somewhat outside of the spirit of 'mentioning'.</p>
+        </section>
+
+        <section id="swp-delivery" rel="schema:hasPart">
+          <h4>Delivering</h4>
+          <div>
+            <p>A user or application may wish to push a notification to another user that the receiver has <em>not explicitly asked</em> for. For example to send a message or some new information; because they have linked to (replied, liked, bookmarked, reposted, etc) their content; because they have linked to (tagged, addressed) the user directly; to make the recipient aware of a change in state of some document or resource on the Web. The Social Web Working Group specifications contain several mechanisms for carrying out delivery; they are listed here from general to specialsed.</p>
+
+            <h5 id="swp-targeting-and-discovery">Targeting and discovery</h5>
+            <p>The target of a notification is usually the addressee or the subject, as referenced by a URL. The target may also be someone who has previously requested notifications through a <a href="#subscribing">subscription</a> request. Once you have determined your target, you need to discover where to send the notification for that particular target. Do this by fetching the target URL and looking for a link to an endpoint which will accept the type of notification you want to send (read on, for all of your exciting options).</p>
+            <p>Bear in mind that many potential targets will <em>not</em> be configured to receive notifications at all. To avoid overloading unsuspecting servers with discovery-related requests, your application should employ a "back-off" strategy when carrying out discovery multiple times to targets on the same domin. This could involve increasing the period of time between subsequent requests, or caching unsuccessful discovery attempts so those domains can be avoided in future. You may wish to send a <code>User-Agent</code> header with a reference to the notification mechanism you are using so that recipient servers can find out more about the purpose of your requests.</p>
+            <p>Your application should also respect relevant cache control and retry headers returned by the target server.</p>
+
+            <h5 id="swp-delivery-generic">Generic notifications</h5>
+            <p><strong>LDN</strong> provides a protocol for sending, receiving and consuming notifications which may contain any content, or be triggered by any person or process. Senders, receivers and consumers can all be on different domains, thus this meets the criteria for a federation protocol. This is a suitable notification mechanism when:</p>
+
+            <ul>
+              <li>Notifications need to be identifiable with their own URLs and exposed by the receiver for other applications to discover and re-use.</li>
+              <li>Notifications are represented as a JSON-LD payload (ie. a 'fat ping').</li>
+              <li>You need to advertise constraints on the type or contents of notifications accepted by a receiver.</li>
+            </ul>
+
+            <p>LDN functionality is divided between <em>senders</em>, <em>receivers</em> and <em>consumers</em>. The endpoint to which notifications are sent is the <code>inbox</code>. Any resource (a user profile, blog post, document) can advertise its <code>inbox</code> so that it may be discovered through an HTTP <code>Link</code> header or the document body in any RDF syntax (including JSON-LD or HTML+RDFa). To this Inbox, senders make a <code>POST</code> request containing the JSON-LD (or other RDF syntax per <code>Accept-Post</code> negotation with the receiver) payload of the notification. The receiver returns a URL from which the notification data can be retrieved, and also adds this URL to a list which is returned upon a <code>GET</code> request to the Inbox. Consumers can retrieve this Inbox listing, and from there the individual notifications, as JSON-LD (optionally content negotiated to another RDF syntax). An obvious type of consumer is a script which displays notifications in a human-readable way.</p>
+
+            <p>An existing LDP implementation can serve as an LDN receiver; publishers simply advertise any <code>ldp:Container</code> as the <code>inbox</code> for a resource.</p>
+
+            <p>The payload of notifications is deliberately left open so that LDN may be used in a wide variety of use cases. However, receivers with particular purposes are likely to want to constrain the types of notifications they accept. They can do this transparently (such that senders are able to attempt to conform, rather than having their requests rejected opaquely) by advertising data shapes constraints such as <a href="https://www.w3.org/TR/shacl/">SHACL</a>. Advertisement of such constraints also allows consumers to understand the types of notifications in the Inbox before attempting to retrieve them. Receivers may reject notifications on the basis of internal, undisclosed constraints, and may also access control the Inbox for example by requiring an <code>Authorization</code> header from both senders and consumers.</p>
+
+            <p><strong>WebSub</strong> <em>publishers</em> deliver content to their <em>hub</em>, and <em>hubs</em> to their <em>subscribers</em> using HTTP <code>POST</code> requests. The body of the request is left to the discretion of the sender in the first case, and in the latter case must match the Content-Type of and contain contents from the <code>topic</code> URL.</p>
+
+            <h5 id="delivery-activities">Activity notifications</h5>
+            <p><strong>ActivityPub</strong> uses LDN to send notifications with some specific constraints. These are:</p>
+
+            <ul>
+              <li>The notification payload MUST be a single AS2 Activity.</li>
+              <li>The notification payload MUST be compact JSON-LD.</li>
+              <li>The receiver MUST verify the notification by fetching its source from the origin server.</li>
+              <li>All notification <code>POST</code> requests are authenticated.</li>
+            </ul>
+
+            <p>ActivityPub specifies how to define the <em>target(s)</em> to which a notification is to be sent (a pre-requisite to LDN sending), via the AS2 audience targeting and object linking properties.</p>
+
+            <p>ActivityPub also defines side-effects that must be carried out by the server as a result of notification receipt. These include:</p>
+
+            <ul>
+              <li>Creating, updating or deleting new objects upon receipt of <code>Create</code>, <code>Update</code> and <code>Delete</code> activities.</li>
+              <li>Reversing the side-effects of prior activities upon receipt of the <code>Undo</code> activity.</li>
+              <li>Updating specialised collections for <code>Follow</code>, <code>Like</code> and <code>Block</code> activities.</li>
+              <li>Updating any other collections upon receipt of <code>Add</code> and <code>Remove</code> activities.</li>
+              <li>Carrying out further delivery to propagate activities through the network in the case of federated servers.</li>
+            </ul>
+
+            <p>ActivityPub actor profiles are linked to their inboxes via the <code>https://www.w3.org/ns/activitystreams#inbox</code> property. This is an <em>alias</em> (in the AS2 JSON-LD context) for LDN's <code>http://www.w3.org/ns/ldp#inbox</code>. Applications using a full JSON-LD processor to parse these documents will see these terms as one and the same. Applications doing naive string matching on terms may wish to note that if you find an <code>ldp:inbox</code> it will accept <code>POST</code> requests in the same way as an <code>as:inbox</code>.</p>
+
+            <h5 id="delivery-mentioning">Mentioning</h5>
+            <p><strong>Webmention</strong> provides an API for sending and receiving notifications when a relationship is created between two documents by including the URL of one document in the content of another. It works when the two documents are on different domains, thus serving as a federation protocol. This is a suitable notification mechanism when:</p>
+
+            <ul>
+              <li>You have a document (source) which contains the URL of another document (target).</li>
+              <li>The owner of the endpoint has access to view the source (so the request can be verified).</li>
+              <li>The only data you need to send over the wire are the URLs of the source and target documents (ie. a 'thin ping').</li>
+            </ul>
+
+            <p>There are no constraints on the syntax of the source and target documents. Discovery of the Webmention endpoint (a script which can process incoming webmentions) is through a link relation (<code>rel="webmention"</code>), either in the HTTP <code>Link</code> header or HTML body of the target. This endpoint does not need to be on the same domain as the target, so webmention receiving can be delegated to a third party.</p>
+
+            <p>Webmentions are verified by the server dereferencing the source and parsing it to check for the existence of the target URL. If the target URL isn't found, the webmention MUST be rejected.</p>
+
+            <p>Webmention uses <code>x-www-form-urlencoded</code> for the source and target as parameters in an HTTP POST request. Beyond verification, it is not specified what the receiver should do upon receipt of a Webmention. What the webmention endpoint should return on a <code>GET</code> request is also left unspecified.</p>
+
+            <h5 id="delivery-interop">Delivery interop</h5>
+
+            <p>This section describes how receiver implementations of either Webmention or LDN may create bridging code in order to accept notifications from senders of the other. This can also be read to understand how a sender of either Webmention or LDN should adapt their discovery and payload in order to send to a receiver of the other.</p>
+
+            <p><strong>Webmention receivers</strong> wishing to also accept LDN <code>POST</code>s at their Webmention endpoint MUST:</p>
+            <ul>
+              <li>Advertise the webmention endpoint via <code>rel="http://www.w3.org/ns/ldp#inbox"</code> in addition to <code>rel="webmention"</code> (in the <code>Link</code> header, HTML body or JSON body of a target).</li>
+              <li>Accept <code>POST</code> requests with the Content-Type <code>application/ld+json</code>. Expect the body of the request to be:</li>
+                  <pre class="example">
+{
+  "@context": "http://www.w3.org/ns/webmention#",
+  "@id": "",
+  "source": { "@id": "https://waterpigs.example/post-by-barnaby" },
+  "target": { "@id": "https://aaronpk.example/post-by-aaron" }
+}
+                  </pre>
+              <li>Use the <code>source->@id</code> and <code>target->@id</code> values as the <code>source</code> and <code>target</code> of the Webmention, and proceed with verification.</li>
+              <li>If returning a <code>201 Created</code>, it MUST return a <code>Location</code> header with a URL from which the contents of the request posted can be retrieved. <code>202 Accepted</code> is still fine.</li>
+              <li>Note than when verifying the source, there's a good chance you can request/parse it as RDF.</li>
+            </ul>
+
+            <p><strong>LDN receivers</strong> wishing to also accept Webmentions to their Inbox MUST:</p>
+            <ul>
+              <li>Advertise the Inbox via <code>rel="webmention"</code> in addition to <code>rel="http://www.w3.org/ns/ldp#inbox"</code> (in the <code>Link</code> header, HTML body or JSON body of a target).</li>
+              <li>Accept <code>POST</code> requests with a content type <code>application/x-www-form-urlencoded</code>. Convert these requests from:</li>
+              <pre class="example">
+source=https://waterpigs.example/post-by-barnaby&amp;
+target=https://aaronpk.example/post-by-aaron
+              </pre>
+              <p>to:</p>
+              <pre class="example">
+{
+  "@context": "http://www.w3.org/ns/webmention#",
+  "@id": "",
+  "source": { "@id": "https://waterpigs.example/post-by-barnaby" },
+  "target": { "@id": "https://aaronpk.example/post-by-aaron" }
+}
+              </pre>
+              <p>and proceed per LDN; receivers MAY add other triples at their discretion.</p>
+              <li>Receivers MUST return a <code>201 Created</code> with a <code>Location</code> header or <code>202 Accepted</code>.</li>
+              <li>Receivers MUST verify the request by retrieving the source document and checking a link to the target document is present. If the Webmention is not verified, recievers MUST NOT keep it.</li>
+            </ul>
+            
+            <h5 id="wm-as-as">Webmention as AS2</h5>
+
+            <p>A webmention may be represented as a persistent resource with AS2. This could come in handy if a Webmention sender <em>mentions</em> a user known to be running an ActivityPub federated server. In this case, the sender can use an AS2 payload and carry out <a href="#delivery">delivery</a> of the notification per ActivityPub/LDN.</p>
+
+            <pre class="example">
+{
+  "@context": "https://www.w3.org/ns/activitystreams#",
+  "type": "Relationship",
+  "subject": "https://waterpigs.example/post-by-barnaby",
+  "object": "https://aaronpk.example/post-by-aaron"
+}
+            </pre>
+
+            <p>A receiver or sender may want to augment this representation with the relationship between the two documents, and any other pertinent data. In the receiver's case, this could be gathered when they parse the source during the verification process. For example:</p>
+
+            <pre class="example">
+{
+  "@context": "https://www.w3.org/ns/activitystreams#",
+  "type": "Relationship",
+  "subject": {
+    "id": "https://waterpigs.example/post-by-barnaby",
+    "name": "Hi Aaron, great post."
+  },
+  "object": {
+    "id": "https://aaronpk.example/post-by-aaron",
+    "name": "Aaron's first post."
+  },
+  "relationship": "inReplyTo"
+}
+            </pre>
+          </div>
+        </section>
+
       </div>
     </section>
   </div>
@@ -163,7 +1065,7 @@
                     <p>[<a href="#vk14">11</a>] suggests that the first feature of a <abbr title="Personal Web Observatory">PWO</abbr> should be to allow individuals to consolidate data collected by third parties into one repository under their control. Rather than attempting to aggregate - or even find - <em>all</em> data about myself spread across the Web, I chose a handful of services which have particular value to me, that I have been using to actively log particular things. I exported data from <a href="https://last.fm">Lastfm</a> (over ten years of music listening history), <a href="https://twitter.com">Twitter</a> (7 years of short notes), <a href="https://runkeeper.com">Runkeeper</a> (1 year of runs, walks and hikes with GPS traces), and <a href="https://github.com">Github</a> and <a href="https://bitbucket.com">Bitbucket</a> (5 years of code commit history), and Firefox bookmarks (2 years). I also exported data from 750words.com (almost 7 years of intermittent use) but did not import this into my store due to private content and no reliable access control built in.</p>
                     
                     <p>On top of these data dumps I created the following templates:</p>
-                    <table id="posttypes" style="font-size: 0.8em;">
+                    <table id="posttypes" class="leftie">
                         <thead>
                             <tr><th>Type of data</th><th>Attributes displayed <sup><a href="#post-attrs">*</a></sup></th></tr>
                         </thead>
@@ -336,25 +1238,92 @@
   </div>
 </section>
 
-<section id="accommodating-audience" rel="schema:hasPart">
-  <h2>Accommodating the audience</h2>
+<section id="audience-and-self-presentation" rel="schema:hasPart">
+  <h2>Audience and self-presentation</h2>
   <div>
-    <section id="introduction" inlist="" rel="schema:hasPart" resource="#introduction">
+    <section id="face-introduction" inlist="" rel="schema:hasPart" resource="#face-introduction">
       <h3>Introduction</h3>
+      <div>
         <p>Conflict or power imbalance arises when one party imposes frontstage expectations on another party's backstage behaviour. For example:</p>
 
         <p>My landlady recently complained to me about an experience she had with a short-term guest in my shared apartment. On the day of the guest's checkout, my landlady had arranged to come over and collect the keys and return the deposit at a certain time. She arrived one hour early, without letting the guest know. She was shocked to find dishes unwashed, jars left open, food on the counter, and the guest watching a movie on the sofa in her underwear. She told me this was "not a good guest", bemoaning the untidiness.</p>
 
         <p>Little does she know that that is often what the apartment looks like when I am home alone and she is not due for a visit. Nonetheless, because I have learned her tendency to turn up unannounced, as well as her penchant for tidiness, I make more effort to keep on top of cleaning day-to-day.</p>
 
-        <p>The problem here is that the guest was engaging in backstage activities, because she did not anticipate being observed for another hour. The guest fully intended to have the apartment clean and ready at the agreed time, and was entitled to behave as she pleased (enjoying her vacation) until then. Similarly, my landlady has every right to enter the apartment she owns when she chooses, however she does *not* have a right to expect that everyone therein behave constantly as if she were already present. She fails to acknowledge that her guests are going to behave differently when she is not around, and is holding her guests at fault for her flawed expectations.</p>
+        <p>The problem here is that the guest was engaging in backstage activities, because she did not anticipate being observed for another hour. The guest fully intended to have the apartment clean and ready at the agreed time, and was entitled to behave as she pleased (enjoying her vacation) until then. Similarly, my landlady has some right to enter the apartment she owns when she chooses, however she does <em>not</em> have a right to expect that everyone therein behave constantly as if she were already present. She fails to acknowledge that her guests are going to behave differently when she is not around, and is holding her guests at fault for her flawed expectations.</p>
 
         <p>One part of engaging in appropriate self-presentation is understanding and accounting for the expectations of those present: our audience. Even when thrown in to unexpected scenarios, we usually have some chance to react and accommodate in face-to-face interactions. When we are unable to do so, unpleasant social situations arise.</p>
 
         <p>Online, we present a face but cannot see our audience. We may have no reliable information about who are audience are or their expectations, or we may <em>imagine</em> a different audience to the one(s) we really have. Furthermore, multiple audiences may access our single 'face', and we have no opportunity to adapt and change our presentation to suit their expectations.</p>
 
-        <p>This section deals with an experimental implementation which attempts to address the problem of accommodating audience expectations with our unified online face.</p>
-      </section>
+        <p>This section deals with an experimental implementation which attempts to address the problem of accommodating audience expectations with our unified online face. It's called <em>face</em>: facilitate audience control of expectations. <!-- I'm so funny and smart.--> </p>
+
+      </div>
+    </section>
+
+    <section id="face-system-design" rel="schema:hasPart">
+      <h3>System design</h3>
+      <div>
+
+        <p class="todo">Since I don't have time to finish building this, should I mock it up and call it a 'thought experiment'? I would hate myself, but maybe it's better than leaving it out altogether.</p>
+
+        <p><em>face</em> is built into <em>sloph</em>, the personal data store described in the <a href="#personal-web-observatory">previous section</a>. The system is essentially a series of stylesheets which can be applied to adapt the presentation of any data object or stream of content viewed using <em>sloph</em>. I came up with five dimensions which can be used to describe different aspects of myself, and along which every data object in the datastore can be rated. The stylesheet(s) for a particular data object is determined by its combination of rankings. In addition, a set of controls are presented to a visitor to the site which allow them to rate how interested they are in each of the five dimensions. Adjusting this rating changes which data objects are visible, as well as the overall appearance of the homepage.</p>
+
+        <p>The default view is a fairly neutral representation of my online presence, which can be adjusted to give a more or less personal or professional view, and gear it towards particular topics of interest. This way, the visitor still may be confronted with content they feel is inappropriate or uninteresting, however they take responsibility for adjusting the controls to give these results. These controls introduce a collaborative approach to impression management; since I cannot react to an audience I don't know is there, maybe I can prompt my audience to give enough clues to the system that my online presence can react on my behalf.</p>
+
+        <section id="" rel="schema:hasPart">
+          <h4>Vocabulary and data integration</h4>
+        </section>
+
+        <section id="" rel="schema:hasPart">
+          <h4>User interface</h4>
+        </section>
+
+        <section id="" rel="schema:hasPart">
+          <h4>Limitations</h4>
+          <p>Obviously this is not a solution for strict access control, privacy protection, or any kind of concealment or separation of online personas.
+        </section>
+
+      </div>
+
+    </section>
+
+    <section id="" rel="schema:hasPart">
+      <h3>Discussion</h3>
+      <div class="notes">
+        <p>The audience of my online presence is determined by my <strong>connections</strong> and the <strong>cascade</strong>.</p>
+        <p>The information that appears in and around my online presence is determined by the <strong>control</strong> I have over systems which produce it, and <strong>customisability</strong> of its display.</p>
+        <p>Meaning is given to the data in accordance with the <strong>context</strong> in which it is both produced and observed.</p>
+      </div>
+      <div>
+        <section id="" rel="schema:hasPart">
+          <h4>Connectivity and cascade</h4>
+        </section>
+
+        <section id="" rel="schema:hasPart">
+          <h4>Control and customisation</h4>
+        </section>
+
+        <section id="" rel="schema:hasPart">
+          <h4>Context</h4>
+        </section>
+      </div>
+    </section>
+
+  </div>
+</section>
+
+<section id="references">
+  <h2>References</h2>
+  <div>
+    <p id="ref-wg-charter">[wg-charter] https://www.w3.org/Guide/Charter#review-eval</p>
+    <p id="ref-wg-os">[wg-os] https://www.w3.org/blog/news/archives/4265</p>
+    <p id="ref-tw-api">[tw-api] http://mashable.com/2012/08/16/twitter-api-big-changes/</p>
+    <p id="ref-tw-api2">[tw-api2] https://www.fastcompany.com/3043716/sxsw/twitter-only-gave-meerkat-2-hours-notice-before-cutting-access-to-the-social-graph</p>
+    <p id="ref-tw-api3">[tw-api3] https://marco.org/2014/11/24/twitter-california-knife</p>
+    <p id="ref-tw-api4">[tw-api4] https://marco.org/2014/10/20/wsj-twitter-peace-offering</p>
+    <p id="ref-fb-api">[fb-api] https://github.com/snarfed/bridgy/issues/305</p>
+    <p id="ref-fb-api2">[fb-api2] https://techcrunch.com/2011/08/11/facebook-wins-worst-api-in-developer-survey/</p>
   </div>
 </section>
 
@@ -366,6 +1335,26 @@
   <script>
     window.onload = function(){
       init(5);
+
+      // SWP diagram cycle
+      function rotateImages(i, img, imgs, capt, capts){
+        img.src = "figs/"+imgs[i]+".png";
+        capt.innerText = capts[i];
+      }
+      var i = 0;
+      var imgs = ["swp-ap", "swp-sloph", "swp-indie", "swp-indieplus", "swp-readonly", "swp-wm", "swp-weird", "swp"];
+      var capts = ["Typical ActivityPub", "ActivityPub without subscriptions", "Typical IndieWeb (Micropub plus Webmention)", "Advanced IndieWeb (Mp, Wm and WebSub)", "Read-only, no publishing clients", "Webmention alone", "ActivityPub to create, WebSub to distribute", "all possibilities"];
+      var img = document.getElementById("swp-specpaths-img");
+      var capt = document.querySelector("#swp-specpaths figcaption p span");
+      img.addEventListener("click", function(e){
+        if(i >= imgs.length-1){
+          i = 0;
+        }else{
+          i = i + 1;
+        }
+        rotateImages(i, img, imgs, capt, capts);
+      });
+      
     }
   </script>
   </body>

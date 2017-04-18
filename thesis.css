@@ -24,10 +24,12 @@ h1 {
 }
 h4, h5 {
   font-family: serif;
-  font-size: 1em; font-style: italic;
+  font-size: 1.2em; font-style: italic;
 }
+h5 { font-weight: normal; }
 article {
   width: 60%; margin-left: auto; margin-right: auto;
+  overflow: visible;
 }
 aside.do#toc {
   background-color: #d7e7d7; 
@@ -51,11 +53,21 @@ q { quotes: '"' '"' "'" "'" }
 q:before { content: open-quote }
 q:after  { content: close-quote }
 
+ul li ul, ul li ul li ul {
+  margin-top: 0;
+}
+ul li p {
+  margin-bottom: 0;
+}
+code { font-size: 0.8em; color: #2d2d2d; }
 table {
-  color: #333;
-  font-family: Helvetica, Arial, sans-serif;
   max-width: 100%!important;
   border-collapse: collapse; border-spacing: 0;
+}
+td, td p, td li {
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
 }
 td, th {
   border: 1px solid transparent; 
@@ -143,7 +155,9 @@ sup a {
   h3 { font-size: 1em; }
   h4 { font-size: 0.8em; font-style: italic; font-weight: normal; }
   h1, h2, h3, h4 {
-    page-break-after: avoid;
+    page-break-after: avoid!important;
+    /*orphans: 3;
+    widows: 3;*/
   }
   pre, blockquote, ul, ol, img, figure, table {
     page-break-inside: avoid;
