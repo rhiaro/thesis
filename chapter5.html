@@ -54,7 +54,19 @@
   <div>
     <p>We have in previous chapters established that online self-presentation is greatly more complex than listing attributes and a photo on a Web page. For decentralised systems to emulate the multitude of self-presentation possibilities provided by mainstream centralised systems today they must coordinate across a range of potential user activities and interactions. Common protocols enable disparate systems to communicate without any prior arrangements. Specifications describing such protocols must be agreed upon and published in such a way that makes them easy to find, and appear authoritative enough that developers of decentralised systems are persuaded to implement them.</p>
 
-    <p>This section documents and furthers the standardisation process, as part of the work of the W3C Social Web Working Group. <a href="chapter4#socialwg">Chapter 4</a> includes a survey of the specifications and their implementations at the time of writing; next I provide a behind-the-scenes look at and contribution to their development.</p>
+    <p>This section documents and furthers the standardisation process, as part of the work of the W3C Social Web Working Group. <a href="chapter4#socialwg">Chapter 4</a> includes a survey of the specifications and their implementations at the time of writing; here I provide a behind-the-scenes look at and contribution to their development.</p>
+
+    <section id="swwg-context" rel="schema:hasPart">
+      <h3>Standardisation as Context</h3>
+      <div>
+
+        <p>The standards developed by the Social Web Working Group will be used as the basis for systems which incorporate social features, and as such, create the opportunity for users of the system to present some aspects of their personhood in an online space. This chapter goes into detail about the non-technical parts of development of these standards.</p>
+
+        <p>The reason for this is as follows: the formation of the Working Group and its charter design; the individual members of the Group and their particular interests and experiences; and the processes of the W3C, all serve to make up part of the <strong>context</strong> (one of the 5 Cs from <a href="chapter3#ccccc">Chapter 3</a>) of any systems built from these standards. This is an example of things to analyse, or at least take note of, with respect to the industrial or organisational context in which users of social systems are engaging in self-presentation.</p>
+        
+      </div>
+
+    </section>
 
     <section id="swwg-charter" rel="schema:hasPart">
       <h3>The Social Web Working Group charter</h3>
@@ -392,28 +404,16 @@
       </div>
     </section>
 
-    <section id="swwg-context" rel="schema:hasPart">
-      <h3>Standardisation as Context</h3>
-      <div>
-
-        <p>The standards developed by the Social Web Working Group will be used as the basis for systems which incorporate social features, and as such, create the opportunity for users of the system to present some aspects of their personhood in an online space. So far, this chapter goes into detail about the non-technical parts of development of these standards.</p>
-
-        <p>The formation of the Working Group and its charter design; the individual members of the Group and their particular interests and experiences; and the processes of the W3C, all serve to make up part of the <strong>context</strong> of any systems built from these standards. This is an example of things to analyse, or at least take note of, with respect to the industrial or organisational context in which users of social systems are engaging in self-presentation.</p>
-        
-      </div>
-
-    </section>
-
     <section id="social-web-protocols" rel="schema:hasPart">
       <h3>Social Web Protocols</h3>
       <div>
-        <p>Having covered the context of the specifications' development, we now dive into their actual functionality. This section introduces the <em>Social Web Protocols</em>, a description of the specifications produced by the Social Web Working Group, and is arranged by the previously derived API requirements. Some content in this section is published as a W3C Working Group Note [<a href="#ref-swp">swp</a>]. Systems can be built with these protocols in great variety. Incorporating the standards produced by the Social Web Working Group does not automatically mean a system is empowering to its users as the protocols provide only a skeleton, leaving much open for specialisation by developers. Conformance to these protocols does however imply that users are able to move their data between systems; that clients and servers are somewhat decoupled so users have more flexibility with regards to tools; and that users are not compelled to follow their network or locked into the system where their friends are.</p>
+        <p>Having covered the context of the specifications' development, we now dive into their actual functionality. This section introduces the <em>Social Web Protocols</em>, a description of the specifications produced by the Social Web Working Group, and is arranged by the previously derived API requirements (read, publish, notify, subscribe). Some content in this section is published as a W3C Working Group Note [<a href="#ref-swp">swp</a>]. Systems can be built with these protocols in great variety. Incorporating the standards produced by the Social Web Working Group into a system does not automatically mean the system is empowering to its users; the protocols provide only a skeleton, leaving much open for specialisation by developers. Conformance to these protocols does however imply that users are able to move their data between systems; that clients and servers are somewhat decoupled so users have more flexibility with regards to tools; and that users are not compelled to follow their network or locked into the system where their friends are.</p>
 
         <section id="swp-overview" rel="schema:hasPart">
           <h4>Overview</h4>
           <div>
 
-            <p>People and the content they create are the core components of the Social Web; they make up the social graph. This document describes a standard way in which people can:</p>
+            <p>People and the content they create are the core components of the Social Web; they make up the social graph. The Social Web Protocols describe standard ways in which people can:</p>
 
             <ul>
               <li>connect with other people and subscribe to their content;</li>
@@ -426,7 +426,7 @@
 
             <p>These components are core building blocks for interoperable social systems.</p>
 
-            <p>Each of these components can be implemented independently as needed, or all together in one system, as well as extended to meet domain-specific requirements. Users can store their social data across any number of compliant servers, and use compliant clients hosted elsewhere to interact with their own content and the content of others. Put simply, this document tells you, according the recommendations of the Social Web Working Group:</p>
+            <p>Each of these components can be implemented independently as needed, or all together in one system, as well as extended to meet domain-specific requirements. Users can store their social data across any number of compliant servers, and use compliant clients hosted elsewhere to interact with their own content and the content of others. Put simply, Social Web Protocols tells you, according the recommendations of the Social Web Working Group:</p>
 
             <ul>
               <li>how to expose/consume social content (reading).</li>
