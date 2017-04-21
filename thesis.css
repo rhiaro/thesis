@@ -14,6 +14,8 @@ h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.n
 #toc h2:before, .notes h1:before, .notes h2:before, .notes h3:before, .notes h4:before, .notes h5:before, .notes h6:before
 { content: ""; counter-increment: none } 
 
+#appendices h2:before {counter-increment: h2; content: counter(h2, upper-alpha) ". "}
+
 /* Previous section heading CSS CC-BY by Phil Archer: http://philarcher.org/diary/2013/headingnumbers/ */
 
 body {
