@@ -155,15 +155,16 @@
 
     <p>A: When they're a document. </p>
 
-    <p>You have the infamous httpRange-14 issue to thank for this section title, which consists of a lengthy discussion (over a decade) and a resolution about how HTTP URIs can be used to represent both Web-based documents (information resources, IRs) which can be transported over HTTP, and everything else (non-information resources, NIRs, like people and places) which, needless to say, cannot be transported over HTTP (yet). In some systems, this distinction matters, and so we have fragment URIs (fragments aren't passed to servers, so they server can only return the resource represented by the URI up to and not including the fragment) and 301 redirects (the server says 'sorry this URI identifies a NIR which I can't return, so I have to send you to an IR about it instead).</p>
+    <p>You have the infamous httpRange-14 issue to thank for this section title, which consists of a lengthy discussion (over a decade) and a resolution about how HTTP URIs can be used to represent both Web-based documents (information resources, IRs) which can be transported over HTTP, and everything else (non-information resources, NIRs, like people and places) which, needless to say, cannot be transported over HTTP (yet). In some systems, this distinction matters, and so these systems separate <em>people</em> from the <em>documents about</em> them by using fragment URIs (fragments aren't passed to servers, so they server can only return the resource represented by the URI up to and not including the fragment) and 301 redirects (the server says 'sorry this URI identifies a NIR which I can't return, so I have to send you to an IR about it instead).</p>
 
-    <p class="notes">(When they're a profile). Data modelling and knowledge representation</p>
+    <p>Data models for representing people and their activities within social networks have been created independently of software implementations that use them, and are sometimes picked up by separate projects. The following may be referred to as in-use by other protocols or implementations throughout the remainder of this chapter:</p>
 
-    <ul class="notes">
-      <li>FOAF + Relationships</li>
-      <li>VCard</li>
-      <li>SIOC</li>
-      <li>ActivityStreams 1.0</li>
+    <ul>
+      <li><strong>FOAF + Relationships:</strong> </li>
+      <li><strong>VCard:</strong> </li>
+      <li><strong>SIOC:</strong> </li>
+      <li><strong>ActivityStreams 1.0:</strong> </li>
+      <li><strong>microformats, xfn:</strong> </li>
     </ul>
 
     <p class="notes">http://blog.plaxo.com/2004/02/plaxo_and_foaf_/</p>
