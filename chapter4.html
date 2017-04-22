@@ -109,6 +109,8 @@
   <div>
     <p>The data stored may be distinctly personal, shared with third-parties only in specific contexts for a particular purpose; or it may be inherantly social, expected to be broadcast on creation to at least one other person and possibly subject to further reshaping, sharing, and propagation throughout a network of people. Many datastores are optimised for one or the other of these scenarios and may place constraints on their users accordingly; others attempt to meet requirements for both types of data and encounter different implementation and usability challenges as a result.</p>
 
+    <p>indx/webbox, mydex, stanford ones, ownCloud/nextCloud</p>
+
   </div>
 </section>
 
@@ -151,6 +153,10 @@
   <h2>When is a person not a person?</h2>
   <div>
 
+    <p>A: When they're a document. </p>
+
+    <p>You have the infamous httpRange-14 issue to thank for this section title, which consists of a lengthy discussion (over a decade) and a resolution about how HTTP URIs can be used to represent both Web-based documents (information resources, IRs) which can be transported over HTTP, and everything else (non-information resources, NIRs, like people and places) which, needless to say, cannot be transported over HTTP (yet). In some systems, this distinction matters, and so we have fragment URIs (fragments aren't passed to servers, so they server can only return the resource represented by the URI up to and not including the fragment) and 301 redirects (the server says 'sorry this URI identifies a NIR which I can't return, so I have to send you to an IR about it instead).</p>
+
     <p class="notes">(When they're a profile). Data modelling and knowledge representation</p>
 
     <ul class="notes">
@@ -158,7 +164,6 @@
       <li>VCard</li>
       <li>SIOC</li>
       <li>ActivityStreams 1.0</li>
-      <li>Person or webpage: who cares, does it matter, and httpRange-14 (it is at least worth mentioning if we’re going to turn this work into something useful for pedantic engineers etc; the real question is: can I fit this discussion into a section in a chapter, or should I write a whole book on it?)</li>
     </ul>
 
     <p class="notes">http://blog.plaxo.com/2004/02/plaxo_and_foaf_/</p>
