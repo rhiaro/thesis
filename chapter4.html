@@ -53,6 +53,16 @@
       </div>
     </section>
 
+    <section id="def-social-systems" rel="schema:hasPart">
+      <h3>Social systems</h3>
+      <div>
+        <p>I defined the type of social system I am interested in in Chapter 3, and repeat it here for convenience:</p>
+        <blockquote>
+          <p>Social systems: </p>
+        </blockquote>
+      </div>
+    </section>
+
     <ul class="notes">
       <li>Analysis of the various stuff in line with CCCCC framework from 3.</li>
       <li>Criteria for good decentralised, interoperable social profiles.</li>
@@ -119,10 +129,20 @@
   </div>
 </section>
 
-<section id="protocols-and-monocultures" rel="schema:hasPart">
-  <h2>Protocols and monocultures</h2>
+<section id="standards-and-monocultures" rel="schema:hasPart">
+  <h2>Standards and monocultures</h2>
   <div>
-    
+    <p>Some projects publish the specifications of their systems as protocols that anyone can implement. ...</p>
+
+    <p>Implementations may be assembled from an existing set of more modular protocols. In some cases, existing sets of protocols have been identified and documented as complimentary. One example is OStatus, which combines Atom, ActivityStreams, PubSubHubbub, Salmon and Webfinger. Another is Solid, which uses LDP, WebID+TLS, FOAF and Web Access Control. OStatus has several independent implementations listed on its Wikipedia page at the time of writing, including GNU Social (previously StatusNet) and Mastodon, both of which there are hundreds of instances.</p>
+
+    <p>Projects which publish their protocols and state their intent to have independent implementations but in practice have limited implementations include Tent and RemoteStorage.</p>
+
+    <p>Zot! supercedes DFRN, both by Friendca. RedMatrix?.</p>
+
+    <p>Conversely, some projects cultivate monocultures, either by not publishing their protocols at all or by gaining little adoption outside of a single core implementation. In computing, a monoculture is when a group of computers all run the same software. Several FOSS Social Web projects meet this description, with large and active developer communities who all contribute to the same codebase (Pump.io, BuddyCloud, ownCloud ..). That particular piece of software is expected to be downloaded and installed on multiple different servers, and different instances can interoperate with each other so it runs in a decentralised manner. This has the advantage that, assuming a straightforward setup process, new instances can be set up quickly and easily, aiding adoption. However, a security vulnerability in the core code base would be present across all instances; there is overhead for developers working on the project to agree its direction and realisation; and focusing on this type of architecture can mean that optimisations for same-software interoperability come at the expense of potentially more open protocols, as is the case with diaspora*. Monocultures can emerge when one implementation of an open protocol is particularly successful; an example is Known, which implements Micropub and Webmention but also has a for-profit company behind it which has driven wide adoption through managed and white-labelled instances for educational institutions.</p>
+
+    <p>Friendica tries to implement all the protocols, including OStatus, diaspora*, ...</p>
   </div>
 </section>
 
