@@ -110,7 +110,7 @@
 
     <p>A: When they're a document. </p>
 
-    <p>You have the infamous httpRange-14 issue to thank for this section title, which consists of a lengthy discussion (over a decade) and a resolution about how HTTP URIs can be used to represent both Web-based documents (information resources, IRs) which can be transported over HTTP, and everything else (non-information resources, NIRs, like people and places) which, needless to say, cannot be transported over HTTP (yet). In some systems, this distinction matters, and so these systems separate <em>people</em> from the <em>documents about</em> them by using fragment URIs (fragments aren't passed to servers, so they server can only return the resource represented by the URI up to and not including the fragment) and 301 redirects (the server says "sorry this URI identifies a NIR which I can't return, so I have to send you to an IR about it instead").</p>
+    <p>Here I introduce some open standards, vocabularies, or ontologies for modelling social data, which are reused by many of the projects mentioned in this chapter. You have the infamous httpRange-14 issue to thank for the section title, which consists of a lengthy discussion (over a decade) and a resolution about how HTTP URIs can be used to represent both Web-based documents (information resources, IRs) which can be transported over HTTP, and everything else (non-information resources, NIRs, like people and places). The latter, needless to say, cannot be transported over HTTP (yet). In some systems, this distinction matters, and so these systems separate <em>people</em> from the <em>documents about</em> them by using fragment URIs (fragments aren't passed to servers, so they server can only return the resource represented by the URI up to and not including the fragment) and 301 redirects (the server says "sorry this URI identifies a NIR which I can't return, so I have to send you to an IR about it instead").</p>
 
     <p>Open data models for representing people and their activities within social networks have been created over the years independently of software implementations that use them, and are sometimes picked up by separate projects. The following may be referred to as in-use by other protocols or implementations throughout the remainder of this chapter:</p>
 
@@ -131,7 +131,7 @@
   <div>
     <p>The data stored may be distinctly personal, shared with third-parties only in specific contexts for a particular purpose; or it may be inherantly social, expected to be broadcast on creation to at least one other person and possibly subject to further reshaping, sharing, and propagation throughout a network of people. Many datastores are optimised for one or the other of these scenarios and may place constraints on their users accordingly; others attempt to meet requirements for both types of data and encounter different implementation and usability challenges as a result.</p>
 
-    <p>indx/webbox, mydex, prpl, ownCloud/nextCloud, OpenLink ODS, midata, remotestorage, solid, </p>
+    <p>indx/webbox, mydex, prpl, ownCloud/nextCloud, OpenLink ODS, remotestorage, solid, </p>
 
   </div>
 </section>
