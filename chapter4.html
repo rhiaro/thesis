@@ -132,19 +132,20 @@
 
     <p>A: When they're a document. </p>
 
-    <p>Here I introduce some open standards, vocabularies, or ontologies for modelling social data, which are reused by many of the projects mentioned in this chapter. You have the infamous httpRange-14 issue to thank for the section title, which consists of a lengthy discussion (over a decade) and a resolution about how HTTP URIs can be used to represent both Web-based documents (information resources, IRs) which can be transported over HTTP, and everything else (non-information resources, NIRs, like people and places). The latter, needless to say, cannot be transported over HTTP (yet). In some systems, this distinction matters, and so these systems separate <em>people</em> from the <em>documents about</em> them by using fragment URIs (fragments aren't passed to servers, so they server can only return the resource represented by the URI up to and not including the fragment) and 301 redirects (the server says "sorry this URI identifies a NIR which I can't return, so I have to send you to an IR about it instead").</p>
+    <p>Here I introduce some open standards, vocabularies, or ontologies for modelling social data, which are reused by many of the projects mentioned in this chapter. You have the infamous httpRange-14 issue to thank for the section title, which consists of a lengthy discussion (over a decade) and a resolution about how HTTP URIs can be used to represent both Web-based documents (information resources, IRs) which can be transported over HTTP, and everything else (non-information resources, NIRs, like people and places) [<a href="#ref-http14">http14</a>]. The latter, needless to say, cannot be transported over HTTP (yet). In some systems, this distinction matters, and so these systems separate <em>people</em> from the <em>documents about</em> them by using fragment URIs (fragments aren't passed to servers, so they server can only return the resource represented by the URI up to and not including the fragment) and 303 redirects (the server says "sorry this URI identifies a NIR which I can't return, so I have to send you to an IR about it instead").</p>
 
-    <p>Open data models for representing people and their activities within social networks have been created over the years independently of software implementations that use them, and are sometimes picked up by separate projects. The following may be referred to as in-use by other protocols or implementations throughout the remainder of this chapter:</p>
+    <p>Open data models for representing people and their activities within social networks have been created over the years independently of software implementations that use them, and are sometimes picked up by separate projects. The following are well known, and may be referred to as in-use by other protocols or implementations throughout the remainder of this chapter:</p>
 
     <ul>
-      <li><strong>FOAF + Relationships:</strong> </li>
-      <li><strong>VCard:</strong> </li>
-      <li><strong>SIOC:</strong> </li>
-      <li><strong>ActivityStreams 1.0:</strong> </li>
-      <li><strong>microformats, xfn:</strong> </li>
+      <li><strong>FOAF:</strong> An RDF vocabulary with various properties for representing attributes of people, as well as the links between them using the <code>knows</code> predicate. A cornerstone of any Semantic Web based social projects [<a href="#ref-foaf14">foaf14</a>].</li>
+      <li><strong>Relationships:</strong> An extension to FOAF to provide more granular relationships than <code>knows</code> [<a href="#ref-foafship">foafship</a>].</li>
+      <li><strong>SIOC:</strong> An RDF vocabulary for representing online discussions, such as blogs, forums and mailing lists. Complements FOAF [<a href="#ref-Passant2010">Passant2010</a>].</li>
+      <li><strong>vCard:</strong>A standard for representing attributes of a person that might be found on a business card. A common export format from email clients and mobile address books, and the core of many 'contacts' type applications [<a href="#ref-vcard">vcard</a>].</li>
+      <li><strong>ActivityStreams 1.0:</strong> A JSON syntax for representing social interactions as activities, which consist of <code>actor</code>, <code>verb</code>, <code>object</code>, and <code>target</code>, as well as other more domain-specific properties; widely deployed, in particular as part of the OStatus stack. Predecessor to ActivityStreams 2.0 [<a href="#ref-as1">as1</a>].</li>
+      <li><strong>microformats2:</strong> A set of classes which can be used with HTML elements to provide semantics about the value of the element. The classes cover types and properties for a core set of social objects (eg. people, organizations, events, locations, blog posts, products, reviews, resumes, recipes) as well as a specification for how to parse them. Built on vCard. [<a href="#ref-mf">mf</a>].</li>
+      <li><strong>XHTML Friends Network (XFN):</strong> A set of values for the HTML4 <code>rel</code> attribute which indicate a relationship between the person who created the link and the person being linked to (eg. "met", "coworker", "parent") [<a href="#ref-xfn">xfn</a>]. Works with microformats2. This one is not bothered by httpRange-14, ie. my homepage can be friends with your homepage no problem.</li>
     </ul>
 
-    <p class="notes">http://blog.plaxo.com/2004/02/plaxo_and_foaf_/</p>
   </div>
 </section>
 
