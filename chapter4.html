@@ -41,7 +41,7 @@
                     <p>This is the law of the fediverse, please bear this in mind. When picking fights with random strangers, make sure it's always based on nothing other than their software choices.</p>
 
                     <p>This has been a public service announcement on behalf of the fediverse. Thank you, and good day. </p> 
-                    <p> - Thomas Willingham, <a href="https://soc.beardyunixer.com/display/0c5b5b901858fce51629a5e267815437">posted on Friendica</a>, seen through Mastodon</p>
+                    <p> - Thomas Willingham, old hat decentralised Social Web developer. <a href="https://soc.beardyunixer.com/display/0c5b5b901858fce51629a5e267815437">Posted on Friendica</a>, seen through Mastodon</p>
                   </blockquote>
 
 <section id="introduction" rel="schema:hasPart">
@@ -231,10 +231,16 @@
 </section> -->
 
 
-<section id="the-pieces" rel="schema:hasPart">
-  <h2>The pieces</h2>
+<section id="discussion" rel="schema:hasPart">
+  <h2>Discussion</h2>
   <div>
     <p>Here we uncover common modules of decentralised social systems from previous discussion, and look at where there are overlaps and things that stand out.</p>
+
+    <p><strong>Identifiers:</strong> Most of the systems mentioned use URIs to identify and locate individual resources (like blog posts). Users of the systems, or their accounts, are identified by a combination of Webfinger URIs and HTTP URLs. A useful point of alignment between different systems might be a standard for mapping between Webfinger URIs and HTTP URLs for user profiles.</p>
+
+    <p><strong>Data storage:</strong> Users of decentralised systems must be acutely more aware of the location(s) of their data. When faced with choices between multiple possible third-party providers (datastore providers or particular hosted software instances), or self-hosting (either on one's own local hardware, or a rented webhosting service), ones personal data gains a sense of concreteness, somewhat divorced from activities which might create the data, of interacting and socialising online.</p>
+
+    <p><strong>Trust:</strong> In most cases, instances federate by passing data from one server or PDS to another. Unless the data is end-to-end encrypted and able to be interpreted by authorised <em>clients</em> only, users ultimately need to trust the servers of their entire social network in the cases where their posts are broadcast to all of their followers, and their followers responses are broadcast to all of <em>their</em> followers. This creeps into the territory of imagined vs. actual audience, which individuals might not be fully aware of.</p>
   </div>
 </section>
 
