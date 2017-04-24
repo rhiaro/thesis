@@ -135,14 +135,14 @@
     <p>Open data models for representing people and their activities within social networks have been created over the years independently of software implementations that use them, and are sometimes picked up by separate projects. The following are well known, and may be referred to as in-use by other protocols or implementations throughout the remainder of this chapter:</p>
 
     <ul>
-      <li><strong>FOAF:</strong> An RDF vocabulary with various properties for representing attributes of people, as well as the links between them using the <code>knows</code> predicate. A cornerstone of any Semantic Web based social projects [<a href="#ref-foaf14">foaf14</a>].</li>
-      <li><strong>Relationships:</strong> An extension to FOAF to provide more granular relationships than <code>knows</code> [<a href="#ref-foafship">foafship</a>].</li>
-      <li><strong>SIOC:</strong> An RDF vocabulary for representing online discussions, such as blogs, forums and mailing lists. Complements FOAF [<a href="#ref-Passant2010">Passant2010</a>].</li>
-      <li><strong>vCard:</strong>A standard for representing attributes of a person that might be found on a business card. A common export format from email clients and mobile address books, and the core of many 'contacts' type applications [<a href="#ref-vcard">vcard</a>].</li>
-      <li><strong>Atom:</strong> An XML based standard for representing streams of content from blogs [<a href="#ref-atom">atom</a>].</li>
-      <li><strong>ActivityStreams 1.0:</strong> A JSON syntax for representing social interactions as activities, which consist of <code>actor</code>, <code>verb</code>, <code>object</code>, and <code>target</code>, as well as other more domain-specific properties; widely deployed, in particular as part of the OStatus stack. Predecessor to ActivityStreams 2.0 [<a href="#ref-as1">as1</a>].</li>
-      <li><strong>microformats2:</strong> A set of classes which can be used with HTML elements to provide semantics about the value of the element. The classes cover types and properties for a core set of social objects (eg. people, organizations, events, locations, blog posts, products, reviews, resumes, recipes) as well as a specification for how to parse them. Built on vCard. [<a href="#ref-mf">mf</a>].</li>
-      <li><strong>XHTML Friends Network (XFN):</strong> A set of values for the HTML4 <code>rel</code> attribute which indicate a relationship between the person who created the link and the person being linked to (eg. "met", "coworker", "parent") [<a href="#ref-xfn">xfn</a>]. Works with microformats2. This one is not bothered by httpRange-14, ie. my homepage can be friends with your homepage no problem.</li>
+      <li>FOAF: An RDF vocabulary with various properties for representing attributes of people, as well as the links between them using the <code>knows</code> predicate. A cornerstone of any Semantic Web based social projects [<a href="#ref-foaf14">foaf14</a>].</li>
+      <li>Relationships: An extension to FOAF to provide more granular relationships than <code>knows</code> [<a href="#ref-foafship">foafship</a>].</li>
+      <li>SIOC: An RDF vocabulary for representing online discussions, such as blogs, forums and mailing lists. Complements FOAF [<a href="#ref-Passant2010">Passant2010</a>].</li>
+      <li>vCard:A standard for representing attributes of a person that might be found on a business card. A common export format from email clients and mobile address books, and the core of many 'contacts' type applications [<a href="#ref-vcard">vcard</a>].</li>
+      <li>Atom: An XML based standard for representing streams of content from blogs [<a href="#ref-atom">atom</a>].</li>
+      <li>ActivityStreams 1.0: A JSON syntax for representing social interactions as activities, which consist of <code>actor</code>, <code>verb</code>, <code>object</code>, and <code>target</code>, as well as other more domain-specific properties; widely deployed, in particular as part of the OStatus stack. Predecessor to ActivityStreams 2.0 [<a href="#ref-as1">as1</a>].</li>
+      <li>microformats2: A set of classes which can be used with HTML elements to provide semantics about the value of the element. The classes cover types and properties for a core set of social objects (eg. people, organizations, events, locations, blog posts, products, reviews, resumes, recipes) as well as a specification for how to parse them. Built on vCard. [<a href="#ref-mf">mf</a>].</li>
+      <li>XHTML Friends Network (XFN): A set of values for the HTML4 <code>rel</code> attribute which indicate a relationship between the person who created the link and the person being linked to (eg. "met", "coworker", "parent") [<a href="#ref-xfn">xfn</a>]. Works with microformats2. This one is not bothered by httpRange-14, ie. my homepage can be friends with your homepage no problem.</li>
     </ul>
 
   </div>
@@ -230,20 +230,6 @@
   </div>
 </section> -->
 
-
-<section id="discussion" rel="schema:hasPart">
-  <h2>Discussion</h2>
-  <div>
-    <p>Here we uncover common modules of decentralised social systems from previous discussion, and look at where there are overlaps and things that stand out.</p>
-
-    <p><strong>Identifiers:</strong> Most of the systems mentioned use URIs to identify and locate individual resources (like blog posts). Users of the systems, or their accounts, are identified by a combination of Webfinger URIs and HTTP URLs. A useful point of alignment between different systems might be a standard for mapping between Webfinger URIs and HTTP URLs for user profiles.</p>
-
-    <p><strong>Data storage:</strong> Users of decentralised systems must be acutely more aware of the location(s) of their data. When faced with choices between multiple possible third-party providers (datastore providers or particular hosted software instances), or self-hosting (either on one's own local hardware, or a rented webhosting service), ones personal data gains a sense of concreteness, somewhat divorced from activities which might create the data, of interacting and socialising online.</p>
-
-    <p><strong>Trust:</strong> In most cases, instances federate by passing data from one server or PDS to another. Unless the data is end-to-end encrypted and able to be interpreted by authorised <em>clients</em> only, users ultimately need to trust the servers of their entire social network in the cases where their posts are broadcast to all of their followers, and their followers responses are broadcast to all of <em>their</em> followers. This creeps into the territory of imagined vs. actual audience, which individuals might not be fully aware of.</p>
-  </div>
-</section>
-
 <section id="socialwg" rel="schema:hasPart">
   <h2>The Social Web Working Group</h2>
   <div>
@@ -253,20 +239,20 @@
     <p>Ultimately, the Social Web Working Group has produced the following recommendations:</p>
 
     <ul>
-      <li><strong>ActivityStreams 2.0 Core and Vocabulary</strong>: A JSON data model and syntax for social content and interactions, with extensibility based on JSON-LD.</li>
-      <li><strong>ActivityPub</strong>: An API for creating content, delivering notifications, and managing common side-effects of interactions within social networks, based on ActivityStreams 2.0.</li>
-      <li><strong>Linked Data Notifications</strong>: An API for delivering and reusing generic notifications, based on JSON-LD.</li>
-      <li><strong>Micropub</strong>: An API for creating content, based on microformats2.</li>
-      <li><strong>Webmention</strong>: An API for delivering notifications when a resource on the Web refers to the URL of another.</li>
-      <li><strong>WebSub</strong>: An API for managing and fulfilling subscription requests to Web content (formally known as PubSubHubbub).</li>
+      <li>ActivityStreams 2.0 Core and Vocabulary: A JSON data model and syntax for social content and interactions, with extensibility based on JSON-LD.</li>
+      <li>ActivityPub: An API for creating content, delivering notifications, and managing common side-effects of interactions within social networks, based on ActivityStreams 2.0.</li>
+      <li>Linked Data Notifications: An API for delivering and reusing generic notifications, based on JSON-LD.</li>
+      <li>Micropub: An API for creating content, based on microformats2.</li>
+      <li>Webmention: An API for delivering notifications when a resource on the Web refers to the URL of another.</li>
+      <li>WebSub: An API for managing and fulfilling subscription requests to Web content (formally known as PubSubHubbub).</li>
     </ul>
 
     <p>And the following Working Group notes:</p>
 
     <ul>
-      <li><strong>JF2</strong>: An alternative JSON syntax and vocabulary for representing social objects, based on microformats2.</li>
-      <li><strong>Post-type Discovery</strong>: An algorithm for converting between implicitly typed social objects (like JF2) to explicitly typed ones (like ActivityStreams 2.0).</li>
-      <li><strong>Social Web Protocols</strong>: A guide to the specifications produced by the group, including how they overlap or complement each other.</li>
+      <li>JF2: An alternative JSON syntax and vocabulary for representing social objects, based on microformats2.</li>
+      <li>Post-type Discovery: An algorithm for converting between implicitly typed social objects (like JF2) to explicitly typed ones (like ActivityStreams 2.0).</li>
+      <li>Social Web Protocols: A guide to the specifications produced by the group, including how they overlap or complement each other.</li>
     </ul>
 
     <section id="socialwg-implementations" rel="schema:hasPart">
@@ -309,6 +295,24 @@
 
     </section>
 
+  </div>
+</section>
+
+
+<section id="discussion" rel="schema:hasPart">
+  <h2>Discussion</h2>
+  <div>
+    <p>Here we uncover common modules of decentralised social systems from previous discussion, and look at where there are overlaps and things that stand out.</p>
+
+    <p><strong>Identifiers:</strong> Most of the systems mentioned use URIs to identify and locate individual resources (like blog posts). Users of the systems, or their accounts, are identified by a combination of Webfinger URIs and HTTP URLs. A useful point of alignment between different systems might be a standard for mapping between Webfinger URIs and HTTP URLs for user profiles.</p>
+
+    <p><strong>Data storage:</strong> Users of decentralised systems must be acutely more aware of the location(s) of their data. When faced with choices between multiple possible third-party providers (datastore providers or particular hosted software instances), or self-hosting (either on one's own local hardware, or a rented webhosting service), ones personal data gains a sense of concreteness, somewhat divorced from activities which might create the data, of interacting and socialising online.</p>
+
+    <p><strong>Trust:</strong> In most cases, instances federate by passing data from one server or PDS to another. Unless the data is end-to-end encrypted and able to be interpreted by authorised <em>clients</em> only, users ultimately need to trust the servers of their entire social network in the cases where their posts are broadcast to all of their followers, and their followers responses are broadcast to all of <em>their</em> followers. This creeps into the territory of imagined vs. actual audience, which individuals might not be fully aware of.</p>
+
+    <p><strong>Content:</strong> Content and activities being passed around between different instances and implementations of protocols means that it is likely to be seen in different user interfaces, and as part of different streams of other data, and even perhaps with additional affordances or missing features. Systems which mix and max functionality of different protocols, and are extended or otherwise customised, will have a significant impact on how people interact with and consume content from others, and in a way that will be fairly unpredictable to the content publisher.</p>
+
+    <p class="todo">More things?</p>
   </div>
 </section>
 
