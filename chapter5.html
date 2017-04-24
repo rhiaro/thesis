@@ -207,17 +207,19 @@
               <li><strong>Notifications</strong> (<span style="background-color: DarkOrchid">notif</span>): users are alerted when content is created that somehow targets them (ie. as recipient or subject).</li>
               <li><strong>Subscribe to content</strong> (<span style="background-color: crimson">sub</span>): users can request notifications about updates certain streams content, eg. by a certain user, posted to a certain group; and users can undo a subscription.</li>
             </ul>
-            <table id="swwg-user-stories" class="leftie">
-              <thead><tr><td colspan="3"><p><strong>Table [swwg-user-stories]</strong>: The top eight Social Web Working Group user stories</p></td></tr></thead>
+            <table id="swwg-user-stories">
+              <caption><strong>Table [swwg-user-stories]</strong>: The top eight Social Web Working Group user stories</caption>
+              <thead>
+                <tr>
+                  <th>Story name</th>
+                  <th>Details</th>
+                  <th>Labels</th>
+                </tr>
+              </thead>
               <tfoot>
                 <tr><td colspan="3">The first two columns are the work of members of the Social Web Working Group (see wiki history for attribution [<a href="#rdf-swwg-user-stories">swwg-user-stories</a>]) and the third column is my own work.</td></tr>
               </tfoot>
               <tbody>
-                <tr>
-                  <th width="15%">Story name</th>
-                  <th width="40%">Details</th>
-                  <th width="45%">Labels</th>
-                </tr>
                 <tr>
                   <td><a href="https://www.w3.org/wiki/Socialwg/Social_API/User_stories#SWAT0">Social Web Acid Test (SWAT0)</a></td>
                   <td>
@@ -440,8 +442,8 @@
 
             <p>The <a href="#swp-reqs">following table</a> shows the high level requirements according to the <a href="https://www.w3.org/2013/socialweb/social-wg-charter.html">Social Web Working Group charter</a> and the <a href="https://www.w3.org/wiki/Socialwg/Social_API/Requirements">Social API Requirements</a>, and how the specifications of the Working Group overlap with respect to each.</p>
             <table id="swp-reqs">
-              <thead><tr><td colspan="10"><p><strong>Table [swp-reqs]:</strong> The API requirements and which specs they are met by.</p></td></tr></thead>
-              <tbody>
+              <caption><strong>Table [swp-reqs]:</strong> The API requirements and which specs they are met by</caption>
+              <thead>
                 <tr>
                   <th></th>
                   <th><a href="#content-representation">Vocabulary</a></th>
@@ -454,8 +456,10 @@
                   <th><a href="#delivery">Delivery</a></th>
                   <!-- <th><a href="#profiles">Profiles</a></th> -->
                 </tr>
+              </thead>
+              <tbody>
                 <tr>
-                  <td style="text-align:left;">ActivityPub</td>
+                  <td>ActivityPub</td>
                   <td></td>
                   <td></td>
                   <td>X</td>
@@ -467,7 +471,7 @@
                   <!-- <td>X</td> -->
                 </tr>
                 <tr>
-                  <td style="text-align:left;">ActivityStreams 2.0</td>
+                  <td>ActivityStreams 2.0</td>
                   <td>X</td>
                   <td>X</td>
                   <td></td>
@@ -479,7 +483,7 @@
                   <!-- <td></td> -->
                 </tr>
                 <tr>
-                  <td style="text-align:left;">Linked Data Notifications</td>
+                  <td>Linked Data Notifications</td>
                   <td></td>
                   <td></td>
                   <td>X</td>
@@ -491,7 +495,7 @@
                   <!-- <td></td> -->
                 </tr>
                 <tr>
-                  <td style="text-align:left;">Micropub</td>
+                  <td>Micropub</td>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -503,7 +507,7 @@
                   <!-- <td></td> -->
                 </tr>
                 <tr>
-                  <td style="text-align:left;">WebSub</td>
+                  <td>WebSub</td>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -515,7 +519,7 @@
                   <!-- <td></td> -->
                 </tr>
                 <tr>
-                  <td style="text-align:left;">Webmention</td>
+                  <td>Webmention</td>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -550,13 +554,8 @@
             </ul>
 
             <table id="swp-specrels" rel="schema:hasPart">
-              <thead><tr><td colspan="7"><p><strong>Table [specrels]:</strong> How each spec relates to the others.</p></td></tr></thead>
-              <tfoot><tr><td colspan="7">
-                <p><strong>To read (approx):</strong> if I have <em>x</em>, it uses <em>y</em> to _.</p>
-                <p><em>n/a</em> means there is no explicit relation between the specs, but does not mean to suggest they can't be used together.</p>
-                <p><em>bridge</em> means these specs have overlapping functionality and bridging code is needed for interoperability.</p>
-              </td></tr></tfoot>
-              <tbody>
+              <caption><strong>Table [specrels]:</strong> How each spec relates to the others</caption>
+              <thead>
                 <tr>
                   <th></th>
                   <th>AS2</th>
@@ -566,6 +565,17 @@
                   <th>WM</th>
                   <th>WS</th>
                 </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <td colspan="7">
+                    <p><strong>To read (approx):</strong> if I have <em>x</em>, it uses <em>y</em> to _.</p>
+                    <p><em>n/a</em> means there is no explicit relation between the specs, but does not mean to suggest they can't be used together.</p>
+                    <p><em>bridge</em> means these specs have overlapping functionality and bridging code is needed for interoperability.</p>
+                </td>
+                </tr>
+              </tfoot>
+              <tbody>
                 <tr>
                   <td>AS2</td>
                   <td></td>
