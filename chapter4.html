@@ -149,6 +149,27 @@
   </div>
 </section>
 
+<section id="standards-and-monocultures" rel="schema:hasPart">
+  <h2>Standards and monocultures</h2>
+  <div>
+    <p>Some projects publish the specifications of their systems as protocols that anyone can implement. ...</p>
+
+    <p>Implementations may be assembled from an existing set of more modular protocols. In some cases, existing sets of protocols have been identified and documented as complimentary. One example is OStatus, which combines Atom, ActivityStreams, PubSubHubbub, Salmon and Webfinger. Another is Solid, which uses LDP, WebID+TLS, FOAF and Web Access Control; DSSN uses WebID, FOAF, Semantic Pingback and PubSubHubbub. OStatus has several independent implementations listed on its Wikipedia page at the time of writing, including GNU Social (previously StatusNet) and Mastodon, both of which there are hundreds of instances.</p>
+
+    <p>Indiewebby protocols, but see more in SWWG section for these.</p>
+
+    <p>Projects which publish their protocols and state their intent to have independent implementations but in practice have limited implementations include Tent and RemoteStorage.</p>
+
+    <p>Zot! supercedes DFRN, both by Friendca. RedMatrix?. hubzilla, remoteStorage</p>
+
+    <p>Conversely, some projects cultivate monocultures, either by not publishing their protocols at all or by gaining little adoption outside of a single core implementation. In computing, a monoculture is when a group of computers all run the same software. Several FOSS Social Web projects meet this description, with large and active developer communities who all contribute to the same codebase (Pump.io, BuddyCloud, ownCloud ..). That particular piece of software is expected to be downloaded and installed on multiple different servers, and different instances can interoperate with each other so it runs in a decentralised manner. This has the advantage that, assuming a straightforward setup process, new instances can be set up quickly and easily, aiding adoption. However, a security vulnerability in the core code base would be present across all instances; there is overhead for developers working on the project to agree its direction and realisation; and focusing on this type of architecture can mean that optimisations for same-software interoperability come at the expense of potentially more open protocols, as is the case with diaspora* [<a href="#ref-dcent">dcent</a>]. Monocultures can emerge when one implementation of an open protocol is particularly successful; an example is Known, which implements Micropub and Webmention but also has a for-profit company behind it which has driven wide adoption through managed and white-labelled instances for educational institutions.</p>
+
+    <p>Friendica tries to implement all the protocols, including OStatus, diaspora*, ...</p>
+
+    <p>RemoteStorage uses Webfinger, OAuth 2.0 and HTTP REST</p>
+  </div>
+</section>
+
 <section id="social-and-personal-datastores" rel="schema:hasPart">
   <h2>Social (and) personal datastores</h2>
   <div>
@@ -174,27 +195,6 @@
 
     <p>The types of content which social networks enable users to create is pertinent to understanding the self-presentation possibilities of profiles within certain systems. Decentralised systems which cannot accommodate a wide variety of types of content or interaction may in the end not meet users' needs for expressiveness. Leaning on extensible technologies and protocols could be one way to ease customisation of basic systems by communities with particular needs.</p>
 
-  </div>
-</section>
-
-<section id="standards-and-monocultures" rel="schema:hasPart">
-  <h2>Standards and monocultures</h2>
-  <div>
-    <p>Some projects publish the specifications of their systems as protocols that anyone can implement. ...</p>
-
-    <p>Implementations may be assembled from an existing set of more modular protocols. In some cases, existing sets of protocols have been identified and documented as complimentary. One example is OStatus, which combines Atom, ActivityStreams, PubSubHubbub, Salmon and Webfinger. Another is Solid, which uses LDP, WebID+TLS, FOAF and Web Access Control; DSSN uses WebID, FOAF, Semantic Pingback and PubSubHubbub. OStatus has several independent implementations listed on its Wikipedia page at the time of writing, including GNU Social (previously StatusNet) and Mastodon, both of which there are hundreds of instances.</p>
-
-    <p>Indiewebby protocols, but see more in SWWG section for these.</p>
-
-    <p>Projects which publish their protocols and state their intent to have independent implementations but in practice have limited implementations include Tent and RemoteStorage.</p>
-
-    <p>Zot! supercedes DFRN, both by Friendca. RedMatrix?. hubzilla, remoteStorage</p>
-
-    <p>Conversely, some projects cultivate monocultures, either by not publishing their protocols at all or by gaining little adoption outside of a single core implementation. In computing, a monoculture is when a group of computers all run the same software. Several FOSS Social Web projects meet this description, with large and active developer communities who all contribute to the same codebase (Pump.io, BuddyCloud, ownCloud ..). That particular piece of software is expected to be downloaded and installed on multiple different servers, and different instances can interoperate with each other so it runs in a decentralised manner. This has the advantage that, assuming a straightforward setup process, new instances can be set up quickly and easily, aiding adoption. However, a security vulnerability in the core code base would be present across all instances; there is overhead for developers working on the project to agree its direction and realisation; and focusing on this type of architecture can mean that optimisations for same-software interoperability come at the expense of potentially more open protocols, as is the case with diaspora* [<a href="#ref-dcent">dcent</a>]. Monocultures can emerge when one implementation of an open protocol is particularly successful; an example is Known, which implements Micropub and Webmention but also has a for-profit company behind it which has driven wide adoption through managed and white-labelled instances for educational institutions.</p>
-
-    <p>Friendica tries to implement all the protocols, including OStatus, diaspora*, ...</p>
-
-    <p>RemoteStorage uses Webfinger, OAuth 2.0 and HTTP REST</p>
   </div>
 </section>
 
