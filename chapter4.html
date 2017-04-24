@@ -84,7 +84,7 @@
         <p>Other concepts which will be useful throughout this chapter are:</p>
         <dl>
           <dt><p><strong>Protocol</strong></p></dt>
-          <dd><p>A set of procedures according to which piece of software should be built.</p></dd>
+          <dd><p>A set of possible communication actions between computer systems.</p></dd>
           <dt><p><strong>Implementation</strong></p></dt>
           <dd><p>A piece of software, possibly designed according to a protocol.</p></dd>
           <dt><p><strong>Instance</strong></p></dt>
@@ -140,7 +140,7 @@
       <li>SIOC: An RDF vocabulary for representing online discussions, such as blogs, forums and mailing lists. Complements FOAF [<a href="#ref-Passant2010">Passant2010</a>].</li>
       <li>vCard:A standard for representing attributes of a person that might be found on a business card. A common export format from email clients and mobile address books, and the core of many 'contacts' type applications [<a href="#ref-vcard">vcard</a>].</li>
       <li>Atom: An XML based standard for representing streams of content from blogs [<a href="#ref-atom">atom</a>].</li>
-      <li>ActivityStreams 1.0: A JSON syntax for representing social interactions as activities, which consist of <code>actor</code>, <code>verb</code>, <code>object</code>, and <code>target</code>, as well as other more domain-specific properties; widely deployed, in particular as part of the OStatus stack. Predecessor to ActivityStreams 2.0 [<a href="#ref-as1">as1</a>].</li>
+      <li>ActivityStreams 1.0: An XML or JSON syntax for representing social interactions as activities, which consist of <code>actor</code>, <code>verb</code>, <code>object</code>, and <code>target</code>, as well as other more domain-specific properties; widely deployed, in particular as part of the OStatus stack. Predecessor to ActivityStreams 2.0 [<a href="#ref-as1">as1</a>].</li>
       <li>microformats2: A set of classes which can be used with HTML elements to provide semantics about the value of the element. The classes cover types and properties for a core set of social objects (eg. people, organizations, events, locations, blog posts, products, reviews, resumes, recipes) as well as a specification for how to parse them. Built on vCard. [<a href="#ref-mf">mf</a>].</li>
       <li>XHTML Friends Network (XFN): A set of values for the HTML4 <code>rel</code> attribute which indicate a relationship between the person who created the link and the person being linked to (eg. "met", "coworker", "parent") [<a href="#ref-xfn">xfn</a>]. Works with microformats2. This one is not bothered by httpRange-14, ie. my homepage can be friends with your homepage no problem.</li>
     </ul>
@@ -154,7 +154,7 @@
 
     <p>Certain more modular (ie. only do one thing) open standards are used by multiple projects. I describe them here for convenience (references are therefore not inline when they are mentioned again):</p>
     <ul>
-      <li>Webfinger: is a discovery mechanism for user profiles using the <code>.well-known</code> URL pattern [<a href="#ref-webfinger">webfinger</a>].</li>
+      <li>Webfinger: is a discovery mechanism for user profiles using the <code>.well-known</code> URL pattern and <code>user@domain.tld</code> style identifiers [<a href="#ref-webfinger">webfinger</a>].</li>
       <li>WebID+TLS: an authentication mechanism that uses FOAF files and browser certificates [<a href="#ref-foaftls">foaftls</a>].</li>
       <li>OAuth 2: a commonly used authentication mechanisms which uses bearer tokens [<a href="#ref-oauth2">oauth2</a>].</li>
       <li>JSON-LD: a JSON syntax for RDF [<a href="#ref-jsonld">jsonld</a>].</li>
