@@ -776,9 +776,13 @@
 
             <p>Since delivery is only a requirement for federated servers, prospective subscribers will not be able to <code>POST</code> their <code>Follow</code> activity to the <code>inbox</code> of a profile which is on a non-federated server (expect a <code>405 Method Not Allowed</code>), and thus are not able to subscribe to these profiles. In this case, prospective subscribers may wish to periodically <em>pull</em> from the publisher's <code>outbox</code> instead.</p>
 
+            <section>
             <h5 id="subscription-delegating">Delegating subscription handling</h5>
+            <div>
             <p><strong>WebSub</strong> provides a mechanism to delegate subscription handling and delivery of content to subscribers to a third-party, called a <em>hub</em>. All publishers need to do is link to their chosen hub(s) using HTTP <code>Link</code> headers or HTML <code>&lt;link&gt; </code> elements with <code>rel="hub"</code>, and then notify the hub when new content is available. The mechanism for notifying the hub is left deliberately unspecified, as publishers may have their own built in hub, and therefore use an internal mechanism.</p>
-            
+            </div>
+            </section>
+
             <p>Hubs and publishers which would like to agree on a standard mechanism to communicate might consider employing an existing <a href="#swp-delivery">delivery</a> mechanism, namely Linked Data Notifications (<a href="#swp-subscription-notification">fig. [subscription-notification</a>]) or Webmention<sup><a href="fn-swp-sub-wm">sub-wm</a></sup>.</p>
 
             <figure id="swp-subscription-notification">
@@ -820,12 +824,18 @@ Content-type: application/ld+json
           <div>
             <p>A user or application may wish to push a notification to another user that the receiver has <em>not explicitly asked</em> for. For example to send a message or some new information; because they have linked to (replied, liked, bookmarked, reposted, etc) their content; because they have linked to (tagged, addressed) the user directly; to make the recipient aware of a change in state of some document or resource on the Web. The Social Web Working Group specifications contain several mechanisms for carrying out delivery; they are listed here from general to specialsed.</p>
 
-            <h5 id="swp-targeting-and-discovery">Targeting and discovery</h5>
+            <section id="swp-targeting-and-discovery">
+            <h5>Targeting and discovery</h5>
+            <div>
             <p>The target of a notification is usually the addressee or the subject, as referenced by a URL. The target may also be someone who has previously requested notifications through a <a href="#subscribing">subscription</a> request. Once you have determined your target, you need to discover where to send the notification for that particular target. Do this by fetching the target URL and looking for a link to an endpoint which will accept the type of notification you want to send (read on, for all of your exciting options).</p>
             <p>Bear in mind that many potential targets will <em>not</em> be configured to receive notifications at all. To avoid overloading unsuspecting servers with discovery-related requests, your application should employ a "back-off" strategy when carrying out discovery multiple times to targets on the same domin. This could involve increasing the period of time between subsequent requests, or caching unsuccessful discovery attempts so those domains can be avoided in future. You may wish to send a <code>User-Agent</code> header with a reference to the notification mechanism you are using so that recipient servers can find out more about the purpose of your requests.</p>
             <p>Your application should also respect relevant cache control and retry headers returned by the target server.</p>
+            </div>
+            </section>
 
-            <h5 id="swp-delivery-generic">Generic notifications</h5>
+            <section id="swp-delivery-generic">
+            <h5>Generic notifications</h5>
+            <div>
             <p><strong>LDN</strong> provides a protocol for sending, receiving and consuming notifications which may contain any content, or be triggered by any person or process. Senders, receivers and consumers can all be on different domains, thus this meets the criteria for a federation protocol. This is a suitable notification mechanism when:</p>
 
             <ul>
@@ -841,8 +851,12 @@ Content-type: application/ld+json
             <p>The payload of notifications is deliberately left open so that LDN may be used in a wide variety of use cases. However, receivers with particular purposes are likely to want to constrain the types of notifications they accept. They can do this transparently (such that senders are able to attempt to conform, rather than having their requests rejected opaquely) by advertising data shapes constraints such as <a href="https://www.w3.org/TR/shacl/">SHACL</a>. Advertisement of such constraints also allows consumers to understand the types of notifications in the Inbox before attempting to retrieve them. Receivers may reject notifications on the basis of internal, undisclosed constraints, and may also access control the Inbox for example by requiring an <code>Authorization</code> header from both senders and consumers.</p>
 
             <p><strong>WebSub</strong> <em>publishers</em> deliver content to their <em>hub</em>, and <em>hubs</em> to their <em>subscribers</em> using HTTP <code>POST</code> requests. The body of the request is left to the discretion of the sender in the first case, and in the latter case must match the Content-Type of and contain contents from the <code>topic</code> URL.</p>
+            </div>
+            </section>
 
-            <h5 id="delivery-activities">Activity notifications</h5>
+            <section id="delivery-activities">
+            <h5>Activity notifications</h5>
+            <div>
             <p><strong>ActivityPub</strong> uses LDN to send notifications with some specific constraints. These are:</p>
 
             <ul>
@@ -865,8 +879,12 @@ Content-type: application/ld+json
             </ul>
 
             <p>ActivityPub actor profiles are linked to their inboxes via the <code>https://www.w3.org/ns/activitystreams#inbox</code> property. This is an <em>alias</em> (in the AS2 JSON-LD context) for LDN's <code>http://www.w3.org/ns/ldp#inbox</code>. Applications using a full JSON-LD processor to parse these documents will see these terms as one and the same. Applications doing naive string matching on terms may wish to note that if you find an <code>ldp:inbox</code> it will accept <code>POST</code> requests in the same way as an <code>as:inbox</code>.</p>
+            </div>
+            </section>
 
-            <h5 id="delivery-mentioning">Mentioning</h5>
+            <section id="delivery-mentioning">
+            <h5>Mentioning</h5>
+            <div>
             <p><strong>Webmention</strong> provides an API for sending and receiving notifications when a relationship is created between two documents by including the URL of one document in the content of another. It works when the two documents are on different domains, thus serving as a federation protocol. This is a suitable notification mechanism when:</p>
 
             <ul>
@@ -880,9 +898,12 @@ Content-type: application/ld+json
             <p>Webmentions are verified by the server dereferencing the source and parsing it to check for the existence of the target URL. If the target URL isn't found, the webmention MUST be rejected.</p>
 
             <p>Webmention uses <code>x-www-form-urlencoded</code> for the source and target as parameters in an HTTP POST request. Beyond verification, it is not specified what the receiver should do upon receipt of a Webmention. What the webmention endpoint should return on a <code>GET</code> request is also left unspecified.</p>
+            </div>
+            </section>
 
-            <h5 id="delivery-interop">Delivery interop</h5>
-
+            <section id="delivery-interop">
+            <h5>Delivery interop</h5>
+            <div>
             <p>This section describes how receiver implementations of either Webmention or LDN may create bridging code in order to accept notifications from senders of the other. This can also be read to understand how a sender of either Webmention or LDN should adapt their discovery and payload in order to send to a receiver of the other.</p>
 
             <p><strong>Webmention receivers</strong> wishing to also accept LDN <code>POST</code>s at their Webmention endpoint MUST:</p>
@@ -923,9 +944,13 @@ target=https://aaronpk.example/post-by-aaron
               <li>Receivers MUST return a <code>201 Created</code> with a <code>Location</code> header or <code>202 Accepted</code>.</li>
               <li>Receivers MUST verify the request by retrieving the source document and checking a link to the target document is present. If the Webmention is not verified, recievers MUST NOT keep it.</li>
             </ul>
-            
-            <h5 id="wm-as-as">Webmention as AS2</h5>
+            </div>
+            </section>
 
+
+            <section id="wm-as-as">
+            <h5>Webmention as AS2</h5>
+            <div>
             <p>A webmention may be represented as a persistent resource with AS2. This could come in handy if a Webmention sender <em>mentions</em> a user known to be running an ActivityPub federated server. In this case, the sender can use an AS2 payload and carry out <a href="#delivery">delivery</a> of the notification per ActivityPub/LDN.</p>
 
             <pre class="example">
@@ -954,6 +979,9 @@ target=https://aaronpk.example/post-by-aaron
   "relationship": "inReplyTo"
 }
             </pre>
+            </div>
+            </section>
+
           </div>
         </section>
 
