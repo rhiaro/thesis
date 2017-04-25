@@ -786,19 +786,17 @@
             <p>Hubs and publishers which would like to agree on a standard mechanism to communicate might consider employing an existing <a href="#swp-delivery">delivery</a> mechanism, namely Linked Data Notifications (<a href="#swp-subscription-notification">fig. [subscription-notification</a>]) or Webmention<sup><a href="fn-swp-sub-wm">sub-wm</a></sup>.</p>
 
             <figure id="swp-subscription-notification">
-              <pre>
-POST /inbox HTTP/1.1
-Host: hubbub.example
-Content-type: application/ld+json
-
-{
-  "@context": "https://www.w3.org/ns/activitystreams",
-  "id": "",
-  "type": "Announce",
-  "object": "https://rhiaro.co.uk/tags/socialwg",
-  "target": "https://hubbub.example/"
-}
-              </pre>
+              <pre><code>POST /inbox HTTP/1.1</code>
+<code>Host: hubbub.example</code>
+<code>Content-type: application/ld+json</code>
+<code></code>
+<code>{</code>
+<code>  "@context": "https://www.w3.org/ns/activitystreams",</code>
+<code>  "id": "",</code>
+<code>  "type": "Announce",</code>
+<code>  "object": "https://rhiaro.co.uk/tags/socialwg",</code>
+<code>  "target": "https://hubbub.example/"</code>
+<code>}</code></pre>
               <figcaption><p><strong>Figure [subscription-notification]:</strong> Notifying a hub of new content with LDN, using an AS2 Announce in the notification body. The <code>object</code> is the <code>topic</code> URL and the <code>target</code> is the hub itself. The hub can use this information to fetch new content for subsequent delivery to subscribers.</p></figcaption>
             </figure>
 
@@ -909,15 +907,14 @@ Content-type: application/ld+json
             <p><strong>Webmention receivers</strong> wishing to also accept LDN <code>POST</code>s at their Webmention endpoint MUST:</p>
             <ul>
               <li>Advertise the webmention endpoint via <code>rel="http://www.w3.org/ns/ldp#inbox"</code> in addition to <code>rel="webmention"</code> (in the <code>Link</code> header, HTML body or JSON body of a target).</li>
-              <li>Accept <code>POST</code> requests with the Content-Type <code>application/ld+json</code>. Expect the body of the request to be:</li>
-                  <pre class="example">
-{
-  "@context": "http://www.w3.org/ns/webmention#",
-  "@id": "",
-  "source": { "@id": "https://waterpigs.example/post-by-barnaby" },
-  "target": { "@id": "https://aaronpk.example/post-by-aaron" }
-}
-                  </pre>
+              <li>Accept <code>POST</code> requests with the Content-Type <code>application/ld+json</code>. Expect the body of the request to be:
+                  <pre class="example"><code>{</code>
+<code>  "@context": "http://www.w3.org/ns/webmention#",</code>
+<code>  "@id": "",</code>
+<code>  "source": { "@id": "https://waterpigs.example/post-by-barnaby" },</code>
+<code>  "target": { "@id": "https://aaronpk.example/post-by-aaron" }</code>
+<code>}</code></pre>
+              </li>
               <li>Use the <code>source->@id</code> and <code>target->@id</code> values as the <code>source</code> and <code>target</code> of the Webmention, and proceed with verification.</li>
               <li>If returning a <code>201 Created</code>, it MUST return a <code>Location</code> header with a URL from which the contents of the request posted can be retrieved. <code>202 Accepted</code> is still fine.</li>
               <li>Note than when verifying the source, there's a good chance you can request/parse it as RDF.</li>
@@ -926,21 +923,18 @@ Content-type: application/ld+json
             <p><strong>LDN receivers</strong> wishing to also accept Webmentions to their Inbox MUST:</p>
             <ul>
               <li>Advertise the Inbox via <code>rel="webmention"</code> in addition to <code>rel="http://www.w3.org/ns/ldp#inbox"</code> (in the <code>Link</code> header, HTML body or JSON body of a target).</li>
-              <li>Accept <code>POST</code> requests with a content type <code>application/x-www-form-urlencoded</code>. Convert these requests from:</li>
-              <pre class="example">
-source=https://waterpigs.example/post-by-barnaby&amp;
-target=https://aaronpk.example/post-by-aaron
-              </pre>
-              <p>to:</p>
-              <pre class="example">
-{
-  "@context": "http://www.w3.org/ns/webmention#",
-  "@id": "",
-  "source": { "@id": "https://waterpigs.example/post-by-barnaby" },
-  "target": { "@id": "https://aaronpk.example/post-by-aaron" }
-}
-              </pre>
-              <p>and proceed per LDN; receivers MAY add other triples at their discretion.</p>
+              <li>Accept <code>POST</code> requests with a content type <code>application/x-www-form-urlencoded</code>. Convert these requests from:
+              <pre class="example"><code>source=https://waterpigs.example/post-by-barnaby&amp;
+target=https://aaronpk.example/post-by-aaron</code></pre>
+              to:
+              <pre class="example"><code>{</code>
+<code>  "@context": "http://www.w3.org/ns/webmention#",</code>
+<code>  "@id": "",</code>
+<code>  "source": { "@id": "https://waterpigs.example/post-by-barnaby" },</code>
+<code>  "target": { "@id": "https://aaronpk.example/post-by-aaron" }</code>
+<code>}</code></pre>
+              and proceed per LDN; receivers MAY add other triples at their discretion.
+              </li>
               <li>Receivers MUST return a <code>201 Created</code> with a <code>Location</code> header or <code>202 Accepted</code>.</li>
               <li>Receivers MUST verify the request by retrieving the source document and checking a link to the target document is present. If the Webmention is not verified, recievers MUST NOT keep it.</li>
             </ul>
@@ -953,32 +947,29 @@ target=https://aaronpk.example/post-by-aaron
             <div>
             <p>A webmention may be represented as a persistent resource with AS2. This could come in handy if a Webmention sender <em>mentions</em> a user known to be running an ActivityPub federated server. In this case, the sender can use an AS2 payload and carry out <a href="#delivery">delivery</a> of the notification per ActivityPub/LDN.</p>
 
-            <pre class="example">
-{
-  "@context": "https://www.w3.org/ns/activitystreams#",
-  "type": "Relationship",
-  "subject": "https://waterpigs.example/post-by-barnaby",
-  "object": "https://aaronpk.example/post-by-aaron"
-}
+            <pre class="example"><code>{</code>
+<code>  "@context": "https://www.w3.org/ns/activitystreams#",</code>
+<code>  "type": "Relationship",</code>
+<code>  "subject": "https://waterpigs.example/post-by-barnaby",</code>
+<code>  "object": "https://aaronpk.example/post-by-aaron"</code>
+<code>}</code>
             </pre>
 
             <p>A receiver or sender may want to augment this representation with the relationship between the two documents, and any other pertinent data. In the receiver's case, this could be gathered when they parse the source during the verification process. For example:</p>
 
-            <pre class="example">
-{
-  "@context": "https://www.w3.org/ns/activitystreams#",
-  "type": "Relationship",
-  "subject": {
-    "id": "https://waterpigs.example/post-by-barnaby",
-    "name": "Hi Aaron, great post."
-  },
-  "object": {
-    "id": "https://aaronpk.example/post-by-aaron",
-    "name": "Aaron's first post."
-  },
-  "relationship": "inReplyTo"
-}
-            </pre>
+            <pre class="example"><code>{</code>
+<code>  "@context": "https://www.w3.org/ns/activitystreams#",</code>
+<code>  "type": "Relationship",</code>
+<code>  "subject": {</code>
+<code>    "id": "https://waterpigs.example/post-by-barnaby",</code>
+<code>    "name": "Hi Aaron, great post."</code>
+<code>  },</code>
+<code>  "object": {</code>
+<code>    "id": "https://aaronpk.example/post-by-aaron",</code>
+<code>    "name": "Aaron's first post."</code>
+<code>  },</code>
+<code>  "relationship": "inReplyTo"</code>
+<code>}</code></pre>
             </div>
             </section>
 
@@ -1406,6 +1397,11 @@ font-size:10pt;
 content: counter(page);
 counter-increment: page;
 }
+
+@page {
+  
+}
+
 }
 </style>
   </body>
