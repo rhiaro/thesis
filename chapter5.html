@@ -908,12 +908,14 @@
             <ul>
               <li>Advertise the webmention endpoint via <code>rel="http://www.w3.org/ns/ldp#inbox"</code> in addition to <code>rel="webmention"</code> (in the <code>Link</code> header, HTML body or JSON body of a target).</li>
               <li>Accept <code>POST</code> requests with the Content-Type <code>application/ld+json</code>. Expect the body of the request to be:
-                  <pre class="listing"><code>{</code>
+<figure class="listing">
+                  <pre><code>{</code>
 <code>  "@context": "http://www.w3.org/ns/webmention#",</code>
 <code>  "@id": "",</code>
 <code>  "source": { "@id": "https://waterpigs.example/post-by-barnaby" },</code>
 <code>  "target": { "@id": "https://aaronpk.example/post-by-aaron" }</code>
 <code>}</code></pre>
+</figure>
               </li>
               <li>Use the <code>source->@id</code> and <code>target->@id</code> values as the <code>source</code> and <code>target</code> of the Webmention, and proceed with verification.</li>
               <li>If returning a <code>201 Created</code>, it MUST return a <code>Location</code> header with a URL from which the contents of the request posted can be retrieved. <code>202 Accepted</code> is still fine.</li>
@@ -924,15 +926,19 @@
             <ul>
               <li>Advertise the Inbox via <code>rel="webmention"</code> in addition to <code>rel="http://www.w3.org/ns/ldp#inbox"</code> (in the <code>Link</code> header, HTML body or JSON body of a target).</li>
               <li>Accept <code>POST</code> requests with a content type <code>application/x-www-form-urlencoded</code>. Convert these requests from:
-              <pre class="listing"><code>source=https://waterpigs.example/post-by-barnaby&amp;
+<figure class="listing">
+              <pre><code>source=https://waterpigs.example/post-by-barnaby&amp;
 target=https://aaronpk.example/post-by-aaron</code></pre>
+</figure>
               to:
-              <pre class="listing"><code>{</code>
+<figure class="listing">
+              <pre><code>{</code>
 <code>  "@context": "http://www.w3.org/ns/webmention#",</code>
 <code>  "@id": "",</code>
 <code>  "source": { "@id": "https://waterpigs.example/post-by-barnaby" },</code>
 <code>  "target": { "@id": "https://aaronpk.example/post-by-aaron" }</code>
 <code>}</code></pre>
+</figure>
               and proceed per LDN; receivers MAY add other triples at their discretion.
               </li>
               <li>Receivers MUST return a <code>201 Created</code> with a <code>Location</code> header or <code>202 Accepted</code>.</li>
@@ -946,18 +952,18 @@ target=https://aaronpk.example/post-by-aaron</code></pre>
             <h5>Webmention as AS2</h5>
             <div>
             <p>A webmention may be represented as a persistent resource with AS2. This could come in handy if a Webmention sender <em>mentions</em> a user known to be running an ActivityPub federated server. In this case, the sender can use an AS2 payload and carry out <a href="#delivery">delivery</a> of the notification per ActivityPub/LDN.</p>
-
-            <pre class="listing"><code>{</code>
+<figure class="listing">
+            <pre><code>{</code>
 <code>  "@context": "https://www.w3.org/ns/activitystreams#",</code>
 <code>  "type": "Relationship",</code>
 <code>  "subject": "https://waterpigs.example/post-by-barnaby",</code>
 <code>  "object": "https://aaronpk.example/post-by-aaron"</code>
 <code>}</code>
             </pre>
-
+</figure>
             <p>A receiver or sender may want to augment this representation with the relationship between the two documents, and any other pertinent data. In the receiver's case, this could be gathered when they parse the source during the verification process. For example:</p>
-
-            <pre class="listing"><code>{</code>
+<figure class="listing">
+            <pre><code>{</code>
 <code>  "@context": "https://www.w3.org/ns/activitystreams#",</code>
 <code>  "type": "Relationship",</code>
 <code>  "subject": {</code>
@@ -970,6 +976,7 @@ target=https://aaronpk.example/post-by-aaron</code></pre>
 <code>  },</code>
 <code>  "relationship": "inReplyTo"</code>
 <code>}</code></pre>
+</figure>
             </div>
             </section>
 
