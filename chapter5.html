@@ -908,7 +908,7 @@
             <ul>
               <li>Advertise the webmention endpoint via <code>rel="http://www.w3.org/ns/ldp#inbox"</code> in addition to <code>rel="webmention"</code> (in the <code>Link</code> header, HTML body or JSON body of a target).</li>
               <li>Accept <code>POST</code> requests with the Content-Type <code>application/ld+json</code>. Expect the body of the request to be:
-                  <pre class="example"><code>{</code>
+                  <pre class="listing"><code>{</code>
 <code>  "@context": "http://www.w3.org/ns/webmention#",</code>
 <code>  "@id": "",</code>
 <code>  "source": { "@id": "https://waterpigs.example/post-by-barnaby" },</code>
@@ -924,10 +924,10 @@
             <ul>
               <li>Advertise the Inbox via <code>rel="webmention"</code> in addition to <code>rel="http://www.w3.org/ns/ldp#inbox"</code> (in the <code>Link</code> header, HTML body or JSON body of a target).</li>
               <li>Accept <code>POST</code> requests with a content type <code>application/x-www-form-urlencoded</code>. Convert these requests from:
-              <pre class="example"><code>source=https://waterpigs.example/post-by-barnaby&amp;
+              <pre class="listing"><code>source=https://waterpigs.example/post-by-barnaby&amp;
 target=https://aaronpk.example/post-by-aaron</code></pre>
               to:
-              <pre class="example"><code>{</code>
+              <pre class="listing"><code>{</code>
 <code>  "@context": "http://www.w3.org/ns/webmention#",</code>
 <code>  "@id": "",</code>
 <code>  "source": { "@id": "https://waterpigs.example/post-by-barnaby" },</code>
@@ -947,7 +947,7 @@ target=https://aaronpk.example/post-by-aaron</code></pre>
             <div>
             <p>A webmention may be represented as a persistent resource with AS2. This could come in handy if a Webmention sender <em>mentions</em> a user known to be running an ActivityPub federated server. In this case, the sender can use an AS2 payload and carry out <a href="#delivery">delivery</a> of the notification per ActivityPub/LDN.</p>
 
-            <pre class="example"><code>{</code>
+            <pre class="listing"><code>{</code>
 <code>  "@context": "https://www.w3.org/ns/activitystreams#",</code>
 <code>  "type": "Relationship",</code>
 <code>  "subject": "https://waterpigs.example/post-by-barnaby",</code>
@@ -957,7 +957,7 @@ target=https://aaronpk.example/post-by-aaron</code></pre>
 
             <p>A receiver or sender may want to augment this representation with the relationship between the two documents, and any other pertinent data. In the receiver's case, this could be gathered when they parse the source during the verification process. For example:</p>
 
-            <pre class="example"><code>{</code>
+            <pre class="listing"><code>{</code>
 <code>  "@context": "https://www.w3.org/ns/activitystreams#",</code>
 <code>  "type": "Relationship",</code>
 <code>  "subject": {</code>
