@@ -291,6 +291,8 @@ http://www.tandfonline.com/doi/pdf/10.1080/09687590220139883?instName=University
 
 # Networked publics
 
+[boyd-sns07]  boyd, danah.  2007.  “Social Network Sites: Public, Private, or What?” Knowledge Tree 13, May. http://kt.flexiblelearning.net.au/tkt2007/?page_id=2http://www.danah.org/papers/KnowledgeTree.pdf
+
 ## Social media
 
 
