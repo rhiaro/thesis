@@ -139,7 +139,7 @@ https://en.wikipedia.org/wiki/Social_software#Deliberative_social_networks
 
 Walther, Joseph; Malcolm Parks (2002). "Cues filtered out, cues filtered in: Computer-mediated communication and relationships". Handbook of interpersonal communication. 3rd edition: 529–563.
 
-Walther, Joseph; Van Der Heide; Kim; Westerman; Tong (January 2008). "The Role of Friends' Appearance and Behavior on Evaluations of Individuals on Facebook: Are We Known by the Company We Keep?". Human Communication Research. 34 (1): 28. doi:10.1111/j.1468-2958.2007.00312.x.
+[tong08] Walther, Joseph; Van Der Heide; Kim; Westerman; Tong (January 2008). "The Role of Friends' Appearance and Behavior on Evaluations of Individuals on Facebook: Are We Known by the Company We Keep?". Human Communication Research. 34 (1): 28. doi:10.1111/j.1468-2958.2007.00312.x.
 
 Walther, Joseph; Brandon Van Der Heide; Lauren M. Hamel; Hillary C. Shulman (2009-01-28). "Self-Generated Versus Other-Generated Statements and Impressions in Computer-Mediated Communication A Test of Warranting Theory Using Facebook". Communication Research. 36 (2): 229–253. doi:10.1177/0093650208330251. Retrieved 24 April 2012.
 
@@ -159,13 +159,19 @@ Utz, S., (2010). Show me your friends and I will tell you what type of person yo
 
 Walther, J. B. (2011). Theories of computer-mediated communication and interpersonal relations. SAGE Handbook of Interpersonal Communication (4th. ed), 443-479.
 
-    boyd, danah. 2010. ” Social network sites as networked publics: Affordances, dynamics, and implications.” Pp. 39-58 in A Networked Self: Identity, Community, and Culture on Social Network Sites, edited by Z. Papacharissi. New York: routledge.
-    boyd, danah 2008. “Why Youth Heart Social Network Sites: The Role of NetworkedPublics in Teenage Social Life.” Pp. 119-142 in Youth, Identity, and Digital Media, edited by D. Buckingham. Cambridge MA: MIT Press.
-    boyd, danah and Nicole B. Ellison. 2007. “Social network sites: Definition, history, and scholarship.” Journal of Computer-Mediated Communication 13:210-210.
-    Donath, Judith and danah boyd. 2004. “Public displays of connection.” Bt Technology Journal 22:71-82.
-    Ellison, Nicole B., Charles Steinfield, and Cliff Lampe. 2007. “The Benefits of Facebook “Friends:” Social Capital and College Students’ Use of Online Social Network Sites.” Journal of Computer-Mediated Communication 12:1143-1168.
-    Hogan, Bernie. 2010. “The Presentation of Self in the Age of Social Media: Distinguishing Performances and Exhibitions Online.” Bulletin of Science, Technology & Society 30:377-386.
-    Lim, Sun Sun, Shobha Vadrevu, Yoke Hian Chan, and Iccha Basnyat. 2012. “Facework on Facebook: The Online Publicness of Juvenile Delinquents and Youths-at-Risk.” Journal of Broadcasting & Electronic Media 56:346-361.
+boyd, danah. 2010. ” Social network sites as networked publics: Affordances, dynamics, and implications.” Pp. 39-58 in A Networked Self: Identity, Community, and Culture on Social Network Sites, edited by Z. Papacharissi. New York: routledge.
+
+boyd, danah 2008. “Why Youth Heart Social Network Sites: The Role of NetworkedPublics in Teenage Social Life.” Pp. 119-142 in Youth, Identity, and Digital Media, edited by D. Buckingham. Cambridge MA: MIT Press.
+
+boyd, danah and Nicole B. Ellison. 2007. “Social network sites: Definition, history, and scholarship.” Journal of Computer-Mediated Communication 13:210-210.
+
+[donathboyd04] Donath, Judith and danah boyd. 2004. “Public displays of connection.” Bt Technology Journal 22:71-82.
+
+[ellison07] Ellison, Nicole B., Charles Steinfield, and Cliff Lampe. 2007. “The Benefits of Facebook “Friends:” Social Capital and College Students’ Use of Online Social Network Sites.” Journal of Computer-Mediated Communication 12:1143-1168.
+
+Hogan, Bernie. 2010. “The Presentation of Self in the Age of Social Media: Distinguishing Performances and Exhibitions Online.” Bulletin of Science, Technology & Society 30:377-386.
+
+Lim, Sun Sun, Shobha Vadrevu, Yoke Hian Chan, and Iccha Basnyat. 2012. “Facework on Facebook: The Online Publicness of Juvenile Delinquents and Youths-at-Risk.” Journal of Broadcasting & Electronic Media 56:346-361.
     McLaughlin, Caitlin and Jessica Vitak. 2012. “Norm evolution and violation on Facebook.” New Media & Society 14:299-315.
     Papacharissi, Z. & Gibson, P. (2011). 15 Minutes of Privacy: Privacy, Sociality an Publicity on Social Network Sites. In L. Reinecke & S. Tepte, (Eds.), Privacy Online: Theoretical Approaches and Research Perspectives on the Role of Privacy in the Social Web (pp. 75-89). New York: Springer.
     Stutzman, Fred, Robert Capra, and Jamila Thompson. 2011. “Factors mediating disclosure in social network sites.” Computers in Human Behavior 27:590-598.
@@ -244,6 +250,19 @@ https://en.wikipedia.org/wiki/Impression_management
 
 https://en.wikipedia.org/wiki/Dramaturgy_(sociology)
 
+[brunswick56] Brunswik, E. (1956). Perception and the representative design of psychological experiments. Berkeley: University of California Press
+
+[lens01] Gigerenzer, G., & Kurz, E. M. (2001). Vicarious functioning reconsidered: A fast and frugal lens model. In K. R. Hammond & T. R. Stewart (Eds.), The essential Brunswik: Beginnings, explications, applications (pp. 342–348). Oxford, UK: Oxford University Press.
+
+[bedrooms02] Gosling, S. D., Ko, S. J., Mannarelli, T., & Morris, M. E. (2002). A room with a cue: Personality judgments based on offices and bedrooms.
+Journal of Personality and Social Psychology, 82, 379–398.
+
+[markus06] Marcus, B., Machilek, F., & Schutz, A. (2006). Personality in cyberspace: Personal Web sites as media for personality expressions and impressions. Journal of Personality and Social Psychology, 90, 1014–1031.
+
+[vazire04] Vazire, S., & Gosling, S. D. (2004). e-Perceptions: Personality impressions based on personal Websites. Journal of Personality and Social Psychology, 87, 123–132.
+
+[gosling08] Evans, D. C., Gosling, S. D., & Carroll, A. (2008). What elements of an online social networking profile predict target-rater agreement in personality impressions. Proceedings of the International Conference on Weblogs and Social Media, 1-6
+
 
 ## Embodiment
 
@@ -270,8 +289,7 @@ http://gradworks.umi.com/35/69/3569922.html
 
 http://www.tandfonline.com/doi/abs/10.1080/15213260802023433
 
-Personality in cyberspace: personal Web sites as media for personality expressions and impressions.
-http://www.ncbi.nlm.nih.gov/pubmed/16784349
+[markus06] http://www.ncbi.nlm.nih.gov/pubmed/16784349
 
 Composing Cyberspace: Identity, Community, and Knowledge in the Electronic Age
 https://books.google.com/books?id=jasQAQAAMAAJ
@@ -316,7 +334,12 @@ http://thenewinquiry.com/blogs/marginal-utility/social-media-is-not-self-express
 
 ## Authenticity
 
+[barmann14drag] Drag Queens, Other Performers Outraged As Facebook Forces Them To Use Their Real Names
+http://sfist.com/2014/09/11/drag_queens_other_performers_outrag.php
 
+[fbeffect] David Kirkpatrick. The Facebook Effect: The Inside Story of the Company That Is Connecting the World. (2010). Simon & Schuster.
+
+[digitalvertigo] Andrew Keen. Digital Vertigo: How Today's Online Social Revolution Is Dividing, Diminishing, and Disorienting Us. (2013). St. Martin's Griffin.
 
 ## Imagined audience
 
