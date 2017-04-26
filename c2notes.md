@@ -190,9 +190,6 @@ https://spir.aoir.org/index.php/spir/article/download/1115/769
 IMAGINING THE ENDS OF IDENTITY: BIRTH AND DEATH ON INSTAGRAM
 https://spir.aoir.org/index.php/spir/article/download/1120/774
 
-RETHINKING SELFIES: EMPOWERING THE MARGINALIZED THROUGH SELF-PORTRAITS
-https://spir.aoir.org/index.php/spir/article/download/1135/787
-
 A SOCIOLINGUISTIC ANALYSIS OF EMOTICON USAGE IN JAPANESE BLOGS: VARIATION BY AGE, GENDER, AND TOPIC
 https://spir.aoir.org/index.php/spir/article/download/1137/789
 
@@ -243,12 +240,18 @@ http://www.aaai.org/ocs/index.php/ICWSM/09/paper/viewFile/199/403 personalities 
 
 ## Narcicissm
 
-http://bc4women.org/2016/02/theres-an-app-for-that-when-social-media-identity-overshadows-identity-in-christ/
 
-http://thenewinquiry.com/blogs/marginal-utility/social-media-is-not-self-expression/
+[noland06] Noland, C. (2006). Auto-photography as research practice: Identity and self-esteem research. Journal of Research Practice, 2(1). 
 
-Affirming the Self through Online Profiles:  Beneficial Effects of Social Networking Sites 
+[toma10] Catalina L. Toma (2010) Affirming the Self through Online Profiles:  Beneficial Effects of Social Networking Sites CHI 2010
 http://dmrussell.net/CHI2010/docs/p1749.pdf
+
+[nemer15] David Nemer and Guo Zhang Freeman. (2015). Rethinking Selfies: Empowering the marginalized through self portraits. Paper presented at Internet Research 16: The 16th Annual Meeting of the Association of Internet Researchers. Phoenix, AZ, USA: AoIR. Retrieved from http://spir.aoir.org
+https://spir.aoir.org/index.php/spir/article/download/1135/787
+
+Narcissism in the Age of Technology https://muse.jhu.edu/article/472214
+
+Turkle Alone Together
 
 
 ## Authenticity
@@ -263,6 +266,8 @@ http://sfist.com/2014/09/11/drag_queens_other_performers_outrag.php
 [donathboyd04] 
 
 [ellison07] 
+
+[conleyintra] Dalton Conley. (2009) Elsewhere USA How We Got from the Company Man Family Dinners & the Affluent Society to the Home Office Blackberry Moms & Economic Anxiety. PENGUIN RANDOM HOUSE.
 
 ## Imagined audience
 
