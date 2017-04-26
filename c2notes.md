@@ -1,80 +1,9 @@
 https://blog.coralproject.net/the-real-name-fallacy/
 
-http://www.informationr.net/ir/21-2/SM1.html#.WPXPREfmivv Quantified Academic Selves
-
-THE LABOR OF VISIBILITY: GENDERED SELF-EXPRESSION IN THE SOCIAL MEDIA IMAGINARY
-https://spir.aoir.org/index.php/spir/article/download/1062/718
-
-From Borking to Streaming: The Normalization of Media Surveillance
-https://spir.aoir.org/index.php/spir/article/download/1086/740
-
-CONTRADICTIONS OF THE SOCIAL IMAGINARY: MAKING SENSE OF DIGITAL FOOD SNAPS 
-https://spir.aoir.org/index.php/spir/article/download/1115/769
-
-IMAGINING THE ENDS OF IDENTITY: BIRTH AND DEATH ON INSTAGRAM
-https://spir.aoir.org/index.php/spir/article/download/1120/774
-
-RETHINKING SELFIES: EMPOWERING THE MARGINALIZED THROUGH SELF-PORTRAITS
-https://spir.aoir.org/index.php/spir/article/download/1135/787
-
-A SOCIOLINGUISTIC ANALYSIS OF EMOTICON USAGE IN JAPANESE BLOGS: VARIATION BY AGE, GENDER, AND TOPIC
-https://spir.aoir.org/index.php/spir/article/download/1137/789
-
-FACEBOOKING TOWARD DEATH: HOW DIGITAL LEGACY IMPACTS CURATION IN ONLINE SETTINGS 
-https://spir.aoir.org/index.php/spir/article/download/1139/791
-
-THE NAVIGATION OF BOUNDARIES IN ONLINE SOCIAL SPACES
-https://spir.aoir.org/index.php/spir/article/download/1142/794
-
-THE HITCHHIKER’S GUIDE TO COMMUNITY: TERRITORIALITY, INTIMACY AND OWNERSHIP IN ONLINE SPACES 
-https://spir.aoir.org/index.php/spir/article/download/1144/795
-
-NOT  MYSELF:  ANTI-SURVIELLANCE  AESTHETICS  AND  THE  CHIN-DOWN  SELFIE
-https://spir.aoir.org/index.php/spir/article/download/1158/809
-
-SUBVERTING SOCIAL MEDIA
-https://spir.aoir.org/index.php/spir/article/download/1159/810
-
-FCJ-166 ‘Change name to No One. Like people’s status’ Facebook Trolling and Managing Online Personas
-http://twentytwo.fibreculturejournal.org/fcj-166-change-name-to-no-one-like-peoples-status-facebook-trolling-and-managing-online-personas/
-
-Stein,Tao, Erdong, Chen, and Mangla, Karan. ‘Facebook Immune Sytem’, EuroSys Social Network Systems (SNS), Salzburg (ACM, 2011), 
-http://research.microsoft.com/en-us/projects/ldg/a10-stein.pdf
-
-Phillips, Whitney. ‘The House That Fox Built: Anonymous, Spectacle, and Cycles of Amplification’, Television & New Media published online before print, 30 August (2012): 1–16, 
-http://tvn.sagepub.com/content/early/2012/08/27/1527476412452799.abstract?rss=1
-
-Phillips, Whitney. ‘LOLing at Tragedy: Facebook Trolls, Memorial Pages and Resistance to Grief Online’, First Monday 16.12 (2011), 
-http://firstmonday.org/htbin/cgiwrap/bin/ojs/index.php/fm/article/view/3168
-
-Papacharissi, Zizi. ‘The Presentation of Self in Virtual Life: Characteristics of Personal Home Pages’, Journalism & Mass Communication Quarterly 79.3 Autumn (2002): 643–660.
-
-Guins, Raiford. Edited Clean Version: Technology and the Culture of Control (Minneapolis, London: University of Minnesota Press, 2009).
-
 Dijck, José van. ‘Users like you? Theorizing agency in user-generated content’, Media, Culture & Society 31.1 (2009): 41–58.
-
-Dijck, José van. ‘Facebook and the Engineering of Connectivity: A multi-layered approach to social media platforms’, Convergence OnlineFirst Version, September (2012): 1–5.
-
-Donath, Judith. ‘Identity and deception in the virtual community’, in Marc A. Smith and Peter Kollock (Eds.) Communities in Cyberspace (London & New York: Routledge, 1999): 29–59.
-
-Cheney-Lippold, John. ‘A New Algorithmic Identity: Soft Biopolitics and the Modulation of Control’, Theory, Culture & Society 28.6 (2011): 164–181.
-
-Bucher T. The friendship assemblage: investigating programmed sociality on Facebook. Television & New Media. November vol.14 (2013);1–15. http://dx.doi.org/10.1177/1527476412452800
-
-https://www.ucl.ac.uk/why-we-post/discoveries/13-each-social-media-platform-only-makes-sense-in-relation-to-alternative-platforms-and-the-media
-
-
-YouTube and You: Experiences of Self-awareness in the Context Collapse of the Recording Webcam
-http://krex.k-state.edu/dspace/handle/2097/6302
 
 I tweet honestly
 http://www.tiara.org/blog/wp-content/uploads/2010/07/marwick_boyd_twitter_nms.pdf
-
-Profiles as Conversation: Networked Identity Performance on Friendster danah boyd,
-http://www.danah.org/papers/HICSS2006.pdf
-
-Context collapse lit review
-https://thesocietypages.org/cyborgology/2013/01/10/context-collapse-a-literature-review/
 
 Social Media and Experiential Ambivalence
 http://www.mdpi.com/1999-5903/4/4/955
@@ -85,44 +14,11 @@ http://onlinelibrary.wiley.com/doi/10.1002/symb.123/abstract
 Identity Theory in a Digital Age
 http://libgen.io/book/index.php?md5=98A2F21BCD17E902F8660B2CB236B5FE
 
-Context collapse: theorizing context collusions and collisions
-http://www.tandfonline.com/doi/abs/10.1080/1369118X.2014.888458?journalCode=rics20
-
-Blogging my Academic Self”
-http://link.springer.com/chapter/10.1007/978-94-017-8718-5_1?no-access=true
-
 Prosuming Identity: The Production and Consumption of Transableism on Transabled.org
 http://www.academia.edu/1286613/Prosuming_Identity_The_Production_and_Consumption_of_Transableism_on_Transabled.org
 
-Davis, Jenny L.2010. "Architecture of the Personal Interactive Homepage: Constructing the Self through MySpace."New Media & Society12(7): 1103-1119
-http://journals.sagepub.com/doi/abs/10.1177/1461444809354212
-
 Burgess, J., Cassidy, E., Duguay, S., & Light, B. (2016). Introduction to special issue: Making digital cultures of gender and sexuality with social media. Social Media + Society, 2(4), 1-4
 http://journals.sagepub.com/doi/pdf/10.1177/2056305116672487
-
-Duguay, S. (2014). ‘He has a way gayer Facebook than I do’: Investigating sexual identity disclosure and context collapse on a social networking site. New Media & Society. Published online before print: 4 September 2014. doi:10.1177/1461444814549930
-http://journals.sagepub.com/doi/pdf/10.1177/1461444814549930
-
-Duguay, S. (2014). ‘I never had to say anything’: Examining the transformative potential of Facebook for sexual identity disclosures. Paper presented at ICA Regional Conference: Digital Transformations, Social Media Engagement and the Asian Century. 1-3 October, Brisbane, Australia.
-https://www.slideshare.net/StefanieDuguay/i-never-had-to-say-anything-examining-the-transformative-potential-of-facebook-for-sexual-identity-disclosures
-
-Duguay, S. (2013). Facebook as a decontextualized environment: Young people’s experiences of navigating LGBTQ identity on a social networking site. Paper presented at Social Media & Society 2013 International Conference. 14-15 September, Halifax, Canada.
-https://smsociety13.sched.com/event/92d43df4bc792748089d5ff268e71ae5#.VUdjNdqqqko
-
-Duguay, S. (2014). Ways to stay connected: Harnessing, managing, and preventing context collapse on social media. “Connections” Keyword Seminar, presented to the Children and Youth Research Centre. 9 October 2014. QUT, Brisbane, Australia.
-https://www.slideshare.net/StefanieDuguay/ways-to-stay-connected-harnessing-managing-and-preventing-context-collapse-on-social-media
-
-Duguay, S. (2013). Your networked world: Connections, self-presentation, and privacy in the age of social media. Presentation to Youth Mandate for Greater Involvement (YMAGIN), Employment and Social Development Canada, Government of Canada. 10 December 2013. Ottawa, Ontario, Canada.
-https://www.slideshare.net/StefanieDuguay/your-networked-world
-
-https://en.wikipedia.org/wiki/Warranting_theory
-
-Warrants and Deception in Computer Mediated Communication 
-https://www.microsoft.com/en-us/research/wp-content/uploads/2017/03/p9.pdf?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fredmond%2Fgroups%2Fconnect%2Fcscw_10%2Fdocs%2Fp9.pdf
-
-Computer-Mediated Communication: Hyperpersonal – Walther
-http://blog.timebarrow.com/2010/07/cmc-hyperpersonal-walther/
-
 
 https://idcubed.org/home_page_feature/white-paper-a-new-kind-of-social-ordering-self-sovereignty-autonomous-trust-and-p2p-parity/
 
@@ -130,22 +26,9 @@ https://idcubed.org/home_page_feature/windhover-principles-digital-identity-trus
 
 https://idcubed.org/about/vision-mission-2/
 
-http://www.aaai.org/ocs/index.php/ICWSM/09/paper/viewFile/199/403 personalities and blogging
-
 https://en.wikipedia.org/wiki/Social_networking_service
 
 https://en.wikipedia.org/wiki/Social_software#Deliberative_social_networks
-
-
-Walther, Joseph; Malcolm Parks (2002). "Cues filtered out, cues filtered in: Computer-mediated communication and relationships". Handbook of interpersonal communication. 3rd edition: 529–563.
-
-[tong08] Walther, Joseph; Van Der Heide; Kim; Westerman; Tong (January 2008). "The Role of Friends' Appearance and Behavior on Evaluations of Individuals on Facebook: Are We Known by the Company We Keep?". Human Communication Research. 34 (1): 28. doi:10.1111/j.1468-2958.2007.00312.x.
-
-Walther, Joseph; Brandon Van Der Heide; Lauren M. Hamel; Hillary C. Shulman (2009-01-28). "Self-Generated Versus Other-Generated Statements and Impressions in Computer-Mediated Communication A Test of Warranting Theory Using Facebook". Communication Research. 36 (2): 229–253. doi:10.1177/0093650208330251. Retrieved 24 April 2012.
-
-Gibbs, Jennifer; Nicole B. Ellison; Chih-Hui Lai (February 2011). "First Comes Love, Then Comes Google: An Investigation of Uncertainty Reduction Strategies and Self-Disclosure in Online Dating". Communication Research. 38 (1): 70–100. doi:10.1177/0093650210377091. Retrieved 24 April 2012.
-
-Parks, Malcolm; Tonjia Archy-Ladas (2003). "Communicating self through personal homepages: Is identity more than screen deep?". ICA conference paper. Retrieved 24 April 2012.
 
 Warkentin, Darcy; Michael Woodworth; Jeffrey Hancock; Nicole Cormier (2012). "Warrants and deception in computer mediated communication" (PDF). CSCW. Retrieved 24 April 2012.
 
@@ -155,21 +38,7 @@ Ramirez, A. Jr., Walther, J. B. Burgoon, J. K., Sunnafrank, M. (2002) Informatio
 
 Stone, A. R. (1995) The war of desire and technology at the close of the mechanical age. Cambridge: MIT Press
 
-Utz, S., (2010). Show me your friends and I will tell you what type of person you are: How one's profile, number of friends, and type of friends influence impression formation on social network sites. Journal of Computer-Mediated Communication, 15, 314–335
-
 Walther, J. B. (2011). Theories of computer-mediated communication and interpersonal relations. SAGE Handbook of Interpersonal Communication (4th. ed), 443-479.
-
-boyd, danah. 2010. ” Social network sites as networked publics: Affordances, dynamics, and implications.” Pp. 39-58 in A Networked Self: Identity, Community, and Culture on Social Network Sites, edited by Z. Papacharissi. New York: routledge.
-
-boyd, danah 2008. “Why Youth Heart Social Network Sites: The Role of NetworkedPublics in Teenage Social Life.” Pp. 119-142 in Youth, Identity, and Digital Media, edited by D. Buckingham. Cambridge MA: MIT Press.
-
-boyd, danah and Nicole B. Ellison. 2007. “Social network sites: Definition, history, and scholarship.” Journal of Computer-Mediated Communication 13:210-210.
-
-[donathboyd04] Donath, Judith and danah boyd. 2004. “Public displays of connection.” Bt Technology Journal 22:71-82.
-
-[ellison07] Ellison, Nicole B., Charles Steinfield, and Cliff Lampe. 2007. “The Benefits of Facebook “Friends:” Social Capital and College Students’ Use of Online Social Network Sites.” Journal of Computer-Mediated Communication 12:1143-1168.
-
-Hogan, Bernie. 2010. “The Presentation of Self in the Age of Social Media: Distinguishing Performances and Exhibitions Online.” Bulletin of Science, Technology & Society 30:377-386.
 
 Lim, Sun Sun, Shobha Vadrevu, Yoke Hian Chan, and Iccha Basnyat. 2012. “Facework on Facebook: The Online Publicness of Juvenile Delinquents and Youths-at-Risk.” Journal of Broadcasting & Electronic Media 56:346-361.
     McLaughlin, Caitlin and Jessica Vitak. 2012. “Norm evolution and violation on Facebook.” New Media & Society 14:299-315.
@@ -191,50 +60,14 @@ http://www.simine.com/docs/Back_et_al_PSYCHSCIENCE_2010.pdf
 Microblogging: What and How Can We Learn From It?
 http://dmrussell.net/CHI2010/docs/p4517.pdf
 
-Affirming the Self through Online Profiles:  Beneficial Effects of Social Networking Sites 
-http://dmrussell.net/CHI2010/docs/p1749.pdf
-
-
 Faceplant
 https://www.aaai.org/ocs/index.php/ICWSM/ICWSM10/paper/viewFile/1465/1858
-    
-Can You See Me Now? Audience and Disclosure Regulation in Online Social Network Sites
-http://journals.sagepub.com/doi/abs/10.1177/0270467607311484
-
-The Online Disinhibition Effect
-http://online.liebertpub.com/doi/abs/10.1089/1094931041291295
-
-Social Comparison 2.0: Examining the Effects of Online Profiles on Social-Networking Sites
-http://online.liebertpub.com/doi/abs/10.1089/cyber.2010.0120
-
-Casanovas of the Virtual World. How Boys Present Themselves on Dating) Websites.
-https://www.researchgate.net/publication/47502962_Casanova_s_of_the_Virtual_World_How_Boys_Present_Themselves_on_Dating_Websites
-
-Information Behavior and the Formation and Maintenance of Peer Cultures in Massive Multiplayer Online RolePlaying Games: A Case Study of City of Heroes
-http://www.digra.org/wp-content/uploads/digital-library/06278.15067.pdf
-
-The truth about online dating
-http://drrobertepstein.com/pdf/Epstein-TheTruthAboutOnlineDating-2-07.pdf?lbisphpreq=1
-
-Managing Impressions Online: Self-Presentation Processes in the Online Dating Environment
-http://onlinelibrary.wiley.com/doi/10.1111/j.1083-6101.2006.00020.x/full
-
-Self-Presentation and Gender on MySpace
-https://www.researchgate.net/publication/222435595_Self-Presentation_and_Gender_on_MySpace
-
-Mick or Keith: blended identity of online rock fans
-http://link.springer.com/article/10.1007/s12394-009-0015-5
-
-Disindivuduation - no identity outside of a collectivie: Virno, P. 2008. 
 
 Multitude: Between innovation and negation. Semiotext, Stiegler, B. 2008. 
 
 Technics and Time: Disorientation. 2 (Vol. 2). Stanford University Press.
 
 Hui, Y., & Halpin, H. 2012. Collective Individuation: A New Theoretical Foundation for post-Facebook Social Networks. In AISB/IACAP World Congress 2012
-
-Self-Presentation of Personality During Online Profile Creation:
-https://www.aaai.org/ocs/index.php/ICWSM/09/paper/viewFile/156/482
 
 # Performing the self
 
@@ -311,10 +144,82 @@ http://www.tandfonline.com/doi/pdf/10.1080/09687590220139883?instName=University
 
 [boyd-sns07]  boyd, danah.  2007.  “Social Network Sites: Public, Private, or What?” Knowledge Tree 13, May. http://kt.flexiblelearning.net.au/tkt2007/?page_id=2http://www.danah.org/papers/KnowledgeTree.pdf
 
+boyd, danah. 2010. ” Social network sites as networked publics: Affordances, dynamics, and implications.” Pp. 39-58 in A Networked Self: Identity, Community, and Culture on Social Network Sites, edited by Z. Papacharissi. New York: routledge.
+
+Profiles as Conversation: Networked Identity Performance on Friendster danah boyd,
+http://www.danah.org/papers/HICSS2006.pdf
+
+Hogan, Bernie. 2010. “The Presentation of Self in the Age of Social Media: Distinguishing Performances and Exhibitions Online.” Bulletin of Science, Technology & Society 30:377-386.
+
+Self-Presentation of Personality During Online Profile Creation:
+https://www.aaai.org/ocs/index.php/ICWSM/09/paper/viewFile/156/482
+
 ## Social media
 
+boyd, danah and Nicole B. Ellison. 2007. “Social network sites: Definition, history, and scholarship.” Journal of Computer-Mediated Communication 13:210-210.
 
-## Blogging
+Social Comparison 2.0: Examining the Effects of Online Profiles on Social-Networking Sites
+http://online.liebertpub.com/doi/abs/10.1089/cyber.2010.0120
+
+Casanovas of the Virtual World. How Boys Present Themselves on Dating) Websites.
+https://www.researchgate.net/publication/47502962_Casanova_s_of_the_Virtual_World_How_Boys_Present_Themselves_on_Dating_Websites
+
+Information Behavior and the Formation and Maintenance of Peer Cultures in Massive Multiplayer Online RolePlaying Games: A Case Study of City of Heroes
+http://www.digra.org/wp-content/uploads/digital-library/06278.15067.pdf
+
+The truth about online dating
+http://drrobertepstein.com/pdf/Epstein-TheTruthAboutOnlineDating-2-07.pdf?lbisphpreq=1
+
+Managing Impressions Online: Self-Presentation Processes in the Online Dating Environment
+http://onlinelibrary.wiley.com/doi/10.1111/j.1083-6101.2006.00020.x/full
+
+Self-Presentation and Gender on MySpace
+https://www.researchgate.net/publication/222435595_Self-Presentation_and_Gender_on_MySpace
+
+Mick or Keith: blended identity of online rock fans
+http://link.springer.com/article/10.1007/s12394-009-0015-5
+
+http://www.informationr.net/ir/21-2/SM1.html#.WPXPREfmivv Quantified Academic Selves
+
+THE LABOR OF VISIBILITY: GENDERED SELF-EXPRESSION IN THE SOCIAL MEDIA IMAGINARY
+https://spir.aoir.org/index.php/spir/article/download/1062/718
+
+CONTRADICTIONS OF THE SOCIAL IMAGINARY: MAKING SENSE OF DIGITAL FOOD SNAPS 
+https://spir.aoir.org/index.php/spir/article/download/1115/769
+
+IMAGINING THE ENDS OF IDENTITY: BIRTH AND DEATH ON INSTAGRAM
+https://spir.aoir.org/index.php/spir/article/download/1120/774
+
+RETHINKING SELFIES: EMPOWERING THE MARGINALIZED THROUGH SELF-PORTRAITS
+https://spir.aoir.org/index.php/spir/article/download/1135/787
+
+A SOCIOLINGUISTIC ANALYSIS OF EMOTICON USAGE IN JAPANESE BLOGS: VARIATION BY AGE, GENDER, AND TOPIC
+https://spir.aoir.org/index.php/spir/article/download/1137/789
+
+FACEBOOKING TOWARD DEATH: HOW DIGITAL LEGACY IMPACTS CURATION IN ONLINE SETTINGS 
+https://spir.aoir.org/index.php/spir/article/download/1139/791
+
+THE NAVIGATION OF BOUNDARIES IN ONLINE SOCIAL SPACES
+https://spir.aoir.org/index.php/spir/article/download/1142/794
+
+THE HITCHHIKER’S GUIDE TO COMMUNITY: TERRITORIALITY, INTIMACY AND OWNERSHIP IN ONLINE SPACES 
+https://spir.aoir.org/index.php/spir/article/download/1144/795
+
+SUBVERTING SOCIAL MEDIA
+https://spir.aoir.org/index.php/spir/article/download/1159/810
+
+FCJ-166 ‘Change name to No One. Like people’s status’ Facebook Trolling and Managing Online Personas
+http://twentytwo.fibreculturejournal.org/fcj-166-change-name-to-no-one-like-peoples-status-facebook-trolling-and-managing-online-personas/
+
+Stein,Tao, Erdong, Chen, and Mangla, Karan. ‘Facebook Immune Sytem’, EuroSys Social Network Systems (SNS), Salzburg (ACM, 2011), 
+http://research.microsoft.com/en-us/projects/ldg/a10-stein.pdf
+
+Phillips, Whitney. ‘LOLing at Tragedy: Facebook Trolls, Memorial Pages and Resistance to Grief Online’, First Monday 16.12 (2011), 
+http://firstmonday.org/htbin/cgiwrap/bin/ojs/index.php/fm/article/view/3168
+
+boyd, danah 2008. “Why Youth Heart Social Network Sites: The Role of NetworkedPublics in Teenage Social Life.” Pp. 119-142 in Youth, Identity, and Digital Media, edited by D. Buckingham. Cambridge MA: MIT Press.
+
+## Blogging and personal homepages
 
 Russell, A. (2009) International Blogging.
 
@@ -324,12 +229,26 @@ http://www.sciencedirect.com/science/article/pii/S074756321000186X
 Constructing academic alter-egos: identity issues in a blog-based community
 http://link.springer.com/article/10.1007/s12394-009-0020-8
 
+[papacharissi02] Papacharissi, Zizi. ‘The Presentation of Self in Virtual Life: Characteristics of Personal Home Pages’, Journalism & Mass Communication Quarterly 79.3 Autumn (2002): 643–660.
+
+Davis, Jenny L.2010. "Architecture of the Personal Interactive Homepage: Constructing the Self through MySpace."New Media & Society12(7): 1103-1119
+http://journals.sagepub.com/doi/abs/10.1177/1461444809354212
+
+Blogging my Academic Self”
+http://link.springer.com/chapter/10.1007/978-94-017-8718-5_1?no-access=true
+
+Parks, Malcolm; Tonjia Archy-Ladas (2003). "Communicating self through personal homepages: Is identity more than screen deep?". ICA conference paper. Retrieved 24 April 2012.
+
+http://www.aaai.org/ocs/index.php/ICWSM/09/paper/viewFile/199/403 personalities and blogging
 
 ## Narcicissm
 
 http://bc4women.org/2016/02/theres-an-app-for-that-when-social-media-identity-overshadows-identity-in-christ/
 
 http://thenewinquiry.com/blogs/marginal-utility/social-media-is-not-self-expression/
+
+Affirming the Self through Online Profiles:  Beneficial Effects of Social Networking Sites 
+http://dmrussell.net/CHI2010/docs/p1749.pdf
 
 
 ## Authenticity
@@ -341,11 +260,79 @@ http://sfist.com/2014/09/11/drag_queens_other_performers_outrag.php
 
 [digitalvertigo] Andrew Keen. Digital Vertigo: How Today's Online Social Revolution Is Dividing, Diminishing, and Disorienting Us. (2013). St. Martin's Griffin.
 
+[donathboyd04] 
+
+[ellison07] 
+
 ## Imagined audience
 
 ## Context collapse
 
-## Friends and communities
+Context collapse lit review
+https://thesocietypages.org/cyborgology/2013/01/10/context-collapse-a-literature-review/
+
+Context collapse: theorizing context collusions and collisions
+http://www.tandfonline.com/doi/abs/10.1080/1369118X.2014.888458?journalCode=rics20
+
+YouTube and You: Experiences of Self-awareness in the Context Collapse of the Recording Webcam
+http://krex.k-state.edu/dspace/handle/2097/6302
+
+Duguay, S. (2014). ‘He has a way gayer Facebook than I do’: Investigating sexual identity disclosure and context collapse on a social networking site. New Media & Society. Published online before print: 4 September 2014. doi:10.1177/1461444814549930
+http://journals.sagepub.com/doi/pdf/10.1177/1461444814549930
+
+Duguay, S. (2013). Facebook as a decontextualized environment: Young people’s experiences of navigating LGBTQ identity on a social networking site. Paper presented at Social Media & Society 2013 International Conference. 14-15 September, Halifax, Canada.
+https://smsociety13.sched.com/event/92d43df4bc792748089d5ff268e71ae5#.VUdjNdqqqko
+
+Duguay, S. (2014). Ways to stay connected: Harnessing, managing, and preventing context collapse on social media. “Connections” Keyword Seminar, presented to the Children and Youth Research Centre. 9 October 2014. QUT, Brisbane, Australia.
+https://www.slideshare.net/StefanieDuguay/ways-to-stay-connected-harnessing-managing-and-preventing-context-collapse-on-social-media
+
+Duguay, S. (2013). Your networked world: Connections, self-presentation, and privacy in the age of social media. Presentation to Youth Mandate for Greater Involvement (YMAGIN), Employment and Social Development Canada, Government of Canada. 10 December 2013. Ottawa, Ontario, Canada.
+https://www.slideshare.net/StefanieDuguay/your-networked-world
+
+## Sharing, friends and communities
+
+Dijck, José van. ‘Facebook and the Engineering of Connectivity: A multi-layered approach to social media platforms’, Convergence OnlineFirst Version, September (2012): 1–5.
+
+Donath, Judith. ‘Identity and deception in the virtual community’, in Marc A. Smith and Peter Kollock (Eds.) Communities in Cyberspace (London & New York: Routledge, 1999): 29–59.
+
+Cheney-Lippold, John. ‘A New Algorithmic Identity: Soft Biopolitics and the Modulation of Control’, Theory, Culture & Society 28.6 (2011): 164–181.
+
+Bucher T. The friendship assemblage: investigating programmed sociality on Facebook. Television & New Media. November vol.14 (2013);1–15. http://dx.doi.org/10.1177/1527476412452800
+
+https://www.ucl.ac.uk/why-we-post/discoveries/13-each-social-media-platform-only-makes-sense-in-relation-to-alternative-platforms-and-the-media
+
+Can You See Me Now? Audience and Disclosure Regulation in Online Social Network Sites
+http://journals.sagepub.com/doi/abs/10.1177/0270467607311484
+
+The Online Disinhibition Effect
+http://online.liebertpub.com/doi/abs/10.1089/1094931041291295
+
+Disindivuduation - no identity outside of a collectivie: Virno, P. 2008. 
+
+Walther, Joseph; Malcolm Parks (2002). "Cues filtered out, cues filtered in: Computer-mediated communication and relationships". Handbook of interpersonal communication. 3rd edition: 529–563.
+
+[tong08] Walther, Joseph; Van Der Heide; Kim; Westerman; Tong (January 2008). "The Role of Friends' Appearance and Behavior on Evaluations of Individuals on Facebook: Are We Known by the Company We Keep?". Human Communication Research. 34 (1): 28. doi:10.1111/j.1468-2958.2007.00312.x.
+
+Walther, Joseph; Brandon Van Der Heide; Lauren M. Hamel; Hillary C. Shulman (2009-01-28). "Self-Generated Versus Other-Generated Statements and Impressions in Computer-Mediated Communication A Test of Warranting Theory Using Facebook". Communication Research. 36 (2): 229–253. doi:10.1177/0093650208330251. Retrieved 24 April 2012.
+
+https://en.wikipedia.org/wiki/Warranting_theory
+
+Warrants and Deception in Computer Mediated Communication 
+https://www.microsoft.com/en-us/research/wp-content/uploads/2017/03/p9.pdf?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fredmond%2Fgroups%2Fconnect%2Fcscw_10%2Fdocs%2Fp9.pdf
+
+Computer-Mediated Communication: Hyperpersonal – Walther
+http://blog.timebarrow.com/2010/07/cmc-hyperpersonal-walther/
+
+[donathboyd04] Donath, Judith and danah boyd. 2004. “Public displays of connection.” Bt Technology Journal 22:71-82.
+
+[ellison07] Ellison, Nicole B., Charles Steinfield, and Cliff Lampe. 2007. “The Benefits of Facebook “Friends:” Social Capital and College Students’ Use of Online Social Network Sites.” Journal of Computer-Mediated Communication 12:1143-1168.
+
+Gibbs, Jennifer; Nicole B. Ellison; Chih-Hui Lai (February 2011). "First Comes Love, Then Comes Google: An Investigation of Uncertainty Reduction Strategies and Self-Disclosure in Online Dating". Communication Research. 38 (1): 70–100. doi:10.1177/0093650210377091. Retrieved 24 April 2012.
+
+Duguay, S. (2014). ‘I never had to say anything’: Examining the transformative potential of Facebook for sexual identity disclosures. Paper presented at ICA Regional Conference: Digital Transformations, Social Media Engagement and the Asian Century. 1-3 October, Brisbane, Australia.
+https://www.slideshare.net/StefanieDuguay/i-never-had-to-say-anything-examining-the-transformative-potential-of-facebook-for-sexual-identity-disclosures
+
+Utz, S., (2010). Show me your friends and I will tell you what type of person you are: How one's profile, number of friends, and type of friends influence impression formation on social network sites. Journal of Computer-Mediated Communication, 15, 314–335
 
 ### Trust
 
@@ -355,7 +342,13 @@ http://sfist.com/2014/09/11/drag_queens_other_performers_outrag.php
 
 # Everybody knows I'm a dog
 
+From Borking to Streaming: The Normalization of Media Surveillance
+https://spir.aoir.org/index.php/spir/article/download/1086/740
 
+NOT  MYSELF:  ANTI-SURVIELLANCE  AESTHETICS  AND  THE  CHIN-DOWN  SELFIE
+https://spir.aoir.org/index.php/spir/article/download/1158/809
+
+Guins, Raiford. Edited Clean Version: Technology and the Culture of Control (Minneapolis, London: University of Minnesota Press, 2009).
 
 https://cie.acm.org/articles/panopticism-cyberculture-could-privacy-invasive-social-media-stifle-innovation/
     
