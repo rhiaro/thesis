@@ -107,9 +107,15 @@ body faceted id/entity
 
 Giddens, Modernity (identity as separateness/uniqueness; personal construction as opposed to ascription due to the loss of traditional anchors. Construction of "self" as an "ongoing project")
 
-## Technoself
+## Extending the self
 
-https://en.wikipedia.org/wiki/Technoself
+[manhammer] Martin Heidegger, "The Question Concerning Technology," Basic Writings Ed. David Farrell Krell (Harper & Row, 1977), 287
+
+[mcluhan] Marshall McLuhan (1964) Understanding Media: The Extensions of Man; 1st ed. McGraw Hill, NY
+
+[clarkmind] Clark, Andy, and David J. Chalmers. (1998). The extended mind. Analysis 58: 7-19
+
+[technoself] Luppicini, R. (ed). (2013). Handbook of Research on Technoself: Identity in a Technological Society. Volume I and II. Hershey: Idea Group Publishing, 900 pp.
 
 # Offline to online... band back again
 
