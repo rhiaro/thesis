@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <title>Standards for the Social Web</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <link href="https://dokie.li/media/css/thesis.css" media="all" rel="stylesheet" title="Thesis do" />
+        <link href="https://dokie.li/media/css/thesis.do.css" media="all" rel="stylesheet" title="Thesis do" />
         <link href="https://dokie.li/media/css/do.css" media="all" rel="stylesheet" />
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet" />
         <script src="https://dokie.li/scripts/simplerdf.js"></script>
@@ -644,8 +644,9 @@
           <div>
             <p>An individual's self presentation online can be partially composed of content they produce and interact with. The <em>read</em> label covers how these are exposed for consumption by others. This may include permissions or access control, which could require the reader to identify themselves before content is made available. Different types of content and interactions should be discoverable, perhaps according to criteria like the type of content, a group or individual with which it is associated, or through its association with other content (eg. through replies).</p>
 
-            <h5 id="content-representation">Content representation</h5>
-
+            <section id="content-representation">
+            <h5>Content representation</h5>
+            <div>
             <p><strong>ActivityStreams 2.0</strong> (AS2) models content and interactions as objects and activities. AS2 includes a <em>vocabulary</em> for modelling different types of objects and activities as well as various relations they might have with other objects (including user profiles) and activities. The AS2 <em>syntax</em> describes a consistent structure for objects and activities including sets of objects and activities as collections. Collections can be explicitly created and updated by a user (like adding photos to an album) or generated automatically as a result of other user actions or the properties of certain objects/activities (eg. a list of followers of a user). AS2 does not specify how objects, activities, or collections come into existence, only what they look like once they do.</p>
 
             <p>AS2 content must be served with the Content-Type <code>application/activity+json</code> or, if necessary for JSON-LD extended implementations, <code>application/ld+json; profile="https://www.w3.org/ns/activitystreams"</code>. Content must be described using the AS2 vocabulary, and may use other vocabularies in addition or instead, per the extension mechanism.</p>
@@ -655,24 +656,34 @@
             <p>AS2 builds upon ActivityStreams 1.0 [<a href="#ref-as1">as1</a>] and is not fully backwards compatible; <a href="http://www.w3.org/TR/activitystreams-core#activitystreams-1.0">the relationship between AS1 and AS2 is documented in the AS2 spec</a>.</p>
 
             <p>Because AS2 is a data model, it does not recommend how data should be displayed. Its utility is in enabling a consistent representation of social objects and activities to be passed between potentially disconnected systems (eg. from Alice's social network to Bob's). The systems consuming the data are responsible for rendering it appropriately. This means that system designers can provide their users with options for customising the presentation data that may constitute their profiles.</p>
+            </div>
+            </section>
 
-            <h5 id="extending-as2">Extending AS2</h5>
+            <section id="extending-as2">
+            <div>
+            <h5>Extending AS2</h5>
 
             <p>AS2 specifies a finite set of object and activity types and properties. These are a baseline set of common social interactions which can be extended upon by systems which need additional terms or more specific variations. The extension mechanism is based on Linked Data, via JSON-LD. Developers are expected to publish documentation and an RDF representation of their terms at a domain under their control, and refer to terms by URI in the normal manner. Further, the Social Web Working Group describes a mechanism by which well-used extensions are included with the AS2 namespace document by means of a W3C Community Group vetting process. The advantage of this is that implementations can adopt common extensions easily, without needing to include additional namespaces. It also makes extensions more discoverable for newcomers to AS2.</p>
 
             <p>The first such extension is in fact <strong>ActivityPub</strong>. ActivityPub uses ActivityStreams 2.0 for all data in all requests, and also adds additional terms to the AS2 namespace. Thus, ActivityPub requires requests have the Content-Type <code>application/ld+json; profile="https://www.w3.org/ns/activitystreams"</code>.</p>
+            </div>
+            </section>
 
-            <h5 id="content-representation-other">Other ways of representing content</h5>
-
+            <section id="content-representation-other">
+            <h5>Other ways of representing content</h5>
+            <div>
             <p>Despite AS2 being the recommended syntax and vocabulary of the Working Group, some specifications use different or broader mechanisms. This helps to let developers pick and choose different specifications for different tasks even if they prefer not to use AS2:</p>
             <ul>
               <li><strong>Linked Data Notifications</strong> notification contents can use any vocabulary, so long as the data is available in JSON-LD. Thus notifications may use ActivityStreams 2.0, but don't have to. Clients and servers can negotiate between themselves (using <code>Accept</code> and <code>Accept-Post</code> HTTP headers) about using different RDF syntaxes, as well.</li>
               <li><strong>Micropub</strong> clients which expect to read data (this would usually be clients for <em>updating</em> content) are expecting it as JSON in the <a href="http://microformats.org/wiki/microformats2-parsing">parsed microformats2 syntax</a>.</li>
               <li><strong>WebSub</strong> is agnostic as to the Content-Type used by publishers; hubs are expected to deliver the new content to subscribers as-is produced by the publisher, at the publisher's <code>topic</code> URL.</li>
             </ul>
+            </div>
+            </section>
 
-            <h5 id="objects-and-streams">Objects and streams</h5>
-
+            <section id="objects-and-streams">
+            <h5>Objects and streams</h5>
+            <div>
             <p>Whichever syntax and vocabulary is used, there are some general recommendations for representing objects (individual entities) and streams (sets or collections of objects).</p>
             <ul>
               <li>All objects must have URLs in their <code>id</code> property. This URL should resolve to return the properties of an object; what is returned may depend on the requester's right to access the content, determined by authentication and/or authorisation.</li>
@@ -680,9 +691,12 @@
               <li>Each object in a stream must contain at least its URL, which can be dereferenced to retrieve all properties of the object, and may contain other properties of the object.</li>
               <li>One user may publish one or more streams of content. Streams may be generated automatically or manually, and might be segregated by post type, topic, audience, or any arbitrary criteria decided by the curator of the stream. A user <a href="#profiles">profile</a> MAY include links to multiple streams, which a consumer could follow to read or subscribe to.</li>
             </ul>
+            </div>
+            </section>
 
-            <h5 id="special-streams">Special streams</h5>
-
+            <section id="special-streams">
+            <h5>Special streams</h5>
+            <div>
             <p>Streams are represented in AS2 as a <code>Collection</code> or <code>OrderedCollection</code>. ActivityPub defines some special usages; two streams that must be accessible from a user's profile, and four which are optional, via the following properties:</p>
 
             <ul>
@@ -699,7 +713,8 @@
             <p>Two kinds of special streams are <code>inbox</code> and <code>outbox</code>. When read (ie. with an HTTP <code>GET</code> request) they return ordinary streams of objects, but they also double as endpoints which can be <code>POST</code>ed to directly to add objects, for <a href="#swp-delivery">delivery of notifications</a> and <a href="#swp-publish">publishing new content</a> respectively.</p>
 
             <p>The <code>inbox</code> is a notion shared by ActivityPub and Linked Data Notifications, however in order to be <em>read</em> by both ActivityPub <em>and</em> LDN clients, publishers must relate the stream to the objects it contains using both the <code>as:items</code> and <code>ldp:contains</code> predicates. This is an unfortunate discord, but since ActivityPub is immovably tied to AS2 and LDN is immovably tied to compatibility with the vocabulary of existing Linked Data Platform servers, there was really no compromise to be had. Fortunately this bridge is relatively minor in terms of coding, once a developer is aware of it.</p>
-
+            </div>
+            </section>
           </div>
         </section>
 
@@ -716,8 +731,9 @@
 
             <p>Neither ActivityPub nor Micropub define APIs for publishing based on HTTP verbs, and thus differ from the more RESTful <a href="https://www.w3.org/TR/ldp">Linked Data Platform (LDP)</a>.</p>
 
-            <h5 id="swp-creating">Creating</h5>
-
+            <section id="swp-creating">
+            <h5>Creating</h5>
+            <div>
             <p>The publishing endpoint of <strong>ActivityPub</strong> is the <code>outbox</code>. Clients are assumed to have the URL of a (ideally authenticated) user profile as a starting point, and discover the value of the <code>https://www.w3.org/ns/activitystreams#outbox</code> property found at the profile URL (which should be available as JSON[-LD]). The client then makes an HTTP <code>POST</code> request with an ActivityStreams 2.0 activity or object as a JSON[-LD] payload with a content type of <code>application/ld+json; profile="https://www.w3.org/ns/activitystreams"</code>. The URL of the created resource is generated at the discretion of the server, and returned in the <code>Location</code> HTTP header. This is an appropriate protocol to use when:</p>
 
             <ul>
@@ -737,23 +753,30 @@
               <li>Your data is described with the h-entry syntax and vocabulary.</li>
               <li>You can rely on out-of-band agreements between clients and servers for vocabulary extensibility.</li>
             </ul>
+            </div>
+            </section>
 
-            <h5 id="swp-updating">Updating</h5>
-
+            <section id="swp-updating">
+            <h5>Updating</h5>
+            <div>
             <p>Content is updated when a client sends changes to attributes (additions, removals, replacements) to an existing object. If a server has implemented a <a href="#swp-delivery">delivery</a> or <a href="#swp-subscribing">subscription</a> mechanism, when an object is updated, the update MUST be propagated to the original recipients using the same mechanism.</p>
 
             <p><strong>ActivityPub</strong> clients send an HTTP <code>POST</code> request to the <code>outbox</code> containing an AS2 <code>Update</code> activity. The <code>object</code> of the activity is an existing object, and the fields to update should be nested. If a partial representation of an object is sent, omitted fields are <em>not</em> deleted by the server. In order to delete specific fields, the client can assign them a <code>null</code> value. However, when a federated server passes an <code>Update</code> activity to another server's <em><code>inbox</code></em>, the recipient must assume this is the <em>complete</em> object to be replaced; partial updates are not performed server-to-server.</p>
 
             <p><strong>Micropub</strong> clients perform updates, as either form-encoded or JSON POST requests, using the <code>mp-action=update</code> parameter, as well as a <code>replace</code>, <code>add</code> or <code>delete</code> property containing the updates to make, to the Micropub endpoint. <code>replace</code> replaces all values of the specified property; if the property does not exist already, it is created. <code>add</code> adds new values to the specified property without changing the existing ones; if the property does not exist already, it is created. <code>delete</code> removes the specified property; you can also remove properties by value by specifying the value.</p>
+            </div>
+            </section>
 
-            <h5 id="swp-deleting">Deleting</h5>
-
+            <section id="swp-deleting">
+            <h5>Deleting</h5>
+            <div>
             <p>Content is deleted when a client sends a request to delete an existing object. If a server has implemented a <a href="#delivery">delivery</a> or <a href="#subscribing">subscription</a> mechanism, when an object is deleted, the deletion MUST be propagated to the original recipients using the same mechanism.</p>
 
             <p><strong>ActivityPub</strong> clients delete an object by sending an HTTP POST request containing an AS2 <code>Delete</code> activity to the <code>outbox</code> of the authenticated user. Servers MUST either <em>replace</em> the <code>object</code> of this activity with a tombstone and return a <code>410 Gone</code> status code, or return a <code>404 Not Found</code>, from its URL.</p>
 
             <p><strong>Micropub</strong> delete requests are two key-value pairs, in form-encoded or JSON: <code>mp-action</code>: <code>delete</code> and <code>url</code>: <code>url-to-be-deleted</code>, sent to the Micropub endpoint .</p>
-
+            </div>
+            </section>
           </div>
         </section>
 
@@ -764,7 +787,9 @@
 
             <p>Nothing should rely on implementation of a subscription mechanism. That is, implementations may set themselves up to receive notifications without always being required to explicitly ask for them from a sender or publisher: see <a href="#swp-delivery">delivery</a>.</p>
 
-            <h5 id="swp-follow">Subscribing with <code>as:Follow</code></h5>
+            <section id="swp-follow">
+            <h5>Subscribing with <code>as:Follow</code></h5>
+            <div>
             <p><strong>ActivityPub</strong> servers maintain a <em>Followers</em> collection for all users. This collection may be directly addressed, or addressed automatically or by default, in the <code>to</code>, <code>cc</code> or <code>bcc</code> field of any Activity, and as a result, servers <a href="#swp-delivery">deliver</a> the Activity to the <code>inbox</code> of each user in the collection.</p>
             <p>Subscription requests are essentially requests to be added to this collection. They are made by the subscriber's server <code>POST</code>ing a <code>Follow</code> Activity to the target's <code>inbox</code>. This request should be authenticated, and therefore doesn't need additional verification. The target server then SHOULD add the subscriber to the target's Followers collection. Exceptions may be made if, for example, the target has blocked the subscriber.</p>
 
@@ -777,9 +802,11 @@
             </ul>
 
             <p>Since delivery is only a requirement for federated servers, prospective subscribers will not be able to <code>POST</code> their <code>Follow</code> activity to the <code>inbox</code> of a profile which is on a non-federated server (expect a <code>405 Method Not Allowed</code>), and thus are not able to subscribe to these profiles. In this case, prospective subscribers may wish to periodically <em>pull</em> from the publisher's <code>outbox</code> instead.</p>
+            </div>
+            </section>
 
-            <section>
-            <h5 id="subscription-delegating">Delegating subscription handling</h5>
+            <section id="subscription-delegating">
+            <h5>Delegating subscription handling</h5>
             <div>
             <p><strong>WebSub</strong> provides a mechanism to delegate subscription handling and delivery of content to subscribers to a third-party, called a <em>hub</em>. All publishers need to do is link to their chosen hub(s) using HTTP <code>Link</code> headers or HTML <code>&lt;link&gt; </code> elements with <code>rel="hub"</code>, and then notify the hub when new content is available. The mechanism for notifying the hub is left deliberately unspecified, as publishers may have their own built in hub, and therefore use an internal mechanism.</p>
             </div>
