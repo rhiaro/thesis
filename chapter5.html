@@ -1386,30 +1386,5 @@ target=https://aaronpk.example/post-by-aaron</code></pre>
       
     }
   </script>
-
-<!-- XXX: Experimental. Works in Firefox. Chrome's counter doesn't work.  Needs to take @page and other dimensions into account if any e.g., LNCS. The following HTML could be dynamically inserted/removed by dokieli if the Print is clicked from the dokieli menu. -->
-  <span class="page-number"></span>
-<style>
-@media print {
-[class="page-number"] {
-position:fixed;
-bottom:0;
-right:50%;
-margin:0;
-padding:0;
-text-align:initial;
-font-size:10pt;
-}
-[class="page-number"]:after {
-content: counter(page);
-counter-increment: page;
-}
-
-@page {
-  
-}
-
-}
-</style>
   </body>
 </html>
