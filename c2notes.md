@@ -170,6 +170,8 @@ An Introduction, Journal of Broadcasting & Electronic Media, 56:3, 320-329, DOI:
 
 [ellison13] Ellison, N.B. & boyd, d. (2013). Sociality through Social Network Sites. In Dutton, W. H. (Ed.), The Oxford Handbook of Internet Studies. Oxford: Oxford University Press, pp. 151-­-172. 
 
+[boyd15] boyd, danah. (2015). “Social Media: A Phenomenon to be Analyzed.” Social Media + Society 1(1).
+
 Hogan, Bernie. 2010. “The Presentation of Self in the Age of Social Media: Distinguishing Performances and Exhibitions Online.” Bulletin of Science, Technology & Society 30:377-386.
 
 Social Comparison 2.0: Examining the Effects of Online Profiles on Social-Networking Sites
@@ -353,6 +355,8 @@ https://www.slideshare.net/StefanieDuguay/i-never-had-to-say-anything-examining-
 
 Utz, S., (2010). Show me your friends and I will tell you what type of person you are: How one's profile, number of friends, and type of friends influence impression formation on social network sites. Journal of Computer-Mediated Communication, 15, 314–335
 
+[marwickdrama14] Marwick, Alice and danah boyd. (2014). "'It's just drama': Teen perspectives on conflict and aggression in a networked era." Journal of Youth Studies 17(9): 1187-1204.
+
 ### Trust
 
 ### Warranting theory
@@ -362,6 +366,8 @@ Utz, S., (2010). Show me your friends and I will tell you what type of person yo
 # Everybody knows I'm a dog
 
 [boydpriv12] boyd, d. 2012. Networked Privacy. Surveillance & Society 10(3/4): 348-350. http://www.surveillance-and-society.org | ISSN: 1477-7487 
+
+[boydpriv11] boyd, danah and Marwick, Alice E., Social Privacy in Networked Publics: Teens’ Attitudes, Practices, and Strategies (September 22, 2011). A Decade in Internet Time: Symposium on the Dynamics of the Internet and Society, September 2011. Available at SSRN: https://ssrn.com/abstract=1925128
 
 From Borking to Streaming: The Normalization of Media Surveillance
 https://spir.aoir.org/index.php/spir/article/download/1086/740
