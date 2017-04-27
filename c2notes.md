@@ -152,7 +152,7 @@ http://www.tandfonline.com/doi/pdf/10.1080/09687590220139883?instName=University
 
 [boyd-sns07]  boyd, danah.  2007.  “Social Network Sites: Public, Private, or What?” Knowledge Tree 13, May. http://kt.flexiblelearning.net.au/tkt2007/?page_id=2http://www.danah.org/papers/KnowledgeTree.pdf
 
-boyd, danah. 2010. ” Social network sites as networked publics: Affordances, dynamics, and implications.” Pp. 39-58 in A Networked Self: Identity, Community, and Culture on Social Network Sites, edited by Z. Papacharissi. New York: routledge.
+[boydnp10] boyd, danah. 2010. ” Social network sites as networked publics: Affordances, dynamics, and implications.” Pp. 39-58 in A Networked Self: Identity, Community, and Culture on Social Network Sites, edited by Z. Papacharissi. New York: routledge.
 
 Profiles as Conversation: Networked Identity Performance on Friendster danah boyd,
 http://www.danah.org/papers/HICSS2006.pdf
