@@ -122,7 +122,7 @@ Giddens, Modernity (identity as separateness/uniqueness; personal construction a
 
 Rodogno, R (2012). "Personal Identity Online.". Philosophy & Technology. - online identity affects offline self
 
-Psychology studies about virtual worlds. Infinite Reality.
+[infinitereality] Jim Blascovich & Jeremy Bailenson  (2011). Infinite Reality: The Hidden Blueprint of Our Virtual Lives. William Morrow Paperbacks.
 
 http://gradworks.umi.com/35/69/3569922.html
 
@@ -145,6 +145,8 @@ http://onlinelibrary.wiley.com/doi/10.1002/j.2048-7940.2010.tb00056.x/pdf
 Disability discourses for online identities
 http://www.tandfonline.com/doi/pdf/10.1080/09687590220139883?instName=University+of+Edinburgh
 
+[inreallife]  Nev Schulman. (2014) In Real Life: Love, Lies & Identity in the Digital Age. Grand Central Publishing
+
 
 # Networked publics
 
@@ -161,6 +163,10 @@ Self-Presentation of Personality During Online Profile Creation:
 https://www.aaai.org/ocs/index.php/ICWSM/09/paper/viewFile/156/482
 
 ## Social media
+
+[appgen] Howard Gardner & Katie Davis. (2013). The App Generation: How Today's Youth Navigate Identity, Intimacy, and Imagination in a Digital World. Yale University Press.
+
+[borndigi]  John Palfrey and Urs Gasser. (2008). Born Digital: Understanding the First Generation of Digital Natives. Basic Books.
 
 boyd, danah and Nicole B. Ellison. 2007. “Social network sites: Definition, history, and scholarship.” Journal of Computer-Mediated Communication 13:210-210.
 
@@ -224,7 +230,7 @@ boyd, danah 2008. “Why Youth Heart Social Network Sites: The Role of Networked
 
 ## Blogging and personal homepages
 
-Russell, A. (2009) International Blogging.
+[intlblog] Russell, A. and Echchaibi, N. (eds.) (2009) International Blogging: Identity, Politics and Networked Publics. Peter Lang Publishing Inc
 
 Personal journal bloggers: Profiles of disclosiveness
 http://www.sciencedirect.com/science/article/pii/S074756321000186X
