@@ -157,8 +157,6 @@ http://www.tandfonline.com/doi/pdf/10.1080/09687590220139883?instName=University
 Profiles as Conversation: Networked Identity Performance on Friendster danah boyd,
 http://www.danah.org/papers/HICSS2006.pdf
 
-Hogan, Bernie. 2010. “The Presentation of Self in the Age of Social Media: Distinguishing Performances and Exhibitions Online.” Bulletin of Science, Technology & Society 30:377-386.
-
 Self-Presentation of Personality During Online Profile Creation:
 https://www.aaai.org/ocs/index.php/ICWSM/09/paper/viewFile/156/482
 
@@ -168,7 +166,9 @@ https://www.aaai.org/ocs/index.php/ICWSM/09/paper/viewFile/156/482
 
 [borndigi]  John Palfrey and Urs Gasser. (2008). Born Digital: Understanding the First Generation of Digital Natives. Basic Books.
 
-boyd, danah and Nicole B. Ellison. 2007. “Social network sites: Definition, history, and scholarship.” Journal of Computer-Mediated Communication 13:210-210.
+[boydsns07] boyd, danah and Nicole B. Ellison. 2007. “Social network sites: Definition, history, and scholarship.” Journal of Computer-Mediated Communication 13:210-210.
+
+Hogan, Bernie. 2010. “The Presentation of Self in the Age of Social Media: Distinguishing Performances and Exhibitions Online.” Bulletin of Science, Technology & Society 30:377-386.
 
 Social Comparison 2.0: Examining the Effects of Online Profiles on Social-Networking Sites
 http://online.liebertpub.com/doi/abs/10.1089/cyber.2010.0120
