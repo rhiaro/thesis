@@ -41,13 +41,13 @@ Stone, A. R. (1995) The war of desire and technology at the close of the mechani
 Walther, J. B. (2011). Theories of computer-mediated communication and interpersonal relations. SAGE Handbook of Interpersonal Communication (4th. ed), 443-479.
 
 Lim, Sun Sun, Shobha Vadrevu, Yoke Hian Chan, and Iccha Basnyat. 2012. “Facework on Facebook: The Online Publicness of Juvenile Delinquents and Youths-at-Risk.” Journal of Broadcasting & Electronic Media 56:346-361.
-    McLaughlin, Caitlin and Jessica Vitak. 2012. “Norm evolution and violation on Facebook.” New Media & Society 14:299-315.
-    Papacharissi, Z. & Gibson, P. (2011). 15 Minutes of Privacy: Privacy, Sociality an Publicity on Social Network Sites. In L. Reinecke & S. Tepte, (Eds.), Privacy Online: Theoretical Approaches and Research Perspectives on the Role of Privacy in the Social Web (pp. 75-89). New York: Springer.
-    Stutzman, Fred, Robert Capra, and Jamila Thompson. 2011. “Factors mediating disclosure in social network sites.” Computers in Human Behavior 27:590-598.
-    Walther, Joseph B., Brandon Van Der Heide, Lauren M. Hamel, and Hillary C. Shulman. 2009. “Self-Generated Versus Other-Generated Statements and Impressions in Computer-Mediated Communication: A Test of Warranting Theory Using Facebook.” Communication Research 36:229-253.
-    Zhao, X., Salehi, N., Naranjit, S., Alwaalan, S., Voida, S., & Cosley, D. (2013). The many faces of Facebook: Experiencing social media as performance, exhibition, and personal archive. Proceedings of the SIGCHI Conference on Human Factors in Computing Systems, ACM, 1-10. Retrieved June 30, 2013, from http://dl.acm.org/citation.cfm?id=2470656
-    Oolo, E., & Siibak, A. (2013). Performing for one’s imagined audience: Social steganography and other privacy strategies of Estonian teens on networked publics. Cyberpsychology: Journal of Psychosocial Research on Cyberspace, 7(1). doi:10.5817/CP2013-1-7
-    Duguay, S. (2014). ‘He has a way gayer Facebook than I do’: Investigating sexual identity disclosure and context collapse on a social networking site. New Media & Society. Published online before print: September 4, 2014, doi:10.1177/1461444814549930
+ McLaughlin, Caitlin and Jessica Vitak. 2012. “Norm evolution and violation on Facebook.” New Media & Society 14:299-315.
+ Papacharissi, Z. & Gibson, P. (2011). 15 Minutes of Privacy: Privacy, Sociality an Publicity on Social Network Sites. In L. Reinecke & S. Tepte, (Eds.), Privacy Online: Theoretical Approaches and Research Perspectives on the Role of Privacy in the Social Web (pp. 75-89). New York: Springer.
+ Stutzman, Fred, Robert Capra, and Jamila Thompson. 2011. “Factors mediating disclosure in social network sites.” Computers in Human Behavior 27:590-598.
+ Walther, Joseph B., Brandon Van Der Heide, Lauren M. Hamel, and Hillary C. Shulman. 2009. “Self-Generated Versus Other-Generated Statements and Impressions in Computer-Mediated Communication: A Test of Warranting Theory Using Facebook.” Communication Research 36:229-253.
+ Zhao, X., Salehi, N., Naranjit, S., Alwaalan, S., Voida, S., & Cosley, D. (2013). The many faces of Facebook: Experiencing social media as performance, exhibition, and personal archive. Proceedings of the SIGCHI Conference on Human Factors in Computing Systems, ACM, 1-10. Retrieved June 30, 2013, from http://dl.acm.org/citation.cfm?id=2470656
+ Oolo, E., & Siibak, A. (2013). Performing for one’s imagined audience: Social steganography and other privacy strategies of Estonian teens on networked publics. Cyberpsychology: Journal of Psychosocial Research on Cyberspace, 7(1). doi:10.5817/CP2013-1-7
+ Duguay, S. (2014). ‘He has a way gayer Facebook than I do’: Investigating sexual identity disclosure and context collapse on a social networking site. New Media & Society. Published online before print: September 4, 2014, doi:10.1177/1461444814549930
 
 http://eprints.lse.ac.uk/27072/1/Taking_risky_opportunities_in_youthful_content_creation_%28LSERO%29.pdf
 
@@ -122,7 +122,7 @@ Giddens, Modernity (identity as separateness/uniqueness; personal construction a
 
 Rodogno, R (2012). "Personal Identity Online.". Philosophy & Technology. - online identity affects offline self
 
-[infinitereality] Jim Blascovich & Jeremy Bailenson  (2011). Infinite Reality: The Hidden Blueprint of Our Virtual Lives. William Morrow Paperbacks.
+[infinitereality] Jim Blascovich & Jeremy Bailenson (2011). Infinite Reality: The Hidden Blueprint of Our Virtual Lives. William Morrow Paperbacks.
 
 http://gradworks.umi.com/35/69/3569922.html
 
@@ -145,28 +145,30 @@ http://onlinelibrary.wiley.com/doi/10.1002/j.2048-7940.2010.tb00056.x/pdf
 Disability discourses for online identities
 http://www.tandfonline.com/doi/pdf/10.1080/09687590220139883?instName=University+of+Edinburgh
 
-[inreallife]  Nev Schulman. (2014) In Real Life: Love, Lies & Identity in the Digital Age. Grand Central Publishing
+[inreallife] Nev Schulman. (2014) In Real Life: Love, Lies & Identity in the Digital Age. Grand Central Publishing
 
 
 # Networked publics
 
-[boyd-sns07]  boyd, danah.  2007.  “Social Network Sites: Public, Private, or What?” Knowledge Tree 13, May. http://kt.flexiblelearning.net.au/tkt2007/?page_id=2http://www.danah.org/papers/KnowledgeTree.pdf
+[boyd-sns07] boyd, danah. 2007. “Social Network Sites: Public, Private, or What?” Knowledge Tree 13, May. http://kt.flexiblelearning.net.au/tkt2007/?page_id=2http://www.danah.org/papers/KnowledgeTree.pdf
 
 [boydnp10] boyd, danah. 2010. ” Social network sites as networked publics: Affordances, dynamics, and implications.” Pp. 39-58 in A Networked Self: Identity, Community, and Culture on Social Network Sites, edited by Z. Papacharissi. New York: routledge.
 
 Profiles as Conversation: Networked Identity Performance on Friendster danah boyd,
 http://www.danah.org/papers/HICSS2006.pdf
 
-Self-Presentation of Personality During Online Profile Creation:
-https://www.aaai.org/ocs/index.php/ICWSM/09/paper/viewFile/156/482
-
 ## Social media
 
 [appgen] Howard Gardner & Katie Davis. (2013). The App Generation: How Today's Youth Navigate Identity, Intimacy, and Imagination in a Digital World. Yale University Press.
 
-[borndigi]  John Palfrey and Urs Gasser. (2008). Born Digital: Understanding the First Generation of Digital Natives. Basic Books.
+[borndigi] John Palfrey and Urs Gasser. (2008). Born Digital: Understanding the First Generation of Digital Natives. Basic Books.
 
 [boydsns07] boyd, danah and Nicole B. Ellison. 2007. “Social network sites: Definition, history, and scholarship.” Journal of Computer-Mediated Communication 13:210-210.
+
+[baym12] Nancy K. Baym & danah boyd (2012) Socially Mediated Publicness:
+An Introduction, Journal of Broadcasting & Electronic Media, 56:3, 320-329, DOI:10.1080/08838151.2012.705200
+
+[ellison13] Ellison, N.B. & boyd, d. (2013). Sociality through Social Network Sites. In Dutton, W. H. (Ed.), The Oxford Handbook of Internet Studies. Oxford: Oxford University Press, pp. 151-­-172. 
 
 Hogan, Bernie. 2010. “The Presentation of Self in the Age of Social Media: Distinguishing Performances and Exhibitions Online.” Bulletin of Science, Technology & Society 30:377-386.
 
@@ -255,7 +257,7 @@ http://www.aaai.org/ocs/index.php/ICWSM/09/paper/viewFile/199/403 personalities 
 
 [noland06] Noland, C. (2006). Auto-photography as research practice: Identity and self-esteem research. Journal of Research Practice, 2(1). 
 
-[toma10] Catalina L. Toma (2010) Affirming the Self through Online Profiles:  Beneficial Effects of Social Networking Sites CHI 2010
+[toma10] Catalina L. Toma (2010) Affirming the Self through Online Profiles: Beneficial Effects of Social Networking Sites CHI 2010
 http://dmrussell.net/CHI2010/docs/p1749.pdf
 
 [nemer15] David Nemer and Guo Zhang Freeman. (2015). Rethinking Selfies: Empowering the marginalized through self portraits. Paper presented at Internet Research 16: The 16th Annual Meeting of the Association of Internet Researchers. Phoenix, AZ, USA: AoIR. Retrieved from http://spir.aoir.org
@@ -359,33 +361,35 @@ Utz, S., (2010). Show me your friends and I will tell you what type of person yo
 
 # Everybody knows I'm a dog
 
+[boydpriv12] boyd, d. 2012. Networked Privacy. Surveillance & Society 10(3/4): 348-350. http://www.surveillance-and-society.org | ISSN: 1477-7487 
+
 From Borking to Streaming: The Normalization of Media Surveillance
 https://spir.aoir.org/index.php/spir/article/download/1086/740
 
-NOT  MYSELF:  ANTI-SURVIELLANCE  AESTHETICS  AND  THE  CHIN-DOWN  SELFIE
+NOT MYSELF: ANTI-SURVIELLANCE AESTHETICS AND THE CHIN-DOWN SELFIE
 https://spir.aoir.org/index.php/spir/article/download/1158/809
 
 Guins, Raiford. Edited Clean Version: Technology and the Culture of Control (Minneapolis, London: University of Minnesota Press, 2009).
 
 https://cie.acm.org/articles/panopticism-cyberculture-could-privacy-invasive-social-media-stifle-innovation/
-    
+ 
 http://blogs.microsoft.com/on-the-issues/2015/01/12/life-online-stifling-young-peoples-self-expression/#sm.0000pytzcsfz8ehetkb1drfejzbrt
-    
+ 
 http://delivery.acm.org/10.1145/2820000/2811257/a32-watson.pdf?ip=128.30.9.155&id=2811257&acc=ACTIVE%20SERVICE&key=7777116298C9657D%2EDE5F786C30E1A3B4%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&CFID=622938928&CFTOKEN=63606359&acm=1464713525_235398616fee89ea696a3cf4d8c788e1
 
 My Profile Is My Password, Verify Me! The Privacy/Convenience Tradeoff of Facebook Connect - Serge Egelman
-    
+ 
 faceted id/entity (mirror)
 richard gomer at soton (meaningful consent data useage)
 
 Human data interaction: http://arxiv.org/pdf/1412.6159.pdf
 
 J. Anderson, C. Diaz, J. Bonneau, and F. Stajano, “Privacy preserving social networking over untrusted networks,” in The Second ACM SIG-COMM Workshop on Online Social Networks, 2009.
-    
+ 
 B. Krishnamurthy and C. Wills, “On the leakage of personally identifiable information via online social networks,” in The Second ACM SIGCOMM Workshop on Online Social Networks, 2009.
-    
+ 
 A. Shakimov, A. Varshavsky, L. Cox, and R. Caceres, “Privacy, cost, and availability tradeoffs in decentralized osns,” in The Second ACM SIGCOMM Workshop on Online Social Networks, 2009.
-    
+ 
 R. Baden, A. Bender, N. Spring, B. Bhattacharjee, and D. Starin. Persona: An online social network with user-defined privacy. SIGCOMM Comput. Commun. Rev., 39(4):135–146, 2009
 
 S. Guha, K. Tang, and P. Francis. Noyb: Privacy in online social networks. In WOSP ’08: Proceedings of the First Workshop on Online Social Networks, pages 49–54, 2008
