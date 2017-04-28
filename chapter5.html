@@ -1138,13 +1138,14 @@ target=https://aaronpk.example/post-by-aaron</code></pre>
                     <p>[<a href="#ref-vkpwo">vkpwo</a>] suggests that the first feature of a <abbr title="Personal Web Observatory">PWO</abbr> should be to allow individuals to consolidate data collected by third parties into one repository under their control. Rather than attempting to aggregate - or even find - <em>all</em> data about myself spread across the Web, I chose a handful of services which have particular value to me, that I have been using to actively log particular things. I exported data from <a href="https://last.fm">Lastfm</a> (over ten years of music listening history), <a href="https://twitter.com">Twitter</a> (7 years of short notes), <a href="https://runkeeper.com">Runkeeper</a> (1 year of runs, walks and hikes with GPS traces), and <a href="https://github.com">Github</a> and <a href="https://bitbucket.com">Bitbucket</a> (5 years of code commit history), and Firefox bookmarks (2 years). I also exported data from 750words.com (almost 7 years of intermittent use) but did not import this into my store due to private content and no reliable access control built in.</p>
                     
                     <p>On top of these data dumps I created the following templates:</p>
-                    <table id="posttypes" class="leftie">
+                    <table id="posttypes">
+                        <caption>Post types</caption>
                         <thead>
-                            <tr><th>Type of data</th><th>Attributes displayed <a href="#post-attrs">*</a></th></tr>
+                            <tr>
+                                <th>Type of data</th>
+                                <th>Attributes displayed <a href="#post-attrs">*</a></th>
+                            </tr>
                         </thead>
-                        <tfoot>
-                            <tr><td colspan="2" id="post-attrs">* All posts contain tags and a published date, and may contain a last modified date.</td></tr>
-                        </tfoot>
                         <tbody>
                             <tr><td>Articles (blog posts)</td><td>name, content</td></tr>
                             <tr><td>Short notes (like Tweets)</td><td>content</td></tr>
@@ -1161,6 +1162,9 @@ target=https://aaronpk.example/post-by-aaron</code></pre>
                             <tr><td>Subscriptons / follows</td><td>URL of profile followed</td></tr>
                             <tr><td>Sleep times</td><td>start and end date and time, optional comment</td></tr>
                         </tbody>
+                        <tfoot>
+                            <tr><td colspan="2" id="post-attrs">* All posts contain tags and a published date, and may contain a last modified date.</td></tr>
+                        </tfoot>
                     </table>
                     <p>Templates were created not all at once, but as I decided to start tracking something new and wanted to visualise it. Templates were continually modified and improved over the course of the year.</p>
 
