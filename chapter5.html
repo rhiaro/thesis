@@ -1400,11 +1400,13 @@ target=https://aaronpk.example/post-by-aaron</code></pre>
 <code>intimiate [0,3,0,0,0] // Intimiate posts</code>
 <code>tasty [0,0,5,0,0] // Posts about food</code>
 <code>wander [0,0,0,0,3] // Posts about travel</code>
-<code>travel [3,5,0,0,5] // Personal posts about travel</code>
+<code>travel [3,5,0,0,5] // Travel plans and specific schedules</code>
                 </pre>
             </figure>
 
             <p>When a resource is rendered, the values for the face dimensions of the resource are compared with the values of the face dimensions for each stylesheet available, and the stylesheet which most appropriately matches the set of ratings is attached.</p>
+
+            <p>This way, if someone comes across an individual post out of context (eg. through seeing the results from a search engine) it is displayed in a default way which suits it the most. For example, a recipe might look like a post from a normal food blog.</p>
 
           </div>
         </section>
@@ -1412,7 +1414,20 @@ target=https://aaronpk.example/post-by-aaron</code></pre>
         <section id="face-ui" rel="schema:hasPart">
           <h4>User interface</h4>
           <div>
-            <p>Examples of types of people who would set things</p>
+            <p>The minimum viable interface to present to visitors to my homepage is a series of sliders, one for each dimension, set at neutral defaults. Visitors can move the sliders to increase or reduce the appearance of different types of posts. For example:</p>
+            
+            <ul>
+              <li>My Mum: as perhaps the only person in the world with a genuine interest in what I had for breakfast, will probably crank everything up to 5.</li>
+              <li>My PhD supervisor, wanting to see my latest informal thoughts about my topic: might look only for <code>informative</code> posts, and increase <code>intimacy</code> to see more heartfelt posts such as rants or complaints about technology.</li>
+              <li>My PhD supervisor, wanting to know why I'm not replying to emails or making code commits: can incrase <code>banality</code>, <code>tastiness</code> and <code>wanderlust</code> to see if I have been spending my time eating, exploring and blogging about it instead of working.</li>
+              <li>A potential employer: may be interested in <code>informative</code> posts, but also where I am in the world through <code>wanderlust</code>.</li>
+              <li>Someone interested in vegan food: a combination of 5 for both <code>banality</code> and <code>tastiness</code> will reveal both what I eat every day, and recipes and restaurant reviews.</li>
+              <li>New friends I make whilst traveling: can maximise <code>wanderlust</code> and increase <code>intimacy</code> for a personal take on my current adventure.</li>
+            </ul>
+
+            <p>I can configure preset options for common types of views people might want. To take it one step further, particularly useful preset views can have their own domain names, which are simply a particular view on a particular feed of posts, and I can give the most suitable of these URLs out to people I meet offline who want to track my activities online. (Specific examples already on the cards are a food blog, whatdoveganseveneat.com, and a travel blog, homeiswherethehammockis.com).</p>
+
+            <p>I also anticipate being able to tailor the defaults based on for example, the referrer (did they click the link from Twitter) or physical location in the world from where the traffic comes from. Similarly, if certain people I know are able to authenticate with sloph, actively making themselves known, I can default to the settings I'd prefer them to use.</p>
           </div>
         </section>
 
