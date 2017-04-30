@@ -1356,7 +1356,7 @@ target=https://aaronpk.example/post-by-aaron</code></pre>
         <section id="face-data" rel="schema:hasPart">
           <h4>Vocabulary and data integration</h4>
           <div>
-            <p>The terms I use for the ratings are published as a Linked Data ontology, available in RDF from https://terms.rhiaro.co.uk/view# (prefix: <code>view</code>). This is effectively an extension to the core ActivityStreams 2.0 vocabulary which I use for most of my data. These terms, some what flowery, are named to represent aspects of myself which I think are useful for people to distinguish my different 'faces' by. I expect these are fairly unique to me, and for this system to be applicable to other people, they would need to choose their own dimensions. Fortunately the decentralised publishing expectations of Linked Data make it possible for people to reuse existing terms and augment them with their own as they see fit.</p>
+            <p>The terms I use for the ratings are published as a Linked Data ontology, available in RDF from https://terms.rhiaro.co.uk/view# (prefix: <code>view</code>). This is effectively an extension to the core ActivityStreams 2.0 vocabulary which I use for most of my data. These terms, somewhat flowery, are named to represent aspects of myself which I think are useful for people to distinguish my different 'faces' by. I expect these are fairly unique to me, and for this system to be applicable to other people, they would need to choose their own dimensions. Fortunately the decentralised publishing expectations of Linked Data make it possible for people to reuse existing terms and augment them with their own as they see fit.</p>
             <ul>
               <li><code>banality</code>: describes the more mundane things I record, like what I had for breakfast or how long I was in a cafe for.</li>
               <li><code>intimacy</code>: describes posts of a personal nature, feelings, problems, hopes and dreams.</li>
@@ -1410,7 +1410,7 @@ target=https://aaronpk.example/post-by-aaron</code></pre>
         <section id="face-ui" rel="schema:hasPart">
           <h4>User interface</h4>
           <div>
-            <p>The minimum viable interface to present to visitors to my homepage is a series of sliders, one for each dimension, set at neutral defaults. Visitors can move the sliders to increase or reduce the appearance of different types of posts. For example:</p>
+            <p>The minimum viable interface to present to visitors to my homepage is a series of sliders, one for each dimension, set at neutral defaults. Visitors can move the sliders to increase or reduce the appearance of different types of posts. Turning a slider up to "5" means "show me all the posts which have a value of at most 5 for this dimension." For example:</p>
             
             <ul>
               <li>My Mum: as perhaps the only person in the world with a genuine interest in what I had for breakfast, will probably crank everything up to 5.</li>
@@ -1423,13 +1423,15 @@ target=https://aaronpk.example/post-by-aaron</code></pre>
 
             <p>I can configure preset options for common types of views people might want. To take it one step further, particularly useful preset views can have their own domain names, which are simply a particular view on a particular feed of posts, and I can give the most suitable of these URLs out to people I meet offline who want to track my activities online. (Specific examples already on the cards are a food blog, whatdoveganseveneat.com, and a travel blog, homeiswherethehammockis.com).</p>
 
-            <p>I also anticipate being able to tailor the defaults based on for example, the referrer (did they click the link from Twitter) or physical location in the world from where the traffic comes from. Similarly, if certain people I know are able to authenticate with sloph, actively making themselves known, I can default to the settings I'd prefer them to use.</p>
+            <p>I can also tailor the defaults based on for example, the referrer (did they click the link from Twitter) or the physical location in the world from where the traffic is coming. Similarly, if certain people I know are able to authenticate with sloph, actively making themselves known, I can default to the settings I'd prefer them to use.</p>
+
+            <p>Changing the default baseline depending on my current mood can give visitor to my site an immediate impression of how I'm feeling - perhaps more focussed or emotional (or hungry) - just as my facial expression and body language might give off this impression were someone to encounter me in person.</p>
           </div>
         </section>
 
         <section id="face-limitations" rel="schema:hasPart">
           <h4>Limitations</h4>
-          <p>Obviously this is not a solution for strict access control, privacy protection, or any kind of concealment or separation of online personas.</p>
+          <p>Obviously this does not provide a solution for strict access control, privacy protection, or any kind of concealment or separation of online personas. To hide content altogether I would still need some kind of authorisation flow, or to refrain from posting it entirely. My various personas are fluid and flexible, however they are clearly linked together.</p>
         </section>
 
       </div>
@@ -1438,26 +1440,49 @@ target=https://aaronpk.example/post-by-aaron</code></pre>
 
     <section id="face-discussion" rel="schema:hasPart">
       <h3>Discussion</h3>
-      <div class="notes">
-        <p>The audience of my online presence is determined by my <strong>connections</strong> and the <strong>cascade</strong>.</p>
-        <p>The information that appears in and around my online presence is determined by the <strong>control</strong> I have over systems which produce it, and <strong>customisability</strong> of its display.</p>
-        <p>Meaning is given to the data in accordance with the <strong>context</strong> in which it is both produced and observed.</p>
-      </div>
       <div>
+        <p>I will briefly discuss this system in terms of the 5 Cs framework outlined in <a href="chapter3#ccccc">chapter 3</a>.</p>
+
         <section id="face-concas" rel="schema:hasPart">
           <h4>Connectivity and cascade</h4>
+          <div>
+            <p>The audience of my online presence is determined by both my <strong>connections</strong> and the <strong>cascade</strong>. In the case of sloph, I haven't implemented a subscription protocol so I do not push content out to people, and nor do I have an notion of friends or followers built in. I do cross-post content to other networks however, such as Twitter. Once content leaves my system, the audience I imagine I have is even less convincing; the likelihood of someone I do not know stumbling across my content and making their way back to my site increases. This is why it is particularly important to attempt to negotiate my impression management with visitors, lest someone on the trail of a technical blog post come across my latest opinions about Star Trek Voyager or vegan cheesecake, and leave in confusion.</p>
+          </div>
         </section>
 
         <section id="face-contcust" rel="schema:hasPart">
-          <h4>Control and customisation</h4>
+          <h4>Control and customisability</h4>
+          <div>
+            <p>This system does not provide a way for me to limit the connections between the different online personas it allows me to present, which is an element of <strong>control</strong>. However, I am able to greatly alter the appearance of different kinds of information, once the designs are developed, simply by adding ratings to each resource I create. This is important for the <strong>customisability</strong> of my online presence overall. If someone is looking for a food blog, and they express that through the input options I provide, then what they'll get is a food blog that both contains the right kind of content and is visualised appropriately.</p> 
+          </div>
         </section>
 
         <section id="face-context" rel="schema:hasPart">
           <h4>Context</h4>
+          <div>
+            <p>Meaning is given to my data according to the <strong>context</strong> in which it is both produced and observed. The closest the observer has to understanding any of the context in which the data was produced is to look at other data logged immediately before or after the post of interest. Of course, these may be filtered out by their preferences, and I do not capture everything necessary to provide an accurate personal context (yet). At present most of my posts display the application with which they were created (though the observer is not necessarily familiar with it), but they are missing which other networks I may have cross-posted to.</p>
+            <p>Given that my data is available in a standard, machine-readable format, it may also be consumed by other applications and re-displayed, potentially removing it from the context provided by my own system. As the face dimensions are a vocabulary of my own design, I cannot assume that other systems will understand and make use of them in any way.</p>
+            <p>What my audience member provides me of their context is through their interaction with the slider controls. This is neither precise nor accurate, but perhaps nonetheless better than nothing.</p>
+          </div>
         </section>
       </div>
     </section>
 
+  </div>
+</section>
+
+<section id="conclusions" rel="schema:hasPart">
+  <h2>Conclusions</h2>
+  <div>
+    <p>In this chapter I have described in detail key elements of standards development within the W3C Social Web Working Group, and then discussed my personal experiences of developing systems based on these standards.</p>
+
+    <p>The standardisation process and its participants are part of the background <strong>context</strong> for any system which are based on these standards in the future, as the protocols many influence user interfaces and interaction models, which in turn impacts end users. The protocols themselves provide key building blocks for <strong>customisability</strong> and <strong>connectivity</strong>, as they describe ways for different types of content to be created, and for individuals to connect to one another and propagate content around a decentralised network. The implementation work highlights <strong>context</strong> which is closer to the point of data production, including the different kinds of applications which can generate the data, and the individual's mindset whilst doing so. </p>
+
+    <p>The experimental content display system, <em>face</em>, ties together <strong>connectivity</strong> and <strong>customisability</strong> by creating an environment in which the subject and their audience can collaborate in forming an appropriate self-expression, despite neither being co-present.</p>
+
+    <p>This chapter outlines a journey from theoretical ideas about how to build systems, to working software, by way of a consensus-based formal standardisation process with many players and stakeholders, as well as personal experimentation and reflection. Many Social Web systems have their own stories which can be traced along these lines, though rarely are they told in completeness. This chapter contains only my perspective, and only one software implementation, when there are many others which likely differ.</p>
+
+    <p>In the <a href="chapter6">next and final chapter</a>, I will bring together my contributions throughout this thesis, and reflect on the research questions I asked at the beginning.</p>
   </div>
 </section>
 
