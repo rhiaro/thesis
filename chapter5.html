@@ -1351,16 +1351,69 @@ target=https://aaronpk.example/post-by-aaron</code></pre>
       <h3>System design</h3>
       <div>
 
-        <p>The <em>face</em> system is essentially a series of stylesheets which can be applied to adapt the presentation of any data object or stream of content viewed using <em>sloph</em>, and a set of controls to adjust the types of content which show up at all. I came up with five dimensions which can be used to describe different aspects of myself, and along which every data object in the datastore can be rated. The stylesheet(s) for a particular data object is determined by its combination of rankings. In addition, a set of controls are presented to a visitor to the site which allow them to rate how interested they are in each of the five dimensions. Adjusting this rating changes which data objects are visible, as well as the overall appearance of the homepage.</p>
+        <p>The <em>face</em> system is essentially a series of stylesheets which can be applied to adapt the presentation of any data object or stream of content viewed using <em>sloph</em>, and a set of controls to adjust the types of content which show up at all. I came up with five dimensions which can be used to describe different aspects of myself, and along which every data object in the datastore can be rated. I can input these ratings using a custom post creation/editing application which implements the same protocol (ActivityPub) which I use for creating any kind of content in the system, so it can talk directly to my existing serverside publishing endpoint. The stylesheet(s) for a particular data object is determined by its combination of ratings. In addition, a set of controls are presented to a visitor to the site which allow them to rate how interested they are in each of the five dimensions. Adjusting this rating changes which data objects are visible, as well as the overall appearance of the homepage.</p>
 
         <p>The default view is a fairly neutral representation of my online presence, which can be adjusted to give a more or less personal or professional view, and gear it towards particular topics of interest. This way, the visitor still may be confronted with content they feel is inappropriate or uninteresting, however they take responsibility for adjusting the controls to give these results. These controls introduce a collaborative approach to impression management; since I cannot react to an audience I don't know is there, maybe I can prompt my audience to give enough clues to the system that my online presence can react on my behalf.</p>
 
         <section id="face-data" rel="schema:hasPart">
           <h4>Vocabulary and data integration</h4>
+          <div>
+            <p>The terms I use for the ratings are published as a Linked Data ontology, available in RDF from https://terms.rhiaro.co.uk/view# (prefix: <code>view</code>). This is effectively an extension to the core ActivityStreams 2.0 vocabulary which I use for most of my data. These terms, some what flowery, are named to represent aspects of myself which I think are useful for people to distinguish my different 'faces' by. I expect these are fairly unique to me, and for this system to be applicable to other people, they would need to choose their own dimensions. Fortunately the decentralised publishing expectations of Linked Data make it possible for people to reuse existing terms and augment them with their own as they see fit.</p>
+            <ul>
+              <li><code>banality</code>: describes the more mundane things I record, like what I had for breakfast or how long I was in a cafe for.</li>
+              <li><code>intimacy</code>: describes posts of a personal nature, feelings, problems, hopes and dreams.</li>
+              <li><code>tastiness</code>: for food-related data objects, like meal logs and recipes.</li>
+              <li><code>informative</code>: for more formal academic output, technical comments or tutorials.</li>
+              <li><code>wanderlust</code>: for travel-related data objects.</li>
+            </ul>
+
+            <p>To give you an idea of how different combinations of ratings along each of these axes line up: A post containing the lyrics to a song which is in my head would rate highly for <code>banality</code> and <code>intimacy</code> and low along other axes, unless the song happens to be food, travel or work-related. A restaurant review in an unfamiliar city would rate highly for <code>tastiness</code> and <code>wanderlust</code>. A complaint about bedbugs in a hostel has <code>intimacy</code> and <code>wanderlust</code>. Expressing my frustration at progress with my thesis is <code>intimacy</code> and <code>informative</code>, and a summary of a talk I did in a new city might be <code>informative</code> and <code>wanderlust</code>. My food logs are <code>banality</code>, <code>tastiness</code> and somewhat <code>intimacy</code>.</p>
+
+            <p>Each of these terms is a predicate, the value of which is an integer between 0 and 5, where 0 means 'contains no content of this nature' and 5 means 'is strictly only interesting to people who want content of this nature'.</p>
+
+            <p>I also use the following terms from the W3C Annotations Vocabulary [<a href="#ref-oav">oav</a>] (prefix: <code>oa</code>):</p>
+            <ul>
+              <li><code>CssStyle</code>: a class for stylesheets.</li>
+              <li><code>styleClass</code>: indicates which CSS classes should be applied to this resource when it is rendered.</li>
+              <li><code>styledBy</code>: indicates a stylesheet that should be used when rendering this resource.</li>
+            </ul>
+
+            <p>A series of stylesheets are specialised to different combinations of ratings. These stylesheets exist in my triplestore as <code>oa:CssStyle</code> typed objects, and each is also associated with a rating along each of the face dimensions, to indicate the types of content it is most appropriate for, ie.:
+
+            <figure class="listing">
+                <pre>
+<code>&lt;/css/style.css&gt; view:banality "5" .</code>
+                </pre>
+            </figure>
+
+            <p>Some examples in the form <code>style-name [banality, intimacy, tastiness, informative, wanderlust]</code>:</p>
+            <figure class="listing">
+                <pre>
+<code>food [5,3,5,0,0] // Meal logs</code>
+<code>lyric [5,5,0,0,0] // Posts which are just song lyrics</code>
+<code>wg [0,0,0,0,4] // W3C Working Group related</code>
+<code>phd [0,1,0,0,5] // PhD related posts</code>
+<code>trek [4,4,0,0,0] // Posts about Star Trek</code>
+<code>checkin [5,3,0,4,0] // Posts which announce my location</code>
+<code>feels [0,5,0,0,1] // Posts about emotions or feelings</code>
+<code>banal [3,0,0,0,0] // Boring posts</code>
+<code>intimiate [0,3,0,0,0] // Intimiate posts</code>
+<code>tasty [0,0,5,0,0] // Posts about food</code>
+<code>wander [0,0,0,0,3] // Posts about travel</code>
+<code>travel [3,5,0,0,5] // Personal posts about travel</code>
+                </pre>
+            </figure>
+
+            <p>When a resource is rendered, the values for the face dimensions of the resource are compared with the values of the face dimensions for each stylesheet available, and the stylesheet which most appropriately matches the set of ratings is attached.</p>
+
+          </div>
         </section>
 
         <section id="face-ui" rel="schema:hasPart">
           <h4>User interface</h4>
+          <div>
+            <p>Examples of types of people who would set things</p>
+          </div>
         </section>
 
         <section id="face-limitations" rel="schema:hasPart">
