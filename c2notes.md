@@ -117,18 +117,19 @@ Giddens, Modernity (identity as separateness/uniqueness; personal construction a
 
 [technoself] Luppicini, R. (ed). (2013). Handbook of Research on Technoself: Identity in a Technological Society. Volume I and II. Hershey: Idea Group Publishing, 900 pp.
 
-# Offline to online... band back again
-
-
-Rodogno, R (2012). "Personal Identity Online.". Philosophy & Technology. - online identity affects offline self
+# Offline to online... and back again
 
 [infinitereality] Jim Blascovich & Jeremy Bailenson (2011). Infinite Reality: The Hidden Blueprint of Our Virtual Lives. William Morrow Paperbacks.
+
+[markus06] http://www.ncbi.nlm.nih.gov/pubmed/16784349
+
+[inreallife] Nev Schulman. (2014) In Real Life: Love, Lies & Identity in the Digital Age. Grand Central Publishing
+
+Rodogno, R (2012). "Personal Identity Online.". Philosophy & Technology. - online identity affects offline self
 
 http://gradworks.umi.com/35/69/3569922.html
 
 http://www.tandfonline.com/doi/abs/10.1080/15213260802023433
-
-[markus06] http://www.ncbi.nlm.nih.gov/pubmed/16784349
 
 Composing Cyberspace: Identity, Community, and Knowledge in the Electronic Age
 https://books.google.com/books?id=jasQAQAAMAAJ
@@ -144,8 +145,6 @@ http://onlinelibrary.wiley.com/doi/10.1002/j.2048-7940.2010.tb00056.x/pdf
 
 Disability discourses for online identities
 http://www.tandfonline.com/doi/pdf/10.1080/09687590220139883?instName=University+of+Edinburgh
-
-[inreallife] Nev Schulman. (2014) In Real Life: Love, Lies & Identity in the Digital Age. Grand Central Publishing
 
 
 # Networked publics
