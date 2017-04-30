@@ -952,8 +952,7 @@ font-size:0.75em;
 <code>  "@id": "",</code>
 <code>  "source": { "@id": "https://waterpigs.example/post-by-barnaby" },</code>
 <code>  "target": { "@id": "https://aaronpk.example/post-by-aaron" }</code>
-<code>}</code></pre>
-</figure>
+<code>}</code></pre></figure>
               </li>
               <li>Use the <code>source->@id</code> and <code>target->@id</code> values as the <code>source</code> and <code>target</code> of the Webmention, and proceed with verification.</li>
               <li>If returning a <code>201 Created</code>, it MUST return a <code>Location</code> header with a URL from which the contents of the request posted can be retrieved. <code>202 Accepted</code> is still fine.</li>
@@ -996,8 +995,7 @@ target=https://aaronpk.example/post-by-aaron</code></pre>
 <code>  "type": "Relationship",</code>
 <code>  "subject": "https://waterpigs.example/post-by-barnaby",</code>
 <code>  "object": "https://aaronpk.example/post-by-aaron"</code>
-<code>}</code>
-            </pre>
+<code>}</code></pre>
 </figure>
             <p>A receiver or sender may want to augment this representation with the relationship between the two documents, and any other pertinent data. In the receiver's case, this could be gathered when they parse the source during the verification process. For example:</p>
 <figure class="listing">
@@ -1381,15 +1379,12 @@ target=https://aaronpk.example/post-by-aaron</code></pre>
             <p>A series of stylesheets are specialised to different combinations of ratings. These stylesheets exist in my triplestore as <code>oa:CssStyle</code> typed objects, and each is also associated with a rating along each of the face dimensions, to indicate the types of content it is most appropriate for, ie.:
 
             <figure class="listing">
-                <pre>
-<code>&lt;/css/style.css&gt; view:banality "5" .</code>
-                </pre>
+                <pre><code>&lt;/css/style.css&gt; view:banality "5" .</code></pre>
             </figure>
 
             <p>Some examples in the form <code>style-name [banality, intimacy, tastiness, informative, wanderlust]</code>:</p>
             <figure class="listing">
-                <pre>
-<code>food [5,3,5,0,0] // Meal logs</code>
+                <pre><code>food [5,3,5,0,0] // Meal logs</code>
 <code>lyric [5,5,0,0,0] // Posts which are just song lyrics</code>
 <code>wg [0,0,0,0,4] // W3C Working Group related</code>
 <code>phd [0,1,0,0,5] // PhD related posts</code>
@@ -1400,8 +1395,7 @@ target=https://aaronpk.example/post-by-aaron</code></pre>
 <code>intimiate [0,3,0,0,0] // Intimiate posts</code>
 <code>tasty [0,0,5,0,0] // Posts about food</code>
 <code>wander [0,0,0,0,3] // Posts about travel</code>
-<code>travel [3,5,0,0,5] // Personal posts about travel</code>
-                </pre>
+<code>travel [3,5,0,0,5] // Personal posts about travel</code></pre>
             </figure>
 
             <p>When a resource is rendered, the values for the face dimensions of the resource are compared with the values of the face dimensions for each stylesheet available, and the stylesheet which most appropriately matches the set of ratings is attached.</p>
