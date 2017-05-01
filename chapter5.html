@@ -103,7 +103,7 @@ font-size:0.75em;
     <section id="swwg-charter" rel="schema:hasPart">
       <h3>The Social Web Working Group charter</h3>
       <div>
-        <p class="todo">Maybe move some of this back to the last section in C4 after all</p>
+        <!-- <p class="todo">Maybe move some of this back to the last section in C4 after all</p> -->
 
         <p>Technical specifications, at least those produced by the W3C, are intended for software developers. A mark of the success of a standard is when multiple developers, who have no knowledge of each others' activities, can independently implement the specification into code and have their systems interoperate successfully.</p>
 
@@ -125,22 +125,7 @@ font-size:0.75em;
           <li>an API for reading and writing social data (create, read, update, delete);</li>
           <li>a federation API for passing social data between disparate systems (subscriptions and notifications).</li>
         </ul>
-        <div class="notes">
-          <p>Problems they did not address:</p>
-          <ul>
-            <li>Identity (authn, authz, presentation)</li>
-            <li>Abuse, spam, data misuse</li>
-            <li>Prevent surveillence</li>
-            <li>Decent outside of http</li>
-            <li>Security, privacy</li>
-            <li>Federated search</li>
-            <li>...</li>
-            <li>Profit</li>
-          </ul>
-
-          <p>The list of unaddressed problems looks enormous and critical, yet I posit that these are mostly unsolveable by technical means. As the SWWG has produced technical specifications rather than a code of ethics or policy recommendations, its reach is somewhat limited.</p>
-
-        </div>
+        
         <aside class="note">
           <p id="fn-act"><sup>act</sup> a W3C 'Activity' is a framework for clustering related Working Groups and Interest Groups together.</p>
         </aside>
@@ -1036,6 +1021,23 @@ target=https://aaronpk.example/post-by-aaron</code></pre>
         </aside>
       </div>
     </section>
+
+    <section id="swwg-remaining-problems" rel="schema:hasPart">
+      <h3>Remaining problems</h3>
+      <div>
+        <p>Some of the problems which the Social Web Working Group did not address (and nor were chartered to) are listed here. This list is substantial, and many of the items seem critical for the future of the Social Web, however I posit that these are mostly unsolvable by technical means. As the SWWG has produced technical specifications rather than a code of ethics or policy recommendations, its reach is somewhat limited.</p>
+        <ul>
+          <li>Identity (authentication, authorisation, presentation of personal data).</li>
+          <li>Abuse, spam, data misuse.</li>
+          <li>Preventing mass surveillence.</li>
+          <li>Decentralisation outside of HTTP protocols.</li>
+          <li>Security or privacy of personal data and online interactions (though each specification was reviewed by W3C Security and Privacy specialists, and contains a section which explicitly addresses these kinds of concerns with regard to that particular protocol).</li>
+          <li>Federated search.</li>
+          <li>Economic incentives for building decentralised social software.</li>
+        </ul>
+      </div>
+    </section>
+
   </div>
 </section>
 
