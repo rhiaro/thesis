@@ -153,8 +153,7 @@ http://www.tandfonline.com/doi/pdf/10.1080/09687590220139883?instName=University
 
 [boydnp10] boyd, danah. 2010. ” Social network sites as networked publics: Affordances, dynamics, and implications.” Pp. 39-58 in A Networked Self: Identity, Community, and Culture on Social Network Sites, edited by Z. Papacharissi. New York: routledge.
 
-Profiles as Conversation: Networked Identity Performance on Friendster danah boyd,
-http://www.danah.org/papers/HICSS2006.pdf
+Profiles as Conversation: Networked Identity Performance on Friendster danah boyd, http://www.danah.org/papers/HICSS2006.pdf
 
 ## Social media
 
@@ -173,52 +172,51 @@ An Introduction, Journal of Broadcasting & Electronic Media, 56:3, 320-329, DOI:
 
 Hogan, Bernie. 2010. “The Presentation of Self in the Age of Social Media: Distinguishing Performances and Exhibitions Online.” Bulletin of Science, Technology & Society 30:377-386.
 
-Social Comparison 2.0: Examining the Effects of Online Profiles on Social-Networking Sites
+[haferkamp10] Nina Haferkamp and Nicole C. Krämer. Cyberpsychology, Behavior, and Social Networking. May 2011, 14(5): 309-314. doi:10.1089/cyber.2010.0120. 
 http://online.liebertpub.com/doi/abs/10.1089/cyber.2010.0120
 
-Casanovas of the Virtual World. How Boys Present Themselves on Dating) Websites.
-https://www.researchgate.net/publication/47502962_Casanova_s_of_the_Virtual_World_How_Boys_Present_Themselves_on_Dating_Websites
+[insta17] Ashraf Sadat Ahadzadeh, Saeed Pahlevan Sharif & Fon Sim Ong. (2017)Self-schema and self-discrepancy mediate the influence of Instagram usage on body image satisfaction among youth. Computers in Human Behavior, Volume 68, March 2017, Pages 8-16
 
-Information Behavior and the Formation and Maintenance of Peer Cultures in Massive Multiplayer Online RolePlaying Games: A Case Study of City of Heroes
-http://www.digra.org/wp-content/uploads/digital-library/06278.15067.pdf
+[bunnies17] Katrin Tiidenberg & Andrew Whelan (2017) Sick bunnies and pocket dumps: “Not-selfies” and the genre of self-representation.  Popular Communication. Volume 15, 2017 - Issue 2: Self-(Re)presentation Now. pp. 141-153
 
-The truth about online dating
-http://drrobertepstein.com/pdf/Epstein-TheTruthAboutOnlineDating-2-07.pdf?lbisphpreq=1
+[vanhouse11] Van House, N. A. (2011). Personal photography, digital technologies and the uses of the visual. Visual Studies, 26(2), 125–134. doi:10.1080/1472586X.2011.571888
 
-Managing Impressions Online: Self-Presentation Processes in the Online Dating Environment
+[lasen15] Lasén, A. (2015). Digital self-portraits, exposure and the modulation of intimacy. In J. R. Carvalheiro, & A. S. Tellería (Eds.), Mobile and digital communication: Approaches to public and private (pp. 61–68). Covilhã, Portugal: Livros LabCom.
+
+[senft15] Senft, T. M., & Baym, N. K. (2015). What does the selfie say? Investigating a global phenomenon. International Journal of Communication, 9, 1588–1606.
+
+[frosch15] Frosh, P. (2015). The gestural image: The selfie, photography theory, and kinesthetic sociability. International Journal of Communication, 9, 1607–1628.
+
+
+<!-- Managing Impressions Online: Self-Presentation Processes in the Online Dating Environment
 http://onlinelibrary.wiley.com/doi/10.1111/j.1083-6101.2006.00020.x/full
 
 Self-Presentation and Gender on MySpace
-https://www.researchgate.net/publication/222435595_Self-Presentation_and_Gender_on_MySpace
+https://www.researchgate.net/publication/222435595_Self-Presentation_and_Gender_on_MySpace -->
 
-Mick or Keith: blended identity of online rock fans
-http://link.springer.com/article/10.1007/s12394-009-0015-5
 
-http://www.informationr.net/ir/21-2/SM1.html#.WPXPREfmivv Quantified Academic Selves
-
-THE LABOR OF VISIBILITY: GENDERED SELF-EXPRESSION IN THE SOCIAL MEDIA IMAGINARY
+[duffy15] Duffy, B. E. (2015). The Labor of Visibility: Gendered Self-Expression in the Social Media Imaginary. Paper presented at Internet Research 16: The 16th Annual Meeting of the Association of Internet Researchers. Phoenix, AZ, USA: AoIR. Retrieved from http://spir.aoir.org
 https://spir.aoir.org/index.php/spir/article/download/1062/718
 
-CONTRADICTIONS OF THE SOCIAL IMAGINARY: MAKING SENSE OF DIGITAL FOOD SNAPS 
-https://spir.aoir.org/index.php/spir/article/download/1115/769
+[duffy15b] Duffy, B. E. (2015). Amateur, autonomous, collaborative: Myths of aspiring female cultural producers in Web 2.0. Critical Studies in Media Communication. 23:48-64.
 
-IMAGINING THE ENDS OF IDENTITY: BIRTH AND DEATH ON INSTAGRAM
-https://spir.aoir.org/index.php/spir/article/download/1120/774
+[food15] Larsen, J. (2015). Contradictions Of The Social Imaginary: Making Sense Of Digital Food Snaps. Paper presented at Internet Research 16: The 16th Annual Meeting of the Association of Internet Researchers. Phoenix, AZ, USA: AoIR. Retrieved from http://spir.aoir.org
 
 A SOCIOLINGUISTIC ANALYSIS OF EMOTICON USAGE IN JAPANESE BLOGS: VARIATION BY AGE, GENDER, AND TOPIC
 https://spir.aoir.org/index.php/spir/article/download/1137/789
 
-FACEBOOKING TOWARD DEATH: HOW DIGITAL LEGACY IMPACTS CURATION IN ONLINE SETTINGS 
-https://spir.aoir.org/index.php/spir/article/download/1139/791
-
-THE NAVIGATION OF BOUNDARIES IN ONLINE SOCIAL SPACES
+[quinn15] Kelly Quinn (2015) THE NAVIGATION OF BOUNDARIES IN ONLINE SOCIAL SPACES. Selected Papers of
+Internet Research 16: The 16th Annual Meeting of the Association of Internet Researchers Phoenix, AZ, USA / 21-24 October 2015
 https://spir.aoir.org/index.php/spir/article/download/1142/794
 
-THE HITCHHIKER’S GUIDE TO COMMUNITY: TERRITORIALITY, INTIMACY AND OWNERSHIP IN ONLINE SPACES 
-https://spir.aoir.org/index.php/spir/article/download/1144/795
-
-SUBVERTING SOCIAL MEDIA
+[singh15] singh, s. (2015, October 21-24) Subverting Social Media. Paper presented at Internet Research 16: The 16th Annual Meeting of the Association of Internet Researchers. Phoenix, AZ, USA: AoIR. Retrieved from http://spir.aoir.org.
 https://spir.aoir.org/index.php/spir/article/download/1159/810
+
+IMAGINING THE ENDS OF IDENTITY: BIRTH AND DEATH ON INSTAGRAM
+https://spir.aoir.org/index.php/spir/article/download/1120/774
+
+FACEBOOKING TOWARD DEATH: HOW DIGITAL LEGACY IMPACTS CURATION IN ONLINE SETTINGS 
+https://spir.aoir.org/index.php/spir/article/download/1139/791
 
 FCJ-166 ‘Change name to No One. Like people’s status’ Facebook Trolling and Managing Online Personas
 http://twentytwo.fibreculturejournal.org/fcj-166-change-name-to-no-one-like-peoples-status-facebook-trolling-and-managing-online-personas/
