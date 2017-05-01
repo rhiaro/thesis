@@ -713,7 +713,9 @@ font-size:0.75em;
         <section id="swp-publish" rel="schema:hasPart">
           <h4>Publishing</h4>
           <div>
-            <p>Publishing in this context incorporates creating new content, and updating or deleting existing content. Content generated through a client (such as a web form, mobile app, sensor, smart device) is created when it is sent to a server for processing, where it is typically stored and usually published (either publicly or to a restricted audience, in human- and/or machine-readable forms). Clients and servers may independently support creating, updating and deleting; there are no dependencies between them.</p>
+            <p>Publishing in this context incorporates creating new content, and updating or deleting existing content. The ability to publish content and generate (and update or remove) new data is critical to online self-presentation, in particular it is part of <strong>customisability</strong> in building an online profile.</p> 
+
+            <p>Content generated through a client (such as a web form, mobile app, sensor, smart device) is created when it is sent to a server for processing, where it is typically stored and usually published (either publicly or to a restricted audience, in human- and/or machine-readable forms). Clients and servers may independently support creating, updating and deleting; there are no dependencies between them.</p>
 
             <p>Authentication and authorization between clients and servers for creating content are not included in these specifications, as they are considered orthogonal problems which should be solved elsewhere.</p>
 
@@ -775,7 +777,7 @@ font-size:0.75em;
         <section id="swp-subscribing" rel="schema:hasPart">
           <h4>Subscribing</h4>
           <div>
-            <p>An agent (client or server) may <em>ask</em> to be notified of changes to a content object (eg. edits, new replies) or stream of content (eg. objects added or removed from a particular stream). This is <em>subscribing</em>. Specifications which contain subscription mechanisms are ActivityPub and WebSub.</p>
+            <p>An agent (client or server) may <em>ask</em> to be notified of changes to a content object (eg. edits, new replies) or stream of content (eg. objects added or removed from a particular stream). This is <em>subscribing</em>. This is part of the process of creating links between individuals in a social network, and other individuals or resources; part of <strong>connectivity</strong>. Specifications which contain subscription mechanisms are ActivityPub and WebSub.</p>
 
             <p>Nothing should rely on implementation of a subscription mechanism. That is, implementations may set themselves up to receive notifications without always being required to explicitly ask for them from a sender or publisher: see <a href="#swp-delivery">delivery</a>.</p>
 
@@ -843,7 +845,7 @@ font-size:0.75em;
         <section id="swp-delivery" rel="schema:hasPart">
           <h4>Delivering</h4>
           <div>
-            <p>A user or application may wish to push a notification to another user that the receiver has <em>not explicitly asked</em> for. For example to send a message or some new information; because they have linked to (replied, liked, bookmarked, reposted, etc) their content; because they have linked to (tagged, addressed) the user directly; to make the recipient aware of a change in state of some document or resource on the Web. The Social Web Working Group specifications contain several mechanisms for carrying out delivery; they are listed here from general to specialsed.</p>
+            <p>A user or application may wish to push a notification to another user that the receiver has <em>not explicitly asked</em> for. For example to send a message or some new information; because they have linked to (replied, liked, bookmarked, reposted, etc) their content; because they have linked to (tagged, addressed) the user directly; to make the recipient aware of a change in state of some document or resource on the Web. This is also part of <strong>connectivity</strong>, as well as a potential way to make individuals aware of how their content is <strong>cascade</strong>d throughout a network, and how they are connected to others of whom they were previously unaware. The Social Web Working Group specifications contain several mechanisms for carrying out delivery; they are listed here from general to specialsed.</p>
 
             <section id="swp-targeting-and-discovery">
             <h5>Targeting and discovery</h5>
