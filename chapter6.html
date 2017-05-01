@@ -12,6 +12,7 @@
         <script src="https://dokie.li/scripts/medium-editor.min.js"></script>
         <script src="https://dokie.li/scripts/medium-editor-tables.min.js"></script>
         <script src="https://dokie.li/scripts/do.js"></script>
+        <script src="thesis.js"></script>
 
         <link href="https://rhiaro.co.uk/incoming/" rel="http://www.w3.org/ns/ldp#inbox" />
         <link href="https://linkedresearch.org/annotation/rhiaro/thesis/" rel="http://www.w3.org/ns/oa#annotationService" />
@@ -68,13 +69,13 @@ font-size:0.75em;
     <section id="contributions" rel="schema:hasPart">
       <h3>Methodological Recommendations</h3>
       <div>
-        <blockquote><p>Web Science must coordinate engineering with a social agenda, policy with technical constraints and possibilities, analysis with synthesis - it is inherently interdisciplinary. - [websci]</p></blockquote>
+        <blockquote><p>Web Science must coordinate engineering with a social agenda, policy with technical constraints and possibilities, analysis with synthesis - it is inherently interdisciplinary. - [<a href="appendices#ref-websci">websci</a>]</p></blockquote>
 
         <p>A further outcome of my work has been to find ways to link research and methods from social science and computer science fields in a way which benefits both, and serves to further our understanding of socio-technical systems in general. I have leaned on Goffman's dramaturgy throughout, and highlighted ways in which theories about face-to-face interactions can be applied to the Social Web, as well as places where these theories need to be extended or amended for digital spaces.</p>
         
         <p>I also advocate exploring more auto-ethnographic style approaches to system design and development. Researchers can immerse themselves in the systems they are studying, and gain greater insight into the motivations and activities of other participants. At the very least, this should enable a more comprehensive description and review of technical features than an outside overview could provide, which in itself is vaulable for situating any particular study.</p>
         
-        <p>In software engineering, using yourself the software you produce is often known as "dogfooding" or "eating one's own dogfood." This comes with the ethic that one shouldn't build systems for other people which aren't useful to you. More extreme advocates argue that if you <em>rely</em> on the software you are building you're also much more likely to resolve problems, and see gaps for missing features. Many large software development companies already employ this policy [<a href="#ref-dogfood">dogfood</a>], and for one-person or small teams developing experimental platforms to explore new ideas I think academics would do well to adopt this approach as well. It has the potential to reduce speculative features and cement a greater level of commitment to a project. I demonstrated this with <em>sloph</em>, the personal social datastore I built and described in <a href="chapter5#personal-web-observatory">Personal data and self-presentation</a>.</p>
+        <p>In software engineering, using yourself the software you produce is often known as "dogfooding" or "eating one's own dogfood." This comes with the ethic that one shouldn't build systems for other people which aren't useful to you. More extreme advocates argue that if you <em>rely</em> on the software you are building you're also much more likely to resolve problems, and see gaps for missing features. Many large software development companies already employ this policy [<a href="appendices#ref-dogfood">dogfood</a>], and for one-person or small teams developing experimental platforms to explore new ideas I think academics would do well to adopt this approach as well. It has the potential to reduce speculative features and cement a greater level of commitment to a project. I demonstrated this with <em>sloph</em>, the personal social datastore I built and described in <a href="chapter5#personal-web-observatory">Personal data and self-presentation</a>.</p>
         
         <p>In terms of the highly personal Social Web systems I expect us to be moving towards as this field progresses, I think it is particularly presumptuous for us to theorise around systems which we aren't willing to engage with directly ourselves.</p>
         
@@ -88,7 +89,7 @@ font-size:0.75em;
 <section id="future" rel="schema:hasPart">
   <h2>Things to come</h2>
   <div>
-    <p>This thesis covers a mere snapshot of a point in time, in the history of the Web and online social interactions. By the time you read this, anything labelled 'current' or 'modern' will probably be obsolete. Even in the last month of writing up, <em>Mastodon</em> gained sudden popularity, and continues to grow (in terms of new instances and total user accounts) at an exponential rate. Mastodon is an implementation of OStatus and alternative to GNU Social, decentralised microblogging platform designed to compete with the monolithic Twitter. If you were paying attention in Chapter 4, you know that GNU Social is the community takeover of StatusNet. The founder of StatusNet and the primary driver of the OStatus architecture, Evan Prodromou, is a chair of the Social Web Working Group. Following StatusNet, Evan worked to simplify OStatus with Pump.io [<a href="#ref-dcent">dcent</a>], a popular instance of which includes <em>identica</em>. A modest community of developers maintain the primary Pump.io codebase and keep federated instances running. The Social Web Working Group's ActivityPub used to be called Activity<em>Pump</em>, and is an evolution of the Pump.io specification, with Evan's oversight. As such, the suddenly popular Mastodon codebase is not one but two generations of protocol behind, if we assume Evan (and Social Web Working Group co-conspirators) know what they're talking about.</p>
+    <p>This thesis covers a mere snapshot of a point in time, in the history of the Web and online social interactions. By the time you read this, anything labelled 'current' or 'modern' will probably be obsolete. Even in the last month of writing up, <em>Mastodon</em> gained sudden popularity, and continues to grow (in terms of new instances and total user accounts) at an exponential rate. Mastodon is an implementation of OStatus and alternative to GNU Social, decentralised microblogging platform designed to compete with the monolithic Twitter. If you were paying attention in Chapter 4, you know that GNU Social is the community takeover of StatusNet. The founder of StatusNet and the primary driver of the OStatus architecture, Evan Prodromou, is a chair of the Social Web Working Group. Following StatusNet, Evan worked to simplify OStatus with Pump.io [<a href="appendices#ref-dcent">dcent</a>], a popular instance of which includes <em>identica</em>. A modest community of developers maintain the primary Pump.io codebase and keep federated instances running. The Social Web Working Group's ActivityPub used to be called Activity<em>Pump</em>, and is an evolution of the Pump.io specification, with Evan's oversight. As such, the suddenly popular Mastodon codebase is not one but two generations of protocol behind, if we assume Evan (and Social Web Working Group co-conspirators) know what they're talking about.</p>
     <blockquote><p>
       "I'm happy for Mastodon's success but disappointed they didn't use the modern protocol ActivityPub we developed at W3C. All I have to say." - Evan Prodromou, on various social platforms [<a href="https://mobile.twitter.com/evanpro/status/851155551325229058">Twitter</a>].
     </p></blockquote>
@@ -139,6 +140,8 @@ font-size:0.75em;
 
         </div>
       </article>
-    </main>
+    </main><script>
+      get_refs();
+    </script>
   </body>
 </html>
