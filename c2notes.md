@@ -125,6 +125,8 @@ Giddens, Modernity (identity as separateness/uniqueness; personal construction a
 
 [inreallife] Nev Schulman. (2014) In Real Life: Love, Lies & Identity in the Digital Age. Grand Central Publishing
 
+[youth] Angela Thomas (2007) Youth Online: Identity and Literacy in the Digital Age. Peter Lang.
+
 Rodogno, R (2012). "Personal Identity Online.". Philosophy & Technology. - online identity affects offline self
 
 http://gradworks.umi.com/35/69/3569922.html
@@ -233,6 +235,8 @@ boyd, danah 2008. “Why Youth Heart Social Network Sites: The Role of Networked
 
 [intlblog] Russell, A. and Echchaibi, N. (eds.) (2009) International Blogging: Identity, Politics and Networked Publics. Peter Lang Publishing Inc
 
+[alist05] Kaye D. Trammell & Ana Keshelashvili (2005) Examining the New Influencers: A Self-Presentation Study of A-List Blogs. Journalism & Mass Communication Quarterly 82(4) 
+
 Personal journal bloggers: Profiles of disclosiveness
 http://www.sciencedirect.com/science/article/pii/S074756321000186X
 
@@ -286,8 +290,8 @@ http://sfist.com/2014/09/11/drag_queens_other_performers_outrag.php
 
 ## Context collapse
 
-Context collapse lit review
-https://thesocietypages.org/cyborgology/2013/01/10/context-collapse-a-literature-review/
+<!-- Context collapse lit review
+https://thesocietypages.org/cyborgology/2013/01/10/context-collapse-a-literature-review/ -->
 
 Context collapse: theorizing context collusions and collisions
 http://www.tandfonline.com/doi/abs/10.1080/1369118X.2014.888458?journalCode=rics20
@@ -301,11 +305,11 @@ http://journals.sagepub.com/doi/pdf/10.1177/1461444814549930
 Duguay, S. (2013). Facebook as a decontextualized environment: Young people’s experiences of navigating LGBTQ identity on a social networking site. Paper presented at Social Media & Society 2013 International Conference. 14-15 September, Halifax, Canada.
 https://smsociety13.sched.com/event/92d43df4bc792748089d5ff268e71ae5#.VUdjNdqqqko
 
-Duguay, S. (2014). Ways to stay connected: Harnessing, managing, and preventing context collapse on social media. “Connections” Keyword Seminar, presented to the Children and Youth Research Centre. 9 October 2014. QUT, Brisbane, Australia.
+<!-- Duguay, S. (2014). Ways to stay connected: Harnessing, managing, and preventing context collapse on social media. “Connections” Keyword Seminar, presented to the Children and Youth Research Centre. 9 October 2014. QUT, Brisbane, Australia.
 https://www.slideshare.net/StefanieDuguay/ways-to-stay-connected-harnessing-managing-and-preventing-context-collapse-on-social-media
 
 Duguay, S. (2013). Your networked world: Connections, self-presentation, and privacy in the age of social media. Presentation to Youth Mandate for Greater Involvement (YMAGIN), Employment and Social Development Canada, Government of Canada. 10 December 2013. Ottawa, Ontario, Canada.
-https://www.slideshare.net/StefanieDuguay/your-networked-world
+https://www.slideshare.net/StefanieDuguay/your-networked-world -->
 
 ## Sharing, friends and communities
 
@@ -365,6 +369,8 @@ Utz, S., (2010). Show me your friends and I will tell you what type of person yo
 [boydpriv12] boyd, d. 2012. Networked Privacy. Surveillance & Society 10(3/4): 348-350. http://www.surveillance-and-society.org | ISSN: 1477-7487 
 
 [boydpriv11] boyd, danah and Marwick, Alice E., Social Privacy in Networked Publics: Teens’ Attitudes, Practices, and Strategies (September 22, 2011). A Decade in Internet Time: Symposium on the Dynamics of the Internet and Society, September 2011. Available at SSRN: https://ssrn.com/abstract=1925128
+
+Winoker 2003 - "is not surviellence coercive?"
 
 From Borking to Streaming: The Normalization of Media Surveillance
 https://spir.aoir.org/index.php/spir/article/download/1086/740
