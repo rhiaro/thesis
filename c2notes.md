@@ -2,9 +2,6 @@ https://blog.coralproject.net/the-real-name-fallacy/
 
 Dijck, José van. ‘Users like you? Theorizing agency in user-generated content’, Media, Culture & Society 31.1 (2009): 41–58.
 
-I tweet honestly
-http://www.tiara.org/blog/wp-content/uploads/2010/07/marwick_boyd_twitter_nms.pdf
-
 Social Media and Experiential Ambivalence
 http://www.mdpi.com/1999-5903/4/4/955
 
@@ -83,18 +80,18 @@ https://en.wikipedia.org/wiki/Impression_management
 
 https://en.wikipedia.org/wiki/Dramaturgy_(sociology)
 
-[brunswick56] Brunswik, E. (1956). Perception and the representative design of psychological experiments. Berkeley: University of California Press
+<!-- [brunswick56] Brunswik, E. (1956). Perception and the representative design of psychological experiments. Berkeley: University of California Press -->
 
-[lens01] Gigerenzer, G., & Kurz, E. M. (2001). Vicarious functioning reconsidered: A fast and frugal lens model. In K. R. Hammond & T. R. Stewart (Eds.), The essential Brunswik: Beginnings, explications, applications (pp. 342–348). Oxford, UK: Oxford University Press.
+<!-- [lens01] Gigerenzer, G., & Kurz, E. M. (2001). Vicarious functioning reconsidered: A fast and frugal lens model. In K. R. Hammond & T. R. Stewart (Eds.), The essential Brunswik: Beginnings, explications, applications (pp. 342–348). Oxford, UK: Oxford University Press. -->
 
-[bedrooms02] Gosling, S. D., Ko, S. J., Mannarelli, T., & Morris, M. E. (2002). A room with a cue: Personality judgments based on offices and bedrooms.
+<!-- [bedrooms02] Gosling, S. D., Ko, S. J., Mannarelli, T., & Morris, M. E. (2002). A room with a cue: Personality judgments based on offices and bedrooms. -->
 Journal of Personality and Social Psychology, 82, 379–398.
 
-[markus06] Marcus, B., Machilek, F., & Schutz, A. (2006). Personality in cyberspace: Personal Web sites as media for personality expressions and impressions. Journal of Personality and Social Psychology, 90, 1014–1031.
+<!-- [markus06] Marcus, B., Machilek, F., & Schutz, A. (2006). Personality in cyberspace: Personal Web sites as media for personality expressions and impressions. Journal of Personality and Social Psychology, 90, 1014–1031. -->
 
-[vazire04] Vazire, S., & Gosling, S. D. (2004). e-Perceptions: Personality impressions based on personal Websites. Journal of Personality and Social Psychology, 87, 123–132.
+<!-- [vazire04] Vazire, S., & Gosling, S. D. (2004). e-Perceptions: Personality impressions based on personal Websites. Journal of Personality and Social Psychology, 87, 123–132. -->
 
-[gosling08] Evans, D. C., Gosling, S. D., & Carroll, A. (2008). What elements of an online social networking profile predict target-rater agreement in personality impressions. Proceedings of the International Conference on Weblogs and Social Media, 1-6
+<!-- [gosling08] Evans, D. C., Gosling, S. D., & Carroll, A. (2008). What elements of an online social networking profile predict target-rater agreement in personality impressions. Proceedings of the International Conference on Weblogs and Social Media, 1-6 -->
 
 
 ## Embodiment
@@ -109,23 +106,23 @@ Giddens, Modernity (identity as separateness/uniqueness; personal construction a
 
 ## Extending the self
 
-[manhammer] Martin Heidegger, "The Question Concerning Technology," Basic Writings Ed. David Farrell Krell (Harper & Row, 1977), 287
+<!-- [manhammer] Martin Heidegger, "The Question Concerning Technology," Basic Writings Ed. David Farrell Krell (Harper & Row, 1977), 287 -->
 
-[mcluhan] Marshall McLuhan (1964) Understanding Media: The Extensions of Man; 1st ed. McGraw Hill, NY
+<!-- [mcluhan] Marshall McLuhan (1964) Understanding Media: The Extensions of Man; 1st ed. McGraw Hill, NY -->
 
-[clarkmind] Clark, Andy, and David J. Chalmers. (1998). The extended mind. Analysis 58: 7-19
+<!-- [clarkmind] Clark, Andy, and David J. Chalmers. (1998). The extended mind. Analysis 58: 7-19 -->
 
-[technoself] Luppicini, R. (ed). (2013). Handbook of Research on Technoself: Identity in a Technological Society. Volume I and II. Hershey: Idea Group Publishing, 900 pp.
+<!-- [technoself] Luppicini, R. (ed). (2013). Handbook of Research on Technoself: Identity in a Technological Society. Volume I and II. Hershey: Idea Group Publishing, 900 pp. -->
 
 # Offline to online... and back again
 
-[infinitereality] Jim Blascovich & Jeremy Bailenson (2011). Infinite Reality: The Hidden Blueprint of Our Virtual Lives. William Morrow Paperbacks.
+<!-- [infinitereality] Jim Blascovich & Jeremy Bailenson (2011). Infinite Reality: The Hidden Blueprint of Our Virtual Lives. William Morrow Paperbacks. -->
 
-[markus06] http://www.ncbi.nlm.nih.gov/pubmed/16784349
+<!-- [markus06] http://www.ncbi.nlm.nih.gov/pubmed/16784349 -->
 
-[inreallife] Nev Schulman. (2014) In Real Life: Love, Lies & Identity in the Digital Age. Grand Central Publishing
+<!-- [inreallife] Nev Schulman. (2014) In Real Life: Love, Lies & Identity in the Digital Age. Grand Central Publishing -->
 
-[youth] Angela Thomas (2007) Youth Online: Identity and Literacy in the Digital Age. Peter Lang.
+<!-- [youth] Angela Thomas (2007) Youth Online: Identity and Literacy in the Digital Age. Peter Lang. -->
 
 Rodogno, R (2012). "Personal Identity Online.". Philosophy & Technology. - online identity affects offline self
 
@@ -151,43 +148,43 @@ http://www.tandfonline.com/doi/pdf/10.1080/09687590220139883?instName=University
 
 # Networked publics
 
-[boyd-sns07] boyd, danah. 2007. “Social Network Sites: Public, Private, or What?” Knowledge Tree 13, May. http://kt.flexiblelearning.net.au/tkt2007/?page_id=2http://www.danah.org/papers/KnowledgeTree.pdf
+<!-- [boyd-sns07] boyd, danah. 2007. “Social Network Sites: Public, Private, or What?” Knowledge Tree 13, May. http://kt.flexiblelearning.net.au/tkt2007/?page_id=2http://www.danah.org/papers/KnowledgeTree.pdf -->
 
-[boydnp10] boyd, danah. 2010. ” Social network sites as networked publics: Affordances, dynamics, and implications.” Pp. 39-58 in A Networked Self: Identity, Community, and Culture on Social Network Sites, edited by Z. Papacharissi. New York: routledge.
+<!-- [boydnp10] boyd, danah. 2010. ” Social network sites as networked publics: Affordances, dynamics, and implications.” Pp. 39-58 in A Networked Self: Identity, Community, and Culture on Social Network Sites, edited by Z. Papacharissi. New York: routledge. -->
 
 Profiles as Conversation: Networked Identity Performance on Friendster danah boyd, http://www.danah.org/papers/HICSS2006.pdf
 
 ## Social media
 
-[appgen] Howard Gardner & Katie Davis. (2013). The App Generation: How Today's Youth Navigate Identity, Intimacy, and Imagination in a Digital World. Yale University Press.
+<!-- [appgen] Howard Gardner & Katie Davis. (2013). The App Generation: How Today's Youth Navigate Identity, Intimacy, and Imagination in a Digital World. Yale University Press. -->
 
-[borndigi] John Palfrey and Urs Gasser. (2008). Born Digital: Understanding the First Generation of Digital Natives. Basic Books.
+<!-- [borndigi] John Palfrey and Urs Gasser. (2008). Born Digital: Understanding the First Generation of Digital Natives. Basic Books. -->
 
-[boydsns07] boyd, danah and Nicole B. Ellison. 2007. “Social network sites: Definition, history, and scholarship.” Journal of Computer-Mediated Communication 13:210-210.
+<!-- [boydsns07] boyd, danah and Nicole B. Ellison. 2007. “Social network sites: Definition, history, and scholarship.” Journal of Computer-Mediated Communication 13:210-210. -->
 
 [baym12] Nancy K. Baym & danah boyd (2012) Socially Mediated Publicness:
-An Introduction, Journal of Broadcasting & Electronic Media, 56:3, 320-329, DOI:10.1080/08838151.2012.705200
+<!-- An Introduction, Journal of Broadcasting & Electronic Media, 56:3, 320-329, DOI:10.1080/08838151.2012.705200 -->
 
-[ellison13] Ellison, N.B. & boyd, d. (2013). Sociality through Social Network Sites. In Dutton, W. H. (Ed.), The Oxford Handbook of Internet Studies. Oxford: Oxford University Press, pp. 151-­-172. 
+<!-- [ellison13] Ellison, N.B. & boyd, d. (2013). Sociality through Social Network Sites. In Dutton, W. H. (Ed.), The Oxford Handbook of Internet Studies. Oxford: Oxford University Press, pp. 151-­-172.  -->
 
-[boyd15] boyd, danah. (2015). “Social Media: A Phenomenon to be Analyzed.” Social Media + Society 1(1).
+<!-- [boyd15] boyd, danah. (2015). “Social Media: A Phenomenon to be Analyzed.” Social Media + Society 1(1). -->
 
-Hogan, Bernie. 2010. “The Presentation of Self in the Age of Social Media: Distinguishing Performances and Exhibitions Online.” Bulletin of Science, Technology & Society 30:377-386.
+<!-- [hogan10] Hogan, Bernie. 2010. “The Presentation of Self in the Age of Social Media: Distinguishing Performances and Exhibitions Online.” Bulletin of Science, Technology & Society 30:377-386. -->
 
-[haferkamp10] Nina Haferkamp and Nicole C. Krämer. Cyberpsychology, Behavior, and Social Networking. May 2011, 14(5): 309-314. doi:10.1089/cyber.2010.0120. 
+<!-- [haferkamp10] Nina Haferkamp and Nicole C. Krämer. Cyberpsychology, Behavior, and Social Networking. May 2011, 14(5): 309-314. doi:10.1089/cyber.2010.0120.  -->
 http://online.liebertpub.com/doi/abs/10.1089/cyber.2010.0120
 
-[insta17] Ashraf Sadat Ahadzadeh, Saeed Pahlevan Sharif & Fon Sim Ong. (2017)Self-schema and self-discrepancy mediate the influence of Instagram usage on body image satisfaction among youth. Computers in Human Behavior, Volume 68, March 2017, Pages 8-16
+<!-- [insta17] Ashraf Sadat Ahadzadeh, Saeed Pahlevan Sharif & Fon Sim Ong. (2017)Self-schema and self-discrepancy mediate the influence of Instagram usage on body image satisfaction among youth. Computers in Human Behavior, Volume 68, March 2017, Pages 8-16 -->
 
-[bunnies17] Katrin Tiidenberg & Andrew Whelan (2017) Sick bunnies and pocket dumps: “Not-selfies” and the genre of self-representation.  Popular Communication. Volume 15, 2017 - Issue 2: Self-(Re)presentation Now. pp. 141-153
+<!-- [bunnies17] Katrin Tiidenberg & Andrew Whelan (2017) Sick bunnies and pocket dumps: “Not-selfies” and the genre of self-representation.  Popular Communication. Volume 15, 2017 - Issue 2: Self-(Re)presentation Now. pp. 141-153 -->
 
-[vanhouse11] Van House, N. A. (2011). Personal photography, digital technologies and the uses of the visual. Visual Studies, 26(2), 125–134. doi:10.1080/1472586X.2011.571888
+<!-- [vanhouse11] Van House, N. A. (2011). Personal photography, digital technologies and the uses of the visual. Visual Studies, 26(2), 125–134. doi:10.1080/1472586X.2011.571888 -->
 
-[lasen15] Lasén, A. (2015). Digital self-portraits, exposure and the modulation of intimacy. In J. R. Carvalheiro, & A. S. Tellería (Eds.), Mobile and digital communication: Approaches to public and private (pp. 61–68). Covilhã, Portugal: Livros LabCom.
+<!-- [lasen15] Lasén, A. (2015). Digital self-portraits, exposure and the modulation of intimacy. In J. R. Carvalheiro, & A. S. Tellería (Eds.), Mobile and digital communication: Approaches to public and private (pp. 61–68). Covilhã, Portugal: Livros LabCom. -->
 
-[senft15] Senft, T. M., & Baym, N. K. (2015). What does the selfie say? Investigating a global phenomenon. International Journal of Communication, 9, 1588–1606.
+<!-- [senft15] Senft, T. M., & Baym, N. K. (2015). What does the selfie say? Investigating a global phenomenon. International Journal of Communication, 9, 1588–1606. -->
 
-[frosch15] Frosh, P. (2015). The gestural image: The selfie, photography theory, and kinesthetic sociability. International Journal of Communication, 9, 1607–1628.
+<!-- [frosch15] Frosh, P. (2015). The gestural image: The selfie, photography theory, and kinesthetic sociability. International Journal of Communication, 9, 1607–1628. -->
 
 
 <!-- Managing Impressions Online: Self-Presentation Processes in the Online Dating Environment
@@ -197,21 +194,21 @@ Self-Presentation and Gender on MySpace
 https://www.researchgate.net/publication/222435595_Self-Presentation_and_Gender_on_MySpace -->
 
 
-[duffy15] Duffy, B. E. (2015). The Labor of Visibility: Gendered Self-Expression in the Social Media Imaginary. Paper presented at Internet Research 16: The 16th Annual Meeting of the Association of Internet Researchers. Phoenix, AZ, USA: AoIR. Retrieved from http://spir.aoir.org
+<!-- [duffy15] Duffy, B. E. (2015). The Labor of Visibility: Gendered Self-Expression in the Social Media Imaginary. Paper presented at Internet Research 16: The 16th Annual Meeting of the Association of Internet Researchers. Phoenix, AZ, USA: AoIR. Retrieved from http://spir.aoir.org -->
 https://spir.aoir.org/index.php/spir/article/download/1062/718
 
-[duffy15b] Duffy, B. E. (2015). Amateur, autonomous, collaborative: Myths of aspiring female cultural producers in Web 2.0. Critical Studies in Media Communication. 23:48-64.
+<!-- [duffy15b] Duffy, B. E. (2015). Amateur, autonomous, collaborative: Myths of aspiring female cultural producers in Web 2.0. Critical Studies in Media Communication. 23:48-64. -->
 
-[food15] Larsen, J. (2015). Contradictions Of The Social Imaginary: Making Sense Of Digital Food Snaps. Paper presented at Internet Research 16: The 16th Annual Meeting of the Association of Internet Researchers. Phoenix, AZ, USA: AoIR. Retrieved from http://spir.aoir.org
+<!-- [food15] Larsen, J. (2015). Contradictions Of The Social Imaginary: Making Sense Of Digital Food Snaps. Paper presented at Internet Research 16: The 16th Annual Meeting of the Association of Internet Researchers. Phoenix, AZ, USA: AoIR. Retrieved from http://spir.aoir.org -->
 
 A SOCIOLINGUISTIC ANALYSIS OF EMOTICON USAGE IN JAPANESE BLOGS: VARIATION BY AGE, GENDER, AND TOPIC
 https://spir.aoir.org/index.php/spir/article/download/1137/789
 
-[quinn15] Kelly Quinn (2015) THE NAVIGATION OF BOUNDARIES IN ONLINE SOCIAL SPACES. Selected Papers of
+<!-- [quinn15] Kelly Quinn (2015) THE NAVIGATION OF BOUNDARIES IN ONLINE SOCIAL SPACES. Selected Papers of -->
 Internet Research 16: The 16th Annual Meeting of the Association of Internet Researchers Phoenix, AZ, USA / 21-24 October 2015
 https://spir.aoir.org/index.php/spir/article/download/1142/794
 
-[singh15] singh, s. (2015, October 21-24) Subverting Social Media. Paper presented at Internet Research 16: The 16th Annual Meeting of the Association of Internet Researchers. Phoenix, AZ, USA: AoIR. Retrieved from http://spir.aoir.org.
+<!-- [singh15] singh, s. (2015, October 21-24) Subverting Social Media. Paper presented at Internet Research 16: The 16th Annual Meeting of the Association of Internet Researchers. Phoenix, AZ, USA: AoIR. Retrieved from http://spir.aoir.org. -->
 https://spir.aoir.org/index.php/spir/article/download/1159/810
 
 IMAGINING THE ENDS OF IDENTITY: BIRTH AND DEATH ON INSTAGRAM
@@ -229,13 +226,13 @@ http://research.microsoft.com/en-us/projects/ldg/a10-stein.pdf
 Phillips, Whitney. ‘LOLing at Tragedy: Facebook Trolls, Memorial Pages and Resistance to Grief Online’, First Monday 16.12 (2011), 
 http://firstmonday.org/htbin/cgiwrap/bin/ojs/index.php/fm/article/view/3168
 
-boyd, danah 2008. “Why Youth Heart Social Network Sites: The Role of NetworkedPublics in Teenage Social Life.” Pp. 119-142 in Youth, Identity, and Digital Media, edited by D. Buckingham. Cambridge MA: MIT Press.
+<!-- boyd, danah 2008. “Why Youth Heart Social Network Sites: The Role of NetworkedPublics in Teenage Social Life.” Pp. 119-142 in Youth, Identity, and Digital Media, edited by D. Buckingham. Cambridge MA: MIT Press. -->
 
 ## Blogging and personal homepages
 
-[intlblog] Russell, A. and Echchaibi, N. (eds.) (2009) International Blogging: Identity, Politics and Networked Publics. Peter Lang Publishing Inc
+<!-- [intlblog] Russell, A. and Echchaibi, N. (eds.) (2009) International Blogging: Identity, Politics and Networked Publics. Peter Lang Publishing Inc -->
 
-[alist05] Kaye D. Trammell & Ana Keshelashvili (2005) Examining the New Influencers: A Self-Presentation Study of A-List Blogs. Journalism & Mass Communication Quarterly 82(4) 
+<!-- [alist05] Kaye D. Trammell & Ana Keshelashvili (2005) Examining the New Influencers: A Self-Presentation Study of A-List Blogs. Journalism & Mass Communication Quarterly 82(4)  -->
 
 Personal journal bloggers: Profiles of disclosiveness
 http://www.sciencedirect.com/science/article/pii/S074756321000186X
@@ -243,7 +240,7 @@ http://www.sciencedirect.com/science/article/pii/S074756321000186X
 Constructing academic alter-egos: identity issues in a blog-based community
 http://link.springer.com/article/10.1007/s12394-009-0020-8
 
-[papacharissi02] Papacharissi, Zizi. ‘The Presentation of Self in Virtual Life: Characteristics of Personal Home Pages’, Journalism & Mass Communication Quarterly 79.3 Autumn (2002): 643–660.
+<!-- [papacharissi02] Papacharissi, Zizi. ‘The Presentation of Self in Virtual Life: Characteristics of Personal Home Pages’, Journalism & Mass Communication Quarterly 79.3 Autumn (2002): 643–660. -->
 
 Davis, Jenny L.2010. "Architecture of the Personal Interactive Homepage: Constructing the Self through MySpace."New Media & Society12(7): 1103-1119
 http://journals.sagepub.com/doi/abs/10.1177/1461444809354212
@@ -258,12 +255,12 @@ http://www.aaai.org/ocs/index.php/ICWSM/09/paper/viewFile/199/403 personalities 
 ## Narcicissm
 
 
-[noland06] Noland, C. (2006). Auto-photography as research practice: Identity and self-esteem research. Journal of Research Practice, 2(1). 
+<!-- [noland06] Noland, C. (2006). Auto-photography as research practice: Identity and self-esteem research. Journal of Research Practice, 2(1).  -->
 
-[toma10] Catalina L. Toma (2010) Affirming the Self through Online Profiles: Beneficial Effects of Social Networking Sites CHI 2010
+<!-- [toma10] Catalina L. Toma (2010) Affirming the Self through Online Profiles: Beneficial Effects of Social Networking Sites CHI 2010 -->
 http://dmrussell.net/CHI2010/docs/p1749.pdf
 
-[nemer15] David Nemer and Guo Zhang Freeman. (2015). Rethinking Selfies: Empowering the marginalized through self portraits. Paper presented at Internet Research 16: The 16th Annual Meeting of the Association of Internet Researchers. Phoenix, AZ, USA: AoIR. Retrieved from http://spir.aoir.org
+<!-- [nemer15] David Nemer and Guo Zhang Freeman. (2015). Rethinking Selfies: Empowering the marginalized through self portraits. Paper presented at Internet Research 16: The 16th Annual Meeting of the Association of Internet Researchers. Phoenix, AZ, USA: AoIR. Retrieved from http://spir.aoir.org -->
 https://spir.aoir.org/index.php/spir/article/download/1135/787
 
 Narcissism in the Age of Technology https://muse.jhu.edu/article/472214
@@ -273,18 +270,18 @@ Turkle Alone Together
 
 ## Authenticity
 
-[barmann14drag] Drag Queens, Other Performers Outraged As Facebook Forces Them To Use Their Real Names
+<!-- [barmann14drag] Drag Queens, Other Performers Outraged As Facebook Forces Them To Use Their Real Names -->
 http://sfist.com/2014/09/11/drag_queens_other_performers_outrag.php
 
-[fbeffect] David Kirkpatrick. The Facebook Effect: The Inside Story of the Company That Is Connecting the World. (2010). Simon & Schuster.
+<!-- [fbeffect] David Kirkpatrick. The Facebook Effect: The Inside Story of the Company That Is Connecting the World. (2010). Simon & Schuster. -->
 
-[digitalvertigo] Andrew Keen. Digital Vertigo: How Today's Online Social Revolution Is Dividing, Diminishing, and Disorienting Us. (2013). St. Martin's Griffin.
+<!-- [digitalvertigo] Andrew Keen. Digital Vertigo: How Today's Online Social Revolution Is Dividing, Diminishing, and Disorienting Us. (2013). St. Martin's Griffin. -->
 
 [donathboyd04] 
 
 [ellison07] 
 
-[conleyintra] Dalton Conley. (2009) Elsewhere USA How We Got from the Company Man Family Dinners & the Affluent Society to the Home Office Blackberry Moms & Economic Anxiety. PENGUIN RANDOM HOUSE.
+<!-- [conleyintra] Dalton Conley. (2009) Elsewhere USA How We Got from the Company Man Family Dinners & the Affluent Society to the Home Office Blackberry Moms & Economic Anxiety. PENGUIN RANDOM HOUSE. -->
 
 ## Imagined audience
 
@@ -333,9 +330,9 @@ Disindivuduation - no identity outside of a collectivie: Virno, P. 2008.
 
 Walther, Joseph; Malcolm Parks (2002). "Cues filtered out, cues filtered in: Computer-mediated communication and relationships". Handbook of interpersonal communication. 3rd edition: 529–563.
 
-[tong08] Walther, Joseph; Van Der Heide; Kim; Westerman; Tong (January 2008). "The Role of Friends' Appearance and Behavior on Evaluations of Individuals on Facebook: Are We Known by the Company We Keep?". Human Communication Research. 34 (1): 28. doi:10.1111/j.1468-2958.2007.00312.x.
+<!-- [tong08] Walther, Joseph; Van Der Heide; Kim; Westerman; Tong (January 2008). "The Role of Friends' Appearance and Behavior on Evaluations of Individuals on Facebook: Are We Known by the Company We Keep?". Human Communication Research. 34 (1): 28. doi:10.1111/j.1468-2958.2007.00312.x. -->
 
-Walther, Joseph; Brandon Van Der Heide; Lauren M. Hamel; Hillary C. Shulman (2009-01-28). "Self-Generated Versus Other-Generated Statements and Impressions in Computer-Mediated Communication A Test of Warranting Theory Using Facebook". Communication Research. 36 (2): 229–253. doi:10.1177/0093650208330251. Retrieved 24 April 2012.
+<!-- [warrant2] Walther, Joseph; Brandon Van Der Heide; Lauren M. Hamel; Hillary C. Shulman (2009-01-28). "Self-Generated Versus Other-Generated Statements and Impressions in Computer-Mediated Communication A Test of Warranting Theory Using Facebook". Communication Research. 36 (2): 229–253. doi:10.1177/0093650208330251. Retrieved 24 April 2012. -->
 
 https://en.wikipedia.org/wiki/Warranting_theory
 
@@ -345,9 +342,9 @@ https://www.microsoft.com/en-us/research/wp-content/uploads/2017/03/p9.pdf?from=
 Computer-Mediated Communication: Hyperpersonal – Walther
 http://blog.timebarrow.com/2010/07/cmc-hyperpersonal-walther/
 
-[donathboyd04] Donath, Judith and danah boyd. 2004. “Public displays of connection.” Bt Technology Journal 22:71-82.
+<!-- [donathboyd04] Donath, Judith and danah boyd. 2004. “Public displays of connection.” Bt Technology Journal 22:71-82. -->
 
-[ellison07] Ellison, Nicole B., Charles Steinfield, and Cliff Lampe. 2007. “The Benefits of Facebook “Friends:” Social Capital and College Students’ Use of Online Social Network Sites.” Journal of Computer-Mediated Communication 12:1143-1168.
+<!-- [ellison07] Ellison, Nicole B., Charles Steinfield, and Cliff Lampe. 2007. “The Benefits of Facebook “Friends:” Social Capital and College Students’ Use of Online Social Network Sites.” Journal of Computer-Mediated Communication 12:1143-1168. -->
 
 Gibbs, Jennifer; Nicole B. Ellison; Chih-Hui Lai (February 2011). "First Comes Love, Then Comes Google: An Investigation of Uncertainty Reduction Strategies and Self-Disclosure in Online Dating". Communication Research. 38 (1): 70–100. doi:10.1177/0093650210377091. Retrieved 24 April 2012.
 
