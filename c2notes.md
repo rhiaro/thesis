@@ -353,7 +353,7 @@ https://www.slideshare.net/StefanieDuguay/i-never-had-to-say-anything-examining-
 
 Utz, S., (2010). Show me your friends and I will tell you what type of person you are: How one's profile, number of friends, and type of friends influence impression formation on social network sites. Journal of Computer-Mediated Communication, 15, 314–335
 
-[marwickdrama14] Marwick, Alice and danah boyd. (2014). "'It's just drama': Teen perspectives on conflict and aggression in a networked era." Journal of Youth Studies 17(9): 1187-1204.
+<!-- [marwickdrama14] Marwick, Alice and danah boyd. (2014). "'It's just drama': Teen perspectives on conflict and aggression in a networked era." Journal of Youth Studies 17(9): 1187-1204. -->
 
 ### Trust
 
@@ -363,9 +363,9 @@ Utz, S., (2010). Show me your friends and I will tell you what type of person yo
 
 # Everybody knows I'm a dog
 
-[boydpriv12] boyd, d. 2012. Networked Privacy. Surveillance & Society 10(3/4): 348-350. http://www.surveillance-and-society.org | ISSN: 1477-7487 
+<!-- [boydpriv12] boyd, d. 2012. Networked Privacy. Surveillance & Society 10(3/4): 348-350. http://www.surveillance-and-society.org | ISSN: 1477-7487  -->
 
-[boydpriv11] boyd, danah and Marwick, Alice E., Social Privacy in Networked Publics: Teens’ Attitudes, Practices, and Strategies (September 22, 2011). A Decade in Internet Time: Symposium on the Dynamics of the Internet and Society, September 2011. Available at SSRN: https://ssrn.com/abstract=1925128
+<!-- [boydpriv11] boyd, danah and Marwick, Alice E., Social Privacy in Networked Publics: Teens’ Attitudes, Practices, and Strategies (September 22, 2011). A Decade in Internet Time: Symposium on the Dynamics of the Internet and Society, September 2011. Available at SSRN: https://ssrn.com/abstract=1925128 -->
 
 Winoker 2003 - "is not surviellence coercive?"
 
