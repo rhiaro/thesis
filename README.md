@@ -8,8 +8,8 @@ Issues always welcome. Please cluster issues that are minor/typos. Small typo fi
 
 ## Structure
 
-* Living version: branch [gh-pages](https://github.com/rhiaro/thesis/tree/handed-in) - subject to ongoing updates
-* Submitted version: frozen on branch [handed-in](https://github.com/rhiaro/thesis/tree/handed-in)
+* Living version: branch [gh-pages](https://github.com/rhiaro/thesis/tree/gh-pages) - subject to ongoing updates
+* Submitted version: frozen on branch [submitted](https://github.com/rhiaro/thesis/tree/submitted)
 * Final printed version after corrections: frozen on branch printed (TODO)
 
 Contents:
