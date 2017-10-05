@@ -85,7 +85,7 @@ font-size:0.75em;
       <div>
         <p>I defined the type of social system I am interested in in Chapter 3, and repeat it here for convenience:</p>
         <blockquote>
-          <p>Social systems: Web-based networked publics which offer individuals consistent and reusable access to an account which they can customise and use to interact in some form with others in the system</p>
+          <p>Social systems: Web-based networked publics which offer individuals consistent and reusable access to an account which they can customise and use to interact in some form with others in the system.</p>
         </blockquote>
 
         <p>Other concepts which will be useful throughout this chapter are:</p>
@@ -136,13 +136,23 @@ font-size:0.75em;
 <section id="when-is-a-person-not-a-person" rel="schema:hasPart">
   <h2>When is a person not a person?</h2>
   <div>
+    <p>Identity and reference are a critical part of broader Web architecture [<a href="appendices#ref-websci">websci</a>, <a href="appendices#ref-halpinthesis">halpinthesis</a>], and in some systems built on top of the Web, this distinction matters. This topic was the subject of the infamous 'httpRange-14' issue debate, a lengthy discussion (over a decade of W3C mailing lists exist) and a supposed resolution about the <em>meaning</em> of an HTTP URI. </p>
+  <!--Contextualise this better, why is it relevant?
+
+When there's a difference between if people are people or profiles and systems disagree, this is problematic for interop.
+
+Signpost as background for technical stuff.
+
+Background for technical development context.-->
 
     <p>Q: When is a person not a person?</p>
     <p>A: When they're a document. </p>
 
-    <p>Here I introduce some open standards, vocabularies, or ontologies for modelling social data, which are reused by many of the projects mentioned in this chapter. You have the infamous 'httpRange-14' issue to thank for the section title, which consists of a lengthy discussion (over a decade) and a resolution about how HTTP URIs can be used to represent both Web-based documents (information resources, IRs) - which can be transported over HTTP - and everything else (non-information resources, NIRs, like people and places) [<a href="appendices#ref-http14">http14</a>]. The latter, needless to say, cannot be transported over HTTP (yet). Identity and reference are a critical part of broader Web architecture [<a href="appendices#ref-websci">websci</a>, <a href="appendices#ref-halpinthesis">halpinthesis</a>], and in some systems built on top of the Web, this distinction matters. In this case, systems separate <em>people</em> from the <em>documents about</em> them by using fragment URIs (fragments aren't passed to servers, so the server can only return the resource represented by the URI up to and not including the fragment) or 303 redirects (the server says "sorry this URI identifies a NIR which I can't return, so I have to send you to an IR about it instead").</p>
+    <p>HTTP URIs can be used to represent both Web-based documents (information resources, IRs) - which can be transported over HTTP - and everything else (non-information resources, NIRs, like people and places) [<a href="appendices#ref-http14">http14</a>]. The latter, needless to say, cannot be transported over HTTP (yet). In this case, some systems separate <em>people</em> from the <em>documents about</em> them by using fragment URIs (fragments aren't passed to servers, so the server can only return the resource represented by the URI up to and not including the fragment) or 303 redirects (the server says "sorry this URI identifies a NIR which I can't return, so I have to send you to an IR about it instead").</p>
 
-    <p>Open data models for representing people and their activities within social networks have been created over the years independently of software implementations that use them, and are sometimes picked up by separate projects. The following are well known, and may be referred to as in-use by other protocols or implementations throughout the remainder of this chapter:</p>
+    <p>Not all systems make this distinction however. For some, conflating metadata about a webpage and metadata about a person is simply not a problem, or not one worth solving. However, when we are thinking about federated systems, architectural differences in data models like this may cause interoperability problems. The <a href="chapter3#profiles-taxonomy">representation feature</a> of profile-hosting systems which was elicited in the first study of the previous chapter demonstrates some variations in how people and profiles are modeled in various contemporary social systems.</p>
+
+    <p>Other ways systems vary their data models are by using different vocabularies and syntaxes. In many cases, open data models for representing people and their activities within social networks have been created over the years independently of software implementations that use them, and are sometimes picked up by separate projects. Common vocabularies, or mappings between them, significantly <em>improves</em> interoperability options. The following are well known, and may be referred to as in-use by other protocols or implementations throughout the remainder of this chapter:</p>
 
     <ul>
       <li>FOAF: An RDF vocabulary with various properties for representing attributes of people, as well as the links between them using the <code>knows</code> predicate. A cornerstone of any Semantic Web based social projects [<a href="appendices#ref-foaf14">foaf14</a>].</li>
@@ -152,7 +162,7 @@ font-size:0.75em;
       <li>Atom: An XML based standard for representing streams of content from blogs [<a href="appendices#ref-atom">atom</a>].</li>
       <li>ActivityStreams 1.0: An XML or JSON syntax for representing social interactions as activities, which consist of <code>actor</code>, <code>verb</code>, <code>object</code>, and <code>target</code>, as well as other more domain-specific properties; widely deployed, in particular as part of the OStatus stack. Predecessor to ActivityStreams 2.0 [<a href="appendices#ref-as1">as1</a>].</li>
       <li>microformats2: A set of classes which can be used with HTML elements to provide semantics about the value of the element. The classes cover types and properties for a core set of social objects (eg. people, organizations, events, locations, blog posts, products, reviews, resumes, recipes) as well as a specification for how to parse them. Built on vCard. [<a href="appendices#ref-mf">mf</a>].</li>
-      <li>XHTML Friends Network (XFN): A set of values for the HTML4 <code>rel</code> attribute which indicate a relationship between the person who created the link and the person being linked to (eg. "met", "coworker", "parent") [<a href="appendices#ref-xfn">xfn</a>]. Works with microformats2. This one is not bothered by httpRange-14, ie. my homepage can be friends with your homepage no problem.</li>
+      <li>XHTML Friends Network (XFN): A set of values for the HTML4 <code>rel</code> attribute which indicate a relationship between the person who created the link and the person being linked to (eg. "met", "coworker", "parent") [<a href="appendices#ref-xfn">xfn</a>]. Works with microformats2. This one is not bothered by httpRange-14, ie. my homepage can be friends with your homepage.</li>
     </ul>
 
   </div>
