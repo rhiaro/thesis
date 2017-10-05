@@ -105,7 +105,7 @@ font-size:0.75em;
               <td>18</td>
               <td>n/a</td>
               <td>A S T</td>
-              <td>flexible, access controlled, prominence, representative, portable</td>
+              <td>flexibility, access control, prominence, representation, portability</td>
             </tr>
             <tr>
               <td><a href="#constructing-online-identity">Constructing online identity</a></td>
@@ -160,15 +160,17 @@ font-size:0.75em;
   <h2>What is a profile?</h2>
   <div>
 
-    <p>We begin with a descriptive study of 18 systems which employ profiles in a social capacity. This study results in five features which systems can be said to have to some degree. Using these features we can cluster similar systems together, or differentiate them, along certain axes in future studies. The features are: <em>flexible</em>, <em>access controlled</em>, <em>prominent</em>, <em>portable</em>, <em>representative</em>.</p>
+    <p>This is a descriptive study of 18 systems which employ profiles in a social capacity. This study results in five features and each system is scored according to the degree each feature is present. Using these features we can cluster similar systems together, or differentiate them, and future studies can use these features to create baseline descriptions or characterisations of systems for comparison. The features are: <em>flexibility</em>, <em>access control</em>, <em>prominence</em>, <em>portability</em>, <em>representation</em>.</p>
 
     <section id="profile-intro" rel="schema:hasPart">
       <h3>Introduction</h3>
       <div>
 
-        <p>In order to build on our understanding of the role an online profile plays in self-presentation, identity, and interaction we need a more nuanced understanding of what a ‘profile’ <em>is</em> in a general sense. What is the <em>meaning</em> of <em>profile</em>? I carried out an empirical analysis of digital representations of users on 18 different online systems. From these I derive a set of constructs to capture features of profiles in online systems. We propose this as groundwork for deriving requirements for profiles when designing new systems which need digital representations of their users, as well as for assessing the benefits and drawbacks of how profiles are implemented in existing systems in such a way that takes into account the contexts in which they are used. Once we have a characterisation of a particular type of profile a system enables, we can use these as control features when comparing systems side by side. Future work is to see how the features of a profile influence actions of users or community formation, and vice versa.</p>
+        <p>In order to build on our understanding of the role an online profile plays in self-presentation, identity and interaction we need a more nuanced understanding of what a ‘profile’ <em>is</em> in a general sense. What is the <em>meaning</em> of <em>profile</em>? I carried out an empirical analysis of digital representations of users of 18 different online systems. From this analysis I derive a set of constructs to capture features of profiles in online systems. I propose this for assessing the benefits and drawbacks of how profiles are implemented in existing systems in such a way that takes into account the scenarios in which they are used, as well as groundwork for deriving requirements for profiles when designing new systems which need digital representations of their users. Once we have a characterisation of a particular <em>type</em> of profile a system enables, we can use these as control features when comparing systems side by side. Interesting future study would be to determine how the features of a profile influence actions of users or community formation, and vice versa.</p>
         <!-- <p class="notes">Maybe use stuff in participation and interaction of social machines taxonomy http://eprints.soton.ac.uk/362359/1/SOCIAM%20Classificationv2.pdf Could see this as a further breakdown of one of the U categories (see also their methodology pg 13) “Given the value of taxonomies in advancing our understanding of the conceptual landscape associated with a domain”. Taxonomy is very sort of task/activity centric rather than about individuals.</p>
         <p class="notes"><a href="https://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.21.pdf">Anonymity, Unobservability, Pseudonymity, and Identity Management – A Proposal for Terminology</a></p> -->
+
+        <p>For the purposes of this thesis, I define social systems to be Web-based networked publics which offer individuals consistent and reusable access to an account which they can personalise and use to interact in some form with others in the system.</p>
 
       </div>
     </section>
@@ -179,14 +181,28 @@ font-size:0.75em;
 
         <blockquote><p>Profile generation is an explicit act of writing oneself into being in a digital environment (boyd, 2006 [<a href="appendices#ref-boyd06">boyd06</a>])</p></blockquote>
 
-        <p>boyd's definition of profile generation above is based on teenagers' use of Friendster and MySpace in 2006. Today, online social systems use profiles in a variety of different ways, and present them in a variety of configurations. I would argue that profile generation is not only explicit, but can occur implicitly, without necessarily even the consent or awareness of the profile subject. As discussed in <a href="chapter2">the previous chapter</a>, studies of online profiles tend to focus on simplified overviews which do not take into account the broader system in which the profile exists. This approach often reduces an individual's representation in the system to a single document or webpage, and neglects the rich array of interactions and activities in which they engage in order to create a presence for themselves.</p>
+        <p>boyd's definition of profile generation above is based on teenagers' use of Friendster and MySpace in 2006. Today, online social systems use profiles in a variety of different ways, and present them in a variety of configurations. Profile generation is not only explicit, but can occur implicitly, without necessarily even the consent or awareness of the profile subject. As discussed in <a href="chapter2">the previous chapter</a>, studies of online profiles tend to focus on oversimplifications or very specific (unrealistic) use cases, which do not take into account the broader system in which the profile exists. This approach often reduces an individual's representation in the system to a single document or webpage, and neglects the rich array of interactions and activities in which they engage in order to create a presence for themselves. In reality, profiles vary in how they are constructed and the roles they play.</p>
 
-        <p>For the purposes of this thesis, I define social systems to be Web-based networked publics which offer individuals consistent and reusable access to an account which they can customise and use to interact in some form with others in the system.</p>
-        <p>The variations in how profiles are constructed and the roles they play can impact the community which forms — and in some cases, vice versa. <!-- Whilst some online communities are top-down impositions on users, others are two way exchanges between system developers and participants. --> This study serves to introduce a formal classification of profile features, and asks the following questions:</p>
+        <p>This study serves to introduce a formal classification of profile features, and asks the following questions:</p>
         <ul>
           <li>What are common features of the ways users are represented in online social systems?</li>
           <li>How do these features vary between systems?</li>
           <!-- <li class="notes">What are potential variants in how profiles are formed which influence a community (and vice versa)?</li> -->
+        </ul>
+
+        <p>Kaplan &amp; Haenlein (2010) categorise social systems into six groups [<a href="appendices#ref-kaplan10">kaplan10</a>]:</p>
+        <ul>
+          <li><em>Blogs</em> are "special types of websites that usually display date-stamped entries in reverse chronological order"</li>
+          <li><em>Social Networking Sites</em> are "applications that enable users to connect by creating personal information profiles, inviting friends and colleagues to have access to those profiles, and sending ... messages between each other"</li>
+          <li><em>Collaborative Projects</em> "enable the joint and simultaneous creation of content by many end-users"</li>
+          <li><em>Content Communities</em> are for "the sharing of media content between users"</li>
+          <li><em>Virtual Gaming Worlds</em> are "platforms that replicate a three-dimensional environment in which users can appear in the form of personalized avatars and interact with each other ... according to strict rules in the context of a massively multiplayer online role-playing game (MMORPG)"</li>
+          <li><em>Virtual Social Worlds</em> "allows inhabitants to choose their behavior more freely ... there are no rules restricting the range of possible interactions"</li>
+        </ul>
+        <p>The subjects of this study (see <a href="#profiles-subjects-table">Table 2</a>) are a cross section of these, but there are also some which do not fit into this framework. Since Kaplan &amp; Haenlein's categorisation, (at least) two new types of system have emerged:</p>
+        <ul>
+          <li><em>Quantified Self</em>: life-logging or self-tracking; automated or manual recording of minutiae of daily life;</li>
+          <li><em>Transactional</em>: networks that exist for exchange of goods or services.</li>
         </ul>
       </div>
     </section>
@@ -195,7 +211,7 @@ font-size:0.75em;
       <h3>Study Design</h3>
       <div>
 
-        <p>This is a descriptive study [<a href="appendices#ref-grimes02">#</a>], which aims to gather and present information about the current state of social systems with regard to how their users are represented. We do not try to determine causal effects between features of systems, nor do we hypothesise about how these features impact users. Rather, we provide a characterisation of a set of systems as a foundation for future exploratory research.</p>
+        <p>This is a descriptive study [<a href="appendices#ref-grimes02">#</a>], which aims to gather and present information about the current state of social systems with regard to how their users are represented. I do not try to determine causal effects between features of systems, nor do I hypothesise about how these features impact users. Rather, I provide a characterisation of a set of systems as a foundation for future exploratory research.</p>
 
         <section id="profiles-method" rel="schema:hasPart">
           <h4>Method</h4>
@@ -204,17 +220,17 @@ font-size:0.75em;
             <p>I started with the following areas to investigate:</p>
             <ul>
               <li>Data contained within a profile.</li>
-              <li>How profile data may be accessed by others.</li>
-              <li>How profile data may be distributed or pushed to others.</li>
+              <li>How profile data may be accessed by others (within and outside of the originating system).</li>
+              <li>How profile data may be distributed or pushed to others (within and outside of the originating system).</li>
               <li>The role of profile data within the broader system.</li>
             </ul>
-            <p>The starting point for a 'profile' was typically a URL or dataset including a username or other unique identifier for an entity (which could be an individual or group). After initial explorations of the profiles in a few systems, these areas were refined into specific questions to ask about each:</p>
+            <p>The starting point for a 'profile' was typically a unique identifier for an entity (which could be an individual or group) such as a URL or username. After initial explorations of the profiles in a few systems, these areas were refined into specific questions:</p>
             <ol>
               <li>What does a profile contain?</li>
+              <li>How are profiles within a system connected together?</li>
               <li>How are profiles updated?</li>
               <li>How are people notified when a profile is updated?</li>
               <li>How is access to a profile controlled?</li>
-              <li>How are profiles within a system connected together?</li>
               <li>How can profiles be exported from or imported into a system?</li>
               <li>What constraints are placed on a profile?</li>
               <li>How do profiles fit in with a systems apparent data model?</li>
@@ -224,7 +240,7 @@ font-size:0.75em;
 
             <p>I took one system at a time, and answered all of the questions by logging in (where applicable) to my own account and observing the behaviours of the system in response to interactions with my own and other users' profiles (where necessary), and took screenshots. I also read systems' terms of service, "About" pages, introductory descriptions or statements of purpose, and leaned on my own background knowledge of how the systems are used by myself and others.</p>
 
-            <p>Having answered all of the questions about each system, I passed through each one again to confirm, and add more detail if necessary, and I noted similarities and differences between systems. From the results, I derived a set of potential <em>features</em> for profiles, and ranked each system according to how it used these features. This allowed some clustering of similar systems into a general categorisation framework. </p>
+            <p>Having answered all of the questions about each system, I passed through each one again to confirm, and add more detail if necessary, and I noted similarities and differences between systems. From the results, I derived a set of potential features for profiles, and ranked each system according to the presence of features. This allowed some clustering of similar systems into a general categorisation framework. </p>
 <!-- 
             <p><span class="notes"> Please tell me there's an actual named method for this?</span></p>
 
@@ -235,7 +251,7 @@ font-size:0.75em;
         <section id="profiles-subjects" rel="schema:hasPart">
           <h4>Subjects</h4>
           <div>
-            <p>Eighteen social systems were selected for the initial analysis phase. Something is considered a 'social system' in this case where users engage with it in order to create a Web-based representation or description of themselves of some kind. Most are ordinary websites which one uses by registering, then logging in and out. Some include or require self-hosted software.</p>
+            <p>18 social systems were selected for the initial analysis phase. Most are ordinary websites which one uses by registering, then logging in and out. Some include or require self-hosted software.</p>
 
             <p>Popular systems which I have personal experience were chosen, in order to take advantage of latent background knowledge when navigating the systems.</p> 
             <!-- <div class="notes">TODO: Better justify selection of starting 18 sites:
@@ -246,16 +262,7 @@ font-size:0.75em;
                 </ul>
             </div> -->
 
-            <p>Kaplan &amp; Haenlein (2010) categorise social systems into six groups [<a href="appendices#ref-kaplan10">kaplan10</a>]:</p>
-            <ul>
-              <li><em>Blogs</em> are "special types of websites that usually display date-stamped entries in reverse chronological order"</li>
-              <li><em>Social Networking Sites</em> are "applications that enable users to connect by creating personal information profiles, inviting friends and colleagues to have access to those profiles, and sending ... messages between each other"</li>
-              <li><em>Collaborative Projects</em> "enable the joint and simultaneous creation of content by many end-users"</li>
-              <li><em>Content Communities</em> are for "the sharing of media content between users"</li>
-              <li><em>Virtual Gaming Worlds</em> are "platforms that replicate a three-dimensional environment in which users can appear in the form of personalized avatars and interact with each other ... according to strict rules in the context of a massively multiplayer online role-playing game (MMORPG)"</li>
-              <li><em>Virtual Social Worlds</em> "allows inhabitants to choose their behavior more freely ... there are no rules restricting the range of possible interactions"</li>
-            </ul>
-            <p>We include the first four of these in the <a href="#profiles-subjects-table">table below</a><sup>k</sup>, as well as extending this categorisation with <em>Quantified Self</em> (life-logging or self-tracking; automated or manual recording of minutiae of daily life) and <em>Transactional </em> (networks that exist for exchange of goods or services) in order to accommodate new types of systems which have emerged since.</p>
+            <p>The information in <a href="#profiles-subjects-table">Table 2</a> serves to give a feel for the diversity of the social systems being studied.</p>
 
             <table id="profiles-subjects-table">
               <caption>Profiles study subjects: social systems analysed to generate the taxonomy</caption>
@@ -267,7 +274,6 @@ font-size:0.75em;
                   <!-- <th>Est.</th> -->
                   <th>Specialisation</th>
                   <th>Overview</th>
-                  <th>Revenue</th>
                   <th>Category<sup>k</sup></th>
                 </tr>
               </thead>
@@ -279,7 +285,6 @@ font-size:0.75em;
                   <!-- <td></td> -->
                   <td>travelers</td>
                   <td>Accommodation renting</td>
-                  <td>transactions</td>
                   <td>T</td>
                 </tr>
                 <tr>
@@ -289,7 +294,6 @@ font-size:0.75em;
                   <!-- <td></td> -->
                   <td>travelers</td>
                   <td>Accommodation, cultural exchange, new connections</td>
-                  <td>?</td>
                   <td>T</td>
                 </tr>
                 <tr>
@@ -299,7 +303,6 @@ font-size:0.75em;
                   <!-- <td></td> -->
                   <td>general</td>
                   <td>New and existing connections</td>
-                  <td>advertising / data sales</td>
                   <td>SNS</td>
                 </tr>
                 <tr>
@@ -309,7 +312,6 @@ font-size:0.75em;
                   <!-- <td></td> -->
                   <td>general</td>
                   <td>New and existing connections</td>
-                  <td>n/a</td>
                   <td>SNS</td>
                 </tr>
                 <tr>
@@ -319,7 +321,6 @@ font-size:0.75em;
                   <!-- <td></td> -->
                   <td>developers</td>
                   <td>Collaborate on software</td>
-                  <td>freemium</td>
                   <td>CP</td>
                 </tr>
                 <tr>
@@ -329,8 +330,7 @@ font-size:0.75em;
                   <!-- <td></td> -->
                   <td>developers</td>
                   <td>Collaborate on ways to develop social web presence</td>
-                  <td>donations</td>
-                  <td>Blog, CP</td>
+                  <td>B, CP</td>
                 </tr>
                 <tr>
                   <td>LinkedIn</td>
@@ -339,7 +339,6 @@ font-size:0.75em;
                   <!-- <td></td> -->
                   <td>professional</td>
                   <td>New and existing connections</td>
-                  <td>freemium</td>
                   <td>SNS</td>
                 </tr>
                 <tr>
@@ -349,7 +348,6 @@ font-size:0.75em;
                   <!-- <td></td> -->
                   <td>relationships</td>
                   <td>New connections</td>
-                  <td>freemium / ads</td>
                   <td>SNS</td>
                 </tr>
                 <tr>
@@ -359,7 +357,6 @@ font-size:0.75em;
                   <!-- <td></td> -->
                   <td>professional</td>
                   <td>Hiring freelancers</td>
-                  <td>transactions?</td>
                   <td>T</td>
                 </tr>
                 <tr>
@@ -369,7 +366,6 @@ font-size:0.75em;
                   <!-- <td></td> -->
                   <td>general</td>
                   <td>New and existing connections</td>
-                  <td>n/a</td>
                   <td>SNS</td>
                 </tr>
                 <tr>
@@ -379,7 +375,6 @@ font-size:0.75em;
                   <!-- <td></td> -->
                   <td>general</td>
                   <td>Q&amp;A (any topic)</td>
-                  <td>?</td>
                   <td>CC</td>
                 </tr>
                 <tr>
@@ -389,7 +384,6 @@ font-size:0.75em;
                   <!-- <td></td> -->
                   <td>academic</td>
                   <td>Advertise/find research publications</td>
-                  <td>?</td>
                   <td>CC</td>
                 </tr>
                 <tr>
@@ -399,7 +393,6 @@ font-size:0.75em;
                   <!-- <td></td> -->
                   <td>sports</td>
                   <td>Track sporting activities</td>
-                  <td>data sales?</td>
                   <td>QS, CC</td>
                 </tr>
                 <tr>
@@ -409,7 +402,6 @@ font-size:0.75em;
                   <!-- <td></td> -->
                   <td>developers</td>
                   <td>Q&amp;A (tech)</td>
-                  <td>advertising</td>
                   <td>CC</td>
                 </tr>
                 <tr>
@@ -419,8 +411,7 @@ font-size:0.75em;
                   <!-- <td></td> -->
                   <td>general</td>
                   <td>New and existing connections</td>
-                  <td>advertising / data sales</td>
-                  <td>CC, SNS, B?</td>
+                  <td>CC, SNS, B</td>
                 </tr>
                 <tr>
                   <td>Twitter</td>
@@ -429,8 +420,7 @@ font-size:0.75em;
                   <!-- <td></td> -->
                   <td>general</td>
                   <td>New and existing connections</td>
-                  <td>advertising / data sales</td>
-                  <td>Blog, SNS, CC</td>
+                  <td>B, SNS, CC</td>
                 </tr>
                 <tr>
                   <td>YouTube</td>
@@ -439,7 +429,6 @@ font-size:0.75em;
                   <!-- <td></td> -->
                   <td>general</td>
                   <td>Consume/create media</td>
-                  <td>advertising / data sales / freemium</td>
                   <td>CC</td>
                 </tr>
                 <tr>
@@ -449,7 +438,6 @@ font-size:0.75em;
                   <!-- <td></td> -->
                   <td>science</td>
                   <td>Citizen science</td>
-                  <td>n/a</td>
                   <td>CP</td>
                 </tr>
               </tbody>
@@ -469,7 +457,7 @@ font-size:0.75em;
           <h4>Limitations</h4>
           <div>
             <p>As with everything in this thesis, this study is limited by a Western, English-speaking perspective on the systems in question. The observations were conducted from an IP address in either the UK or the US, and I did not attempt to find out how each system differs based on the language preferences or geographical location of users.</p>
-            <p>Significantly these systems change over time, often rapidly, in response to changing markets, legislation, and available technologies. Most of the data was collected and screenshots captured in the summer of 2015. Some data points were verified to be largely in line with the original findings, but not deeply verified, during writeup in spring 2017. It is important to note that the results are a dated snapshot which cannot be assumed to hold true for the systems analysed indefinitely.</p>
+            <p>Significantly these systems change over time, often rapidly, in response to changing markets, legislation, and available technologies. Most of the data was collected and screenshots captured in the summer of 2015. Some data points were verified to be largely in line with the original findings, but not deeply verified, during writeup in spring 2017. It is important to note that the results are a dated snapshot which cannot be assumed to hold true indefinitely.</p>
             <p>I will emphasise again that the nature of a descriptive study does not give any indication of cause-effect relationships between any of the results. Similarly, I can only describe systems as they appear, and not speculate as to <em>why</em> they appear such.</p>
           </div>
         </section>
@@ -484,7 +472,7 @@ font-size:0.75em;
 
           <p>Here I summarise the findings of the study.<!--  Detailed tables of results are available in <a href="">Appendix X</a>. --></p>
 
-          <p>The most distinct of the systems is the Indieweb wiki, which largely functions as an ordinary wiki except that one identifies oneself with a domain name (logging in with the <a href="https://indieweb.org/indieauth">IndieAuth authentication protocol</a>) and thus the 'profile' is tied to one's personal blog, website, or homepage. As a result, profiles are highly custom and diverse, but even though they are not hosted centrally by the wiki software they are the main source of identification between users of the wiki, so they are considered here in the same way as the other systems. In order to study them without visiting the domains of every single user, I also make use of the contents of the wiki itself, which is focused around documenting and recommending best practices for creating a social Web presence; that is, I assume that practices relevant to profile creation described the wiki are adopted by a majority of users.</p>
+          <p>The most distinct of the systems is the Indieweb wiki, which largely functions as an ordinary wiki except that one identifies oneself with a domain name (logging in with the <a href="https://indieweb.org/indieauth">IndieAuth authentication protocol</a>) and thus the 'profile' is tied to one's personal blog, website, or homepage. As a result, profiles are highly custom and diverse; even though they are not hosted centrally by the wiki software they are the main source of identification between users of the wiki, so they are considered here in the same way as the profiles in other systems. In order to study them without visiting the domains of every single user, I also make use of the contents of the wiki itself, which is focused around documenting and recommending best practices for creating a social Web presence; that is, I assume that practices relevant to profile creation described the wiki are adopted by a majority of users.</p>
 
           <section id="profiles-what" rel="schema:hasPart">
             <h4>What does a profile contain?</h4>
@@ -496,17 +484,17 @@ font-size:0.75em;
 
             <p>Facebook has the broadest array of possible attributes, including the possibility to create your own keys, and use ones that others have created. CouchSurfing and OkCupid make extensive use of free text input, prompting users to write short essay-style answers to certain questions. Most systems encourage an avatar or display picture, and several also permit uploading a prominent header image (also known as 'banner' or 'cover photo'). The Indieweb community bases attribute-style profile content around the <a href="http://microformats.org/wiki/h-card">microformats h-card</a> specifications, which provides a fixed set, all optional.</p>
 
-            <p>Indieweb profiles tend to be the homepages of blogs (although they may be a more static 'about' page) and as such are heavy on the content and activities aspects. SNS like Twitter, Facebook, Tumblr, Pump.io, Friendica, also lend prominence to content (typically text-based status updates; often photos) and a feed of activities on the site. YouTube (obviously) incorporates videos created by the profile owner, and how these are organised is highly customiseable. For users who have not uploaded video, YouTube profiles contain mostly attributes and activities, and elevate interactions with other content on the site, such as commenting on videos, adding to playlists, and subscribing to channels.</p>
+            <p>Indieweb profiles tend to be the homepages of blogs (although they may be a more static 'about' page) and are heavy on the content and activities aspects. SNS like Twitter, Facebook, Tumblr, Pump.io and Friendica, also lend prominence to content (typically text-based status updates; often photos) and a feed of activities on the site. YouTube incorporates videos created by the profile owner, and how these are organised is highly customiseable. For users who have not uploaded video, YouTube profiles contain mostly attributes and activities, and elevate interactions with other content on the site, such as commenting on videos, adding to playlists, and subscribing to channels.</p>
 
-            <p>Activity feeds in general vary in their level of detail. Quora includes if someone edited a question or answer. Pump.io distinguishes between 'major' and 'minor' activities, displaying them in separate feeds. Amongst posts by the profile owner, Twitter includes a heavily algorithmically curated subset of activites, such as recent follows or likes. Most sites do not include a complete log of all of the possible interactions however. For example, CouchSurfing enables a rich array of activities, from offering to host a guest, to posting in group forums and arranging events; but none of these are displayed on a user's profile. Similarly, most systems do not display a feed of changes to attributes of the profile, which could also be considered activities.</p>
+            <p>Activity feeds in general vary in their level of detail. Quora displays if someone edited a question or answer. Pump.io distinguishes between 'major' and 'minor' activities, displaying them in separate feeds. Mixed in with posts by the profile owner, Twitter includes a heavily algorithmically curated subset of activites, such as recent follows or likes. Most sites do not include a complete log of all of the possible interactions however. For example, CouchSurfing enables a rich array of activities, from offering to host a guest, to posting in group forums and arranging events; but none of these are displayed on a user's profile. Similarly, most systems do not display a feed of changes to attributes of the profile, which could also be considered activities.</p>
 
-            <p>On the other hand, when users interact with other content on a system, for example by liking or favouriting it or adding it to a collection (a playlist on YouTube), reblogging it on Tumblr, voting on it on Quora or StackOverflow; this content becomes part of the profile.</p> 
+            <p>On the other hand, when users interact with content on a system, for example by liking or favouriting it or adding it to a collection (a playlist on YouTube), reblogging it on Tumblr, voting on it on Quora or StackOverflow; this content becomes part of the profile.</p> 
 
-            <p>StackOverflow, GitHub, PeoplePerHour, ResearchGate, Quora and RunKeeper are very statistics-oriented. RunKeeper focusses on a feed of offline activities, calculating for example how many calories you lost this week from logged exercise, or how far you ran. GitHub visualises code commits and 'contributions' (ie. helpful interactions with others' projects) in a coloured grid. ResearchGate and Quora display statistics about how much others have interacted with the profile owner's content. OkCupid also generates statistics based on answers to short, multiple-choice personal questions, and these statistics are dependent on who is viewing the profile, e.g. percentage romantic match, and things like '30% more social'.</p>
+            <p>StackOverflow, GitHub, PeoplePerHour, ResearchGate, Quora and RunKeeper are very statistics-oriented. RunKeeper focusses on a feed of offline activities, calculating for example how many calories you lost this week from logged exercise, or how far you ran. GitHub visualises code commits and 'contributions' (helpful interactions with projects) in a coloured grid. ResearchGate and Quora display statistics about how much others have interacted with the profile owner's content. OkCupid also generates statistics based on answers to short, multiple-choice personal questions, and these statistics are dependent on who is viewing the profile, e.g. percentage romantic match, and things like '30% more social'.</p>
 
             <p>Sites which make heavy use of content left by others on a profile are CouchSurfing, AirBnB, and PeoplePerHour. Each of these display reviews of the profile owner by other users, typically in a way that cannot be amended or removed. Facebook allows one to 'write on the wall' of another profile, but users can disable this. However, comments and likes by other users commonly show up alongside activities or created content on a profile as well. LinkedIn prompts users to 'endorse' one another for particular skills, and these endorsements are prominent on profiles. StackOverflow and Quora aggregate ratings left by others on content into overall numbers or rankings to display on profiles.</p>
 
-            <p>Many systems give prominence to the connections with other users in the system; LinkedIn displays neither likes nor status updates on the profile, but emphasises contacts and the network around them; Twitter displays followers and following; YouTube displays subscriptions and subscribers; ResearchGate, Pump.io, Friendica, and Quora similarly.</p>
+            <p>Many systems give prominence to the connections with other users in the system; LinkedIn displays neither likes nor status updates on the profile, but emphasises contacts and the network around them; Twitter displays followers and following; YouTube, ResearchGate, Pump.io, Friendica, and Quora display subscriptions and subscribers.</p>
 
             <!--<pre class="notes">**Indieweb**: Attributes (fixed as per microformats2 but extensible), authored content.
 
@@ -547,17 +535,71 @@ font-size:0.75em;
             </div>
           </section>
 
+          <section id="profiles-connections" rel="schema:hasPart">
+            <h4>How are profiles within a system connected together?</h4>
+            <div>
+              <p>Connections between profiles may be uni- or bi-directional; some systems permit both. <strong>Bi-directional</strong> connections need to be mutual; triggered by one user and confirmed by the second. <strong>Uni-directional</strong> connections may or may not need approval from the second user, depending on either the system as a whole or individual user preferences. Some systems contain more than one kind of uni-directional connection, which may be named or displayed differently, and carry different connotations. Systems vary in whether or not they notify other users (than the ones involved in the connection) about new connections.</p>
+
+              <p>Systems with uni-directional connections are Twitter, Tumblr, Pump.io, Facebook, Quora, LinkedIn, ResearchGate, Friendca and GitHub ('follow'), YouTube ('subscribe'), OkCupid, PeoplePerHour ('like/bookmark/favourite'). Systems with bi-directional connections are CouchSurfing, Facbook, Friendica, and RunKeeper ('friends'), LinkedIn ('connect'). The intersection of these (systems with both) is Facebook, LinkedIn, and Friendica.</p>
+
+              <p>Some Indieweb profiles include a list of others the profile owner follows using XFN markup [<a href="appendices#ref-xfn">xfn</a>], but this is not necessarily widespread. StackOverflow, Zooniverse and AirBnb do not have a means of creating persistent connections between profiles, besides leaving references in the case of AirBnb.</p>
+
+              <p>Systems which permit more specific information or <strong>categorisation of connections</strong> are CouchSurfing (specify 'hosted', 'surfed', 'traveled with' or 'never met' as well as the closeness of the relationship), and Facebook (can specify specific relationships, e.g. 'brother'). When a follow request is sent on Friendica, the recipient can accept it as uni-directional (the follower is labelled a 'fan/admirer') or bi-directional, so the recipient also sees the follower's updates. Bi-directional connections on LinkedIn require a reason or more information as 'proof' of a mutual connection, before the request is even sent.</p>
+
+              <p>YouTube connects profiles together through subscriptions to channels, however it also explicitly provides input for profile owners to link to other profiles without creating a subscriber relationship. This lets content creators list, for example, other users they admire, or the people they collaborate with. Many YouTubers use this feature to link to other profiles they have on the site. The system gives users free text fields to name this list, as well as each individual link in the list. This particular phenomenon is examined in more detail in the next study, Constructing Online Identity.</p>
+
+              <p>OkCupid connections are uni-directional, and only revealed to the recipient if and when a mutual action is made. On Twitter, following another user sometimes (not consistently) appears as an activity in your timeline; notifications are also sometimes sent to your followers to advertise the new connection.</p>
+
+              <!--<pre class="notes">**Indieweb**: Under debate, some people use XFN (e.g. `rel=following`)
+
+**Twitter**: One directional; notifications sometimes sent to your followers when you follow someone, especially if others in your network also do; follows (some? all? curated how?) appear in your timeline; no notifications of unfollows; configurable notification when someone follows you.
+
+**Tumblr**: `Follow` a blog. (Not a user).
+
+**Pump.io**: `Follow` a user. Minor activity and notification when someone follows you. Added to 'follows' collection (public). One way.
+
+**YouTube**: `Subscribe` to a channel, one way.
+
+**CouchSurfing**: Friends — specify hosted/surft/traveled/never met, and closeness. Couch request/offer (but this doesn't create a persistant connection). References.
+
+**Facebook**: Friends — mutual, accept/reject request. You can choose to let anyone 'follow' your public posts (or not). You can follow pages. Following is one way.
+
+**Quora**: follow a user (one way)
+
+**Okcupid**: Like/bookmark (same thing, interchangeable language). Only revealed if mutual.
+
+**StackOverflow**: none? RSS feeds for user activity..
+
+**LinkedIn**: Follow (one way) someone if they allow. 2 way 'Connect' can require reason or input contact details as proof.
+
+**PeoplePerHour**: Add user to favourites.
+
+**ResearchGate**: Follow (one way).
+
+**AirBnB**: n/a (only references, nothing persistant)
+
+**Friendica**: Follow request. Reciever gets to accept as one way (fan/admirer; they read you) or two way (friend; you also see updates from them).
+
+**Zooniverse**: n/a
+
+**runkeeper**: 2 way friendship (request-accept); used with access control as 4, and delivery/notifications.
+
+**github**: follow a user (see all activity in feed), but primary method seems to be to follow content/threads.</pre>-->
+            </div>
+          </section>
+
           <section id="profiles-updates" rel="schema:hasPart">
             <h4>How are profiles updated?</h4>
             <div>
 
-              <p>By this I mean how profiles are updated by profile owners via a system's user interface, <em>as well as</em> how profiles can be updated programmatically through an API (Application Programming Interface; the means through which data can be read or written by third-party software). <!--I posit that the options presented for modifying a profile can influence how users make use of a system for their self-presentation.--> The latter is relevant because programmatic access suggests that third-party applications (outside of direct control the system itself) can also influence a profile owner's view on the possibilities of the profile.</p>
+              <p>Profiles may be updated by profile owners via a system's user interface, programmatically through an API (Application Programming Interface; the means through which data can be read or written by third-party software). <!--I posit that the options presented for modifying a profile can influence how users make use of a system for their self-presentation.--> The latter is relevant because programmatic access suggests that third-party applications (outside of direct control the system itself) can also influence a profile owner's view on the possibilities of the profile.</p>
 
-              <p>Most systems provide a <strong>Web form</strong> to add or update attributes, or a similar UI in a native mobile application. In some cases, the form fields appear where the information appears on the profile itself (Twitter, Quora, LinkedIn, ResearchGate) and in some the updating interface is completely divorced from the final view of the profile; in some cases, both depending on the attributes (Facebook, OkCupid). Indieweb profiles are updated with custom editing interfaces, or simply by editing static HTML; there are currently no specific recommendations for protocols or UIs to edit profile attributes.</p>
+              <p>Most systems provide a <strong>Web form</strong> to add or update <em>attributes</em>, or a similar UI in a native mobile application. 
+              The editing interface and the profile display may be tightly coupled (Twitter, Quora, LinkedIn, ResearchGate) completely divorced, or a combination (Facebook, OkCupid). Indieweb profiles are updated with custom editing interfaces, or simply by editing static HTML; there are currently no specific recommendations for protocols or UIs to edit profile attributes.</p>
 
-              <p>For the non-attribute data which makes up a profile, separate, often <strong>specialised interfaces</strong> for both Web and mobile exist, e.g. for posting status updates or media content. For data like statistics and activities, this content is generated by <strong>algorithms or sensors</strong>, with no explicit input from the profile owner. In a few cases it may be hidden, but rarely changed. An exception is RunKeeper, where one can edit an automatically generated GPS trace after the fact, which can correct distance and speed records. On CouchSurfing, AirBnB and PeoplePerHour, one may respond to a review left by someone else, but not remove it.</p>
+              <p>For the non-attribute data which makes up a profile, separate, often <strong>specialised interfaces</strong> for both Web and mobile exist, e.g. for posting status updates or media content. For data like statistics and activities, this content is generated by <strong>algorithms or sensors</strong>, with no explicit input from the profile owner. In a few cases it may be hidden by the profile owner, but rarely changed. An exception is RunKeeper, where one can edit an automatically generated GPS trace after the fact, which can correct distance and speed records. On CouchSurfing, AirBnB and PeoplePerHour, one may respond to a review left by someone else, but not remove it.</p>
 
-              <p>Only Pump.io, RunKeeper and GitHub provide <strong>APIs</strong> to update all attributes of a profile. Facebook and Zooniverse provide limited update access to certain attributes. Most systems provide write APIs to create, follow and like (or equivalent) non-attribute content.</p>
+              <p>Only Pump.io, RunKeeper and GitHub provide <strong>APIs</strong> to update all <em>attributes</em> of a profile. Facebook and Zooniverse provide limited update access to certain attributes. Most systems provide write APIs to create, follow and like (or equivalent) non-attribute content.</p>
 
               <!--<pre class="notes">**Indieweb**: not spec'd (likely editing static HTML).
 
@@ -659,11 +701,11 @@ Content-Type: application/vnd.com.runkeeper.Profile+json
             <h4>How are people notified when a profile is updated?</h4>
             <div>
 
-              <p>When profile attributes are updated by the profile owner, most systems <strong>do not notify</strong> other users of the system at all.</p>
+              <p>The attention a system draws to profile updates could affect how people engage with their own profiles. When profile attributes are updated by the profile owner, most systems <strong>do not notify</strong> other users of the system at all.</p>
 
-              <p>Facebook however pushes updates to friends' timelines along with status updates and content interactions, though the extent to which it does this for each friend depends on their <strong>arbitrary</strong> content distribution algorithm, and from a user perspective is hard to predict. The most reliably seen attribute updates are changes to profile pictures, cover photos, and relationship status. Whenever the profile owner updates an attribute on Facebook, they are asked to make it a 'story', which sustains a reference to the fact the attribute changed. Friendica delivers changes to profile pictures only.</p>
+              <p>Facebook however pushes updates to friends' timelines along with status updates and content interactions, though the extent to which it does this for each friend depends on their <strong>arbitrary</strong> content distribution algorithm, and from a user perspective is hard to predict. The most reliably seen attribute updates are changes to profile pictures, cover photos, and relationship status. Whenever the profile owner updates an attribute on Facebook, they are asked to make it a 'story', which sustains a reference to the fact the attribute changed. Friendica notifies about changes to profile pictures only.</p>
 
-              <p>OkCupid and LinkedIn provide the <strong>option to enable sharing of changes</strong> to profile attributes. In the case of LinkedIn, updates are pushed to contacts' feeds, but may also be displayed to non-immediate contacts in the network as a form of promoting connections. OkCupid may display updates to other users in their activity feeds according to whether the system thinks these people might be interested in your profile.</p>
+              <p>OkCupid and LinkedIn provide the <strong>option to enable sharing of changes</strong> to profile attributes. In the case of LinkedIn, updates are pushed to contacts' feeds, but may also be displayed to non-immediate contacts in the network as a form of promoting connections. OkCupid may display updates to other users in their activity feeds according to whether the system thinks these people might be interested in your profile. How either of these are decided is opaque to the user.</p>
 
               <!--<pre class="notes">**Indieweb**: not spec'd
 
@@ -708,11 +750,11 @@ Content-Type: application/vnd.com.runkeeper.Profile+json
             <h4>How is access to a profile controlled?</h4>
             <div>
 
-              <p>Systems vary between providing all-or-nothing access to profiles, making everything public but all optional, providing access control on the basis of groups or networks, or individual users, and providing granular access to individual aspects of profiles.</p>
+              <p>Systems may provide all-or-nothing access to profiles, make everything public but all optional, provide access control on the basis of groups or networks, or individual users, and provide granular access to individual aspects of profiles.</p>
 
-              <p>Systems which have limited to <strong>no access control</strong>, but make all or most data <strong>optional</strong> to enter include OkCupid, Quora, CouchSurfing, AirBnB, Friendica, Zooniverse, Pump.io and GitHub. OkCupid and CouchSurfing allow profile visibility to be restricted to other logged-in users. CouchSurfing permits users to hide their full name, and GitHub permits users to hide their email address.</p>
+              <p>Systems which have limited or <strong>no access control</strong>, but make all or most data <strong>optional</strong> to enter include OkCupid, Quora, CouchSurfing, AirBnB, Friendica, Zooniverse, Pump.io and GitHub. OkCupid and CouchSurfing allow profile visibility to be restricted to other logged-in users. CouchSurfing permits users to hide their full name, and GitHub permits users to hide their email address.</p>
 
-              <p>Quora permits users to answer or ask questions as <strong>'anonymous'</strong> whilst logged into their account. These questions/answers do not show up on the user's profile. Otherwise, the only other control profile owners have is disabling their online presence. Friendica permits connections to be hidden, as well as certain aspects of content. On AirBnB, profile attributes are optional but <em>hosts</em> can automatically decline users without certain attributes filled in.</p>
+              <p>Quora permits users to answer or ask questions as <strong>'anonymous'</strong> whilst logged into their account. These questions/answers do not show up on the user's profile. Otherwise, the only other control profile owners have is disabling their online presence. Friendica permits connections to be hidden, as well as certain aspects of content. On AirBnB, profile attributes are optional but <em>hosts</em> can automatically decline users who omit certain attributes.</p>
 
               <p>Systems with more <strong>granular concepts of audience</strong> than public/private include Pump.io, LinkedIn, Facebook, Twitter, and ResearchGate. In Pump.io individual objects can be 'addressed' so that only particular groups (which can be created by the profile owner) or individuals can see them. LinkedIn permits visibility of some individual profile attributes to 'everyone', 'my network' and 'my connections'. The profile can be set to publicly visible, with certain attributes individually excluded. Connections can be private or public, and content and interactions can be designated different levels of visibility from entirely private to entirely public, with 'network' and 'connections' in between. ResearchGate enables hiding certain statistics, certain attributes, and certain content. Uploaded papers can be visible to 'everyone', 'mutual followers' or 'ResearchGate members'.</p>
 
@@ -767,69 +809,14 @@ Can grant write access and transfer admin between users for secondary blogs.
 **github**: Most optional, can choose to keep email private.</pre>-->
             </div>
           </section>
-              
-
-          <section id="profiles-connections" rel="schema:hasPart">
-            <h4>How are profiles within a system connected together?</h4>
-            <div>
-              <p>Connections between profiles may be uni- or bi-directional; some systems permit both. <strong>Bi-directional</strong> connections need to be mutual; triggered by one user and confirmed by the second. <strong>Uni-directional</strong> connections may or may not need approval from the second user, depending on either the system as a whole or individual user preferences. Some systems contain more than one kind of uni-directional connection, which may be named or displayed differently, and carry different connotations. Systems vary in whether or not they notify other users (than the ones involved in the connection) about new connections.</p>
-
-              <p>Systems with uni-directional connections are Twitter, Tumblr, Pump.io, Facebook, Quora, LinkedIn, ResearchGate, Friendca and GitHub ('follow'), YouTube ('subscribe'), OkCupid, PeoplePerHour ('like/bookmark/favourite'). Systems with bi-directional connections are CouchSurfing, Facbook, Friendica, and RunKeeper ('friends'), LinkedIn ('connect'). The intersection of these (systems with both) is Facebook, LinkedIn, and Friendica.</p>
-
-              <p>Some Indieweb profiles include a list of others the profile owner follows using XFN markup, but this is not necessarily widespread. StackOverflow, Zooniverse and AirBnb do not have a means of creating persistent connections between profiles, besides leaving references in the case of AirBnb.</p>
-
-              <p>Systems which permit more specific information or <strong>categorisation of connections</strong> are CouchSurfing (specify 'hosted', 'surfed', 'traveled with' or 'never met' as well as the closeness of the relationship), and Facebook (can specify specific relationships, e.g. 'brother'). When a follow request is sent on Friendica, the recipient can accept it as uni-directional (the follower is labelled a 'fan/admirer') or bi-directional, so the recipient also sees the follower's updates. Bi-directional connection requests on LinkedIn require a reason or more information as 'proof' of a mutual connection, before it is sent.</p>
-
-              <p>YouTube connects profiles together through subscriptions to channels, however it also explicitly provides input for profile owners to link to other profiles without creating a subscriber relationship. This lets content creators list, for example, other users they admire, or the people they collaborate with. Many YouTubers use this feature to link to other profiles they have on the site. The system gives users free text fields to name this list, as well as each individual link in the list.</p>
-
-              <p>OkCupid connections are uni-directional, and only revealed to the recipient if and when a mutual action is made. On Twitter, following another user sometimes appears as an activity in your timeline; notifications are also sometimes sent to your followers to advertise the new connection.</p>
-
-              <!--<pre class="notes">**Indieweb**: Under debate, some people use XFN (e.g. `rel=following`)
-
-**Twitter**: One directional; notifications sometimes sent to your followers when you follow someone, especially if others in your network also do; follows (some? all? curated how?) appear in your timeline; no notifications of unfollows; configurable notification when someone follows you.
-
-**Tumblr**: `Follow` a blog. (Not a user).
-
-**Pump.io**: `Follow` a user. Minor activity and notification when someone follows you. Added to 'follows' collection (public). One way.
-
-**YouTube**: `Subscribe` to a channel, one way.
-
-**CouchSurfing**: Friends — specify hosted/surft/traveled/never met, and closeness. Couch request/offer (but this doesn't create a persistant connection). References.
-
-**Facebook**: Friends — mutual, accept/reject request. You can choose to let anyone 'follow' your public posts (or not). You can follow pages. Following is one way.
-
-**Quora**: follow a user (one way)
-
-**Okcupid**: Like/bookmark (same thing, interchangeable language). Only revealed if mutual.
-
-**StackOverflow**: none? RSS feeds for user activity..
-
-**LinkedIn**: Follow (one way) someone if they allow. 2 way 'Connect' can require reason or input contact details as proof.
-
-**PeoplePerHour**: Add user to favourites.
-
-**ResearchGate**: Follow (one way).
-
-**AirBnB**: n/a (only references, nothing persistant)
-
-**Friendica**: Follow request. Reciever gets to accept as one way (fan/admirer; they read you) or two way (friend; you also see updates from them).
-
-**Zooniverse**: n/a
-
-**runkeeper**: 2 way friendship (request-accept); used with access control as 4, and delivery/notifications.
-
-**github**: follow a user (see all activity in feed), but primary method seems to be to follow content/threads.</pre>-->
-            </div>
-          </section>
-              
-
+          
           <section id="profiles-portability" rel="schema:hasPart">
             <h4>How can profiles be exported from or imported into a system?</h4>
             <div>
 
-              <p>In the Indieweb model of profile ownership, all data is assumed to be on a server controlled, or at least trusted, by the profile owner. As such, they can move it however they please. Similarly, Pump.io and Friendica are open source software platforms which allow people to either opt to use an instance on a server they trust, or install their own instance for complete control. They both use the ActivityStreams 1.0 data model (Friendica has extensions); while Friendica provides <strong>import/export</strong> functionality in the UI, Pump.io doesn't, however the database or JSON feed is compatible across instances.</p>
+              <p>In the Indieweb model of profile ownership, all data is assumed to be on a server controlled, or at least trusted, by the profile owner. As such, they can move it however they please. Similarly, Pump.io and Friendica are open source software platforms which allow people to either opt to use an instance on a server they trust, or install their own instance for complete control. They both use the standard ActivityStreams 1.0 data model [<a href="appendices#ref-as1">as1</a>] (Friendica has extensions); while Friendica provides <strong>import/export</strong> functionality in the UI, Pump.io doesn't, however the database or JSON feed is compatible across instances.</p>
 
-              <p>Twitter, Facebook, YouTube, LinkedIn, ResearchGate, and RunKeeper provide a <strong>download link</strong> for an archive of content. In most cases these are a snapshot of current profile attributes, without a history of changes, except for Facebook, which provides a comprehensive activity log. All exports are proprietary JSON, HTML or CSV formats.</p>
+              <p>Twitter, Facebook, YouTube, LinkedIn, ResearchGate, and RunKeeper provide a <strong>download link</strong> for an archive of content. In most cases these are a snapshot of current profile attributes, without a history of changes, except for Facebook, which provides a comprehensive activity log. All exports are proprietary schema in JSON, HTML or CSV.</p>
 
               <p>StackOverflow profiles are <strong>reusable</strong> across different StackExchange sites; there is no export, however there are public dumps of Q&amp;A data. GitHub data is available through an <strong>API</strong>.</p>
 
@@ -887,7 +874,7 @@ Can grant write access and transfer admin between users for secondary blogs.
             <h4>What constraints are placed on a profile?</h4>
             <div>
 
-              <p>In this section we examine the terms of service of systems to determine how users are <em>expected</em> to engage. In some cases, we mention how these are enforced by technical constraints.</p>
+              <p>In this section I examine the terms of service of systems to determine how users are <em>expected</em> to engage. In some cases these are enforced by technical constraints.</p>
 
               <p>Twitter, CouchSurfing, Facebook, OkCupid, LinkedIn, PeoplePerHour, AirBnB and GitHub state that a user <strong>may not have multiple</strong> accounts. Twitter qualifies this with "overlapping use cases".</p>
 
@@ -1027,14 +1014,14 @@ One person or legal entity may not maintain more than one free account.
               
 
           <section id="profiles-model" rel="schema:hasPart">
-            <h4>How do profiles fit in with a systems apparent data model?</h4>
+            <h4>What is the data model of a profile?</h4>
             <div>
 
               <p>To answer this question, I have examined wording in systems' documentation around profiles, in user interfaces as well as APIs. Where possible, I have also looked at internal data models of the software.</p>
 
-              <p>Twitter, Indieweb, Pump.io, LinkedIn, Facebook, Quora, PeoplePerHour, ResearchGate, OkCupid, AirBnB, Zooniverse, RunKeeper, and GitHub profiles, accounts and people are all roughly equivalent. That is, a profile sufficiently <strong>identifies a person</strong>; for example the "name" attribute of a profile is the name of the profile owner (rather than the name of the profile). Activities associated with these profiles (e.g. "distance ran" or "commit made") are assumed to have been carried out by the profile owner.</p>
+              <p>Accounts and people are roughly equivalent for Twitter, Indieweb, Pump.io, LinkedIn, Facebook, Quora, PeoplePerHour, ResearchGate, OkCupid, AirBnB, Zooniverse, RunKeeper, and GitHub profiles. That is, a profile sufficiently <strong>identifies a person</strong>; for example the "name" attribute of a profile is the name of the profile owner (rather than the name of the profile). Activities associated with these profiles (e.g. "distance ran" or "commit made") are assumed to have been carried out by the profile owner.</p>
 
-              <p>Tumblr and YouTube equate an account (or login; username/password combination) with a person, but each account may be attached to multiple profiles: secondary blogs in the case of Tumblr, channels in the case of YouTube. Profile owners can carry out interactions from behind one of these profiles at a time.</p>
+              <p>Tumblr and YouTube equate an account - or username/password combination - with a person, but each account may be attached to multiple profiles: secondary blogs in the case of Tumblr, channels in the case of YouTube. Profile owners can carry out interactions from behind one of these profiles at a time.</p>
 
               <p>Friendica permits a user of one account to create multiple profiles with different attributes, and set up access control so that certain people see a particular profile. Different profiles are different <strong>'views' on one person</strong>. Profile owners can also assign a 'type' to their profile which automatically sets some defaults for privacy and access control settings.</p>
 <!--
@@ -1090,11 +1077,11 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
             <div>
               <p>This question looks at the purpose of the profile within the system, rather than any purpose of the system itself, though the two may be similar.</p>
 
-              <p>In cases like Twitter, Tumblr, Pump.io, CouchSurfing, Facebook, LinkedIn and Friendica, a profile is key as an <strong>endpoint for connections</strong> and relationships within the network. In Twitter, Tumblr, YouTube, Quora, StackOverflow, Indieweb, ResearchGate, Zooniverse, RunKeeper and Github, profiles serve as a central hub for <strong>aggregation of content</strong> by the profile owner.</p>
+              <p>In Twitter, Tumblr, YouTube, Quora, StackOverflow, Indieweb, ResearchGate, Zooniverse, RunKeeper and Github, profiles serve as a central hub for <strong>aggregation of content</strong> by the profile owner. In the cases of Twitter, Tumblr, Pump.io, CouchSurfing, Facebook, LinkedIn and Friendica, a profile serves as an <strong>endpoint for connections</strong> and relationships within networks where connections are important.</p>
 
               <p>In systems with high levels of interaction and often some concern about trust or reputation, profiles provide a <strong>face behind content</strong> so that statements may be evaluated against the backdrop of 'who said it' (e.g. Twitter, Tumblr, Pump.io, YouTube, CouchSurfing, Facebook, Quora, StackOverflow, ResearchGate, Friendica, Github). Systems which are particularly geared towards building trust or <strong>reputation</strong> as a foundation for future relationships and interactions within the system are CouchSurfing, Quora, AirBnB, OkCupid, StackOverflow, LinkedIn, PeoplePerHour, ResearchGate and Zooniverse.</p>
 
-              <p>Profiles which are geared particularly towards <strong>self-expression</strong>, or just a way to <em>be</em> or exist on the Web are Indieweb, Twitter, Tumblr, Facebook, Pump.io, YouTube and Friendica.</p>
+              <p>Profiles which are geared particularly towards <strong>self-expression</strong>, or establishing a presence, are Indieweb, Twitter, Tumblr, Facebook, Pump.io, YouTube and Friendica.</p>
               <!--<pre class="notes">**Indieweb**: Personal publishing, to have a 'face' on the social web, to share ideas
 
 **Twitter**: An endpoint for connections and a face behind content
@@ -1139,9 +1126,9 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
             <h4><em>Who</em> is the profile for?</h4>
             <div>
 
-              <p>Often who a profile is intended for is related to the profile's purpose within the system. In some cases, the <strong>audience is known</strong> (e.g. you know who follows you on Twitter; Tumblr, Pump.io, YouTube, Facebook, Quora, LinkedIn, Friendica, RunKeeper, Github) and in other cases <strong>imagined</strong> (you have an idea of who OkCupid might be promoting your profile too, but no sure evidence; CouchSurfing, StackOverflow, Indieweb, PeoplePerHour, ResearchGate, Zooniverse) and in some cases both (your Twitter profile is public, so people who aren't your followers will see it; Tumblr, Pump.io, Facebook, Quora, LinkedIn, Friendica, RunKeeper, Github).</p>
+              <p>Often who a profile is intended for is related to the profile's purpose within the system. In some cases, the <strong>audience is known</strong> (e.g. you know who follows you on Twitter; Tumblr, Pump.io, YouTube, Facebook, Quora, LinkedIn, Friendica, RunKeeper, Github) and in other cases <strong>imagined</strong> (you have an idea of who OkCupid might be promoting your profile too, but no sure evidence; the same for CouchSurfing, StackOverflow, Indieweb, PeoplePerHour, ResearchGate, Zooniverse) and in some cases both (your Twitter profile is public, so people who aren't your followers will see it; also similar for Tumblr, Pump.io, Facebook, Quora, LinkedIn, Friendica, RunKeeper, Github).</p>
 
-              <p>In cases where a profile is constituted of an aggregation of personal data, content, and online interactions, the <strong>profile owner</strong> is also who the profile is for, as they can use it for self-reflection and/or expressing aspects of their personality to explore themselves (Twitter, Tumblr, Pump.io, YouTube, Facebook, Quora, OkCupid, Indieweb, StackOverflow, LinkedIn, ResearchGate, Friendica, RunKeeper, Github).</p>
+              <p>In cases where a profile is constituted of an aggregation of personal data, content, and online interactions, the <strong>profile owner</strong> is a member of the audience, as they can use it for self-reflection or self-expression (Twitter, Tumblr, Pump.io, YouTube, Facebook, Quora, OkCupid, Indieweb, StackOverflow, LinkedIn, ResearchGate, Friendica, RunKeeper, Github).</p>
 
               <p>Systems like Quora, CouchSurfing, OkCupid, StackOverflow, LinkedIn, PeoplePerHour, Twitter, Facebook, YouTube and AirBnb use data from user profiles as input to core <strong>algorithms</strong> which enable the system to function, providing a service to profile owners.</p>
 
@@ -1194,7 +1181,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
       <h3>Features</h3>
       <div>
 
-        <p>Five features of profiles were derived and are <a href="#profile-features">described below</a>.</p>
+        <p>From this analysis, five features of profiles were derived and are <a href="#profile-features">described below</a>, and summarised in <a href="#profile-features">Table 3</a>.</p>
         <table id="profile-features">
           <caption>Profiles study features</caption>
           <thead>
@@ -1206,42 +1193,42 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
           </thead>
           <tbody>
             <tr>
-              <td>Flexible</td>
+              <td>Flexibility</td>
               <td>Profile owners have choice about the kinds of content associated with their profile and how it is presented.</td>
               <td>Profiles are generated as a side effect of owner's activities or automatically (e.g. from sensor data) and owners cannot amend.</td>
             </tr>
             <tr>
-              <td>Access controlled</td>
+              <td>Access control</td>
               <td>Profile owners have control over which parts of the profile others see.</td>
               <td>Profile owners have no control over what others see.</td>
             </tr>
             <tr>
-              <td>Prominent</td>
+              <td>Prominence</td>
               <td>Profiles are integral to functioning of the system as a whole.</td>
               <td>Profiles are a side-effect of some other function of the system, and/or not necessary to use the system.</td>
             </tr>
             <tr>
-              <td>Portable</td>
+              <td>Portability</td>
               <td>Profile owners can move their data in or out of a system.</td>
               <td>Profile data cannot be imported or exported.</td>
             </tr>
             <tr>
-              <td>Representative</td>
+              <td>Representation</td>
               <td>The profile <em>is</em> a person, as far as the system is concerned.</td>
               <td>The profile is a document describing some aspect of a person(a).</td>
             </tr>
           </tbody>
         </table>
 
-        <p>Flexibility is a function of the different types of content/data which make up a profile, and the relationship the profile owner has with those who see or use their profile. As some times of content are under more control of the profile owner than others, we consider the proportion to which they make up the profile, and weighting given to each. Flexibility also considers the systems technical or policy constraints around profile contents.</p>
+        <p><strong>Flexibility</strong> is a function of the different types of content/data which make up a profile, and the relationship the profile owner has with those who see or use their profile. As some times of content are under more control of the profile owner than others, we consider the proportion to which they make up the profile, and weighting given to each. Flexibility also considers the systems technical or policy constraints around profile contents.</p>
 
-        <p>Access control involves the granularity of the controls, the extent to which profile owners can opt into or out of publishing certain aspects, and the awareness of the owner of who their audience is.</p>
+        <p><strong>Access control</strong> involves the granularity of the controls, the extent to which profile owners can opt into or out of publishing certain aspects, and the awareness of the owner of who their audience is.</p>
 
-        <p>Prominence takes into account the extent to which a system would function were users' data (of the various kinds) not aggregated into profiles. Prominence of profiles may depend on the role a user is playing in the system, so the potential varying roles are also taken into account. Systems with a high emphasis on connecting people feature profiles prominently, whilst systems with lots of interactions but little need for reputation do not necessarily require consistent profiles to be useful.</p>
+        <p><strong>Prominence</strong> takes into account the extent to which a system would function were users' data (of the various kinds) not aggregated into profiles. Prominence of profiles may depend on the role a user is playing in the system, so the potential varying roles are also taken into account. Systems with a high emphasis on connecting people feature profiles prominently, whilst systems with lots of interactions but little need for reputation do not necessarily require consistent profiles to be useful.</p>
 
-        <p>Portability considers how easy it is to get profile data out of a system, as well as how reusable that data is in other systems. This includes whether data is exported into a known standard data model, and standard file format, and the extent of additional processing that may be required to port it elsewhere.</p>
+        <p><strong>Portability</strong> considers how easy it is to get profile data out of a system, as well as how reusable that data is in other systems. This includes whether data is exported into a known standard data model, and standard file format, and the extent of additional processing that may be required to port it elsewhere.</p>
 
-        <p>Representation connects the systems' model of users with its purpose. Systems with possibility or expectation of personas or partial representations of individuals score low, whilst systems with emphasis on 'real people' and one-to-one mappings between profiles and profile owners score highly. Systems in which the real-life human is required for legal or transactional purposes (e.g. to make a payment or provide a service) lose 0.1 point because this is a level of distinction between the profile and the person.</p>
+        <p><strong>Representation</strong> connects the systems' model of users with its purpose. Systems with the possibility or expectation of personas or partial representations of individuals are not considered representative, whilst systems with emphasis on 'real people' and one-to-one mappings between profiles and profile owners have high representation. Systems in which the real-life human is required for legal or transactional purposes (e.g. to make a payment or provide a service) make a distinction between the profile and the person, and this lowers representation.</p>
 
         <p>An overview of the questions which contributed to the derivation of each feature is in <a href="#profile-questions-features">this table</a> and the rankings of each system against each feature are in the <a href="#profile-features-results">following table</a>.</p>
 
@@ -1267,7 +1254,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
           </thead>
           <tbody>
             <tr>
-              <td>Flexible</td>
+              <td>Flexibility</td>
               <td>X</td>
               <td>X</td>
               <td>X</td>
@@ -1280,7 +1267,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
               <td></td>
             </tr>
             <tr>
-              <td>Access Controlled</td>
+              <td>Access Control</td>
               <td>X</td>
               <td></td>
               <td>X</td>
@@ -1293,7 +1280,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
               <td></td>
             </tr>
             <tr>
-              <td>Prominent</td>
+              <td>Prominence</td>
               <td></td>
               <td></td>
               <td>X</td>
@@ -1306,7 +1293,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
               <td>X</td>
             </tr>
             <tr>
-              <td>Portable</td>
+              <td>Portability</td>
               <td></td>
               <td></td>
               <td></td>
@@ -1319,7 +1306,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
               <td></td>
             </tr>
             <tr>
-              <td>Representative</td>
+              <td>Representation</td>
               <td></td>
               <td></td>
               <td></td>
@@ -1339,11 +1326,11 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
           <thead>
             <tr title="click headers to sort">
               <th>System</th>
-              <th>Flexible</th>
-              <th>Access Controlled</th>
-              <th>Prominent</th>
-              <th>Portable</th>
-              <th>Representative</th>
+              <th>Flexibility</th>
+              <th>Access Control</th>
+              <th>Prominence</th>
+              <th>Portability</th>
+              <th>Representation</th>
             </tr>
           </thead>
           <tbody>
@@ -1521,7 +1508,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
           </thead>
           <tbody>
             <tr>
-              <td>Flexible</td>
+              <td>Flexibility</td>
               <td>0.2</td>
               <td>0.5</td>
               <td>0.3</td>
@@ -1542,7 +1529,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
               <td>0.5</td>
             </tr>
             <tr>
-              <td>Access Controlled</td>
+              <td>Access Control</td>
               <td>0.2</td>
               <td>0.1</td>
               <td>0.9</td>
@@ -1563,7 +1550,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
               <td>0.1</td>
             </tr>
             <tr>
-              <td>Prominent</td>
+              <td>Prominence</td>
               <td>1.0</td>
               <td>1.0</td>
               <td>0.7</td>
@@ -1584,7 +1571,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
               <td>0.1</td>
             </tr>
             <tr>
-              <td>Portable</td>
+              <td>Portability</td>
               <td>0.0</td>
               <td>0.0</td>
               <td>0.5</td>
@@ -1605,7 +1592,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
               <td>0.0</td>
             </tr>
             <tr>
-              <td>Representative</td>
+              <td>Representation</td>
               <td>0.9</td>
               <td>0.9</td>
               <td>0.8</td>
@@ -1634,25 +1621,25 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
     <section id="profiles-discussion" rel="schema:hasPart">
       <h3>Discussion</h3>
       <div>
-        <p>Five features of online profiles were derived from observations of the functionality and uses of a set of existing social systems. We can use these features to cluster similar systems and give us a better understanding of the online profiles space. In this section I discuss some noticeable clusters. When I use 'highly' in reference to a score, I mean the score was greater than 0.5.</p>
+        <p>Five features of online profiles were derived from observations of the functionality and uses of a set of existing social systems. We can use these features to cluster similar systems and give us a better understanding of online profiles in the social web ecosystem today. In this section I discuss some noticeable clusters. When I use 'highly' in reference to a score, I mean the score was greater than 0.5.</p>
 
-        <p>Though much of the literature around studying user profiles only acknowledges <em>attributes</em> [<a href="appendices#ref-dcent">dcent</a>, <a href="appendices#ref-counts09">counts09</a>] We can see that profiles are constituted of much more than just descriptive attributes about an individual. Content that makes up a person's profile may be input directly by the profile owner, generated or inferred from their online or offline activities, combined with content of others in the system and/or generated directly by other users of the system. Different systems emphasise different aspects of a person's online presence and allow users to adjust this to varying degrees.</p>
+        <p>Though much of the literature around studying user profiles only acknowledges <em>attributes</em> [<a href="appendices#ref-dcent">dcent</a>, <a href="appendices#ref-counts09">counts09</a>] we can see that profiles are constituted of much more than just descriptive attributes about an individual. Content that makes up a person's profile may be input directly by the profile owner, generated or inferred from their online or offline activities, combined with content of others in the system and/or generated directly by other users of the system. Different systems emphasise different aspects of a person's online presence and allow users to adjust this to varying degrees.</p>
 
         <!-- dcent: "personal data tends to be limited to profiles, collections of attributes... rather than progressing towards a more full notion of socially-produced data" -->
 
-        <p>The features which enable greatest control over self-representation for users are flexibility, portability and access control. Flexibility means that users have freedom to choose which information and contents make up their profile; portability means that they can move this data around or repurpose it easily; and access control means that the profile owner can choose who sees what. These things in combination are particularly empowering. Thus, the systems which give users the greatest control are Friendica and YouTube, which score highly for all three, and Tumblr, which scores highly for flexibility and access control. To a lesser degree, Pump.io and, Indieweb and ResearchGate score highly for flexibility and portability, but with limited access control. This means that profile owners must employ strategies of omission or self-censorship to effectively manage what their audience sees. Facebook and LinkedIn on the other hand score very highly for access control, but lower for flexibility and portability; that is, you don't have much control over how your profile is constructed, but at least you can control who sees the information.</p>
+        <p>The features which enable greatest control over self-representation for users are flexibility, portability and access control. Flexibility means that users have freedom to choose which information and contents make up their profile; portability means that they can move this data around or repurpose it easily; and access control means that the profile owner can choose who sees what. These things in combination are particularly empowering. Thus, the systems which give users the greatest control are Friendica and YouTube, which score highly for all three, and Tumblr, which scores highly for flexibility and access control. To a lesser degree, Pump.io, Indieweb and ResearchGate score highly for flexibility and portability, but with limited access control. This means that profile owners must employ strategies of omission or self-censorship to effectively manage what their audience sees. Facebook and LinkedIn on the other hand score very highly for access control, but lower for flexibility and portability; that is, you don't have much control over how your profile is constructed, but at least you can control who sees the information.</p>
 
 <!--         <p>The most flexible profiles were also the most portable, and also among the least representative of a single individual. The most representative profiles were among the most prominent, but were also the least portable.<span class="todo">HERENOW</span></p> -->
   
-        <p>Systems with high prominence scores tend to also have high representative scores. However Friendica has a very high score for prominence, as profiles are crucial in a network where making connections is the end goal, but it has a low score for representative, as the expectation is that profile owners present <em>personas</em>, and may have more than one for different aspects of themselves. The high-prominence and high-representative systems (CouchSurfing, PeoplePerHour, AirBnB, OkCupid, Facebook, LinkedIn) have strong ties to 'real life', for example in-person meetings, employment, or service exchange.</p>
+        <p>Systems with high prominence scores tend to also have high representation scores. However Friendica has a very high score for prominence, as profiles are crucial in a network where making connections is the end goal, but it has a low score for representation, as the expectation is that profile owners present <em>personas</em>, and may have more than one for different aspects of themselves. The high-prominence and high-representation systems (CouchSurfing, PeoplePerHour, AirBnB, OkCupid, Facebook, LinkedIn) have strong ties to 'real life', for example in-person meetings, employment, or service exchange.</p>
 
-        <p>Low prominence systems are geared towards an end purpose that is not oriented around user profiles, such as content creation, collaborative projects or information aggregation (Zooniverse, YouTube, Twitter, Quora, StackOverflow, ResearchGate, Github, Tumblr, RunKeeper). Profiles are useful, but not an end in themselves. On top of being low prominence, Tumblr and RunKeeper are not very representative; Tumblr permits multiple profiles and the community generally expects anonymity or pseudonymity; RunKeeper contains a very small subset of information about a person. Zooniverse, StackOverflow, Quora and Github nonetheless score relatively highly for representative, since unique profiles for individuals is necessary for establishing reputation or standing, a key element in these communities.</p>
+        <p>Low prominence systems are geared towards an end purpose that is not oriented around user profiles, such as content creation, collaborative projects or information aggregation (Zooniverse, YouTube, Twitter, Quora, StackOverflow, ResearchGate, Github, Tumblr, RunKeeper). Profiles are useful, but not an end in themselves. On top of being low prominence, Tumblr and RunKeeper are not very representative; Tumblr permits multiple profiles and the community generally expects anonymity or pseudonymity; RunKeeper contains a very small subset of information about a person. Zooniverse, StackOverflow, Quora and Github nonetheless score relatively highly for representation, since unique profiles for individuals is necessary for establishing reputation or standing, a key element in these communities.</p>
 
         <p>To be able to classify systems according to these features it is necessary to consider multiple perspectives: those of the profile owner, others who will see the profile, and the organisation which runs the system itself. As such, the classification process gives a wholistic view of a system, but only at a surface level. It misses out on the finer details of how the system is situated in the context of a society, how profile owners use one system alongside others, and the multiple possible uses of a system by different people, or different roles people may play. Nonetheless this provides a baseline idea of how people <em>could</em> use a system, in order to carry out more detailed studies about how individuals actually <em>do</em> use a system.</p>
 
-        <p>In particular, when one is studying users of a particular system, one can refer back to the features of the system (perhaps scoring systems which have not been covered here, or updating scores for ones which have changed) in order to put the users' actions in a broader context.</p>
+        <p>In particular, in future studies of users of a particular system, researchers can refer back to the features of the system (perhaps scoring systems which have not been covered here, or updating scores for ones which have changed) in order to put the users' actions in the bigger picture.</p>
 
-        <p>Throughout the remaining studies in this chapter, where specific systems are highlighted, we refer back to these features.</p>
+        <p>Throughout the remaining studies in this chapter, where specific systems are highlighted, I refer back to these features.</p>
       </div>
     </section>
 
@@ -3014,7 +3001,7 @@ A User is exactly what you'd expect, it's a person, it has a bunch of informatio
           <h4>Analysis</h4>
           <div>
 
-            <p>We take a grounded theory approach to analysing the data gathered.</p>
+            <p>We take a grounded theory approach to analysing the data gathered [<a href="appendices#ref-strauss1990basics">strauss1990basics</a>].</p>
 
             <p>Immediately following each interview, the interviewer recorded pertinent
             words or phrases and notable highlights from the discussion, as well as
