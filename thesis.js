@@ -32,6 +32,7 @@ function http_get_async(theUrl, callback)
 }
 
 function get_refs(){
+  // var file = "appendices.html";
   var file = "https://rhiaro.github.io/thesis/appendices";
   http_get_async(file, number_citations);
 }

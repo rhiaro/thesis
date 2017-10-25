@@ -50,7 +50,20 @@ margin:0 auto !important;
 padding:0 !important;
 width:145mm !important;
 height:137mm !important;
-line-height:2 !important;
+line-height: 1.6 !important;
+}
+
+thead {
+  display: table-row-group;
+}
+td a[href^="http"]:after {
+  content: "" !important;
+}
+#references-list {
+  line-height: 1.2 !important;
+}
+#references-list li {
+  padding-top: 0.4em;
 }
 
 h1, .h1 { font-size:22pt !important; font-weight:normal; }
@@ -70,6 +83,7 @@ page-break-after: avoid;
 body > nav,
 body > header nav,
 body > footer nav { display:none; }
+
 
 /*
 caption, td, th,
