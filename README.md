@@ -2,7 +2,7 @@
 
 This is my PhD thesis, conducted between 2012 and 2017, in the Center for Intelligent Systems and their Applications (CISA), School of Informatics, University of Edinburgh. I'm writing it in public to stretch ideas about Open Science a little bit, as well as to support and experiment with [Linked Research](https://linkedresearch.org) ideas and technologies.
 
-**Current status:** Viva passed, minor corrections ongoing.
+**Current status:** Final printed copy submitted, graduation pending.
 
 Issues always welcome. Please cluster issues that are minor/typos. Small typo fixes also welcome as PRs.
 
@@ -10,7 +10,7 @@ Issues always welcome. Please cluster issues that are minor/typos. Small typo fi
 
 * Living version: branch [gh-pages](https://github.com/rhiaro/thesis/tree/gh-pages) - subject to ongoing updates
 * Submitted version: frozen on branch [submitted](https://github.com/rhiaro/thesis/tree/submitted)
-* Final printed version after corrections: frozen on branch printed (TODO)
+* Final printed version after corrections: frozen on branch [printed](https://github.com/rhiaro/thesis/tree/printed)
 
 Contents:
 
