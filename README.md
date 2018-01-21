@@ -2,7 +2,7 @@
 
 This is my PhD thesis, conducted between 2012 and 2017, in the Center for Intelligent Systems and their Applications (CISA), School of Informatics, University of Edinburgh. I'm writing it in public to stretch ideas about Open Science a little bit, as well as to support and experiment with [Linked Research](https://linkedresearch.org) ideas and technologies.
 
-**Current status:** Final printed copy submitted, graduation pending.
+**Current status:** GRADUATED 2017-11-30.
 
 Issues always welcome. Please cluster issues that are minor/typos. Small typo fixes also welcome as PRs.
 
